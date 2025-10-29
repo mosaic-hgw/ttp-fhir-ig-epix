@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-UpdatePatient-request-example-1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Parameters-UpdatePatient-request-example-1"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "domain" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "MIRACUM"
+     ]
+  ] [
+     fhir:name [ fhir:v "source" ] ;
+     fhir:value [
+       a fhir:string ;
+       fhir:v "KlinikumXY"
+     ]
+  ] [
+     fhir:name [ fhir:v "mpiIdentifier" ] ;
+     fhir:value [
+       a fhir:Identifier ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1001000000066" ]
+     ]
+  ] [
+     fhir:name [ fhir:v "identity" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Patient ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+         ] )
+       ] ;
+       fhir:name ( [
+         fhir:family [ fhir:v "xxxxx" ] ;
+         fhir:given ( [ fhir:v "Stefanie" ] )
+       ] ) ;
+       fhir:birthDate [ fhir:v "1962-12-16"^^xsd:date ] ;
+       fhir:address ( [
+         fhir:city [ fhir:v "Spöck" ] ;
+         fhir:postalCode [ fhir:v "76297" ]
+       ] )
+     ] )
+  ] [
+     fhir:name [ fhir:v "force" ] ;
+     fhir:value [
+       a fhir:boolean ;
+       fhir:v false
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

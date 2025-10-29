@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="RemovePossibleMatches"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition RemovePossibleMatches</b></p><a name="RemovePossibleMatches"> </a><a name="hcRemovePossibleMatches"> </a><p>URL: [base]/$removePossibleMatches</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>
+</div></td></tr><tr><td>IN</td><td>linkId</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>Link-ID eines zu löschen Matches.</p>
+</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Anmerkung zum Löschvorgang</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Löschvorgang.</p>
+</div></td></tr></table><div><p>(Mögliche) Matches von Identitäten entfernen.</p>
+</div></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches"/>
+  <version value="2025.1.0"/>
+  <name value="RemovePossibleMatches"/>
+  <title value="removePossibleMatches"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Entfernt Matches aus einer Domäne."/>
+  <affectsState value="true"/>
+  <code value="removePossibleMatches"/>
+  <comment value="(Mögliche) Matches von Identitäten entfernen."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="domain"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Matching-Domaene"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="linkId"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Link-ID eines zu löschen Matches."/>
+    <type value="integer"/>
+  </parameter>
+  <parameter>
+    <name value="comment"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Anmerkung zum Löschvorgang"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="return"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Rückinformation zum Löschvorgang."/>
+    <type value="OperationOutcome"/>
+  </parameter>
+</OperationDefinition>

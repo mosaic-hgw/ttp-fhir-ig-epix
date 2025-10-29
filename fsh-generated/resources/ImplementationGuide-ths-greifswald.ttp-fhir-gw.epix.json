@@ -1,0 +1,579 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ths-greifswald.ttp-fhir-gw.epix",
+  "url": "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
+  "version": "2025.1.0",
+  "name": "IGTTPFHIRGatewayEPIX",
+  "status": "active",
+  "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact": [
+    {
+      "name": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "packageId": "ths-greifswald.ttp-fhir-gw.epix",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.einwilligungsmanagement",
+      "version": "2.0.0",
+      "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
+      "id": "de_einwilligungsmanagement"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "OperationDefinition/AddPatient"
+        },
+        "name": "addPatient",
+        "description": "Fügt eine oder mehrere Patientenidentitäten hinzu.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/AddPossibleMatch"
+        },
+        "name": "addPossibleMatch",
+        "description": "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/AssignIdentity"
+        },
+        "name": "assignIdentity",
+        "description": "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/AssignIdentityByIdentifier"
+        },
+        "name": "assignIdentityByIdentifier",
+        "description": "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationOutcome/AssignIdentityByIdentifier-example1"
+        },
+        "name": "AssignIdentityByIdentifier-example1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/BloomfilterTypeVS"
+        },
+        "name": "BloomfilterType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/BloomfilterTypeCS"
+        },
+        "name": "BloomfilterType",
+        "description": "Types of Bloomfilters.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentComponentTypeVS"
+        },
+        "name": "ConsentComponentType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentComponentTypeCS"
+        },
+        "name": "ConsentComponentType",
+        "description": "Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentPolicyActionVS"
+        },
+        "name": "ConsentPolicyAction",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentPolicyActionCS"
+        },
+        "name": "ConsentPolicyAction",
+        "description": "Extensible description of the permissible (data processing-) action resulting from consented module or policy.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentPolicyActorVS"
+        },
+        "name": "ConsentPolicyActor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentPolicyActorCS"
+        },
+        "name": "ConsentPolicyActor",
+        "description": "Expandable categorisation of consumer/requestor of a consent enforcement request  related to a specific consent component (e.g. policy or module)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentPolicyClassVS"
+        },
+        "name": "ConsentPolicyClass",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentPolicyClassCS"
+        },
+        "name": "ConsentPolicyClass",
+        "description": "Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT')",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentPolicyPurposeVS"
+        },
+        "name": "ConsentPolicyPurpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentPolicyPurposeCS"
+        },
+        "name": "ConsentPolicyPurpose",
+        "description": "Expandable specification of the application context and/or scope of a consent policy or module",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusVS"
+        },
+        "name": "ConsentStatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ConsentStatusCS"
+        },
+        "name": "ConsentStatus",
+        "description": " consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusConsentFullValuesVS"
+        },
+        "name": "ConsentStatusConsentFullValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusConsentOptOutFullValuesVS"
+        },
+        "name": "ConsentStatusConsentOptOutFullValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusConsentOptOutShortValuesVS"
+        },
+        "name": "ConsentStatusConsentOptOutShortValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusConsentShortValuesVS"
+        },
+        "name": "ConsentStatusConsentShortValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusObjectionFullValuesVS"
+        },
+        "name": "ConsentStatusObjectionFullValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusObjectionShortValuesVS"
+        },
+        "name": "ConsentStatusObjectionShortValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusRefusalFullValuesVS"
+        },
+        "name": "ConsentStatusRefusalFullValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusRefusalShortValuesVS"
+        },
+        "name": "ConsentStatusRefusalShortValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusWithdrawalFullValuesVS"
+        },
+        "name": "ConsentStatusWithdrawalFullValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConsentStatusWithdrawalShortValuesVS"
+        },
+        "name": "ConsentStatusWithdrawalShortValues",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CustomIdatValues"
+        },
+        "name": "Custom IDAT Values",
+        "description": "Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/DesignationUseCS"
+        },
+        "name": "DesignationUse",
+        "description": "Use codes (contexts) for terminology designations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/IdatElementsVS"
+        },
+        "name": "IdatElements",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/IdatElementsCS"
+        },
+        "name": "IdatElements",
+        "description": "Element names for use in $requestTasks operation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/IdMatchingTypeVS"
+        },
+        "name": "IdMatchingType",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/IdMatchingTypeCS"
+        },
+        "name": "IdMatchingType",
+        "description": "ID matching types used in consent management",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/MatchStatusVS"
+        },
+        "name": "MatchStatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/MatchStatusCS"
+        },
+        "name": "MatchStatus",
+        "description": "Possible match statuses in the context of adding patient identities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationOutcome/OperationOutcome-AssignIdentity-response-example-1"
+        },
+        "name": "OperationOutcome-AssignIdentity-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "OperationOutcome/OperationOutcome-RemovePossibleMatches-response-example-1"
+        },
+        "name": "OperationOutcome-RemovePossibleMatches-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AddPatient-request-example-1"
+        },
+        "name": "Parameters-AddPatient-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AddPatient-response-example-1"
+        },
+        "name": "Parameters-AddPatient-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AddPossibleMatch-request-example-1"
+        },
+        "name": "Parameters-AddPossibleMatch-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AddPossibleMatch-response-example-1"
+        },
+        "name": "Parameters-AddPossibleMatch-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AssignIdentity-request-example-1"
+        },
+        "name": "Parameters-AssignIdentity-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AssignIdentityByIdentifier-request-example-1"
+        },
+        "name": "Parameters-AssignIdentityByIdentifier-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-QueryPossibleMatches-request-example-1"
+        },
+        "name": "Parameters-QueryPossibleMatches-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-QueryPossibleMatches-response-example-1"
+        },
+        "name": "Parameters-QueryPossibleMatches-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-RemovePossibleMatches-request-example-1"
+        },
+        "name": "Parameters-RemovePossibleMatches-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-SetReferenceIdentity-request-example-1"
+        },
+        "name": "Parameters-SetReferenceIdentity-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-SetReferenceIdentity-response-example-1"
+        },
+        "name": "Parameters-SetReferenceIdentity-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-UpdatePatient-request-example-1"
+        },
+        "name": "Parameters-UpdatePatient-request-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-UpdatePatient-response-example-1"
+        },
+        "name": "Parameters-UpdatePatient-response-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Patient"
+        },
+        "name": "Patient",
+        "description": "Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI Eintrag, Person-Profil).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-example-1"
+        },
+        "name": "Patient-example-1",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/Patient-example-2"
+        },
+        "name": "Patient-example-2",
+        "exampleCanonical": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Person"
+        },
+        "name": "Person",
+        "description": "Allgemeines Personen-Profil. Repräsentiert die reale Person (MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil). Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Person/Person-example-1"
+        },
+        "name": "Person-example-1",
+        "exampleCanonical": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PolicyVS"
+        },
+        "name": "Policy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/PolicyCS"
+        },
+        "name": "Policy",
+        "description": "Policies used in consent management",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/PolicyStatusVS"
+        },
+        "name": "PolicyStatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/QueryPossibleMatches"
+        },
+        "name": "queryPossibleMatches",
+        "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/RemovePossibleMatches"
+        },
+        "name": "removePossibleMatches",
+        "description": "Entfernt Matches aus einer Domäne.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SaveActionVS"
+        },
+        "name": "SaveAction",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/SaveActionCS"
+        },
+        "name": "SaveAction",
+        "description": "Possible save actions in the context of adding patient identities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/SetReferenceIdentity"
+        },
+        "name": "setReferenceIdentity",
+        "description": "Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "OperationDefinition/UpdatePatient"
+        },
+        "name": "updatePatient",
+        "description": "Aktualisiert Patienten-Identitäten eines MPI-Eintrags.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "Beschreibung.html",
+          "title": "Beschreibung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "KontextUndKonzept.html",
+          "title": "Kontext und Konzept",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "PersonenUndPatienten-Suche.html",
+          "title": "Personen- und Patienten-Suche",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "RecordLinkageUndIdentitaetsmanagement.html",
+          "title": "Record Linkage und Identitätsmanagement",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "TechnischeGrundlagen.html",
+          "title": "Technische Grundlagen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Vorgehen.html",
+          "title": "Vorgehen",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

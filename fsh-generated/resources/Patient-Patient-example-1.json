@@ -1,0 +1,25 @@
+{
+  "resourceType": "Patient",
+  "id": "Patient-example-1",
+  "meta": {
+    "profile": [
+      "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
+    ],
+    "lastUpdated": "2021-05-19T17:50:23.000+02:00"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "ANON",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Anonymous identifier"
+          }
+        ]
+      },
+      "system": "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym",
+      "value": "dic_1H51T"
+    }
+  ]
+}

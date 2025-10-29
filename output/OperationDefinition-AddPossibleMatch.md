@@ -1,0 +1,114 @@
+# addPossibleMatch - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "AddPossibleMatch",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch",
+  "version" : "2025.1.0",
+  "name" : "AddPossibleMatch",
+  "title" : "addPossibleMatch",
+  "status" : "draft",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu.",
+  "affectsState" : true,
+  "code" : "addPossibleMatch",
+  "comment" : "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [
+    {
+      "name" : "domain",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Angabe der Matching-Domaene",
+      "type" : "string"
+    },
+    {
+      "name" : "mpiId",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "aliasMpiId",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Identifikator des matchenden MPI-Entrags.",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "match",
+      "use" : "out",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Match-Informationen zu zwei Identitäten.",
+      "part" : [
+        {
+          "name" : "item",
+          "use" : "out",
+          "min" : 2,
+          "max" : "2",
+          "documentation" : "Die beiden matchenden Identitäten wie im Request übergeben.",
+          "type" : "Patient"
+        },
+        {
+          "name" : "score",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Matching-Score",
+          "type" : "decimal"
+        },
+        {
+          "name" : "result",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Matching-Ergebnis",
+          "type" : "decimal"
+        },
+        {
+          "name" : "linkId",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Link-ID des Matches",
+          "type" : "integer"
+        },
+        {
+          "name" : "comment",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Anmerkung zum Match",
+          "type" : "string"
+        }
+      ]
+    }
+  ]
+}
+
+```

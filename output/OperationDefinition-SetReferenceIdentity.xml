@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="SetReferenceIdentity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition SetReferenceIdentity</b></p><a name="SetReferenceIdentity"> </a><a name="hcSetReferenceIdentity"> </a><p>URL: [base]/$setReferenceIdentity</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>
+</div></td></tr><tr><td>IN</td><td>mpiId</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier).</p>
+</div></td></tr><tr><td>IN</td><td>identityReference</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></td><td/><td><div><p>Referenz zur Identität (Patient-Ressource), die als Referenzidentität gesetzt werden soll.</p>
+</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Anmerkung zum Änderungsvorgang</p>
+</div></td></tr><tr><td>OUT</td><td>mpiPerson</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/person.html">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>
+</div></td></tr><tr><td>OUT</td><td>identity</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity"/>
+  <version value="2025.1.0"/>
+  <name value="SetReferenceIdentity"/>
+  <title value="setReferenceIdentity"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen."/>
+  <affectsState value="true"/>
+  <code value="setReferenceIdentity"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="domain"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Matching-Domaene"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="mpiId"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier)."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="identityReference"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Referenz zur Identität (Patient-Ressource), die als Referenzidentität gesetzt werden soll."/>
+    <type value="Reference"/>
+  </parameter>
+  <parameter>
+    <name value="comment"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Anmerkung zum Änderungsvorgang"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="mpiPerson"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Person-Ressource, die den MPI-Eintrag repräsentiert."/>
+    <type value="Person"/>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource)."/>
+    <type value="Patient"/>
+  </parameter>
+</OperationDefinition>

@@ -1,0 +1,97 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "UpdatePatient",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition UpdatePatient</b></p><a name=\"UpdatePatient\"> </a><a name=\"hcUpdatePatient\"> </a><p>URL: [base]/$updatePatient</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matchingdomain</p>\n</div></td></tr><tr><td>IN</td><td>source</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Datenquelle</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>\n</div></td></tr><tr><td>IN</td><td>identity</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu der Patienten-Identität)</p>\n</div></td></tr><tr><td>IN</td><td>force</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>matchStatus</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-MatchStatusVS.html\">MatchStatus</a> (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>\n</div></td></tr><tr><td>OUT</td><td>mpiPerson</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/person.html\">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>\n</div></td></tr><tr><td>OUT</td><td>identity</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>\n</div></td></tr></table><div><p>Aktualisiert Patienten-Identitäten eines MPI-Eintrags.</p>\n</div></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient",
+  "version" : "2025.1.0",
+  "name" : "UpdatePatient",
+  "title" : "updatePatient",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Aktualisiert Patienten-Identitäten eines MPI-Eintrags.",
+  "affectsState" : true,
+  "code" : "updatePatient",
+  "comment" : "Aktualisiert Patienten-Identitäten eines MPI-Eintrags.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matchingdomain",
+    "type" : "string"
+  },
+  {
+    "name" : "source",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Datenquelle",
+    "type" : "string"
+  },
+  {
+    "name" : "mpiIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "identity",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient-Ressource (analog zu der Patienten-Identität)",
+    "type" : "Patient"
+  },
+  {
+    "name" : "force",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "matchStatus",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Match-Status aus dem Matching der übermittelten Patienten-Identität",
+    "type" : "Coding",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
+    }
+  },
+  {
+    "name" : "mpiPerson",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+    "type" : "Person"
+  },
+  {
+    "name" : "identity",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+    "type" : "Patient"
+  }]
+}

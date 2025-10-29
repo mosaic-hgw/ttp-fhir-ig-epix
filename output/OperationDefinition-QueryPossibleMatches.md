@@ -1,0 +1,146 @@
+# queryPossibleMatches - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "QueryPossibleMatches",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches",
+  "version" : "2025.1.0",
+  "name" : "QueryPossibleMatches",
+  "title" : "queryPossibleMatches",
+  "status" : "draft",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [
+    {
+      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.ths-greifswald.de/"
+        }
+      ]
+    }
+  ],
+  "description" : "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+  "affectsState" : false,
+  "code" : "queryPossibleMatches",
+  "comment" : "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [
+    {
+      "name" : "_offset",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Offset für Paging (Anzahl der zu überspringenden match-Parameter)",
+      "type" : "integer"
+    },
+    {
+      "name" : "_count",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Anzahl der zurück zu gebenden match-Parameter (Paging)",
+      "type" : "string"
+    },
+    {
+      "name" : "domain",
+      "use" : "in",
+      "min" : 1,
+      "max" : "1",
+      "documentation" : "Angabe der Matching-Domaene",
+      "type" : "string"
+    },
+    {
+      "name" : "mpiId",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben.",
+      "type" : "Identifier"
+    },
+    {
+      "name" : "prev",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Bei Paging: URL der vorausgehenden Seite.",
+      "type" : "uri"
+    },
+    {
+      "name" : "self",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Bei Paging: URL der aktuellen Seite.",
+      "type" : "uri"
+    },
+    {
+      "name" : "next",
+      "use" : "out",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Bei Paging: URL der folgenden Seite.",
+      "type" : "uri"
+    },
+    {
+      "name" : "match",
+      "use" : "out",
+      "min" : 0,
+      "max" : "*",
+      "documentation" : "Match-Informationen zu zwei Identitäten.",
+      "part" : [
+        {
+          "name" : "matchItem",
+          "use" : "out",
+          "min" : 2,
+          "max" : "2",
+          "documentation" : "Die beiden matchenden Identitäten.",
+          "type" : "Patient"
+        },
+        {
+          "name" : "matchScore",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Matching-Score",
+          "type" : "decimal"
+        },
+        {
+          "name" : "matchResult",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Matching-Ergebnis",
+          "type" : "decimal"
+        },
+        {
+          "name" : "linkId",
+          "use" : "out",
+          "min" : 1,
+          "max" : "1",
+          "documentation" : "Link-ID des Matches",
+          "type" : "integer"
+        },
+        {
+          "name" : "comment",
+          "use" : "out",
+          "min" : 0,
+          "max" : "1",
+          "documentation" : "Anmerkung zum Match",
+          "type" : "string"
+        }
+      ]
+    }
+  ]
+}
+
+```

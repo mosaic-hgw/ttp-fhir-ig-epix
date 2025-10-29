@@ -1,0 +1,19 @@
+{
+  "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
+  "name" : "IGTTPFHIRGatewayEPIX",
+  "title" : null,
+  "description" : "",
+  "status" : "active",
+  "package-id" : "ths-greifswald.ttp-fhir-gw.epix",
+  "ig-ver" : "2025.1.0",
+  "date" : "Wed, 29 Oct, 2025 11:37:27 +0100",
+  "dateISO8601" : "2025-10-29T11:37:27+01:00",
+  "errs" : 121,
+  "warnings" : 165,
+  "hints" : 103,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1211063576
+}

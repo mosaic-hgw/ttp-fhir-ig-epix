@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPatient> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AddPatient"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AddPatient</b></p><a name=\"AddPatient\"> </a><a name=\"hcAddPatient\"> </a><p>URL: [base]/$addPatient</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>source</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Datenquelle</p>\n</div></td></tr><tr><td>IN</td><td>identity</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität).</p>\n</div></td></tr><tr><td>IN</td><td>saveAction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-SaveActionVS.html\">SaveAction</a> (Required)</td><td/></tr><tr><td>IN</td><td>forceReferenceUpdate</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>matchResult</td><td/><td>1..*</td><td/><td/><td><div><p>Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben.</p>\n</div></td></tr><tr><td>OUT</td><td>matchResult.sourceIdentity</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht.</p>\n</div></td></tr><tr><td>OUT</td><td>matchResult.matchStatus</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td><a href=\"ValueSet-MatchStatusVS.html\">MatchStatus</a> (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>\n</div></td></tr><tr><td>OUT</td><td>matchResult.mpiPerson</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/person.html\">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>\n</div></td></tr><tr><td>OUT</td><td>matchResult.identity</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>\n</div></td></tr></table><div><p>Anlegen und Matching (<strong>Record Linkage</strong>) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im <a href=\"https://www.ths-greifswald.de/e-pix\">E-PIX</a>.</p>\n<p>Dabei werden eine oder mehrere Patienten-Identitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der <strong>Master Person Index (MPI ID)</strong>, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben.</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2025.1.0"] ; # 
+  fhir:name [ fhir:v "AddPatient"] ; # 
+  fhir:title [ fhir:v "addPatient"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2025-06-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Fügt eine oder mehrere Patientenidentitäten hinzu."] ; # 
+  fhir:affectsState [ fhir:v true] ; # 
+  fhir:code [ fhir:v "addPatient"] ; # 
+  fhir:comment [ fhir:v "Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix). \r\n\r\nDabei werden eine oder mehrere Patienten-Identitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der **Master Person Index (MPI ID)**, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben."] ; # 
+  fhir:system [ fhir:v true] ; # 
+  fhir:type [ fhir:v false] ; # 
+  fhir:instance [ fhir:v false] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "domain" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Angabe der Matching-Domaene" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:name [ fhir:v "source" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Datenquelle" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:name [ fhir:v "identity" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Patient-Ressource (analog zu Patienten-Identität)." ] ;
+     fhir:type [ fhir:v "Patient" ]
+  ] [
+     fhir:name [ fhir:v "saveAction" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:type [ fhir:v "Coding" ] ;
+     fhir:binding [
+       fhir:strength [ fhir:v "required" ] ;
+       fhir:valueSet [
+         fhir:v "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"^^xsd:anyURI ;
+         fhir:link <https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction>
+       ]
+     ]
+  ] [
+     fhir:name [ fhir:v "forceReferenceUpdate" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:name [ fhir:v "matchResult" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben." ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "sourceIdentity" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht." ] ;
+       fhir:type [ fhir:v "Patient" ]
+     ] [
+       fhir:name [ fhir:v "matchStatus" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 1 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Match-Status aus dem Matching der übermittelten Patienten-Identität" ] ;
+       fhir:type [ fhir:v "Coding" ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:valueSet [
+           fhir:v "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"^^xsd:anyURI ;
+           fhir:link <https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus>
+         ]
+       ]
+     ] [
+       fhir:name [ fhir:v "mpiPerson" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:documentation [ fhir:v "Person-Ressource, die den MPI-Eintrag repräsentiert." ] ;
+       fhir:type [ fhir:v "Person" ]
+     ] [
+       fhir:name [ fhir:v "identity" ] ;
+       fhir:use [ fhir:v "out" ] ;
+       fhir:min [ fhir:v 0 ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:documentation [ fhir:v "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource)." ] ;
+       fhir:type [ fhir:v "Patient" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

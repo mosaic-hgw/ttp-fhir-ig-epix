@@ -1,0 +1,30 @@
+# Parameters-SetReferenceIdentity-request-example-1 - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "Parameters-SetReferenceIdentity-request-example-1",
+  "parameter" : [
+    {
+      "name" : "comment",
+      "valueString" : "aufgrund neuerer Informationen"
+    },
+    {
+      "name" : "mpiId",
+      "valueIdentifier" : {
+        "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+        "value" : "1001000000066"
+      }
+    },
+    {
+      "name" : "identityReference",
+      "valueId" : "53"
+    }
+  ]
+}
+
+```

@@ -1,2 +1,2 @@
-# ttp-fhir-ig-epix
-Implementation Guide TTP-FHIR Gateway for E-PIX based on IG Publisher
+# ttp-fhir-ig-publisher
+IG Publisher Version des FHIR IG (ehemals simplifier)

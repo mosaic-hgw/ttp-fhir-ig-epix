@@ -1,0 +1,69 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "AssignIdentityByIdentifier",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AssignIdentityByIdentifier</b></p><a name=\"AssignIdentityByIdentifier\"> </a><a name=\"hcAssignIdentityByIdentifier\"> </a><p>URL: [base]/$assignIdentityByIdentifier</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domäne</p>\n</div></td></tr><tr><td>IN</td><td>identityIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifier der zu verschiebenden Identität (Patient-Ressource).</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>\n</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anmerkung zum Änderungsvorgang</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Merge-Vorgang.</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier",
+  "version" : "2025.1.0",
+  "name" : "AssignIdentityByIdentifier",
+  "title" : "assignIdentityByIdentifier",
+  "status" : "draft",
+  "kind" : "operation",
+  "date" : "2025-06-12",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität.",
+  "affectsState" : true,
+  "code" : "assignIdentityByIdentifier",
+  "system" : true,
+  "type" : false,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domäne",
+    "type" : "string"
+  },
+  {
+    "name" : "identityIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifier der zu verschiebenden Identität (Patient-Ressource).",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "mpiIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Änderungsvorgang",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Rückinformation zum Merge-Vorgang.",
+    "type" : "OperationOutcome"
+  }]
+}

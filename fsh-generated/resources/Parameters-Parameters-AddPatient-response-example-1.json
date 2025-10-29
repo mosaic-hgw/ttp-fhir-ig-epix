@@ -1,0 +1,158 @@
+{
+  "resourceType": "Parameters",
+  "id": "Parameters-AddPatient-response-example-1",
+  "parameter": [
+    {
+      "part": [
+        {
+          "resource": {
+            "meta": {
+              "profile": [
+                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+              ]
+            },
+            "resourceType": "Patient",
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "valueString": "A38"
+                  },
+                  {
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "name": [
+              {
+                "family": "xxxxx",
+                "given": [
+                  "Stefanie"
+                ]
+              }
+            ],
+            "birthDate": "1962-12-17"
+          },
+          "name": "sourceIdentity"
+        },
+        {
+          "name": "matchStatus",
+          "valueCoding": {
+            "code": "MATCH",
+            "system": "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"
+          }
+        },
+        {
+          "resource": {
+            "meta": {
+              "profile": [
+                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
+              ],
+              "lastUpdated": "2021-06-17T08:28:03.200+02:00"
+            },
+            "resourceType": "Person",
+            "id": "52",
+            "identifier": [
+              {
+                "system": "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+                "value": "1001000000066"
+              }
+            ],
+            "managingOrganization": {
+              "identifier": {
+                "value": "MIRACUM"
+              }
+            },
+            "active": true,
+            "link": [
+              {
+                "target": {
+                  "reference": "Patient/52"
+                }
+              },
+              {
+                "target": {
+                  "reference": "Patient/53"
+                },
+                "assurance": "level4"
+              }
+            ]
+          },
+          "name": "mpiPerson"
+        },
+        {
+          "resource": {
+            "meta": {
+              "profile": [
+                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+              ],
+              "versionId": "1",
+              "lastUpdated": "2021-06-17T08:28:03.200+02:00",
+              "source": "dummy_safe_source"
+            },
+            "resourceType": "Patient",
+            "id": "52",
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "valueString": "A38"
+                  },
+                  {
+                    "valueBoolean": true
+                  }
+                ]
+              }
+            ],
+            "active": true,
+            "identifier": [
+              {
+                "system": "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
+                "value": "ABC_12345"
+              }
+            ],
+            "name": [
+              {
+                "family": "xxxxx",
+                "given": [
+                  "Stefanie"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1962-12-17"
+          },
+          "name": "identity"
+        },
+        {
+          "resource": {
+            "meta": {
+              "profile": [
+                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+              ],
+              "versionId": "1",
+              "lastUpdated": "2021-06-17T08:28:24.180+02:00",
+              "source": "dummy_safe_source"
+            },
+            "resourceType": "Patient",
+            "id": "53",
+            "active": true,
+            "name": [
+              {
+                "family": "xxxxx",
+                "given": [
+                  "Stefanie"
+                ]
+              }
+            ],
+            "gender": "male",
+            "birthDate": "1962-12-16"
+          },
+          "name": "identity"
+        }
+      ],
+      "name": "matchResult"
+    }
+  ]
+}

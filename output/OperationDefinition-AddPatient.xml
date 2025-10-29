@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="AddPatient"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition AddPatient</b></p><a name="AddPatient"> </a><a name="hcAddPatient"> </a><p>URL: [base]/$addPatient</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>
+</div></td></tr><tr><td>IN</td><td>source</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Datenquelle</p>
+</div></td></tr><tr><td>IN</td><td>identity</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität).</p>
+</div></td></tr><tr><td>IN</td><td>saveAction</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-SaveActionVS.html">SaveAction</a> (Required)</td><td/></tr><tr><td>IN</td><td>forceReferenceUpdate</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>matchResult</td><td/><td>1..*</td><td/><td/><td><div><p>Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben.</p>
+</div></td></tr><tr><td>OUT</td><td>matchResult.sourceIdentity</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht.</p>
+</div></td></tr><tr><td>OUT</td><td>matchResult.matchStatus</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-MatchStatusVS.html">MatchStatus</a> (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>
+</div></td></tr><tr><td>OUT</td><td>matchResult.mpiPerson</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/person.html">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>
+</div></td></tr><tr><td>OUT</td><td>matchResult.identity</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>
+</div></td></tr></table><div><p>Anlegen und Matching (<strong>Record Linkage</strong>) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im <a href="https://www.ths-greifswald.de/e-pix">E-PIX</a>.</p>
+<p>Dabei werden eine oder mehrere Patienten-Identitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der <strong>Master Person Index (MPI ID)</strong>, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben.</p>
+</div></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient"/>
+  <version value="2025.1.0"/>
+  <name value="AddPatient"/>
+  <title value="addPatient"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2025-06-12"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Fügt eine oder mehrere Patientenidentitäten hinzu."/>
+  <affectsState value="true"/>
+  <code value="addPatient"/>
+  <comment value="Anlegen und Matching (**Record Linkage**) von übermittelten Patienten-Resourcen auf Basis der personenidentifizierenden Informationen (IDAT) im [E-PIX](https://www.ths-greifswald.de/e-pix). &#xD;&#xA;&#xD;&#xA;Dabei werden eine oder mehrere Patienten-Identitäten im E-PIX erzeugt. Nach Abschluss des Record Linkage Prozesses werden für jede übermittelte Patienten-Resource der **Master Person Index (MPI ID)**, die MPI-Zuordnung (Person-Ressource) sowie der Match-Status und vorhandene Identitäten zurückgegeben."/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="domain"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Angabe der Matching-Domaene"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="source"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Datenquelle"/>
+    <type value="string"/>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Patient-Ressource (analog zu Patienten-Identität)."/>
+    <type value="Patient"/>
+  </parameter>
+  <parameter>
+    <name value="saveAction"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <type value="Coding"/>
+    <binding>
+      <strength value="required"/>
+      <valueSet value="https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"/>
+    </binding>
+  </parameter>
+  <parameter>
+    <name value="forceReferenceUpdate"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <type value="boolean"/>
+  </parameter>
+  <parameter>
+    <name value="matchResult"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben."/>
+    <part>
+      <name value="sourceIdentity"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht."/>
+      <type value="Patient"/>
+    </part>
+    <part>
+      <name value="matchStatus"/>
+      <use value="out"/>
+      <min value="1"/>
+      <max value="1"/>
+      <documentation value="Match-Status aus dem Matching der übermittelten Patienten-Identität"/>
+      <type value="Coding"/>
+      <binding>
+        <strength value="required"/>
+        <valueSet value="https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"/>
+      </binding>
+    </part>
+    <part>
+      <name value="mpiPerson"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="1"/>
+      <documentation value="Person-Ressource, die den MPI-Eintrag repräsentiert."/>
+      <type value="Person"/>
+    </part>
+    <part>
+      <name value="identity"/>
+      <use value="out"/>
+      <min value="0"/>
+      <max value="*"/>
+      <documentation value="Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource)."/>
+      <type value="Patient"/>
+    </part>
+  </parameter>
+</OperationDefinition>

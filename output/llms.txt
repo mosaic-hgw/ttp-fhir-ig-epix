@@ -1,0 +1,103 @@
+# ths-greifswald.ttp-fhir-gw.epix#2025.1.0: null
+
+## Pages
+
+* [Home](index.md)
+* [Record Linkage und Identitätsmanagement](RecordLinkageUndIdentitaetsmanagement.md)
+* [Extensions](Extensions.md)
+* [Beschreibung](Beschreibung.md)
+* [Kontext und Konzept](KontextUndKonzept.md)
+* [Artifacts Summary](artifacts.md)
+* [Vorgehen](Vorgehen.md)
+* [Technische Grundlagen](TechnischeGrundlagen.md)
+* [Personen- und Patienten-Suche](PersonenUndPatienten-Suche.md)
+
+## Resources
+
+### CodeSystems
+
+* [BloomfilterType](CodeSystem-BloomfilterTypeCS.md)
+* [ConsentComponentType](CodeSystem-ConsentComponentTypeCS.md)
+* [ConsentPolicyAction](CodeSystem-ConsentPolicyActionCS.md)
+* [ConsentPolicyActor](CodeSystem-ConsentPolicyActorCS.md)
+* [ConsentPolicyClass](CodeSystem-ConsentPolicyClassCS.md)
+* [ConsentPolicyPurpose](CodeSystem-ConsentPolicyPurposeCS.md)
+* [ConsentStatus](CodeSystem-ConsentStatusCS.md)
+* [DesignationUse](CodeSystem-DesignationUseCS.md)
+* [IdMatchingType](CodeSystem-IdMatchingTypeCS.md)
+* [IdatElements](CodeSystem-IdatElementsCS.md)
+* [MatchStatus](CodeSystem-MatchStatusCS.md)
+* [Policy](CodeSystem-PolicyCS.md)
+* [SaveAction](CodeSystem-SaveActionCS.md)
+
+### ValueSets
+
+* [BloomfilterType](ValueSet-BloomfilterTypeVS.md)
+* [ConsentComponentType](ValueSet-ConsentComponentTypeVS.md)
+* [ConsentPolicyAction](ValueSet-ConsentPolicyActionVS.md)
+* [ConsentPolicyActor](ValueSet-ConsentPolicyActorVS.md)
+* [ConsentPolicyClass](ValueSet-ConsentPolicyClassVS.md)
+* [ConsentPolicyPurpose](ValueSet-ConsentPolicyPurposeVS.md)
+* [ConsentStatusConsentFullValues](ValueSet-ConsentStatusConsentFullValuesVS.md)
+* [ConsentStatusConsentOptOutFullValues](ValueSet-ConsentStatusConsentOptOutFullValuesVS.md)
+* [ConsentStatusConsentOptOutShortValues](ValueSet-ConsentStatusConsentOptOutShortValuesVS.md)
+* [ConsentStatusConsentShortValues](ValueSet-ConsentStatusConsentShortValuesVS.md)
+* [ConsentStatusObjectionFullValues](ValueSet-ConsentStatusObjectionFullValuesVS.md)
+* [ConsentStatusObjectionShortValues](ValueSet-ConsentStatusObjectionShortValuesVS.md)
+* [ConsentStatusRefusalFullValues](ValueSet-ConsentStatusRefusalFullValuesVS.md)
+* [ConsentStatusRefusalShortValues](ValueSet-ConsentStatusRefusalShortValuesVS.md)
+* [ConsentStatus](ValueSet-ConsentStatusVS.md)
+* [ConsentStatusWithdrawalFullValues](ValueSet-ConsentStatusWithdrawalFullValuesVS.md)
+* [ConsentStatusWithdrawalShortValues](ValueSet-ConsentStatusWithdrawalShortValuesVS.md)
+* [IdMatchingType](ValueSet-IdMatchingTypeVS.md)
+* [IdatElements](ValueSet-IdatElementsVS.md)
+* [MatchStatus](ValueSet-MatchStatusVS.md)
+* [PolicyStatus](ValueSet-PolicyStatusVS.md)
+* [Policy](ValueSet-PolicyVS.md)
+* [SaveAction](ValueSet-SaveActionVS.md)
+
+### Resource Profiles
+
+* [Patient](StructureDefinition-Patient.md)
+* [Person](StructureDefinition-Person.md)
+
+### Extensions
+
+* [Custom IDAT Values](StructureDefinition-CustomIdatValues.md)
+
+### ImplementationGuides
+
+* [IGTTPFHIRGatewayEPIX](index.md)
+
+### OperationDefinitions
+
+* [addPatient](OperationDefinition-AddPatient.md)
+* [addPossibleMatch](OperationDefinition-AddPossibleMatch.md)
+* [assignIdentity](OperationDefinition-AssignIdentity.md)
+* [assignIdentityByIdentifier](OperationDefinition-AssignIdentityByIdentifier.md)
+* [queryPossibleMatches](OperationDefinition-QueryPossibleMatches.md)
+* [removePossibleMatches](OperationDefinition-RemovePossibleMatches.md)
+* [setReferenceIdentity](OperationDefinition-SetReferenceIdentity.md)
+* [updatePatient](OperationDefinition-UpdatePatient.md)
+
+### Examples
+
+* [AssignIdentityByIdentifier-example1 (OperationOutcome)](OperationOutcome-AssignIdentityByIdentifier-example1.md)
+* [OperationOutcome-AssignIdentity-response-example-1 (OperationOutcome)](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md)
+* [OperationOutcome-RemovePossibleMatches-response-example-1 (OperationOutcome)](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md)
+* [Parameters-AddPatient-request-example-1 (Parameters)](Parameters-Parameters-AddPatient-request-example-1.md)
+* [Parameters-AddPatient-response-example-1 (Parameters)](Parameters-Parameters-AddPatient-response-example-1.md)
+* [Parameters-AddPossibleMatch-request-example-1 (Parameters)](Parameters-Parameters-AddPossibleMatch-request-example-1.md)
+* [Parameters-AddPossibleMatch-response-example-1 (Parameters)](Parameters-Parameters-AddPossibleMatch-response-example-1.md)
+* [Parameters-AssignIdentity-request-example-1 (Parameters)](Parameters-Parameters-AssignIdentity-request-example-1.md)
+* [Parameters-AssignIdentityByIdentifier-request-example-1 (Parameters)](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md)
+* [Parameters-QueryPossibleMatches-request-example-1 (Parameters)](Parameters-Parameters-QueryPossibleMatches-request-example-1.md)
+* [Parameters-QueryPossibleMatches-response-example-1 (Parameters)](Parameters-Parameters-QueryPossibleMatches-response-example-1.md)
+* [Parameters-RemovePossibleMatches-request-example-1 (Parameters)](Parameters-Parameters-RemovePossibleMatches-request-example-1.md)
+* [Parameters-SetReferenceIdentity-request-example-1 (Parameters)](Parameters-Parameters-SetReferenceIdentity-request-example-1.md)
+* [Parameters-SetReferenceIdentity-response-example-1 (Parameters)](Parameters-Parameters-SetReferenceIdentity-response-example-1.md)
+* [Parameters-UpdatePatient-request-example-1 (Parameters)](Parameters-Parameters-UpdatePatient-request-example-1.md)
+* [Parameters-UpdatePatient-response-example-1 (Parameters)](Parameters-Parameters-UpdatePatient-response-example-1.md)
+* [Patient-example-1 (Patient)](Patient-Patient-example-1.md)
+* [Patient-example-2 (Patient)](Patient-Patient-example-2.md)
+* [Person-example-1 (Person)](Person-Person-example-1.md)

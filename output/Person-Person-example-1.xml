@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Person xmlns="http://hl7.org/fhir">
+  <id value="Person-example-1"/>
+  <meta>
+    <lastUpdated value="2021-06-17T08:28:03.200+02:00"/>
+    <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Person Person-example-1</b></p><a name="Person-example-1"> </a><a name="hcPerson-example-1"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2021-06-17 08:28:03+0200</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Person.html">Person</a></p></div><p><b>identifier</b>: <code>https://ths-greifswald.de/fhir/epix/identifier/MPI</code>/1001000000066</p><p><b>managingOrganization</b>: Identifier: MIRACUM</p><p><b>active</b>: true</p><blockquote><p><b>link</b></p><p><b>target</b>: <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/52">Patient/52</a></p></blockquote><blockquote><p><b>link</b></p><p><b>target</b>: <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/53">Patient/53</a></p><p><b>assurance</b>: Level 4</p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+    <value value="1001000000066"/>
+  </identifier>
+  <managingOrganization>
+    <identifier>
+      <value value="MIRACUM"/>
+    </identifier>
+  </managingOrganization>
+  <active value="true"/>
+  <link>
+    <target>
+      <reference value="Patient/52"/>
+    </target>
+  </link>
+  <link>
+    <target>
+      <reference value="Patient/53"/>
+    </target>
+    <assurance value="level4"/>
+  </link>
+</Person>

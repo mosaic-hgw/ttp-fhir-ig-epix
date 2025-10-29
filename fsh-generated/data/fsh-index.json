@@ -1,0 +1,530 @@
+[
+  {
+    "outputFile": "CodeSystem-BloomfilterTypeCS.json",
+    "fshName": "BloomfilterType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-BloomfilterType.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-ConsentComponentTypeCS.json",
+    "fshName": "ConsentComponentType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentComponentType.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-ConsentPolicyActionCS.json",
+    "fshName": "ConsentPolicyAction",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentPolicyAction.fsh",
+    "startLine": 1,
+    "endLine": 151
+  },
+  {
+    "outputFile": "CodeSystem-ConsentPolicyActorCS.json",
+    "fshName": "ConsentPolicyActor",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentPolicyActor.fsh",
+    "startLine": 1,
+    "endLine": 45
+  },
+  {
+    "outputFile": "CodeSystem-ConsentPolicyClassCS.json",
+    "fshName": "ConsentPolicyClass",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentPolicyClass.fsh",
+    "startLine": 1,
+    "endLine": 157
+  },
+  {
+    "outputFile": "CodeSystem-ConsentPolicyPurposeCS.json",
+    "fshName": "ConsentPolicyPurpose",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentPolicyPurpose.fsh",
+    "startLine": 1,
+    "endLine": 340
+  },
+  {
+    "outputFile": "CodeSystem-ConsentStatusCS.json",
+    "fshName": "ConsentStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-ConsentStatus.fsh",
+    "startLine": 1,
+    "endLine": 56
+  },
+  {
+    "outputFile": "CodeSystem-DesignationUseCS.json",
+    "fshName": "DesignationUse",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-DesignationUse.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-IdMatchingTypeCS.json",
+    "fshName": "IdMatchingType",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-IdMatchingType.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-IdatElementsCS.json",
+    "fshName": "IdatElements",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-IdatElements.fsh",
+    "startLine": 1,
+    "endLine": 23
+  },
+  {
+    "outputFile": "CodeSystem-MatchStatusCS.json",
+    "fshName": "MatchStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-MatchStatus.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "CodeSystem-PolicyCS.json",
+    "fshName": "Policy",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-Policy.fsh",
+    "startLine": 1,
+    "endLine": 83
+  },
+  {
+    "outputFile": "CodeSystem-SaveActionCS.json",
+    "fshName": "SaveAction",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystem-SaveAction.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "OperationDefinition-AddPatient.json",
+    "fshName": "AddPatient",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPatient.fsh",
+    "startLine": 1,
+    "endLine": 77
+  },
+  {
+    "outputFile": "OperationDefinition-AddPossibleMatch.json",
+    "fshName": "AddPossibleMatch",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "OperationDefinition-AssignIdentity.json",
+    "fshName": "AssignIdentity",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentity.fsh",
+    "startLine": 1,
+    "endLine": 50
+  },
+  {
+    "outputFile": "OperationDefinition-AssignIdentityByIdentifier.json",
+    "fshName": "AssignIdentityByIdentifier",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentityByIdentifier.fsh",
+    "startLine": 1,
+    "endLine": 50
+  },
+  {
+    "outputFile": "OperationDefinition-QueryPossibleMatches.json",
+    "fshName": "QueryPossibleMatches",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
+    "startLine": 1,
+    "endLine": 93
+  },
+  {
+    "outputFile": "OperationDefinition-RemovePossibleMatches.json",
+    "fshName": "RemovePossibleMatches",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "OperationDefinition-SetReferenceIdentity.json",
+    "fshName": "SetReferenceIdentity",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-SetReferenceIdentity.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
+    "outputFile": "OperationDefinition-UpdatePatient.json",
+    "fshName": "UpdatePatient",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-UpdatePatient.fsh",
+    "startLine": 1,
+    "endLine": 64
+  },
+  {
+    "outputFile": "OperationOutcome-AssignIdentityByIdentifier-example1.json",
+    "fshName": "AssignIdentityByIdentifier-example1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentityByIdentifier.fsh",
+    "startLine": 74,
+    "endLine": 80
+  },
+  {
+    "outputFile": "OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.json",
+    "fshName": "OperationOutcome-AssignIdentity-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentity.fsh",
+    "startLine": 70,
+    "endLine": 76
+  },
+  {
+    "outputFile": "OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.json",
+    "fshName": "OperationOutcome-RemovePossibleMatches-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
+    "startLine": 54,
+    "endLine": 60
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPatient-request-example-1.json",
+    "fshName": "Parameters-AddPatient-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPatient.fsh",
+    "startLine": 80,
+    "endLine": 108
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPatient-response-example-1.json",
+    "fshName": "Parameters-AddPatient-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPatient.fsh",
+    "startLine": 110,
+    "endLine": 169
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatch-request-example-1.json",
+    "fshName": "Parameters-AddPossibleMatch-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 81,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatch-response-example-1.json",
+    "fshName": "Parameters-AddPossibleMatch-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "startLine": 98,
+    "endLine": 133
+  },
+  {
+    "outputFile": "Parameters-Parameters-AssignIdentity-request-example-1.json",
+    "fshName": "Parameters-AssignIdentity-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentity.fsh",
+    "startLine": 53,
+    "endLine": 67
+  },
+  {
+    "outputFile": "Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json",
+    "fshName": "Parameters-AssignIdentityByIdentifier-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AssignIdentityByIdentifier.fsh",
+    "startLine": 53,
+    "endLine": 71
+  },
+  {
+    "outputFile": "Parameters-Parameters-QueryPossibleMatches-request-example-1.json",
+    "fshName": "Parameters-QueryPossibleMatches-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
+    "startLine": 96,
+    "endLine": 103
+  },
+  {
+    "outputFile": "Parameters-Parameters-QueryPossibleMatches-response-example-1.json",
+    "fshName": "Parameters-QueryPossibleMatches-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
+    "startLine": 105,
+    "endLine": 140
+  },
+  {
+    "outputFile": "Parameters-Parameters-RemovePossibleMatches-request-example-1.json",
+    "fshName": "Parameters-RemovePossibleMatches-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
+    "startLine": 43,
+    "endLine": 51
+  },
+  {
+    "outputFile": "Parameters-Parameters-SetReferenceIdentity-request-example-1.json",
+    "fshName": "Parameters-SetReferenceIdentity-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-SetReferenceIdentity.fsh",
+    "startLine": 60,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Parameters-Parameters-SetReferenceIdentity-response-example-1.json",
+    "fshName": "Parameters-SetReferenceIdentity-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-SetReferenceIdentity.fsh",
+    "startLine": 79,
+    "endLine": 124
+  },
+  {
+    "outputFile": "Parameters-Parameters-UpdatePatient-request-example-1.json",
+    "fshName": "Parameters-UpdatePatient-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-UpdatePatient.fsh",
+    "startLine": 67,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Parameters-Parameters-UpdatePatient-response-example-1.json",
+    "fshName": "Parameters-UpdatePatient-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-UpdatePatient.fsh",
+    "startLine": 88,
+    "endLine": 130
+  },
+  {
+    "outputFile": "Patient-Patient-example-1.json",
+    "fshName": "Patient-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Patient.fsh",
+    "startLine": 110,
+    "endLine": 117
+  },
+  {
+    "outputFile": "Patient-Patient-example-2.json",
+    "fshName": "Patient-example-2",
+    "fshType": "Instance",
+    "fshFile": "profile-Patient.fsh",
+    "startLine": 119,
+    "endLine": 146
+  },
+  {
+    "outputFile": "Person-Person-example-1.json",
+    "fshName": "Person-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Person.fsh",
+    "startLine": 67,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-CustomIdatValues.json",
+    "fshName": "CustomIdatValues",
+    "fshType": "Extension",
+    "fshFile": "extension-CustomIdatValues.fsh",
+    "startLine": 1,
+    "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-Patient.json",
+    "fshName": "Patient",
+    "fshType": "Profile",
+    "fshFile": "profile-Patient.fsh",
+    "startLine": 1,
+    "endLine": 107
+  },
+  {
+    "outputFile": "StructureDefinition-Person.json",
+    "fshName": "Person",
+    "fshType": "Profile",
+    "fshFile": "profile-Person.fsh",
+    "startLine": 1,
+    "endLine": 65
+  },
+  {
+    "outputFile": "ValueSet-BloomfilterTypeVS.json",
+    "fshName": "BloomfilterType",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-BloomfilterType.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ConsentComponentTypeVS.json",
+    "fshName": "ConsentComponentType",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentComponentType.fsh",
+    "startLine": 1,
+    "endLine": 29
+  },
+  {
+    "outputFile": "ValueSet-ConsentPolicyActionVS.json",
+    "fshName": "ConsentPolicyAction",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentPolicyAction.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ConsentPolicyActorVS.json",
+    "fshName": "ConsentPolicyActor",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentPolicyActor.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ConsentPolicyClassVS.json",
+    "fshName": "ConsentPolicyClass",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentPolicyClass.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ConsentPolicyPurposeVS.json",
+    "fshName": "ConsentPolicyPurpose",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentPolicyPurpose.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusConsentFullValuesVS.json",
+    "fshName": "ConsentStatusConsentFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentFullValues.fsh",
+    "startLine": 1,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusConsentOptOutFullValuesVS.json",
+    "fshName": "ConsentStatusConsentOptOutFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentOptOutFullValues.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusConsentOptOutShortValuesVS.json",
+    "fshName": "ConsentStatusConsentOptOutShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentOptOutShortValues.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusConsentShortValuesVS.json",
+    "fshName": "ConsentStatusConsentShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusConsentShortValues.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusObjectionFullValuesVS.json",
+    "fshName": "ConsentStatusObjectionFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusObjectionFullValues.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusObjectionShortValuesVS.json",
+    "fshName": "ConsentStatusObjectionShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusObjectionShortValues.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusRefusalFullValuesVS.json",
+    "fshName": "ConsentStatusRefusalFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusRefusalFullValues.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusRefusalShortValuesVS.json",
+    "fshName": "ConsentStatusRefusalShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusRefusalShortValues.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusVS.json",
+    "fshName": "ConsentStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatus.fsh",
+    "startLine": 1,
+    "endLine": 42
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusWithdrawalFullValuesVS.json",
+    "fshName": "ConsentStatusWithdrawalFullValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusWithdrawalFullValues.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-ConsentStatusWithdrawalShortValuesVS.json",
+    "fshName": "ConsentStatusWithdrawalShortValues",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-ConsentStatusWithdrawalShortValues.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "ValueSet-IdMatchingTypeVS.json",
+    "fshName": "IdMatchingType",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-IdMatchingType.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-IdatElementsVS.json",
+    "fshName": "IdatElements",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-IdatElements.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "ValueSet-MatchStatusVS.json",
+    "fshName": "MatchStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-MatchStatus.fsh",
+    "startLine": 1,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ValueSet-PolicyStatusVS.json",
+    "fshName": "PolicyStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-PolicyStatus.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-PolicyVS.json",
+    "fshName": "Policy",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-Policy.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-SaveActionVS.json",
+    "fshName": "SaveAction",
+    "fshType": "ValueSet",
+    "fshFile": "valueset-SaveAction.fsh",
+    "startLine": 1,
+    "endLine": 21
+  }
+]

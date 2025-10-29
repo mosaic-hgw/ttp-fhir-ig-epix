@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AddPatient-request-example-1"/>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
+  </parameter>
+  <parameter>
+    <name value="source"/>
+    <valueString value="KlinikumXY"/>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <resource>
+      <Patient>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <extension>
+          <extension>
+            <valueString value="A38"/>
+          </extension>
+          <extension>
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/SystemXY"/>
+          <value value="ABC_12345"/>
+        </identifier>
+        <name>
+          <family value="xxxxx"/>
+          <given value="Stefanie"/>
+        </name>
+        <birthDate value="1962-12-17"/>
+        <address>
+          <city value="Spöck"/>
+          <postalCode value="76297"/>
+        </address>
+        <address>
+          <line value="Musterstrasse 1"/>
+          <city value="Greifswald"/>
+          <postalCode value="17487"/>
+        </address>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="saveAction"/>
+    <valueCoding>
+      <system value="https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"/>
+      <code value="SAVE_ALL"/>
+    </valueCoding>
+  </parameter>
+  <parameter>
+    <name value="forceReferenceUpdate"/>
+    <valueBoolean value="false"/>
+  </parameter>
+</Parameters>

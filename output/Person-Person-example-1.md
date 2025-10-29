@@ -1,0 +1,44 @@
+# Person-example-1 - v2025.1.0
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Person",
+  "id" : "Person-example-1",
+  "meta" : {
+    "lastUpdated" : "2021-06-17T08:28:03.200+02:00",
+    "profile" : [
+      "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"
+    ]
+  },
+  "identifier" : [
+    {
+      "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+      "value" : "1001000000066"
+    }
+  ],
+  "managingOrganization" : {
+    "identifier" : {
+      "value" : "MIRACUM"
+    }
+  },
+  "active" : true,
+  "link" : [
+    {
+      "target" : {
+        "reference" : "Patient/52"
+      }
+    },
+    {
+      "target" : {
+        "reference" : "Patient/53"
+      },
+      "assurance" : "level4"
+    }
+  ]
+}
+
+```

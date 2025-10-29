@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-UpdatePatient-request-example-1"/>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
+  </parameter>
+  <parameter>
+    <name value="source"/>
+    <valueString value="KlinikumXY"/>
+  </parameter>
+  <parameter>
+    <name value="mpiIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+      <value value="1001000000066"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <resource>
+      <Patient>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <name>
+          <family value="xxxxx"/>
+          <given value="Stefanie"/>
+        </name>
+        <birthDate value="1962-12-16"/>
+        <address>
+          <city value="Spöck"/>
+          <postalCode value="76297"/>
+        </address>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="force"/>
+    <valueBoolean value="false"/>
+  </parameter>
+</Parameters>

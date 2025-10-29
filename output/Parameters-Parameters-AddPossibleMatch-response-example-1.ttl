@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatch-response-example-1> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Parameters-AddPossibleMatch-response-example-1"] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "match" ] ;
+     fhir:part ( [
+       fhir:name [ fhir:v "item" ] ;
+       fhir:Parameters.parameter.resource ( [
+         a fhir:Patient ;
+         fhir:id [ fhir:v "52" ] ;
+         fhir:meta [
+           fhir:versionId [ fhir:v "1" ] ;
+           fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
+           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
+           fhir:profile ( [
+             fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+           ] )
+         ] ;
+         fhir:active [ fhir:v true ] ;
+         fhir:name ( [
+           fhir:family [ fhir:v "xxxxx" ] ;
+           fhir:given ( [ fhir:v "Stefanie" ] )
+         ] ) ;
+         fhir:gender [ fhir:v "male" ] ;
+         fhir:birthDate [ fhir:v "1962-12-17"^^xsd:date ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "item" ] ;
+       fhir:Parameters.parameter.resource ( [
+         a fhir:Patient ;
+         fhir:id [ fhir:v "53" ] ;
+         fhir:meta [
+           fhir:versionId [ fhir:v "1" ] ;
+           fhir:lastUpdated [ fhir:v "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
+           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
+           fhir:profile ( [
+             fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+           ] )
+         ] ;
+         fhir:active [ fhir:v true ] ;
+         fhir:name ( [
+           fhir:family [ fhir:v "xxxxx" ] ;
+           fhir:given ( [ fhir:v "Stefanie" ] )
+         ] ) ;
+         fhir:gender [ fhir:v "male" ] ;
+         fhir:birthDate [ fhir:v "1962-12-16"^^xsd:date ]
+       ] )
+     ] [
+       fhir:name [ fhir:v "score" ] ;
+       fhir:value [
+         a fhir:decimal ;
+         fhir:v 0.965
+       ]
+     ] [
+       fhir:name [ fhir:v "result" ] ;
+       fhir:value [
+         a fhir:decimal ;
+         fhir:v 0.952
+       ]
+     ] [
+       fhir:name [ fhir:v "linkId" ] ;
+       fhir:value [
+         a fhir:integer ;
+         fhir:v 5654986
+       ]
+     ] [
+       fhir:name [ fhir:v "comment" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "This match was added manually!"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
