@@ -1,4 +1,4 @@
-# assignIdentity - v2025.1.0
+# assignIdentity - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "AssignIdentity",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "AssignIdentity",
   "title" : "assignIdentity",
   "status" : "draft",

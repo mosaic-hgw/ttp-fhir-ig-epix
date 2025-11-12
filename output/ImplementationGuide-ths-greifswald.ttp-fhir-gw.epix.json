@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.epix</b></p><a name=\"ths-greifswald.ttp-fhir-gw.epix\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.epix\"> </a><h2>IGTTPFHIRGatewayEPIX</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix</pre></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2025-10-29T11:36:58+01:00",
+  "date" : "2025-11-12T10:54:25+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -45,7 +45,7 @@
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.0"
+    "version" : "2.0.2"
   }],
   "definition" : {
     "extension" : [{
@@ -1363,28 +1363,10 @@
       "page" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Beschreibung.html"
-        }],
-        "nameUrl" : "Beschreibung.html",
-        "title" : "Beschreibung",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "index.html"
         }],
         "nameUrl" : "index.html",
-        "title" : "Home",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "KontextUndKonzept.html"
-        }],
-        "nameUrl" : "KontextUndKonzept.html",
-        "title" : "Kontext und Konzept",
+        "title" : "Implementation Guide E-PIX",
         "generation" : "markdown"
       },
       {
@@ -1399,15 +1381,6 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "RecordLinkageUndIdentitaetsmanagement.html"
-        }],
-        "nameUrl" : "RecordLinkageUndIdentitaetsmanagement.html",
-        "title" : "Record Linkage und Identitätsmanagement",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "Extensions.html"
         }],
         "nameUrl" : "Extensions.html",
@@ -1417,19 +1390,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "TechnischeGrundlagen.html"
+          "valueUrl" : "Allgemein.html"
         }],
-        "nameUrl" : "TechnischeGrundlagen.html",
-        "title" : "Technische Grundlagen",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Vorgehen.html"
-        }],
-        "nameUrl" : "Vorgehen.html",
-        "title" : "Vorgehen",
+        "nameUrl" : "Allgemein.html",
+        "title" : "Allgemein",
         "generation" : "markdown"
       }]
     },

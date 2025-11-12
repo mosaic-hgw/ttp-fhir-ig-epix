@@ -13,49 +13,73 @@
      fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
      fhir:profile ( [
        fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient-example-2</b></p><a name=\"Patient-example-2\"> </a><a name=\"hcPatient-example-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Manfred Mustermann  Male, DoB: 1953-12-11 ( https://ths-greifswald.de/fhir/epix/identifier/SystemXY#ABC_12345)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"mailto:manfred.mustermann@example.org\">manfred.mustermann@example.org</a></li><li>ph: 012345/5555567</li><li>Musterweg 22 Musterstadt 12345 </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:{urn:iso:std:iso:3166 DE}\">Germany</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Musterhausen </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX\">Custom IDAT Values:</td><td colspan=\"3\"><ul><li>value1: A38</li><li>value2: true</li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Patient-example-2</b></p><a name=\"Patient-example-2\"> </a><a name=\"hcPatient-example-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-05-19 17:50:23+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Patient.html\">Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Manfred Mustermann  Male, DoB: 1953-12-11 ( https://ths-greifswald.de/fhir/epix/identifier/SystemXY#ABC_12345)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"mailto:manfred.mustermann@example.org\">manfred.mustermann@example.org</a></li><li>ph: 012345/5555567</li><li>Musterweg 22 Musterstadt 12345 </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">Patient Nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes:{urn:iso:std:iso:3166 DE}\">Germany</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-birthPlace.html\">Patient Birth Place</a></td><td colspan=\"3\">Musterhausen </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX\">Custom IDAT Values:</td><td colspan=\"3\"><ul><li>value1: A38</li><li>value2: true</li></ul></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/patient-birthPlace>
+     ] ;
      fhir:value [
        a fhir:Address ;
        fhir:city [ fhir:v "Musterhausen" ]
      ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "code"^^xsd:anyURI ;
+         fhir:l fhir:code
+       ] ;
        fhir:value [
          a fhir:CodeableConcept ;
          fhir:coding ( [
-           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+             fhir:l <urn:iso:std:iso:3166>
+           ] ;
            fhir:code [ fhir:v "DE" ]
          ] )
        ]
      ] ) ;
-     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/patient-nationality>
+     ]
   ] [
      fhir:extension ( [
-       fhir:url [ fhir:v "value1"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "value1"^^xsd:anyURI ;
+         fhir:l fhir:value1
+       ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "A38"
        ]
      ] [
-       fhir:url [ fhir:v "value2"^^xsd:anyURI ] ;
+       fhir:url [
+         fhir:v "value2"^^xsd:anyURI ;
+         fhir:l fhir:value2
+       ] ;
        fhir:value [
-         a fhir:boolean ;
+         a fhir:Boolean ;
          fhir:v true
        ]
      ] ) ;
-     fhir:url [ fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"^^xsd:anyURI ]
+     fhir:url [
+       fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues>
+     ]
   ] ) ; # 
   fhir:identifier ( [
-     fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ] ;
+     fhir:system [
+       fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ;
+       fhir:l <https://ths-greifswald.de/fhir/epix/identifier/SystemXY>
+     ] ;
      fhir:value [ fhir:v "ABC_12345" ]
   ] ) ; # 
   fhir:name ( [

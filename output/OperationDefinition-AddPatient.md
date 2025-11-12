@@ -1,4 +1,4 @@
-# addPatient - v2025.1.0
+# addPatient - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "AddPatient",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "AddPatient",
   "title" : "addPatient",
   "status" : "draft",

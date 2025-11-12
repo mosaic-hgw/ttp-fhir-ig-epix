@@ -20,7 +20,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="QueryPossibleMatches"/>
   <title value="queryPossibleMatches"/>
   <status value="draft"/>

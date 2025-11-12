@@ -9,7 +9,7 @@ name: IG TTP-FHIR Gateway E-PIX
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
-version: 2025.1.0
+version: 2025.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -24,7 +24,7 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
-  de.einwilligungsmanagement: 2.0.0
+  de.einwilligungsmanagement: 2.0.2
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -38,18 +38,12 @@ dependencies:
 # sub-pages.
 #
 pages:
-  Beschreibung.md:
   index.md:
-    title: Home
-  KontextUndKonzept.md:
-    title: Kontext und Konzept
+    title: Implementation Guide E-PIX
   PersonenUndPatienten-Suche.md:
     title: Personen- und Patienten-Suche
-  RecordLinkageUndIdentitaetsmanagement.md:
-    title: Record Linkage und Identitätsmanagement
   Extensions.md:
-  TechnischeGrundlagen.md:
-  Vorgehen.md:
+  Allgemein.md:
   ### automatisch generierte Pages müssen hier nicht gelistet werden
 
 
@@ -79,12 +73,8 @@ pages:
 menu:
   ##### Home ###################################################################
   Home: index.html
-  ##### Allgemeines ############################################################
-  Allgemeines:
-    Beschreibung: Beschreibung.html
-    Kontext und Konzept: KontextUndKonzept.html
-    Technische Grundlagen: TechnischeGrundlagen.html
-    Record Linkage und Identitätsmanagement: RecordLinkageUndIdentitaetsmanagement.html
+  ##### Allgemein ################################################################
+  Allgemein: Allgemein.html
   ##### Profile ################################################################
   Profile: 
     Person: StructureDefinition-Person.html

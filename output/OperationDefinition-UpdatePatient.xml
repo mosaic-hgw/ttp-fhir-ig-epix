@@ -14,7 +14,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="UpdatePatient"/>
   <title value="updatePatient"/>
   <status value="active"/>

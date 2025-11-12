@@ -1,15 +1,11 @@
-# ths-greifswald.ttp-fhir-gw.epix#2025.1.0: null
+# ths-greifswald.ttp-fhir-gw.epix#2025.2.0: null
 
 ## Pages
 
-* [Home](index.md)
-* [Record Linkage und Identitätsmanagement](RecordLinkageUndIdentitaetsmanagement.md)
-* [Extensions](Extensions.md)
-* [Beschreibung](Beschreibung.md)
-* [Kontext und Konzept](KontextUndKonzept.md)
+* [Implementation Guide E-PIX](index.md)
+* [Allgemein](Allgemein.md)
 * [Artifacts Summary](artifacts.md)
-* [Vorgehen](Vorgehen.md)
-* [Technische Grundlagen](TechnischeGrundlagen.md)
+* [Extensions](Extensions.md)
 * [Personen- und Patienten-Suche](PersonenUndPatienten-Suche.md)
 
 ## Resources

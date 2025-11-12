@@ -1,4 +1,4 @@
-# addPossibleMatch - v2025.1.0
+# addPossibleMatch - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "AddPossibleMatch",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "AddPossibleMatch",
   "title" : "addPossibleMatch",
   "status" : "draft",

@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition RemovePossibleMatches</b></p><a name=\"RemovePossibleMatches\"> </a><a name=\"hcRemovePossibleMatches\"> </a><p>URL: [base]/$removePossibleMatches</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>linkId</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Link-ID eines zu löschen Matches.</p>\n</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anmerkung zum Löschvorgang</p>\n</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Löschvorgang.</p>\n</div></td></tr></table><div><p>(Mögliche) Matches von Identitäten entfernen.</p>\n</div></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "RemovePossibleMatches",
   "title" : "removePossibleMatches",
   "status" : "draft",

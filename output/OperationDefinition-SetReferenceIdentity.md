@@ -1,4 +1,4 @@
-# setReferenceIdentity - v2025.1.0
+# setReferenceIdentity - v2025.2.0
 
 
 
@@ -9,7 +9,7 @@
   "resourceType" : "OperationDefinition",
   "id" : "SetReferenceIdentity",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity",
-  "version" : "2025.1.0",
+  "version" : "2025.2.0",
   "name" : "SetReferenceIdentity",
   "title" : "setReferenceIdentity",
   "status" : "draft",

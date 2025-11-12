@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e2c86ef9-36f0-4890-ac8d-f19fe1f8956b"/>
+  <id value="9587b47b-150a-4b42-8417-02ed86a52a80"/>
   <meta>
-    <lastUpdated value="2025-10-29T11:37:27.515+01:00"/>
+    <lastUpdated value="2025-11-12T10:54:25.690+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-BloomfilterTypeCS.html">codesystem BloomfilterType v2025.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-BloomfilterTypeCS.html">codesystem BloomfilterType v2025.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType|2025.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType|2025.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -54,12 +54,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Dummy-Bloomfilter A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;A&quot;, &quot;display&quot;: &quot;Dummy-Bloomfilter A&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Dummy-Bloomfilter A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;A&quot;&gt;&lt;display value=&quot;Dummy-Bloomfilter A&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75,12 +75,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Dummy-Bloomfilter B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;B&quot;, &quot;display&quot;: &quot;Dummy-Bloomfilter B&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Dummy-Bloomfilter B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;B&quot;&gt;&lt;display value=&quot;Dummy-Bloomfilter B&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -88,14 +88,14 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/epix/BloomfilterType"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="BloomfilterType"/>
         <status value="draft"/>
         <experimental value="false"/>
         <date value="2025-06-12"/>
         <expansion>
-          <identifier value="urn:uuid:4c0aa30c-b344-4d0e-a8a3-220182fd2f38"/>
-          <timestamp value="2025-10-29T11:37:59+01:00"/>
+          <identifier value="urn:uuid:c93ec08f-3a2c-48a6-9a40-b420b4fd578d"/>
+          <timestamp value="2025-11-12T10:56:23+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -116,7 +116,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType|2025.1.0"/>
+            <valueUri value="https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType|2025.2.0"/>
           </parameter>
           <contains>
             <system value="https://ths-greifswald.de/fhir/CodeSystem/epix/BloomfilterType"/>
@@ -169,7 +169,7 @@
                   <code>http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-TemplateModule">TemplateModule</a>
+                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-TemplateModule">TemplateModule</a>
                 </td>
                 <td>Template-Module</td>
                 <td/>
@@ -190,7 +190,7 @@
                   <code>http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-TemplateFrame">TemplateFrame</a>
+                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-TemplateFrame">TemplateFrame</a>
                 </td>
                 <td>Template-Frame</td>
                 <td/>
@@ -211,7 +211,7 @@
                   <code>http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents</code>
                 </td>
                 <td style="white-space:nowrap">  
-                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.0&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-QuestionnaireComposed">QuestionnaireComposed</a>
+                  <a href="https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&amp;canonical=http://fhir.de/ConsentManagement/CodeSystem/QuestionnaireComponents#valueset-consent-management-questionnaire-components-QuestionnaireComposed">QuestionnaireComposed</a>
                 </td>
                 <td>Composed Questionnaire</td>
                 <td/>
@@ -293,7 +293,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentComponentType"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentComponentType"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -463,7 +463,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentFullValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusConsentFullValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -606,7 +606,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentOptOutFullValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusConsentOptOutFullValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -698,7 +698,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentOptOutShortValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusConsentOptOutShortValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -801,7 +801,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusConsentShortValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusConsentShortValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -934,7 +934,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionFullValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusObjectionFullValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1026,7 +1026,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusObjectionShortValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusObjectionShortValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1171,7 +1171,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalFullValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusRefusalFullValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1293,7 +1293,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusRefusalShortValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusRefusalShortValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1594,7 +1594,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatus"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatus"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1789,7 +1789,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusWithdrawalFullValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusWithdrawalFullValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -1911,7 +1911,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/ConsentStatusWithdrawalShortValues"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="ConsentStatusWithdrawalShortValues"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -2044,7 +2044,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/IdMatchingType"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="IdMatchingType"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -2430,7 +2430,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/dispatcher/IdatElements"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="IdatElements"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -2729,7 +2729,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="MatchStatus"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -2882,7 +2882,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/PolicyStatus"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="PolicyStatus"/>
         <status value="active"/>
         <experimental value="false"/>
@@ -2927,9 +2927,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-PolicyCS.html">codesystem Policy v2025.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-PolicyCS.html">codesystem Policy v2025.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|2025.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|2025.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 75 concepts</p>
@@ -2966,12 +2966,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung neuer identifizierender Daten (IDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung neuer identifizierender Daten (IDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung neuer identifizierender Daten (IDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung neuer identifizierender Daten (IDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -2987,12 +2987,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_erheben_Institutionen&quot;, &quot;display&quot;: &quot;Erfassung identifizierender Daten durch Anfrage bei Melderegister oder Krankenversicherung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_erheben_Institutionen&quot;, &quot;display&quot;: &quot;Erfassung identifizierender Daten durch Anfrage bei Melderegister oder Krankenversicherung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_erheben_Institutionen&quot;&gt;&lt;display value=&quot;Erfassung identifizierender Daten durch Anfrage bei Melderegister oder Krankenversicherung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_erheben_Institutionen&quot;&gt;&lt;display value=&quot;Erfassung identifizierender Daten durch Anfrage bei Melderegister oder Krankenversicherung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3008,12 +3008,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung identifizierender Daten (IDAT) in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3029,12 +3029,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Arzt&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an beliebigen Arzt (inkl. Hausarzt)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Arzt&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an beliebigen Arzt (inkl. Hausarzt)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Arzt&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an beliebigen Arzt (inkl. Hausarzt)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Arzt&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an beliebigen Arzt (inkl. Hausarzt)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3050,12 +3050,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Hausarzt&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Hausarzt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Hausarzt&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Hausarzt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Hausarzt&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Hausarzt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Hausarzt&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Hausarzt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3071,12 +3071,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Institutionen&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Institutionen&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Institutionen&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Institutionen&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3092,12 +3092,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Institutionen_Tod&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung im Falle des Todes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_Institutionen_Tod&quot;, &quot;display&quot;: &quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung im Falle des Todes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Institutionen_Tod&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung im Falle des Todes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_Institutionen_Tod&quot;&gt;&lt;display value=&quot;Weitergabe von identifizierenden Daten an Melderegeister oder Krankenversicherung zum Zweck der Datenergänzung im Falle des Todes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3113,12 +3113,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Herausgabe identifizierender Daten (IDAT) an verantwortliche Stelle zur weiteren Verarbeitung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3134,12 +3134,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in identifizierende Daten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in identifizierende Daten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in identifizierende Daten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in identifizierende Daten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3155,12 +3155,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IDAT_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IDAT_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IDAT_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IDAT_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführung identifizierender Daten (IDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3176,12 +3176,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3197,12 +3197,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Arzt&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage bei externem Arzt (inkl. Hausarzt)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Arzt&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage bei externem Arzt (inkl. Hausarzt)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Arzt&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage bei externem Arzt (inkl. Hausarzt)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Arzt&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage bei externem Arzt (inkl. Hausarzt)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3218,12 +3218,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Hausarzt&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage beim Hausarzt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Hausarzt&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage beim Hausarzt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Hausarzt&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage beim Hausarzt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Hausarzt&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage beim Hausarzt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3239,12 +3239,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Institutionen&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage bei Institutionen, wie z.B. Gesundheitsamt, Kassenärztliche Vereinigung, Melderegister oder Krankenversicherung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Institutionen&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Anfrage bei Institutionen, wie z.B. Gesundheitsamt, Kassenärztliche Vereinigung, Melderegister oder Krankenversicherung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Institutionen&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage bei Institutionen, wie z.B. Gesundheitsamt, Kassenärztliche Vereinigung, Melderegister oder Krankenversicherung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Institutionen&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Anfrage bei Institutionen, wie z.B. Gesundheitsamt, Kassenärztliche Vereinigung, Melderegister oder Krankenversicherung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3260,12 +3260,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Krankenunterlagen&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Übertrag aus Krankenunterlagen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Krankenunterlagen&quot;, &quot;display&quot;: &quot;Erfassung medizinischer Daten durch Übertrag aus Krankenunterlagen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Krankenunterlagen&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Übertrag aus Krankenunterlagen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Krankenunterlagen&quot;&gt;&lt;display value=&quot;Erfassung medizinischer Daten durch Übertrag aus Krankenunterlagen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3281,12 +3281,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Tod&quot;, &quot;display&quot;: &quot;Erfassung von medizinischen Daten zum Zwecke der Datenergänzung im Falle des Todes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_erheben_Tod&quot;, &quot;display&quot;: &quot;Erfassung von medizinischen Daten zum Zwecke der Datenergänzung im Falle des Todes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Tod&quot;&gt;&lt;display value=&quot;Erfassung von medizinischen Daten zum Zwecke der Datenergänzung im Falle des Todes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_erheben_Tod&quot;&gt;&lt;display value=&quot;Erfassung von medizinischen Daten zum Zwecke der Datenergänzung im Falle des Todes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3302,12 +3302,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung_Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3323,12 +3323,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3344,12 +3344,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3365,12 +3365,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3386,12 +3386,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3407,12 +3407,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3428,12 +3428,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_pharma&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an eine am Sponsoring beteiligte Pharmafirma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_pharma&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an eine am Sponsoring beteiligte Pharmafirma&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_pharma&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an eine am Sponsoring beteiligte Pharmafirma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_pharma&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an eine am Sponsoring beteiligte Pharmafirma&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3449,12 +3449,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_CRO&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an eine Clinical Research Organisation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_bereitstellen_CRO&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Daten an eine Clinical Research Organisation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_CRO&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an eine Clinical Research Organisation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_bereitstellen_CRO&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Daten an eine Clinical Research Organisation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3470,12 +3470,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3491,12 +3491,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in medizinische Daten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in medizinische Daten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in medizinische Daten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in medizinische Daten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3512,12 +3512,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_bereitstellen_NUM_CODEX&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_bereitstellen_NUM_CODEX&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_bereitstellen_NUM_CODEX&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_bereitstellen_NUM_CODEX&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz für wiss. Nutzung in NUM-CODEX Plattform bereitstellen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3533,12 +3533,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz in NUM-CODEX Plattform speichern und verarbeiten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3554,12 +3554,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Medizinische Daten des GECCO83 Datensatz an Länder ohne EU Datenschutzniveau weitergeben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3575,12 +3575,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung von Bildern und Bilddaten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_erheben&quot;, &quot;display&quot;: &quot;Erfassung von Bildern und Bilddaten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung von Bildern und Bilddaten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_erheben&quot;&gt;&lt;display value=&quot;Erfassung von Bildern und Bilddaten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3596,12 +3596,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Langfristiges Speichern und Verarbeiten von Bildern und Bilddaten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Langfristiges Speichern und Verarbeiten von Bildern und Bilddaten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Langfristiges Speichern und Verarbeiten von Bildern und Bilddaten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Langfristiges Speichern und Verarbeiten von Bildern und Bilddaten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3617,12 +3617,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3638,12 +3638,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3659,12 +3659,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3680,12 +3680,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von Bildern und Bilddaten an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3701,12 +3701,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;IMGDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in Bilder und Bilddaten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;IMGDAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in Bilder und Bilddaten im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;IMGDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in Bilder und Bilddaten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;IMGDAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in Bilder und Bilddaten im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3722,12 +3722,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_erheben&quot;, &quot;display&quot;: &quot;Gewinnung und/oder Entnahme von Biomaterialien und medizinischen Proben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_erheben&quot;, &quot;display&quot;: &quot;Gewinnung und/oder Entnahme von Biomaterialien und medizinischen Proben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_erheben&quot;&gt;&lt;display value=&quot;Gewinnung und/oder Entnahme von Biomaterialien und medizinischen Proben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_erheben&quot;&gt;&lt;display value=&quot;Gewinnung und/oder Entnahme von Biomaterialien und medizinischen Proben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3743,12 +3743,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_erheben_studienintern&quot;, &quot;display&quot;: &quot;Gewinnung von dem Studienbiomaterial zugeordneten medizinischen Proben ohne Veränderung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_erheben_studienintern&quot;, &quot;display&quot;: &quot;Gewinnung von dem Studienbiomaterial zugeordneten medizinischen Proben ohne Veränderung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_erheben_studienintern&quot;&gt;&lt;display value=&quot;Gewinnung von dem Studienbiomaterial zugeordneten medizinischen Proben ohne Veränderung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_erheben_studienintern&quot;&gt;&lt;display value=&quot;Gewinnung von dem Studienbiomaterial zugeordneten medizinischen Proben ohne Veränderung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3764,12 +3764,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_lagern_verarbeiten_studienintern&quot;, &quot;display&quot;: &quot;Langfristiges Ablegen von dem Studienbiomaterial zugeordneten medizinischen Proben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_lagern_verarbeiten_studienintern&quot;, &quot;display&quot;: &quot;Langfristiges Ablegen von dem Studienbiomaterial zugeordneten medizinischen Proben&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_lagern_verarbeiten_studienintern&quot;&gt;&lt;display value=&quot;Langfristiges Ablegen von dem Studienbiomaterial zugeordneten medizinischen Proben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_lagern_verarbeiten_studienintern&quot;&gt;&lt;display value=&quot;Langfristiges Ablegen von dem Studienbiomaterial zugeordneten medizinischen Proben&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3785,12 +3785,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_lagern_verarbeiten&quot;, &quot;display&quot;: &quot;Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_lagern_verarbeiten&quot;, &quot;display&quot;: &quot;Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_lagern_verarbeiten&quot;&gt;&lt;display value=&quot;Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_lagern_verarbeiten&quot;&gt;&lt;display value=&quot;Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3806,12 +3806,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_studienintern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben innerhalb der Studie zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_studienintern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben innerhalb der Studie zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3827,12 +3827,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_intern&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_intern&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben innerhalb des Projektes (bspw. DZHK) zu Auswertungszwecken&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3848,12 +3848,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3869,12 +3869,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_bereitstellen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Weitergabe von medizinischen Proben an externe Wissenschaftler in nicht DSGVO konformen Ländern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3890,12 +3890,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_Eigentum_uebertragen&quot;, &quot;display&quot;: &quot;Eigentumsübertragung der BIOMAT an den Träger der Biobank&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_Eigentum_uebertragen&quot;, &quot;display&quot;: &quot;Eigentumsübertragung der BIOMAT an den Träger der Biobank&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_Eigentum_uebertragen&quot;&gt;&lt;display value=&quot;Eigentumsübertragung der BIOMAT an den Träger der Biobank&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_Eigentum_uebertragen&quot;&gt;&lt;display value=&quot;Eigentumsübertragung der BIOMAT an den Träger der Biobank&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3911,12 +3911,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3932,12 +3932,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_Analysedaten_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführen von auf Biomaterialien (BIOMAT) basierenden Analysedaten mit Analysedaten Dritter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_Analysedaten_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Zusammenführen von auf Biomaterialien (BIOMAT) basierenden Analysedaten mit Analysedaten Dritter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_Analysedaten_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführen von auf Biomaterialien (BIOMAT) basierenden Analysedaten mit Analysedaten Dritter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_Analysedaten_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Zusammenführen von auf Biomaterialien (BIOMAT) basierenden Analysedaten mit Analysedaten Dritter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3953,12 +3953,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_Zusatzmengen_entnehmen&quot;, &quot;display&quot;: &quot;Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_Zusatzmengen_entnehmen&quot;, &quot;display&quot;: &quot;Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_Zusatzmengen_entnehmen&quot;&gt;&lt;display value=&quot;Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_Zusatzmengen_entnehmen&quot;&gt;&lt;display value=&quot;Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3974,12 +3974,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in medizinische Proben im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_Einsicht_Monitoring&quot;, &quot;display&quot;: &quot;Einsicht in medizinische Proben im Rahmen des Monitoring&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in medizinische Proben im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_Einsicht_Monitoring&quot;&gt;&lt;display value=&quot;Einsicht in medizinische Proben im Rahmen des Monitoring&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -3995,12 +3995,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_Genanalyse&quot;, &quot;display&quot;: &quot;Gewinnung von genetischen Daten aus Biomaterialien&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_Genanalyse&quot;, &quot;display&quot;: &quot;Gewinnung von genetischen Daten aus Biomaterialien&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_Genanalyse&quot;&gt;&lt;display value=&quot;Gewinnung von genetischen Daten aus Biomaterialien&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_Genanalyse&quot;&gt;&lt;display value=&quot;Gewinnung von genetischen Daten aus Biomaterialien&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4016,12 +4016,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_retro_uebertragen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) für retrospektiv übertragen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_retro_uebertragen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) für retrospektiv übertragen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_retro_uebertragen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) für retrospektiv übertragen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_retro_uebertragen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) für retrospektiv übertragen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4037,12 +4037,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_retro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) retrospektiv speichern_verarbeiten in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_retro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) retrospektiv speichern_verarbeiten in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_retro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) retrospektiv speichern_verarbeiten in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_retro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) retrospektiv speichern_verarbeiten in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4058,12 +4058,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_retro_wissenschaftlich_nutzen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) retrospektiv wissenschaftlich nutzen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_retro_wissenschaftlich_nutzen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) retrospektiv wissenschaftlich nutzen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_retro_wissenschaftlich_nutzen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) retrospektiv wissenschaftlich nutzen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_retro_wissenschaftlich_nutzen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) retrospektiv wissenschaftlich nutzen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4079,12 +4079,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_pro_uebertragen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv übertragen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_pro_uebertragen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv übertragen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_pro_uebertragen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv übertragen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_pro_uebertragen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv übertragen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4100,12 +4100,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_pro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv speichern verarbeiten in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_pro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv speichern verarbeiten in der verantwortlichen Stelle&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_pro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv speichern verarbeiten in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_pro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv speichern verarbeiten in der verantwortlichen Stelle&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4121,12 +4121,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;KDAT_pro_wissenschaftlich_nutzen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv wissenschaftlich nutzen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;KDAT_pro_wissenschaftlich_nutzen&quot;, &quot;display&quot;: &quot;Krankenkassendaten (KDAT) prospektiv wissenschaftlich nutzen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;KDAT_pro_wissenschaftlich_nutzen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv wissenschaftlich nutzen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;KDAT_pro_wissenschaftlich_nutzen&quot;&gt;&lt;display value=&quot;Krankenkassendaten (KDAT) prospektiv wissenschaftlich nutzen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4142,12 +4142,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Abfrage_Gesundheitszustand&quot;, &quot;display&quot;: &quot;Rekontaktierung des Teilnehmers zur Abfrage des Gesundheitszustandes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Abfrage_Gesundheitszustand&quot;, &quot;display&quot;: &quot;Rekontaktierung des Teilnehmers zur Abfrage des Gesundheitszustandes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Abfrage_Gesundheitszustand&quot;&gt;&lt;display value=&quot;Rekontaktierung des Teilnehmers zur Abfrage des Gesundheitszustandes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Abfrage_Gesundheitszustand&quot;&gt;&lt;display value=&quot;Rekontaktierung des Teilnehmers zur Abfrage des Gesundheitszustandes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4163,12 +4163,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Verknuepfung_Datenbanken&quot;, &quot;display&quot;: &quot;Rekontaktierung zur Verknüpfung von PatDat mit Info anderer Dbs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Verknuepfung_Datenbanken&quot;, &quot;display&quot;: &quot;Rekontaktierung zur Verknüpfung von PatDat mit Info anderer Dbs&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Verknuepfung_Datenbanken&quot;&gt;&lt;display value=&quot;Rekontaktierung zur Verknüpfung von PatDat mit Info anderer Dbs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Verknuepfung_Datenbanken&quot;&gt;&lt;display value=&quot;Rekontaktierung zur Verknüpfung von PatDat mit Info anderer Dbs&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4184,12 +4184,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_weitere_Studien&quot;, &quot;display&quot;: &quot;Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_weitere_Studien&quot;, &quot;display&quot;: &quot;Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_weitere_Studien&quot;&gt;&lt;display value=&quot;Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_weitere_Studien&quot;&gt;&lt;display value=&quot;Rekontaktierung bezüglich Information zu neuen Forschungsvorhaben oder Studien&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4205,12 +4205,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Zufallsbefund&quot;, &quot;display&quot;: &quot;Rekontaktierung des Teilnehmers zur Mitteilung von Zufallsbefunden&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_Zufallsbefund&quot;, &quot;display&quot;: &quot;Rekontaktierung des Teilnehmers zur Mitteilung von Zufallsbefunden&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Zufallsbefund&quot;&gt;&lt;display value=&quot;Rekontaktierung des Teilnehmers zur Mitteilung von Zufallsbefunden&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_Zufallsbefund&quot;&gt;&lt;display value=&quot;Rekontaktierung des Teilnehmers zur Mitteilung von Zufallsbefunden&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4226,12 +4226,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_weitere_Erhebung&quot;, &quot;display&quot;: &quot;Rekontaktierung bezüglich Erhebung zusätzlicher Daten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Rekontaktierung_weitere_Erhebung&quot;, &quot;display&quot;: &quot;Rekontaktierung bezüglich Erhebung zusätzlicher Daten&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_weitere_Erhebung&quot;&gt;&lt;display value=&quot;Rekontaktierung bezüglich Erhebung zusätzlicher Daten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Rekontaktierung_weitere_Erhebung&quot;&gt;&lt;display value=&quot;Rekontaktierung bezüglich Erhebung zusätzlicher Daten&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4247,12 +4247,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Information_Hausarzt_Studienteilnahme&quot;, &quot;display&quot;: &quot;Information des Hausarztes über die Teilnahme des Patienten an der Studie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Information_Hausarzt_Studienteilnahme&quot;, &quot;display&quot;: &quot;Information des Hausarztes über die Teilnahme des Patienten an der Studie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Information_Hausarzt_Studienteilnahme&quot;&gt;&lt;display value=&quot;Information des Hausarztes über die Teilnahme des Patienten an der Studie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Information_Hausarzt_Studienteilnahme&quot;&gt;&lt;display value=&quot;Information des Hausarztes über die Teilnahme des Patienten an der Studie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4268,12 +4268,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;Information_Arzt_Studienteilnahme&quot;, &quot;display&quot;: &quot;Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;Information_Arzt_Studienteilnahme&quot;, &quot;display&quot;: &quot;Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;Information_Arzt_Studienteilnahme&quot;&gt;&lt;display value=&quot;Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;Information_Arzt_Studienteilnahme&quot;&gt;&lt;display value=&quot;Information eines Facharztes des Patienten über die Teilnahme des Patienten an der Studie&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4289,12 +4289,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_retro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung und retrospektive Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_retro_speichern_verarbeiten&quot;, &quot;display&quot;: &quot;Speicherung und retrospektive Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_retro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung und retrospektive Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_retro_speichern_verarbeiten&quot;&gt;&lt;display value=&quot;Speicherung und retrospektive Verarbeitung von medizinischen Daten innerhalb der verantwortlichen Stelle (MDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4310,12 +4310,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Retrospektive Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Retrospektive Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Retrospektive Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Retrospektive Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4331,12 +4331,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_retro_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Retrospektive Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_retro_zusammenfuehren_Dritte&quot;, &quot;display&quot;: &quot;Retrospektive Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_retro_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Retrospektive Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_retro_zusammenfuehren_Dritte&quot;&gt;&lt;display value=&quot;Retrospektive Zusammenführung medizinischer Daten (MDAT) mit Dritten Forschungspartnern&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4352,12 +4352,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;MDAT_wissenschaftlich_nutzen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung medizinische Daten (MDAT)  für wissenschaftliche Nutzung  und Analysen für Länder ohne EU DSGVO Niveau&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;MDAT_wissenschaftlich_nutzen_non_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Bereitstellung medizinische Daten (MDAT)  für wissenschaftliche Nutzung  und Analysen für Länder ohne EU DSGVO Niveau&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;MDAT_wissenschaftlich_nutzen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung medizinische Daten (MDAT)  für wissenschaftliche Nutzung  und Analysen für Länder ohne EU DSGVO Niveau&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;MDAT_wissenschaftlich_nutzen_non_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Bereitstellung medizinische Daten (MDAT)  für wissenschaftliche Nutzung  und Analysen für Länder ohne EU DSGVO Niveau&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4373,12 +4373,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_retro_lagern_verarbeiten&quot;, &quot;display&quot;: &quot;Retrospektive Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT) &quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_retro_lagern_verarbeiten&quot;, &quot;display&quot;: &quot;Retrospektive Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT) &quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_retro_lagern_verarbeiten&quot;&gt;&lt;display value=&quot;Retrospektive Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT) &quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_retro_lagern_verarbeiten&quot;&gt;&lt;display value=&quot;Retrospektive Lagerung und Verarbeitung von Biomaterialien innerhalb der verantwortlichen Stelle (BIOMAT) &quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4394,12 +4394,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Retrospektive Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;, &quot;display&quot;: &quot;Retrospektive Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Retrospektive Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU&quot;&gt;&lt;display value=&quot;Retrospektive Bereitstellung Biomaterialien (BIOMAT) für wissenschaftliche Nutzung und Analysen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4415,12 +4415,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_erheben_KV&quot;, &quot;display&quot;: &quot;Erfassung Sozialversicherungsdaten von Krankenversicherungen (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_erheben_KV&quot;, &quot;display&quot;: &quot;Erfassung Sozialversicherungsdaten von Krankenversicherungen (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_erheben_KV&quot;&gt;&lt;display value=&quot;Erfassung Sozialversicherungsdaten von Krankenversicherungen (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_erheben_KV&quot;&gt;&lt;display value=&quot;Erfassung Sozialversicherungsdaten von Krankenversicherungen (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4436,12 +4436,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_erheben_RV&quot;, &quot;display&quot;: &quot;Erfassung Sozialversicherungsdaten von Rentenversicherungen (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_erheben_RV&quot;, &quot;display&quot;: &quot;Erfassung Sozialversicherungsdaten von Rentenversicherungen (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_erheben_RV&quot;&gt;&lt;display value=&quot;Erfassung Sozialversicherungsdaten von Rentenversicherungen (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_erheben_RV&quot;&gt;&lt;display value=&quot;Erfassung Sozialversicherungsdaten von Rentenversicherungen (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4457,12 +4457,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_speichern_verarbeiten_KV&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Krankenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_speichern_verarbeiten_KV&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Krankenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_speichern_verarbeiten_KV&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Krankenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_speichern_verarbeiten_KV&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Krankenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4478,12 +4478,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_speichern_verarbeiten_RV&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Rentenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_speichern_verarbeiten_RV&quot;, &quot;display&quot;: &quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Rentenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_speichern_verarbeiten_RV&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Rentenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_speichern_verarbeiten_RV&quot;&gt;&lt;display value=&quot;Speicherung und Verarbeitung von codierten Sozialversicherungsdaten von Rentenversicherungen zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (SDAT)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4499,12 +4499,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_KV&quot;, &quot;display&quot;: &quot;Bereitstellung umcodierter Sozialversicherungsdaten von Krankenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_KV&quot;, &quot;display&quot;: &quot;Bereitstellung umcodierter Sozialversicherungsdaten von Krankenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_KV&quot;&gt;&lt;display value=&quot;Bereitstellung umcodierter Sozialversicherungsdaten von Krankenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_KV&quot;&gt;&lt;display value=&quot;Bereitstellung umcodierter Sozialversicherungsdaten von Krankenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4520,12 +4520,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.1.0&quot;, &quot;code&quot;: &quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_RV&quot;, &quot;display&quot;: &quot;Bereitstellung umcodierter Sozialversicherungsdaten von Rentenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;, &quot;version&quot;: &quot;2025.2.0&quot;, &quot;code&quot;: &quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_RV&quot;, &quot;display&quot;: &quot;Bereitstellung umcodierter Sozialversicherungsdaten von Rentenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.1.0&quot;&gt;&lt;code value=&quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_RV&quot;&gt;&lt;display value=&quot;Bereitstellung umcodierter Sozialversicherungsdaten von Rentenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/CodeSystem/gics/Policy&quot;&gt;&lt;version value=&quot;2025.2.0&quot;&gt;&lt;code value=&quot;SDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_RV&quot;&gt;&lt;display value=&quot;Bereitstellung umcodierter Sozialversicherungsdaten von Rentenversicherungen für wissenschaftliche Nutzung zu Zwecken med. Forschung an externe Forscher&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -4533,14 +4533,14 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/gics/Policy"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="Policy"/>
         <status value="draft"/>
         <experimental value="false"/>
         <date value="2025-06-12"/>
         <expansion>
-          <identifier value="urn:uuid:c6665c95-673a-48dd-8f8b-8bd8befc7ad6"/>
-          <timestamp value="2025-10-29T11:38:00+01:00"/>
+          <identifier value="urn:uuid:a628799f-4126-4e1e-9cab-4df04f7719a9"/>
+          <timestamp value="2025-11-12T10:56:25+01:00"/>
           <total value="75"/>
           <offset value="0"/>
           <parameter>
@@ -4561,7 +4561,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|2025.1.0"/>
+            <valueUri value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy|2025.2.0"/>
           </parameter>
           <contains>
             <system value="https://ths-greifswald.de/fhir/CodeSystem/gics/Policy"/>
@@ -5061,7 +5061,7 @@
           </div>
         </text>
         <url value="https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"/>
-        <version value="2025.1.0"/>
+        <version value="2025.2.0"/>
         <name value="SaveAction"/>
         <status value="active"/>
         <experimental value="false"/>

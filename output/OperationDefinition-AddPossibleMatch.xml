@@ -16,7 +16,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch"/>
-  <version value="2025.1.0"/>
+  <version value="2025.2.0"/>
   <name value="AddPossibleMatch"/>
   <title value="addPossibleMatch"/>
   <status value="draft"/>

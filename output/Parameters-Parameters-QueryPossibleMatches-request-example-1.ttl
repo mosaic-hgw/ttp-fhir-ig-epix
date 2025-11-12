@@ -12,14 +12,17 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MIRACUM"
      ]
   ] [
      fhir:name [ fhir:v "mpiId" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/epix/identifier/MPI>
+       ] ;
        fhir:value [ fhir:v "1001000000066" ]
      ]
   ] ) . # 
