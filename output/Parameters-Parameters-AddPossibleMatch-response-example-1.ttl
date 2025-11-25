@@ -19,13 +19,10 @@
          fhir:meta [
            fhir:versionId [ fhir:v "1" ] ;
            fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
-           fhir:source [
-             fhir:v "dummy_safe_source"^^xsd:anyURI ;
-             fhir:l fhir:dummy_safe_source
-           ] ;
+           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
            ] )
          ] ;
          fhir:active [ fhir:v true ] ;
@@ -44,13 +41,10 @@
          fhir:meta [
            fhir:versionId [ fhir:v "1" ] ;
            fhir:lastUpdated [ fhir:v "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
-           fhir:source [
-             fhir:v "dummy_safe_source"^^xsd:anyURI ;
-             fhir:l fhir:dummy_safe_source
-           ] ;
+           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
            ] )
          ] ;
          fhir:active [ fhir:v true ] ;
@@ -64,25 +58,25 @@
      ] [
        fhir:name [ fhir:v "score" ] ;
        fhir:value [
-         a fhir:Decimal ;
+         a fhir:decimal ;
          fhir:v 0.965
        ]
      ] [
        fhir:name [ fhir:v "result" ] ;
        fhir:value [
-         a fhir:Decimal ;
+         a fhir:decimal ;
          fhir:v 0.952
        ]
      ] [
        fhir:name [ fhir:v "linkId" ] ;
        fhir:value [
-         a fhir:Integer ;
+         a fhir:integer ;
          fhir:v 5654986
        ]
      ] [
        fhir:name [ fhir:v "comment" ] ;
        fhir:value [
-         a fhir:String ;
+         a fhir:string ;
          fhir:v "This match was added manually!"
        ]
      ] )

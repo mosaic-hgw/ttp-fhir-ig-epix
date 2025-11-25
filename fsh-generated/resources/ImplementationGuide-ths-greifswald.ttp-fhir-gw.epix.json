@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "ths-greifswald.ttp-fhir-gw.epix",
   "url": "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version": "2025.1.0",
+  "version": "2025.2.0",
   "name": "IGTTPFHIRGatewayEPIX",
   "status": "active",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -24,7 +24,7 @@
   "dependsOn": [
     {
       "packageId": "de.einwilligungsmanagement",
-      "version": "2.0.0",
+      "version": "2.0.2",
       "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
       "id": "de_einwilligungsmanagement"
     }
@@ -524,18 +524,8 @@
       "generation": "html",
       "page": [
         {
-          "nameUrl": "Beschreibung.html",
-          "title": "Beschreibung",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "index.html",
-          "title": "Home",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "KontextUndKonzept.html",
-          "title": "Kontext und Konzept",
+          "title": "Implementation Guide E-PIX",
           "generation": "markdown"
         },
         {
@@ -544,23 +534,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "RecordLinkageUndIdentitaetsmanagement.html",
-          "title": "Record Linkage und Identitätsmanagement",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "Extensions.html",
           "title": "Extensions",
           "generation": "markdown"
         },
         {
-          "nameUrl": "TechnischeGrundlagen.html",
-          "title": "Technische Grundlagen",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "Vorgehen.html",
-          "title": "Vorgehen",
+          "nameUrl": "Allgemein.html",
+          "title": "Allgemein",
           "generation": "markdown"
         }
       ]

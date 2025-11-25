@@ -4,8 +4,8 @@
 
 * [Implementation Guide E-PIX](index.md)
 * [Allgemein](Allgemein.md)
-* [Artifacts Summary](artifacts.md)
 * [Extensions](Extensions.md)
+* [Artifacts Summary](artifacts.md)
 * [Personen- und Patienten-Suche](PersonenUndPatienten-Suche.md)
 
 ## Resources

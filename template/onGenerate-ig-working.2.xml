@@ -14,10 +14,10 @@
       </div>
    </text>
    <url value="https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix"/>
-   <version value="2025.1.0"/>
+   <version value="2025.2.0"/>
    <name value="IGTTPFHIRGatewayEPIX"/>
    <status value="active"/>
-   <date value="2025-10-29T11:36:58+01:00"/>
+   <date value="2025-11-25T13:37:50+01:00"/>
    <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
    <contact>
       <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -35,7 +35,7 @@
       </extension>
       <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
       <packageId value="hl7.terminology.r4"/>
-      <version value="6.5.0"/>
+      <version value="7.0.0"/>
    </dependsOn>
    <dependsOn id="hl7ext">
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -48,7 +48,7 @@
    <dependsOn id="de_einwilligungsmanagement">
       <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
       <packageId value="de.einwilligungsmanagement"/>
-      <version value="2.0.0"/>
+      <version value="2.0.2"/>
    </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1521,26 +1521,10 @@
          <generation value="html"/>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="Beschreibung.html"/>
-            </extension>
-            <nameUrl value="Beschreibung.html"/>
-            <title value="Beschreibung"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="index.html"/>
             </extension>
             <nameUrl value="index.html"/>
-            <title value="Home"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="KontextUndKonzept.html"/>
-            </extension>
-            <nameUrl value="KontextUndKonzept.html"/>
-            <title value="Kontext und Konzept"/>
+            <title value="Implementation Guide E-PIX"/>
             <generation value="markdown"/>
          </page>
          <page>
@@ -1553,14 +1537,6 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="RecordLinkageUndIdentitaetsmanagement.html"/>
-            </extension>
-            <nameUrl value="RecordLinkageUndIdentitaetsmanagement.html"/>
-            <title value="Record Linkage und Identitätsmanagement"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="Extensions.html"/>
             </extension>
             <nameUrl value="Extensions.html"/>
@@ -1569,18 +1545,10 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="TechnischeGrundlagen.html"/>
+               <valueUrl value="Allgemein.html"/>
             </extension>
-            <nameUrl value="TechnischeGrundlagen.html"/>
-            <title value="Technische Grundlagen"/>
-            <generation value="markdown"/>
-         </page>
-         <page>
-            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-               <valueUrl value="Vorgehen.html"/>
-            </extension>
-            <nameUrl value="Vorgehen.html"/>
-            <title value="Vorgehen"/>
+            <nameUrl value="Allgemein.html"/>
+            <title value="Allgemein"/>
             <generation value="markdown"/>
          </page>
       </page>
