@@ -12,7 +12,7 @@
   "version" : "2025.2.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2025-11-25T13:37:50+01:00",
+  "date" : "2025-11-25T14:14:02+01:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
