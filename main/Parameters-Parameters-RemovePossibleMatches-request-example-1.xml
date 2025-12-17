@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-RemovePossibleMatches-request-example-1"/>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
+    <part>
+      <name value="comment"/>
+      <valueString value="Dieser Match war völliger Unsinn!"/>
+    </part>
+  </parameter>
+  <parameter>
+    <name value="linkId"/>
+    <valueInteger value="5654986"/>
+  </parameter>
+</Parameters>

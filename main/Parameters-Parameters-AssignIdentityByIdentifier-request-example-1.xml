@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AssignIdentityByIdentifier-request-example-1"/>
+  <parameter>
+    <name value="comment"/>
+    <valueString value="Korrektur nach manueller Begutachtung."/>
+  </parameter>
+  <parameter>
+    <name value="identityIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/epix/identifier/identity"/>
+      <value value="10010000006546"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="mpiIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+      <value value="1001000000066"/>
+    </valueIdentifier>
+  </parameter>
+</Parameters>

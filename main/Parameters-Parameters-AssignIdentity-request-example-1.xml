@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AssignIdentity-request-example-1"/>
+  <parameter>
+    <name value="comment"/>
+    <valueString value="Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."/>
+  </parameter>
+  <parameter>
+    <name value="linkId"/>
+    <valueInteger value="5654986"/>
+  </parameter>
+  <parameter>
+    <name value="identityReference"/>
+    <valueReference>
+      <reference value="Patient/52"/>
+    </valueReference>
+  </parameter>
+</Parameters>

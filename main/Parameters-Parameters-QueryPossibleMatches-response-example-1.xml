@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-QueryPossibleMatches-response-example-1"/>
+  <parameter>
+    <name value="match"/>
+    <part>
+      <name value="matchItem"/>
+      <resource>
+        <Patient>
+          <id value="52"/>
+          <meta>
+            <versionId value="1"/>
+            <lastUpdated value="2021-06-17T08:28:03.200+02:00"/>
+            <source value="dummy_safe_source"/>
+            <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+          </meta>
+          <active value="true"/>
+          <name>
+            <family value="xxxxx"/>
+            <given value="Stefanie"/>
+          </name>
+          <gender value="male"/>
+          <birthDate value="1962-12-17"/>
+        </Patient>
+      </resource>
+    </part>
+    <part>
+      <name value="matchItem"/>
+      <resource>
+        <Patient>
+          <id value="53"/>
+          <meta>
+            <versionId value="1"/>
+            <lastUpdated value="2021-06-17T08:28:24.180+02:00"/>
+            <source value="dummy_safe_source"/>
+            <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+          </meta>
+          <active value="true"/>
+          <name>
+            <family value="xxxxx"/>
+            <given value="Stefanie"/>
+          </name>
+          <gender value="male"/>
+          <birthDate value="1962-12-16"/>
+        </Patient>
+      </resource>
+    </part>
+    <part>
+      <name value="matchScore"/>
+      <valueDecimal value="0.965"/>
+    </part>
+    <part>
+      <name value="matchResult"/>
+      <valueDecimal value="0.952"/>
+    </part>
+    <part>
+      <name value="linkId"/>
+      <valueInteger value="5654986"/>
+    </part>
+    <part>
+      <name value="comment"/>
+      <valueString value="Dieser Match wurde manuell durchgeführt!"/>
+    </part>
+  </parameter>
+</Parameters>

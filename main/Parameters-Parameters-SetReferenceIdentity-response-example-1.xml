@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-SetReferenceIdentity-response-example-1"/>
+  <parameter>
+    <name value="mpiPerson"/>
+    <resource>
+      <Person>
+        <id value="52"/>
+        <meta>
+          <lastUpdated value="2021-06-17T08:28:03.200+02:00"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"/>
+        </meta>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+          <value value="1001000000066"/>
+        </identifier>
+        <managingOrganization>
+          <identifier>
+            <value value="MIRACUM"/>
+          </identifier>
+        </managingOrganization>
+        <active value="true"/>
+        <link>
+          <target>
+            <reference value="Patient/52"/>
+          </target>
+        </link>
+        <link>
+          <target>
+            <reference value="Patient/53"/>
+          </target>
+          <assurance value="level4"/>
+        </link>
+      </Person>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <resource>
+      <Patient>
+        <id value="52"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2021-06-17T08:28:03.200+02:00"/>
+          <source value="dummy_safe_source"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <active value="true"/>
+        <name>
+          <family value="xxxxx"/>
+          <given value="Stefanie"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1962-12-17"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="identity"/>
+    <resource>
+      <Patient>
+        <id value="53"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2021-06-17T08:28:24.180+02:00"/>
+          <source value="dummy_safe_source"/>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <active value="true"/>
+        <name>
+          <family value="xxxxx"/>
+          <given value="Stefanie"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1962-12-16"/>
+      </Patient>
+    </resource>
+  </parameter>
+</Parameters>
