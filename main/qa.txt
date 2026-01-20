@@ -3,7 +3,7 @@ IGTTPFHIRGatewayEPIX : Validation Results
 
 err = 125, warn = 161, info = 91
 IG Publisher Version: 2.0.29
-Generated Tue Jan 20 08:30:56 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2025.2.0 (canonical = https://ths-greifswald.de/fhir/epix)
+Generated Tue Jan 20 10:02:51 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2025.2.0 (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 6 / 46 / 0
  /workspace/fsh-generated/resources/CodeSystem-BloomfilterTypeCS : 2 / 1 / 1
  /workspace/fsh-generated/resources/CodeSystem-ConsentComponentTypeCS : 2 / 1 / 1
