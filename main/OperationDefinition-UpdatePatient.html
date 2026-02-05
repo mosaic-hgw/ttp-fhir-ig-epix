@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"5.8"}
-    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.8"}
+    h3,h4,h5,h6{--heading-prefix:"6.8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -103,9 +103,6 @@
       <li>
         <a href="StructureDefinition-Patient.html">Patient</a>
       </li>
-      <li>
-        <a href="PersonenUndPatienten-Suche.html">Suche</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -123,24 +120,30 @@
         <a href="OperationDefinition-UpdatePatient.html">updatePatient</a>
       </li>
       <li>
-        <a href="OperationDefinition-SetReferenceIdentity.html">setReferenceIdentity</a>
+        <a href="OperationDefinition-SetReferenceIdentity.html">setReferenceIdentity (Draft)</a>
       </li>
       <li>
-        <a href="OperationDefinition-AssignIdentity.html">assignIdentity</a>
+        <a href="OperationDefinition-AssignIdentity.html">assignIdentity (Draft)</a>
       </li>
       <li>
-        <a href="OperationDefinition-AssignIdentityByIdentifier.html">assignIdentityByIdentifier</a>
+        <a href="OperationDefinition-AssignIdentityByIdentifier.html">assignIdentityByIdentifier (Draft)</a>
       </li>
       <li>
-        <a href="OperationDefinition-QueryPossibleMatches.html">queryPossibleMatches</a>
+        <a href="OperationDefinition-QueryPossibleMatches.html">queryPossibleMatches (Draft)</a>
       </li>
       <li>
-        <a href="OperationDefinition-AddPossibleMatch.html">addPossibleMatch</a>
+        <a href="OperationDefinition-AddPossibleMatch.html">addPossibleMatch (Draft)</a>
       </li>
       <li>
-        <a href="OperationDefinition-RemovePossibleMatches.html">removePossibleMatches</a>
+        <a href="OperationDefinition-RemovePossibleMatches.html">removePossibleMatches (Draft)</a>
       </li>
     </ul>
+  </li>
+  <li>
+    <a href="Suche.html">Suche</a>
+  </li>
+  <li>
+    <a href="Terminologie.html">Terminologie</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -237,7 +240,7 @@
         
           Active
           
-            as of 2025-06-12
+            as of 2026-02-05
           
         
       </td>
@@ -266,14 +269,8 @@
 
 <div markdown="1" style="display:inline-block">
 
-<p><strong>Unterstützt ab TTP-FHIR Gateway Version 2.2.0</strong></p>
-
-<h4 id="zweck">Zweck</h4>
+<h2 id="zweck">Zweck</h2>
 <p>Aktualisierung eines <strong>vorhandenen Datensatzes</strong> von personenidentifizierenden Informationen eines vorhandenen Patienten unter Angabe eines vormals vergebenen Master Person Index (MPI ID).</p>
-
-<h4 id="voraussetzung">Voraussetzung</h4>
-<p>Die angegebenen Parameter zur Spezifikation der Matching-Domäne, der Datenquelle und der MPI-ID müssen im E-PIX vorhanden sein.</p>
-
 
 </div>
 
@@ -291,7 +288,7 @@
 </div></td></tr><tr><td>IN</td><td>source</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td></td><td><div><p>Datenquelle</p>
 </div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td></td><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>
 </div></td></tr><tr><td>IN</td><td>identity</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td></td><td><div><p>Patient-Ressource (analog zu der Patienten-Identität)</p>
-</div></td></tr><tr><td>IN</td><td>force</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td></td><td></td></tr><tr><td>OUT</td><td>matchStatus</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td><a href="ValueSet-MatchStatusVS.html">MatchStatus</a> (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>
+</div></td></tr><tr><td>IN</td><td>force</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td></td><td></td></tr><tr><td>OUT</td><td>matchStatus</td><td></td><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td>https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>
 </div></td></tr><tr><td>OUT</td><td>mpiPerson</td><td></td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/person.html">Person</a></td><td></td><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>
 </div></td></tr><tr><td>OUT</td><td>identity</td><td></td><td>0..*</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td></td><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>
 </div></td></tr></table><div><p>Aktualisiert Patienten-Identitäten eines MPI-Eintrags.</p>
@@ -300,12 +297,15 @@
     <!-- insert notes if present -->
   
 
-<h3>Hinweise</h3>
+
 
 
 <div markdown="1" style="display:inline-block">
 
-<h4 id="aufruf-und-rückgabe">Aufruf und Rückgabe</h4>
+<h2 id="voraussetzung">Voraussetzung</h2>
+<p>Die angegebenen Parameter zur Spezifikation der Matching-Domäne, der Datenquelle und der MPI-ID müssen im E-PIX vorhanden sein.</p>
+
+<h2 id="aufruf-und-rückgabe">Aufruf und Rückgabe</h2>
 <p>Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von <a href="https://www.hl7.org/fhir/parameters.html">FHIR Parameters</a> übermittelt.</p>
 
 <p><code class="language-plaintext highlighter-rouge">&lt;HOST&gt;:&lt;PORT&gt;/ttp-fhir/fhir/epix/$updatePatient</code></p>
@@ -326,11 +326,11 @@
   <li>422: Fehlende oder falsche Patienten-Attribute.</li>
 </ul>
 
-<h4 id="beispiel">Beispiel</h4>
+<h2 id="beispiel">Beispiel</h2>
 
 <ul>
-  <li><a name="l660">​</a><a href="Parameters-UpdatePatient-request-example-1.html">Request-Body</a></li>
-  <li><a name="l664">​</a><a href="Parameters-UpdatePatient-response-example-1.html">Rückmeldung</a></li>
+  <li><a name="l657">​</a><a href="Parameters-UpdatePatient-request-example-1.html">Request-Body</a></li>
+  <li><a name="l661">​</a><a href="Parameters-UpdatePatient-response-example-1.html">Rückmeldung</a></li>
 </ul>
 
 
@@ -357,7 +357,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 20, 2026 10:01+0000">2026-01-20</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2025.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 5, 2026 15:33+0000">2026-02-05</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

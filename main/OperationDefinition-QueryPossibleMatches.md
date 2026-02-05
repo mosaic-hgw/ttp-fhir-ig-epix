@@ -14,7 +14,7 @@
   "title" : "queryPossibleMatches",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-06-12",
+  "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

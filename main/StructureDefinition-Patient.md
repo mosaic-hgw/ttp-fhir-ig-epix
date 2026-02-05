@@ -14,7 +14,7 @@
   "title" : "Patient",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-06-12",
+  "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -28,7 +28,7 @@
     }
   ],
   "description" : "Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI Eintrag, Person-Profil).",
-  "copyright" : "Copyright 2020-2025 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "copyright" : "Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
