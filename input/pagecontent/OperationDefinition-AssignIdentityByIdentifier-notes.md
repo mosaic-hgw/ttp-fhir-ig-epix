@@ -1,4 +1,7 @@
-#### Aufruf und Rückgabe
+## Voraussetzung
+Verwendete Parameter-Werte müssen im E-PIX bekannt sein.
+
+## Aufruf und Rückgabe
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$assignIdentityByIdentifier`
@@ -13,7 +16,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 404: Parameter mit unbekanntem Inhalt.
 * 422: Fehlende oder falsche Attribute.
 
-#### Beispiel
+## Beispiel
 
 * [Request-Body](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html)
 * [Rückmeldung](Parameters-Parameters-AssignIdentityByIdentifier-response-example-1.html)

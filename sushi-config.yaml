@@ -40,13 +40,13 @@ dependencies:
 pages:
   index.md:
     title: Implementation Guide E-PIX
-  PersonenUndPatienten-Suche.md:
-    title: Personen- und Patienten-Suche
-  Extensions.md:
   Allgemein.md:
-  ### automatisch generierte Pages müssen hier nicht gelistet werden
+  Extensions.md:
+  Suche.md:
+    title: Suche nach Personen und Identitäten
+  Terminologie.md:
 
-
+### automatisch generierte Pages müssen hier nicht gelistet werden
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -79,20 +79,22 @@ menu:
   Profile: 
     Person: StructureDefinition-Person.html
     Patient: StructureDefinition-Patient.html
-    Suche: PersonenUndPatienten-Suche.html
   ##### Extensions #############################################################
   Extensions: Extensions.html
   ##### Operationen ############################################################
   Operationen:
     addPatient: OperationDefinition-AddPatient.html
     updatePatient: OperationDefinition-UpdatePatient.html
-    setReferenceIdentity: OperationDefinition-SetReferenceIdentity.html
-    assignIdentity: OperationDefinition-AssignIdentity.html
-    assignIdentityByIdentifier: OperationDefinition-AssignIdentityByIdentifier.html
-    queryPossibleMatches: OperationDefinition-QueryPossibleMatches.html
-    addPossibleMatch: OperationDefinition-AddPossibleMatch.html
-    removePossibleMatches: OperationDefinition-RemovePossibleMatches.html
-
+    setReferenceIdentity (Draft): OperationDefinition-SetReferenceIdentity.html
+    assignIdentity (Draft): OperationDefinition-AssignIdentity.html
+    assignIdentityByIdentifier (Draft): OperationDefinition-AssignIdentityByIdentifier.html
+    queryPossibleMatches (Draft): OperationDefinition-QueryPossibleMatches.html
+    addPossibleMatch (Draft): OperationDefinition-AddPossibleMatch.html
+    removePossibleMatches (Draft): OperationDefinition-RemovePossibleMatches.html
+  ##### Suche ############################################################
+  Suche: Suche.html
+  ##### Suche ############################################################
+  Terminologie: Terminologie.html
 
 
 

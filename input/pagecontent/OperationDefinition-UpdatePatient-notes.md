@@ -1,4 +1,7 @@
-#### Aufruf und Rückgabe
+## Voraussetzung
+Die angegebenen Parameter zur Spezifikation der Matching-Domäne, der Datenquelle und der MPI-ID müssen im E-PIX vorhanden sein.
+
+## Aufruf und Rückgabe
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$updatePatient`
@@ -17,7 +20,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 * 404: Parameter mit unbekanntem Inhalt.
 * 422: Fehlende oder falsche Patienten-Attribute.
 
-#### Beispiel
+## Beispiel
 
 * [Request-Body](Parameters-UpdatePatient-request-example-1.html)
 * [Rückmeldung](Parameters-UpdatePatient-response-example-1.html)

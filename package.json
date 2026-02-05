@@ -6,7 +6,5 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.einwilligungsmanagement": "latest",
-    "de.medizininformatikinitiative.kerndatensatz.consent": "2025.0.4"
   }
 }
