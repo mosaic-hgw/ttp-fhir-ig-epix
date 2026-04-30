@@ -16,1801 +16,1771 @@
   "experimental" : false,
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX",
   "copyright" : "Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
   "kind" : "complex-type",
   "abstract" : false,
-  "context" : [
-    {
-      "type" : "element",
-      "expression" : "Patient"
-    },
-    {
-      "type" : "element",
-      "expression" : "Person"
-    }
-  ],
+  "context" : [{
+    "type" : "element",
+    "expression" : "Patient"
+  },
+  {
+    "type" : "element",
+    "expression" : "Person"
+  }],
   "type" : "Extension",
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation" : "constraint",
   "differential" : {
-    "element" : [
-      {
-        "id" : "Extension",
-        "path" : "Extension",
-        "short" : "Custom IDAT Values",
-        "definition" : "Custom IDAT Values"
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Custom IDAT Values",
+      "definition" : "Custom IDAT Values"
+    },
+    {
+      "id" : "Extension.extension:value1",
+      "path" : "Extension.extension",
+      "sliceName" : "value1",
+      "label" : "value1",
+      "short" : "Benutzerdefinierter Wert 1",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value1.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value1.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value1"
+    },
+    {
+      "id" : "Extension.extension:value1.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
       },
       {
-        "id" : "Extension.extension:value1",
-        "path" : "Extension.extension",
-        "sliceName" : "value1",
-        "label" : "value1",
-        "short" : "Benutzerdefinierter Wert 1",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "boolean"
       },
       {
-        "id" : "Extension.extension:value1.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "canonical"
       },
       {
-        "id" : "Extension.extension:value1.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value1"
+        "code" : "code"
       },
       {
-        "id" : "Extension.extension:value1.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "date"
       },
       {
-        "id" : "Extension.extension:value2",
-        "path" : "Extension.extension",
-        "sliceName" : "value2",
-        "label" : "value2",
-        "short" : "Benutzerdefinierter Wert 2",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "dateTime"
       },
       {
-        "id" : "Extension.extension:value2.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "decimal"
       },
       {
-        "id" : "Extension.extension:value2.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value2"
+        "code" : "id"
       },
       {
-        "id" : "Extension.extension:value2.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "instant"
       },
       {
-        "id" : "Extension.extension:value3",
-        "path" : "Extension.extension",
-        "sliceName" : "value3",
-        "label" : "value3",
-        "short" : "Benutzerdefinierter Wert 3",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "integer"
       },
       {
-        "id" : "Extension.extension:value3.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "markdown"
       },
       {
-        "id" : "Extension.extension:value3.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value3"
+        "code" : "oid"
       },
       {
-        "id" : "Extension.extension:value3.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "positiveInt"
       },
       {
-        "id" : "Extension.extension:value4",
-        "path" : "Extension.extension",
-        "sliceName" : "value4",
-        "label" : "value4",
-        "short" : "Benutzerdefinierter Wert 4",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "string"
       },
       {
-        "id" : "Extension.extension:value4.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "time"
       },
       {
-        "id" : "Extension.extension:value4.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value4"
+        "code" : "unsignedInt"
       },
       {
-        "id" : "Extension.extension:value4.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "uri"
       },
       {
-        "id" : "Extension.extension:value5",
-        "path" : "Extension.extension",
-        "sliceName" : "value5",
-        "label" : "value5",
-        "short" : "Benutzerdefinierter Wert 5",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "url"
       },
       {
-        "id" : "Extension.extension:value5.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "uuid"
       },
       {
-        "id" : "Extension.extension:value5.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value5"
+        "code" : "Address"
       },
       {
-        "id" : "Extension.extension:value5.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "Age"
       },
       {
-        "id" : "Extension.extension:value6",
-        "path" : "Extension.extension",
-        "sliceName" : "value6",
-        "label" : "value6",
-        "short" : "Benutzerdefinierter Wert 6",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "Annotation"
       },
       {
-        "id" : "Extension.extension:value6.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "Attachment"
       },
       {
-        "id" : "Extension.extension:value6.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value6"
+        "code" : "CodeableConcept"
       },
       {
-        "id" : "Extension.extension:value6.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "Coding"
       },
       {
-        "id" : "Extension.extension:value7",
-        "path" : "Extension.extension",
-        "sliceName" : "value7",
-        "label" : "value7",
-        "short" : "Benutzerdefinierter Wert 7",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "ContactPoint"
       },
       {
-        "id" : "Extension.extension:value7.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "Count"
       },
       {
-        "id" : "Extension.extension:value7.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value7"
+        "code" : "Distance"
       },
       {
-        "id" : "Extension.extension:value7.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "Duration"
       },
       {
-        "id" : "Extension.extension:value8",
-        "path" : "Extension.extension",
-        "sliceName" : "value8",
-        "label" : "value8",
-        "short" : "Benutzerdefinierter Wert 8",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "HumanName"
       },
       {
-        "id" : "Extension.extension:value8.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "Identifier"
       },
       {
-        "id" : "Extension.extension:value8.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value8"
+        "code" : "Money"
       },
       {
-        "id" : "Extension.extension:value8.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "Period"
       },
       {
-        "id" : "Extension.extension:value9",
-        "path" : "Extension.extension",
-        "sliceName" : "value9",
-        "label" : "value9",
-        "short" : "Benutzerdefinierter Wert 9",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "Quantity"
       },
       {
-        "id" : "Extension.extension:value9.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "Range"
       },
       {
-        "id" : "Extension.extension:value9.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value9"
+        "code" : "Ratio"
       },
       {
-        "id" : "Extension.extension:value9.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "Reference"
       },
       {
-        "id" : "Extension.extension:value10",
-        "path" : "Extension.extension",
-        "sliceName" : "value10",
-        "label" : "value10",
-        "short" : "Benutzerdefinierter Wert 10",
-        "min" : 0,
-        "max" : "1",
-        "mustSupport" : true
+        "code" : "SampledData"
       },
       {
-        "id" : "Extension.extension:value10.extension",
-        "path" : "Extension.extension.extension",
-        "max" : "0"
+        "code" : "Signature"
       },
       {
-        "id" : "Extension.extension:value10.url",
-        "path" : "Extension.extension.url",
-        "fixedUri" : "value10"
+        "code" : "Timing"
       },
       {
-        "id" : "Extension.extension:value10.value[x]",
-        "path" : "Extension.extension.value[x]",
-        "min" : 1,
-        "type" : [
-          {
-            "code" : "base64Binary"
-          },
-          {
-            "code" : "boolean"
-          },
-          {
-            "code" : "canonical"
-          },
-          {
-            "code" : "code"
-          },
-          {
-            "code" : "date"
-          },
-          {
-            "code" : "dateTime"
-          },
-          {
-            "code" : "decimal"
-          },
-          {
-            "code" : "id"
-          },
-          {
-            "code" : "instant"
-          },
-          {
-            "code" : "integer"
-          },
-          {
-            "code" : "markdown"
-          },
-          {
-            "code" : "oid"
-          },
-          {
-            "code" : "positiveInt"
-          },
-          {
-            "code" : "string"
-          },
-          {
-            "code" : "time"
-          },
-          {
-            "code" : "unsignedInt"
-          },
-          {
-            "code" : "uri"
-          },
-          {
-            "code" : "url"
-          },
-          {
-            "code" : "uuid"
-          },
-          {
-            "code" : "Address"
-          },
-          {
-            "code" : "Age"
-          },
-          {
-            "code" : "Annotation"
-          },
-          {
-            "code" : "Attachment"
-          },
-          {
-            "code" : "CodeableConcept"
-          },
-          {
-            "code" : "Coding"
-          },
-          {
-            "code" : "ContactPoint"
-          },
-          {
-            "code" : "Count"
-          },
-          {
-            "code" : "Distance"
-          },
-          {
-            "code" : "Duration"
-          },
-          {
-            "code" : "HumanName"
-          },
-          {
-            "code" : "Identifier"
-          },
-          {
-            "code" : "Money"
-          },
-          {
-            "code" : "Period"
-          },
-          {
-            "code" : "Quantity"
-          },
-          {
-            "code" : "Range"
-          },
-          {
-            "code" : "Ratio"
-          },
-          {
-            "code" : "Reference"
-          },
-          {
-            "code" : "SampledData"
-          },
-          {
-            "code" : "Signature"
-          },
-          {
-            "code" : "Timing"
-          },
-          {
-            "code" : "ContactDetail"
-          },
-          {
-            "code" : "Contributor"
-          },
-          {
-            "code" : "DataRequirement"
-          },
-          {
-            "code" : "Expression"
-          },
-          {
-            "code" : "ParameterDefinition"
-          },
-          {
-            "code" : "RelatedArtifact"
-          },
-          {
-            "code" : "TriggerDefinition"
-          },
-          {
-            "code" : "UsageContext"
-          },
-          {
-            "code" : "Dosage"
-          }
-        ]
+        "code" : "ContactDetail"
       },
       {
-        "id" : "Extension.url",
-        "path" : "Extension.url",
-        "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
+        "code" : "Contributor"
       },
       {
-        "id" : "Extension.value[x]",
-        "path" : "Extension.value[x]",
-        "max" : "0"
-      }
-    ]
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value2",
+      "path" : "Extension.extension",
+      "sliceName" : "value2",
+      "label" : "value2",
+      "short" : "Benutzerdefinierter Wert 2",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value2.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value2.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value2"
+    },
+    {
+      "id" : "Extension.extension:value2.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value3",
+      "path" : "Extension.extension",
+      "sliceName" : "value3",
+      "label" : "value3",
+      "short" : "Benutzerdefinierter Wert 3",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value3.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value3.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value3"
+    },
+    {
+      "id" : "Extension.extension:value3.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value4",
+      "path" : "Extension.extension",
+      "sliceName" : "value4",
+      "label" : "value4",
+      "short" : "Benutzerdefinierter Wert 4",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value4.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value4.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value4"
+    },
+    {
+      "id" : "Extension.extension:value4.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value5",
+      "path" : "Extension.extension",
+      "sliceName" : "value5",
+      "label" : "value5",
+      "short" : "Benutzerdefinierter Wert 5",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value5.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value5.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value5"
+    },
+    {
+      "id" : "Extension.extension:value5.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value6",
+      "path" : "Extension.extension",
+      "sliceName" : "value6",
+      "label" : "value6",
+      "short" : "Benutzerdefinierter Wert 6",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value6.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value6.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value6"
+    },
+    {
+      "id" : "Extension.extension:value6.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value7",
+      "path" : "Extension.extension",
+      "sliceName" : "value7",
+      "label" : "value7",
+      "short" : "Benutzerdefinierter Wert 7",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value7.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value7.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value7"
+    },
+    {
+      "id" : "Extension.extension:value7.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value8",
+      "path" : "Extension.extension",
+      "sliceName" : "value8",
+      "label" : "value8",
+      "short" : "Benutzerdefinierter Wert 8",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value8.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value8.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value8"
+    },
+    {
+      "id" : "Extension.extension:value8.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value9",
+      "path" : "Extension.extension",
+      "sliceName" : "value9",
+      "label" : "value9",
+      "short" : "Benutzerdefinierter Wert 9",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value9.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value9.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value9"
+    },
+    {
+      "id" : "Extension.extension:value9.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.extension:value10",
+      "path" : "Extension.extension",
+      "sliceName" : "value10",
+      "label" : "value10",
+      "short" : "Benutzerdefinierter Wert 10",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Extension.extension:value10.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:value10.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "value10"
+    },
+    {
+      "id" : "Extension.extension:value10.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "base64Binary"
+      },
+      {
+        "code" : "boolean"
+      },
+      {
+        "code" : "canonical"
+      },
+      {
+        "code" : "code"
+      },
+      {
+        "code" : "date"
+      },
+      {
+        "code" : "dateTime"
+      },
+      {
+        "code" : "decimal"
+      },
+      {
+        "code" : "id"
+      },
+      {
+        "code" : "instant"
+      },
+      {
+        "code" : "integer"
+      },
+      {
+        "code" : "markdown"
+      },
+      {
+        "code" : "oid"
+      },
+      {
+        "code" : "positiveInt"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "time"
+      },
+      {
+        "code" : "unsignedInt"
+      },
+      {
+        "code" : "uri"
+      },
+      {
+        "code" : "url"
+      },
+      {
+        "code" : "uuid"
+      },
+      {
+        "code" : "Address"
+      },
+      {
+        "code" : "Age"
+      },
+      {
+        "code" : "Annotation"
+      },
+      {
+        "code" : "Attachment"
+      },
+      {
+        "code" : "CodeableConcept"
+      },
+      {
+        "code" : "Coding"
+      },
+      {
+        "code" : "ContactPoint"
+      },
+      {
+        "code" : "Count"
+      },
+      {
+        "code" : "Distance"
+      },
+      {
+        "code" : "Duration"
+      },
+      {
+        "code" : "HumanName"
+      },
+      {
+        "code" : "Identifier"
+      },
+      {
+        "code" : "Money"
+      },
+      {
+        "code" : "Period"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Range"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Reference"
+      },
+      {
+        "code" : "SampledData"
+      },
+      {
+        "code" : "Signature"
+      },
+      {
+        "code" : "Timing"
+      },
+      {
+        "code" : "ContactDetail"
+      },
+      {
+        "code" : "Contributor"
+      },
+      {
+        "code" : "DataRequirement"
+      },
+      {
+        "code" : "Expression"
+      },
+      {
+        "code" : "ParameterDefinition"
+      },
+      {
+        "code" : "RelatedArtifact"
+      },
+      {
+        "code" : "TriggerDefinition"
+      },
+      {
+        "code" : "UsageContext"
+      },
+      {
+        "code" : "Dosage"
+      }]
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
   }
 }
 

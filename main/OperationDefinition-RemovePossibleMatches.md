@@ -16,17 +16,13 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Entfernt Matches aus einer Domäne.",
   "affectsState" : true,
   "code" : "removePossibleMatches",
@@ -34,40 +30,38 @@
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Matching-Domaene",
-      "type" : "string"
-    },
-    {
-      "name" : "linkId",
-      "use" : "in",
-      "min" : 1,
-      "max" : "*",
-      "documentation" : "Link-ID eines zu löschen Matches.",
-      "type" : "integer"
-    },
-    {
-      "name" : "comment",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Löschvorgang",
-      "type" : "string"
-    },
-    {
-      "name" : "return",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Rückinformation zum Löschvorgang.",
-      "type" : "OperationOutcome"
-    }
-  ]
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domaene",
+    "type" : "string"
+  },
+  {
+    "name" : "linkId",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Link-ID eines zu löschen Matches.",
+    "type" : "integer"
+  },
+  {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Löschvorgang",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Rückinformation zum Löschvorgang.",
+    "type" : "OperationOutcome"
+  }]
 }
 
 ```

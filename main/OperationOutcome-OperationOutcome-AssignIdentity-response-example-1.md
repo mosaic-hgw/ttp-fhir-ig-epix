@@ -8,13 +8,11 @@
 {
   "resourceType" : "OperationOutcome",
   "id" : "OperationOutcome-AssignIdentity-response-example-1",
-  "issue" : [
-    {
-      "severity" : "information",
-      "code" : "informational",
-      "diagnostics" : "match resolved, identity moved."
-    }
-  ]
+  "issue" : [{
+    "severity" : "information",
+    "code" : "informational",
+    "diagnostics" : "match resolved, identity moved."
+  }]
 }
 
 ```

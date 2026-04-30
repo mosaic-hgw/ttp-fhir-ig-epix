@@ -16,17 +16,13 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Fügt eine oder mehrere Patientenidentitäten hinzu.",
   "affectsState" : true,
   "code" : "addPatient",
@@ -34,95 +30,91 @@
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domaene",
+    "type" : "string"
+  },
+  {
+    "name" : "source",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Datenquelle",
+    "type" : "string"
+  },
+  {
+    "name" : "identity",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Patient-Ressource (analog zu Patienten-Identität).",
+    "type" : "Patient"
+  },
+  {
+    "name" : "saveAction",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "Coding",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"
+    }
+  },
+  {
+    "name" : "forceReferenceUpdate",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "matchResult",
+    "use" : "out",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben.",
+    "part" : [{
+      "name" : "sourceIdentity",
+      "use" : "out",
       "min" : 1,
       "max" : "1",
-      "documentation" : "Angabe der Matching-Domaene",
-      "type" : "string"
-    },
-    {
-      "name" : "source",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Datenquelle",
-      "type" : "string"
-    },
-    {
-      "name" : "identity",
-      "use" : "in",
-      "min" : 1,
-      "max" : "*",
-      "documentation" : "Patient-Ressource (analog zu Patienten-Identität).",
+      "documentation" : "Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht.",
       "type" : "Patient"
     },
     {
-      "name" : "saveAction",
-      "use" : "in",
+      "name" : "matchStatus",
+      "use" : "out",
       "min" : 1,
       "max" : "1",
+      "documentation" : "Match-Status aus dem Matching der übermittelten Patienten-Identität",
       "type" : "Coding",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/SaveAction"
+        "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
       }
     },
     {
-      "name" : "forceReferenceUpdate",
-      "use" : "in",
-      "min" : 1,
+      "name" : "mpiPerson",
+      "use" : "out",
+      "min" : 0,
       "max" : "1",
-      "type" : "boolean"
+      "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+      "type" : "Person"
     },
     {
-      "name" : "matchResult",
+      "name" : "identity",
       "use" : "out",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
-      "documentation" : "Match-Ergebnis zu einer übergebenen Patienten-Identität. Für jeden im Request übergebenen identity-Parameter wird genau ein matchResult zurück gegeben.",
-      "part" : [
-        {
-          "name" : "sourceIdentity",
-          "use" : "out",
-          "min" : 1,
-          "max" : "1",
-          "documentation" : "Die im Request übergebene, unveränderte Patienten-Ressource, auf die sich dieses Match-Ergebnis bezieht.",
-          "type" : "Patient"
-        },
-        {
-          "name" : "matchStatus",
-          "use" : "out",
-          "min" : 1,
-          "max" : "1",
-          "documentation" : "Match-Status aus dem Matching der übermittelten Patienten-Identität",
-          "type" : "Coding",
-          "binding" : {
-            "strength" : "required",
-            "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
-          }
-        },
-        {
-          "name" : "mpiPerson",
-          "use" : "out",
-          "min" : 0,
-          "max" : "1",
-          "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
-          "type" : "Person"
-        },
-        {
-          "name" : "identity",
-          "use" : "out",
-          "min" : 0,
-          "max" : "*",
-          "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
-          "type" : "Patient"
-        }
-      ]
-    }
-  ]
+      "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+      "type" : "Patient"
+    }]
+  }]
 }
 
 ```

@@ -8,13 +8,11 @@
 {
   "resourceType" : "OperationOutcome",
   "id" : "AssignIdentityByIdentifier-example1",
-  "issue" : [
-    {
-      "severity" : "information",
-      "code" : "informational",
-      "diagnostics" : "identity moved."
-    }
-  ]
+  "issue" : [{
+    "severity" : "information",
+    "code" : "informational",
+    "diagnostics" : "identity moved."
+  }]
 }
 
 ```

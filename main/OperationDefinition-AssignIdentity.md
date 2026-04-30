@@ -16,65 +16,59 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben.",
   "affectsState" : true,
   "code" : "assignIdentity",
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Matching-Domäne",
-      "type" : "string"
-    },
-    {
-      "name" : "linkId",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Link-ID des Matches (Dubletteneintrag). Ermittelbar mittels Operation queryPossibleMatches.",
-      "type" : "integer"
-    },
-    {
-      "name" : "identityReference",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Referenz zur korrekten Ausprägung (Identität, Match-Item, Patient-Ressource), die das Ziel der Verschiebung ist.",
-      "type" : "Reference"
-    },
-    {
-      "name" : "comment",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Änderungsvorgang",
-      "type" : "string"
-    },
-    {
-      "name" : "return",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Rückinformation zum Merge-Vorgang.",
-      "type" : "OperationOutcome"
-    }
-  ]
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domäne",
+    "type" : "string"
+  },
+  {
+    "name" : "linkId",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Link-ID des Matches (Dubletteneintrag). Ermittelbar mittels Operation queryPossibleMatches.",
+    "type" : "integer"
+  },
+  {
+    "name" : "identityReference",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Referenz zur korrekten Ausprägung (Identität, Match-Item, Patient-Ressource), die das Ziel der Verschiebung ist.",
+    "type" : "Reference"
+  },
+  {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Änderungsvorgang",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Rückinformation zum Merge-Vorgang.",
+    "type" : "OperationOutcome"
+  }]
 }
 
 ```

@@ -16,73 +16,67 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen.",
   "affectsState" : true,
   "code" : "setReferenceIdentity",
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Matching-Domaene",
-      "type" : "string"
-    },
-    {
-      "name" : "mpiId",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier).",
-      "type" : "Identifier"
-    },
-    {
-      "name" : "identityReference",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Referenz zur Identität (Patient-Ressource), die als Referenzidentität gesetzt werden soll.",
-      "type" : "Reference"
-    },
-    {
-      "name" : "comment",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Änderungsvorgang",
-      "type" : "string"
-    },
-    {
-      "name" : "mpiPerson",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
-      "type" : "Person"
-    },
-    {
-      "name" : "identity",
-      "use" : "out",
-      "min" : 1,
-      "max" : "*",
-      "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
-      "type" : "Patient"
-    }
-  ]
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domaene",
+    "type" : "string"
+  },
+  {
+    "name" : "mpiId",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier).",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "identityReference",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Referenz zur Identität (Patient-Ressource), die als Referenzidentität gesetzt werden soll.",
+    "type" : "Reference"
+  },
+  {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Änderungsvorgang",
+    "type" : "string"
+  },
+  {
+    "name" : "mpiPerson",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+    "type" : "Person"
+  },
+  {
+    "name" : "identity",
+    "use" : "out",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+    "type" : "Patient"
+  }]
 }
 
 ```

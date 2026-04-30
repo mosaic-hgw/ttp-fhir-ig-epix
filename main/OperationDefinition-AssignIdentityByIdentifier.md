@@ -16,65 +16,59 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität.",
   "affectsState" : true,
   "code" : "assignIdentityByIdentifier",
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Matching-Domäne",
-      "type" : "string"
-    },
-    {
-      "name" : "identityIdentifier",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Identifier der zu verschiebenden Identität (Patient-Ressource).",
-      "type" : "Identifier"
-    },
-    {
-      "name" : "mpiIdentifier",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
-      "type" : "Identifier"
-    },
-    {
-      "name" : "comment",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Änderungsvorgang",
-      "type" : "string"
-    },
-    {
-      "name" : "return",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Rückinformation zum Merge-Vorgang.",
-      "type" : "OperationOutcome"
-    }
-  ]
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matching-Domäne",
+    "type" : "string"
+  },
+  {
+    "name" : "identityIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifier der zu verschiebenden Identität (Patient-Ressource).",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "mpiIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Änderungsvorgang",
+    "type" : "string"
+  },
+  {
+    "name" : "return",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Rückinformation zum Merge-Vorgang.",
+    "type" : "OperationOutcome"
+  }]
 }
 
 ```

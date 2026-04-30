@@ -8,77 +8,65 @@
 {
   "resourceType" : "Parameters",
   "id" : "Parameters-AddPossibleMatch-response-example-1",
-  "parameter" : [
+  "parameter" : [{
+    "name" : "match",
+    "part" : [{
+      "name" : "item",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "52",
+        "meta" : {
+          "versionId" : "1",
+          "lastUpdated" : "2021-06-17T08:28:03.200+02:00",
+          "source" : "dummy_safe_source",
+          "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
+        },
+        "active" : true,
+        "name" : [{
+          "family" : "xxxxx",
+          "given" : ["Stefanie"]
+        }],
+        "gender" : "male",
+        "birthDate" : "1962-12-17"
+      }
+    },
     {
-      "name" : "match",
-      "part" : [
-        {
-          "name" : "item",
-          "resource" : {
-            "resourceType" : "Patient",
-            "id" : "52",
-            "meta" : {
-              "versionId" : "1",
-              "lastUpdated" : "2021-06-17T08:28:03.200+02:00",
-              "source" : "dummy_safe_source",
-              "profile" : [
-                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-              ]
-            },
-            "active" : true,
-            "name" : [
-              {
-                "family" : "xxxxx",
-                "given" : ["Stefanie"]
-              }
-            ],
-            "gender" : "male",
-            "birthDate" : "1962-12-17"
-          }
+      "name" : "item",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "53",
+        "meta" : {
+          "versionId" : "1",
+          "lastUpdated" : "2021-06-17T08:28:24.180+02:00",
+          "source" : "dummy_safe_source",
+          "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
         },
-        {
-          "name" : "item",
-          "resource" : {
-            "resourceType" : "Patient",
-            "id" : "53",
-            "meta" : {
-              "versionId" : "1",
-              "lastUpdated" : "2021-06-17T08:28:24.180+02:00",
-              "source" : "dummy_safe_source",
-              "profile" : [
-                "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-              ]
-            },
-            "active" : true,
-            "name" : [
-              {
-                "family" : "xxxxx",
-                "given" : ["Stefanie"]
-              }
-            ],
-            "gender" : "male",
-            "birthDate" : "1962-12-16"
-          }
-        },
-        {
-          "name" : "score",
-          "valueDecimal" : 0.965
-        },
-        {
-          "name" : "result",
-          "valueDecimal" : 0.952
-        },
-        {
-          "name" : "linkId",
-          "valueInteger" : 5654986
-        },
-        {
-          "name" : "comment",
-          "valueString" : "This match was added manually!"
-        }
-      ]
-    }
-  ]
+        "active" : true,
+        "name" : [{
+          "family" : "xxxxx",
+          "given" : ["Stefanie"]
+        }],
+        "gender" : "male",
+        "birthDate" : "1962-12-16"
+      }
+    },
+    {
+      "name" : "score",
+      "valueDecimal" : 0.965
+    },
+    {
+      "name" : "result",
+      "valueDecimal" : 0.952
+    },
+    {
+      "name" : "linkId",
+      "valueInteger" : 5654986
+    },
+    {
+      "name" : "comment",
+      "valueString" : "This match was added manually!"
+    }]
+  }]
 }
 
 ```

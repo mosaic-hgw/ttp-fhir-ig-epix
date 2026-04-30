@@ -16,17 +16,13 @@
   "kind" : "operation",
   "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-  "contact" : [
-    {
-      "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://www.ths-greifswald.de/"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
   "description" : "Aktualisiert Patienten-Identitäten eines MPI-Eintrags.",
   "affectsState" : true,
   "code" : "updatePatient",
@@ -34,75 +30,73 @@
   "system" : true,
   "type" : false,
   "instance" : false,
-  "parameter" : [
-    {
-      "name" : "domain",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Angabe der Matchingdomain",
-      "type" : "string"
-    },
-    {
-      "name" : "source",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Datenquelle",
-      "type" : "string"
-    },
-    {
-      "name" : "mpiIdentifier",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
-      "type" : "Identifier"
-    },
-    {
-      "name" : "identity",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Patient-Ressource (analog zu der Patienten-Identität)",
-      "type" : "Patient"
-    },
-    {
-      "name" : "force",
-      "use" : "in",
-      "min" : 1,
-      "max" : "1",
-      "type" : "boolean"
-    },
-    {
-      "name" : "matchStatus",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Match-Status aus dem Matching der übermittelten Patienten-Identität",
-      "type" : "Coding",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
-      }
-    },
-    {
-      "name" : "mpiPerson",
-      "use" : "out",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
-      "type" : "Person"
-    },
-    {
-      "name" : "identity",
-      "use" : "out",
-      "min" : 0,
-      "max" : "*",
-      "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
-      "type" : "Patient"
+  "parameter" : [{
+    "name" : "domain",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Angabe der Matchingdomain",
+    "type" : "string"
+  },
+  {
+    "name" : "source",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Datenquelle",
+    "type" : "string"
+  },
+  {
+    "name" : "mpiIdentifier",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Identifikator des MPI-Eintrags (MPI-ID)",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "identity",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient-Ressource (analog zu der Patienten-Identität)",
+    "type" : "Patient"
+  },
+  {
+    "name" : "force",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "type" : "boolean"
+  },
+  {
+    "name" : "matchStatus",
+    "use" : "out",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Match-Status aus dem Matching der übermittelten Patienten-Identität",
+    "type" : "Coding",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"
     }
-  ]
+  },
+  {
+    "name" : "mpiPerson",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Person-Ressource, die den MPI-Eintrag repräsentiert.",
+    "type" : "Person"
+  },
+  {
+    "name" : "identity",
+    "use" : "out",
+    "min" : 0,
+    "max" : "*",
+    "documentation" : "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).",
+    "type" : "Patient"
+  }]
 }
 
 ```

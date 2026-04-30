@@ -10,78 +10,60 @@
   "id" : "Patient-example-2",
   "meta" : {
     "lastUpdated" : "2021-05-19T17:50:23.000+02:00",
-    "profile" : [
-      "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-    ]
+    "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
   },
-  "extension" : [
-    {
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-      "valueAddress" : {
-        "city" : "Musterhausen"
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress" : {
+      "city" : "Musterhausen"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE"
+        }]
       }
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
+  },
+  {
+    "extension" : [{
+      "url" : "value1",
+      "valueString" : "A38"
     },
     {
-      "extension" : [
-        {
-          "url" : "code",
-          "valueCodeableConcept" : {
-            "coding" : [
-              {
-                "system" : "urn:iso:std:iso:3166",
-                "code" : "DE"
-              }
-            ]
-          }
-        }
-      ],
-      "url" : "http://hl7.org/fhir/StructureDefinition/patient-nationality"
-    },
-    {
-      "extension" : [
-        {
-          "url" : "value1",
-          "valueString" : "A38"
-        },
-        {
-          "url" : "value2",
-          "valueBoolean" : true
-        }
-      ],
-      "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
-    }
-  ],
-  "identifier" : [
-    {
-      "system" : "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
-      "value" : "ABC_12345"
-    }
-  ],
-  "name" : [
-    {
-      "family" : "Mustermann",
-      "given" : ["Manfred"]
-    }
-  ],
-  "telecom" : [
-    {
-      "system" : "email",
-      "value" : "manfred.mustermann@example.org"
-    },
-    {
-      "system" : "phone",
-      "value" : "012345/5555567"
-    }
-  ],
+      "url" : "value2",
+      "valueBoolean" : true
+    }],
+    "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues"
+  }],
+  "identifier" : [{
+    "system" : "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
+    "value" : "ABC_12345"
+  }],
+  "name" : [{
+    "family" : "Mustermann",
+    "given" : ["Manfred"]
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "manfred.mustermann@example.org"
+  },
+  {
+    "system" : "phone",
+    "value" : "012345/5555567"
+  }],
   "gender" : "male",
   "birthDate" : "1953-12-11",
-  "address" : [
-    {
-      "line" : ["Musterweg 22"],
-      "city" : "Musterstadt",
-      "postalCode" : "12345"
-    }
-  ]
+  "address" : [{
+    "line" : ["Musterweg 22"],
+    "city" : "Musterstadt",
+    "postalCode" : "12345"
+  }]
 }
 
 ```
