@@ -22,5 +22,5 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ## Beispiel
 
-* [Request-Body](Parameters-UpdatePatient-request-example-1.html)
-* [Rückmeldung](Parameters-UpdatePatient-response-example-1.html)
+* [Request-Body](Parameters-Parameters-UpdatePatient-request-example-1.html)
+* [Rückmeldung](Parameters-Parameters-UpdatePatient-response-example-1.html)
