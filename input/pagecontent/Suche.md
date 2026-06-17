@@ -25,7 +25,7 @@ Eine PDQ/MPI Suche in Kombination mit Paging wird nicht unterstützt.
 Eine Suche zur Person erfolgt mittels der folgenden Suchparameter der Person-Ressource bzw. der referenzierten Patient-Ressourcen (Chaining):
 
 * `organization`: enthält die E-PIX-Domäne
-* `identifier`: Identifikator der Person (MPI, z.B. https://ths-greifswald.de/fhir/epix/identifier/MPI%7C0011000000011)
+* `identifier`: Identifikator der Person (MPI, z.B. https://ths-greifswald.de/fhir/epix/identifier/MPI|0011000000011)
 * Chained Suchparameter auf Patient (patient.xxx): `birthdate`, `family`, `gender`, `given` (vgl. [FHIR-Spezifikation](http://www.hl7.org/fhir/r4/patient.html#search)).
 
 **Hinweis: Die Angabe des Suchparameters "organization" ist verpflichtend. Existiert dieser nicht im Request, wird der HTTP-Statuscode 400 zurück gegeben.**
@@ -37,7 +37,8 @@ Mit Hilfe der Include-Funktionalität der FHIR-Suche wird auch die gleichzeitige
 Eine Suche zur Identität erfolgt mittels der folgenden Suchparameter der Patient-Ressource bzw. der referenzierenden Person-Ressource (Reverse Chaining und Reverse Include):
 
 * `_has:Person:link:organization:identifier`: enthält die E-PIX-Domäne
-* `identifier`: (lokaler) Identifikator der Patient-Ressource (Identität)
+* `identifier`: (lokaler) Identifikator der Patient-Ressource (Identität),
+  z.B. lokale Identifier-Domain "SAP" mit lokale ID "sap1" als Identifier: `https://ths-greifswald.de/fhir/epix/identifier/SAP|sap1`
 * Weitere Suchparameter auf Patient: `birthdate`, `family`, `gender`, `given`
 
 Bei dieser Suche wird die gefundene Patient-Ressource (Identität) sowie die hierauf verweisende Person-Ressource zurück gegegeben, nicht jedoch weitere Patient-Ressourcen mit anderen Identitäten der Person.
@@ -62,6 +63,6 @@ Suche auf 10 Ergebnisse beschränkt und ab der 11. Ressource der Ergebnisliste:
 
 `GET [base]/Person?organization:identifier=MIRACUM&_include=Person:link&_count=10&_offset=10`
 
-Suche eine bestimmte E-PIX-Identität (FHIR: Patient) sowie die übergeordnete E-PIX-Person (FHIR: Person) zu einer bestimmten Domäne:
+Suche eine bestimmte E-PIX-Identität (FHIR: Patient) in localIdentifier-Domain `SystemXY` mit lokalem Identifier `ABC_12345` sowie die übergeordnete E-PIX-Person (FHIR: Person) zu einer bestimmten Domäne `MIRACUM`:
 
 `GET [base]/Patient?identifier=https://klinium-musterstadt.de/fhir/epix/identifier/SystemXY|ABC_12345&_has:Person:link:organization:identifier=MIRACUM&_revinclude=Person:link`
