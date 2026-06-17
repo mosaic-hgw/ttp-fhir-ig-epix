@@ -1,5 +1,23 @@
 # OperationOutcome-AssignIdentity-response-example-1 - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **OperationOutcome-AssignIdentity-response-example-1**
+
+## Example OperationOutcome: OperationOutcome-AssignIdentity-response-example-1
+
+### Issues
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Severity** | **Code** | **Diagnostics** |
+| * | Information | Informational Note | match resolved, identity moved. |
+
 
 
 ## Resource Content

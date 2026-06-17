@@ -1,5 +1,37 @@
 # Patient-example-2 - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Patient-example-2**
+
+## Example Patient: Patient-example-2
+
+Last updated: 2021-05-19 17:50:23+0200
+
+Profile: [Patient](StructureDefinition-Patient.md)
+
+Manfred Mustermann Male, DoB: 1953-12-11 ( https://ths-greifswald.de/fhir/epix/identifier/SystemXY#ABC_12345)
+
+-------
+
+| | |
+| :--- | :--- |
+| Contact Detail | * [manfred.mustermann@example.org](mailto:manfred.mustermann@example.org)
+* ph: 012345/5555567
+* Musterweg 22 Musterstadt 12345 
+ |
+| Patient Nationality: | * code: Germany
+ |
+| [Patient Birth Place](http://hl7.org/fhir/extensions/5.3.0/StructureDefinition-patient-birthPlace.html) | Musterhausen |
+| Custom IDAT Values: | * value1: A38
+* value2: true
+ |
+
 
 
 ## Resource Content

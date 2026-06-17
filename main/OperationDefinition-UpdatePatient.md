@@ -1,5 +1,58 @@
 # updatePatient - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **updatePatient**
+
+## OperationDefinition: updatePatient 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient | *Version*:2025.2.0 |
+| Active as of 2026-02-05 | *Computable Name*:UpdatePatient |
+
+ 
+Aktualisiert Patienten-Identitäten eines MPI-Eintrags. 
+
+## Zweck
+
+Aktualisierung eines **vorhandenen Datensatzes** von personenidentifizierenden Informationen eines vorhandenen Patienten unter Angabe eines vormals vergebenen Master Person Index (MPI ID).
+
+## Voraussetzung
+
+Die angegebenen Parameter zur Spezifikation der Matching-Domäne, der Datenquelle und der MPI-ID müssen im E-PIX vorhanden sein.
+
+## Aufruf und Rückgabe
+
+Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
+
+`<HOST>:<PORT>/ttp-fhir/fhir/epix/$updatePatient`
+
+Der Funktionsaufruf liefert eine Parameters-Ressource zurück.
+
+Der Parameter "identity" enthält eine Patient-Ressource entsprechend dem allgemeinen [Patient-Profil](StructureDefinition-Patient.md).
+
+Der Parameter "mpiPerson" enthält eine Person-Ressource entsprechend dem allgemeinen Person-Profil. Die Angabe link.assurance='level4' kennzeichnet hierbei die [Referenz-Identität](StructureDefinition-Person.md).
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+## Beispiel
+
+* [Request-Body](Parameters-Parameters-UpdatePatient-request-example-1.md)
+* [Rückmeldung](Parameters-Parameters-UpdatePatient-response-example-1.md)
+
 
 
 ## Resource Content

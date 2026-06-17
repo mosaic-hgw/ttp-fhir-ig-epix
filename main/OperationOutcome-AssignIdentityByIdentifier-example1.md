@@ -1,5 +1,23 @@
 # AssignIdentityByIdentifier-example1 - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **AssignIdentityByIdentifier-example1**
+
+## Example OperationOutcome: AssignIdentityByIdentifier-example1
+
+### Issues
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| - | **Severity** | **Code** | **Diagnostics** |
+| * | Information | Informational Note | identity moved. |
+
 
 
 ## Resource Content

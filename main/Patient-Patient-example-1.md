@@ -1,5 +1,24 @@
 # Patient-example-1 - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Patient-example-1**
+
+## Example Patient: Patient-example-1
+
+Last updated: 2021-05-19 17:50:23+0200
+
+Profile: [Consent Management: Patient](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient)
+
+Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: dic_1H51T)
+
+-------
+
 
 
 ## Resource Content

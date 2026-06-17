@@ -13,7 +13,7 @@
      fhir:lastUpdated [ fhir:v "2021-05-19T17:50:23.000+02:00"^^xsd:dateTime ] ;
      fhir:profile ( [
        fhir:v "http://fhir.de/ConsentManagement/StructureDefinition/Patient"^^xsd:anyURI ;
-       fhir:l <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
+       fhir:link <http://fhir.de/ConsentManagement/StructureDefinition/Patient>
      ] )
   ] ; # 
   fhir:text [
@@ -23,18 +23,12 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [
-           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
-           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
-         ] ;
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "ANON" ] ;
          fhir:display [ fhir:v "Anonymous identifier" ]
        ] )
      ] ;
-     fhir:system [
-       fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ;
-       fhir:l <https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym>
-     ] ;
+     fhir:system [ fhir:v "https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "dic_1H51T" ]
   ] ) . # 
 

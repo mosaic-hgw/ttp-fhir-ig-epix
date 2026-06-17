@@ -1,5 +1,56 @@
 # addPossibleMatch - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **addPossibleMatch**
+
+## OperationDefinition: addPossibleMatch 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch | *Version*:2025.2.0 |
+| Draft as of 2026-02-05 | *Computable Name*:AddPossibleMatch |
+
+ 
+Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu. 
+
+**Konzeptarbeit. Noch nicht implementiert**
+
+## Zweck
+
+Fügt manuell ein Match zu einer Domäne hinzu.
+
+## Voraussetzung
+
+Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX konfiguriert sein.
+
+## Aufruf und Rückgabe
+
+Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
+
+`<HOST>:<PORT>/ttp-fhir/fhir/epix/$addPossibleMatch`
+
+Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem Multi-Part-Parameter zurück.
+
+Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
+
+Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer OperationOutcome-Ressource zurückgegeben:
+
+* 400: Fehlende oder fehlerhafte Parameter.
+* 401: Fehlende Authentifizierung oder Autorisierung.
+* 404: Parameter mit unbekanntem Inhalt.
+* 422: Fehlende oder falsche Patienten-Attribute.
+
+## Beispiel
+
+* [Request-Body](Parameters-Parameters-AddPossibleMatch-request-example-1.md)
+* [Rückmeldung](Parameters-Parameters-AddPossibleMatch-response-example-1.md)
+
 
 
 ## Resource Content

@@ -164,7 +164,7 @@
     "oids" : ["2.16.840.1.113883.5.43"],
     "uses" : {
     },
-    "http://hl7.org/fhir/extensions/5.2.0/ValueSet-name-part-qualifier.html" : "EntityNamePartQualifier"
+    "http://hl7.org/fhir/R4/valueset-name-part-qualifier.html" : "EntityNamePartQualifier"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2",
@@ -176,7 +176,7 @@
     "oids" : ["2.16.840.1.113883.5.1122"],
     "uses" : {
     },
-    "http://hl7.org/fhir/extensions/5.2.0/ValueSet-name-part-qualifier.html" : "EntityNamePartQualifier"
+    "http://hl7.org/fhir/R4/valueset-name-part-qualifier.html" : "EntityNamePartQualifier"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",

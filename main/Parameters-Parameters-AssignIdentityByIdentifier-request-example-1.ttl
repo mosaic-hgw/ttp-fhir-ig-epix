@@ -12,27 +12,21 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "comment" ] ;
      fhir:value [
-       a fhir:String ;
+       a fhir:string ;
        fhir:v "Korrektur nach manueller Begutachtung."
      ]
   ] [
      fhir:name [ fhir:v "identityIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [
-         fhir:v "https://ths-greifswald.de/fhir/epix/identifier/identity"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/epix/identifier/identity>
-       ] ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/identity"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "10010000006546" ]
      ]
   ] [
      fhir:name [ fhir:v "mpiIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [
-         fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ;
-         fhir:l <https://ths-greifswald.de/fhir/epix/identifier/MPI>
-       ] ;
+       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
        fhir:value [ fhir:v "1001000000066" ]
      ]
   ] ) . # 

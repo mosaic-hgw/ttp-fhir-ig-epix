@@ -1,5 +1,40 @@
 # Patient - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Patient**
+
+## Resource Profile: Patient 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient | *Version*:2025.2.0 |
+| Active as of 2026-02-05 | *Computable Name*:Patient |
+| **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+ 
+Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI Eintrag, Person-Profil). 
+
+**Usages:**
+
+* Refer to this Profile: [Person](StructureDefinition-Person.md)
+* Examples for this Profile: [Patient/Patient-example-2](Patient-Patient-example-2.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.epix|current/StructureDefinition/StructureDefinition-Patient.json)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-Patient.csv), [Excel](StructureDefinition-Patient.xlsx), [Schematron](StructureDefinition-Patient.sch) 
+
 
 
 ## Resource Content

@@ -191,8 +191,8 @@
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/name-part-qualifier",
-    "version" : "5.2.0",
-    "status" : "active",
+    "version" : "4.0.1",
+    "status" : "draft",
     "name" : "EntityNamePartQualifier",
     "title" : "EntityNamePartQualifier",
     "description" : "A set of codes each of which specifies a certain subcategory of the name part in addition to the main name part type.",

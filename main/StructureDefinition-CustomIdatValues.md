@@ -1,5 +1,45 @@
 # Custom IDAT Values - v2025.2.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2025.2.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Custom IDAT Values**
+
+## Extension: Custom IDAT Values 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues | *Version*:2025.2.0 |
+| Active as of 2026-02-05 | *Computable Name*:CustomIdatValues |
+| **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
+
+Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX
+
+**Context of Use**
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [Patient](StructureDefinition-Patient.md) and [Person](StructureDefinition-Person.md)
+* Examples for this Extension: [Patient/Patient-example-2](Patient-Patient-example-2.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.epix|current/StructureDefinition/StructureDefinition-CustomIdatValues.json)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-CustomIdatValues.csv), [Excel](StructureDefinition-CustomIdatValues.xlsx), [Schematron](StructureDefinition-CustomIdatValues.sch) 
+
+#### Constraints
+
 
 
 ## Resource Content
