@@ -12,20 +12,20 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MIRACUM"
      ] ;
      fhir:part ( [
        fhir:name [ fhir:v "comment" ] ;
        fhir:value [
-         a fhir:string ;
+         a fhir:String ;
          fhir:v "Dieser Match war völliger Unsinn!"
        ]
      ] )
   ] [
      fhir:name [ fhir:v "linkId" ] ;
      fhir:value [
-       a fhir:integer ;
+       a fhir:Integer ;
        fhir:v 5654986
      ]
   ] ) . # 

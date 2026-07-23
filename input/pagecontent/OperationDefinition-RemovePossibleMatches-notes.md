@@ -19,4 +19,4 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-RemovePossibleMatches-request-example-1.html)
-* [Rückmeldung](Parameters-Parameters-RemovePossibleMatches-response-example-1.html)
+* [Rückmeldung](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.html)

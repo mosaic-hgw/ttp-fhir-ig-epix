@@ -20,4 +20,4 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-AssignIdentity-request-example-1.html)
-* [Rückmeldung](Parameters-Parameters-AssignIdentity-response-example-1.html)
+* [Rückmeldung](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.html)

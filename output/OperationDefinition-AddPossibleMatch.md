@@ -1,4 +1,4 @@
-# addPossibleMatch - v2025.2.0
+# addPossibleMatch - v2026.1.0
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "OperationDefinition",
   "id" : "AddPossibleMatch",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AddPossibleMatch",
   "title" : "addPossibleMatch",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-06-12",
+  "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

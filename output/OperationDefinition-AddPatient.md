@@ -1,4 +1,4 @@
-# addPatient - v2025.2.0
+# addPatient - v2026.1.0
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "OperationDefinition",
   "id" : "AddPatient",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AddPatient",
   "title" : "addPatient",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-06-12",
+  "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

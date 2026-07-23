@@ -11,12 +11,12 @@
 </div></td></tr></table></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier"/>
-  <version value="2025.2.0"/>
+  <version value="2026.1.0"/>
   <name value="AssignIdentityByIdentifier"/>
   <title value="assignIdentityByIdentifier"/>
   <status value="draft"/>
   <kind value="operation"/>
-  <date value="2025-06-12"/>
+  <date value="2026-02-05"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>

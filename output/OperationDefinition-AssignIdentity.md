@@ -1,4 +1,4 @@
-# assignIdentity - v2025.2.0
+# assignIdentity - v2026.1.0
 
 
 
@@ -9,12 +9,12 @@
   "resourceType" : "OperationDefinition",
   "id" : "AssignIdentity",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AssignIdentity",
   "title" : "assignIdentity",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2025-06-12",
+  "date" : "2026-02-05",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {

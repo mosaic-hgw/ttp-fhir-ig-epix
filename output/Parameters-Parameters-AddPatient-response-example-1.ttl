@@ -18,18 +18,18 @@
          fhir:meta [
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
            ] )
          ] ;
          fhir:extension ( [
            fhir:extension ( [
              fhir:value [
-               a fhir:string ;
+               a fhir:String ;
                fhir:v "A38"
              ]
            ] [
              fhir:value [
-               a fhir:boolean ;
+               a fhir:Boolean ;
                fhir:v true
              ]
            ] )
@@ -44,7 +44,10 @@
        fhir:name [ fhir:v "matchStatus" ] ;
        fhir:value [
          a fhir:Coding ;
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus"^^xsd:anyURI ;
+           fhir:l <https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus>
+         ] ;
          fhir:code [ fhir:v "MATCH" ]
        ]
      ] [
@@ -56,11 +59,14 @@
            fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"^^xsd:anyURI ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Person>
+             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Person>
            ] )
          ] ;
          fhir:identifier ( [
-           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/epix/identifier/MPI>
+           ] ;
            fhir:value [ fhir:v "1001000000066" ]
          ] ) ;
          fhir:managingOrganization [
@@ -71,12 +77,12 @@
          fhir:active [ fhir:v true ] ;
          fhir:link ( [
            fhir:target [
-             fhir:link <https://ths-greifswald.de/fhir/epix/Patient/52> ;
+             fhir:l <https://ths-greifswald.de/fhir/epix/Patient/52> ;
              fhir:reference [ fhir:v "Patient/52" ]
            ]
          ] [
            fhir:target [
-             fhir:link <https://ths-greifswald.de/fhir/epix/Patient/53> ;
+             fhir:l <https://ths-greifswald.de/fhir/epix/Patient/53> ;
              fhir:reference [ fhir:v "Patient/53" ]
            ] ;
            fhir:assurance [ fhir:v "level4" ]
@@ -90,27 +96,33 @@
          fhir:meta [
            fhir:versionId [ fhir:v "1" ] ;
            fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
-           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
+           fhir:source [
+             fhir:v "dummy_safe_source"^^xsd:anyURI ;
+             fhir:l fhir:dummy_safe_source
+           ] ;
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
            ] )
          ] ;
          fhir:extension ( [
            fhir:extension ( [
              fhir:value [
-               a fhir:string ;
+               a fhir:String ;
                fhir:v "A38"
              ]
            ] [
              fhir:value [
-               a fhir:boolean ;
+               a fhir:Boolean ;
                fhir:v true
              ]
            ] )
          ] ) ;
          fhir:identifier ( [
-           fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ] ;
+           fhir:system [
+             fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ;
+             fhir:l <https://ths-greifswald.de/fhir/epix/identifier/SystemXY>
+           ] ;
            fhir:value [ fhir:v "ABC_12345" ]
          ] ) ;
          fhir:active [ fhir:v true ] ;
@@ -129,10 +141,13 @@
          fhir:meta [
            fhir:versionId [ fhir:v "1" ] ;
            fhir:lastUpdated [ fhir:v "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
-           fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
+           fhir:source [
+             fhir:v "dummy_safe_source"^^xsd:anyURI ;
+             fhir:l fhir:dummy_safe_source
+           ] ;
            fhir:profile ( [
              fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+             fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
            ] )
          ] ;
          fhir:active [ fhir:v true ] ;

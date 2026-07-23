@@ -12,20 +12,23 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MIRACUM"
      ]
   ] [
      fhir:name [ fhir:v "source" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "KlinikumXY"
      ]
   ] [
      fhir:name [ fhir:v "mpiIdentifier" ] ;
      fhir:value [
        a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/epix/identifier/MPI>
+       ] ;
        fhir:value [ fhir:v "1001000000066" ]
      ]
   ] [
@@ -35,7 +38,7 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
          ] )
        ] ;
        fhir:name ( [
@@ -51,7 +54,7 @@
   ] [
      fhir:name [ fhir:v "force" ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v false
      ]
   ] ) . # 

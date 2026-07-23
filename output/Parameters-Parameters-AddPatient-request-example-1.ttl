@@ -12,13 +12,13 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "domain" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "MIRACUM"
      ]
   ] [
      fhir:name [ fhir:v "source" ] ;
      fhir:value [
-       a fhir:string ;
+       a fhir:String ;
        fhir:v "KlinikumXY"
      ]
   ] [
@@ -28,24 +28,27 @@
        fhir:meta [
          fhir:profile ( [
            fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
-           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+           fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
          ] )
        ] ;
        fhir:extension ( [
          fhir:extension ( [
            fhir:value [
-             a fhir:string ;
+             a fhir:String ;
              fhir:v "A38"
            ]
          ] [
            fhir:value [
-             a fhir:boolean ;
+             a fhir:Boolean ;
              fhir:v true
            ]
          ] )
        ] ) ;
        fhir:identifier ( [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ] ;
+         fhir:system [
+           fhir:v "https://ths-greifswald.de/fhir/epix/identifier/SystemXY"^^xsd:anyURI ;
+           fhir:l <https://ths-greifswald.de/fhir/epix/identifier/SystemXY>
+         ] ;
          fhir:value [ fhir:v "ABC_12345" ]
        ] ) ;
        fhir:name ( [
@@ -66,13 +69,16 @@
      fhir:name [ fhir:v "saveAction" ] ;
      fhir:value [
        a fhir:Coding ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction>
+       ] ;
        fhir:code [ fhir:v "SAVE_ALL" ]
      ]
   ] [
      fhir:name [ fhir:v "forceReferenceUpdate" ] ;
      fhir:value [
-       a fhir:boolean ;
+       a fhir:Boolean ;
        fhir:v false
      ]
   ] ) . # 

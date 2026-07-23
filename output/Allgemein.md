@@ -1,2 +1,2 @@
-# Allgemein - v2025.2.0
+# Allgemein - v2026.1.0
 

@@ -1,10 +1,11 @@
 {
   "name": "ttpfhirigepix",
-  "version": "2025.2.0",
+  "version": "2026.1.0",
   "description": "Put a description here",
   "fhirVersions": [
     "4.0.1"
   ],
   "dependencies": {
+    "de.einwilligungsmanagement": "2.0.3"
   }
 }

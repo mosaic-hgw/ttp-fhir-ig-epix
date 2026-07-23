@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.epix</b></p><a name="ths-greifswald.ttp-fhir-gw.epix"> </a><a name="hcths-greifswald.ttp-fhir-gw.epix"> </a><h2>IGTTPFHIRGatewayEPIX</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix"/>
-  <version value="2025.2.0"/>
+  <version value="2026.1.0"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2025-11-25T14:14:02+01:00"/>
+  <date value="2026-07-23T13:22:00+02:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.0"/>
+    <version value="7.2.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -35,12 +35,12 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="de_einwilligungsmanagement">
     <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
     <packageId value="de.einwilligungsmanagement"/>
-    <version value="2.0.2"/>
+    <version value="2.0.3"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -502,253 +502,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/BloomfilterTypeVS"/>
-      </reference>
-      <name value="BloomfilterType"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/BloomfilterTypeCS"/>
-      </reference>
-      <name value="BloomfilterType"/>
-      <description value="Types of Bloomfilters."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentComponentTypeVS"/>
-      </reference>
-      <name value="ConsentComponentType"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentComponentTypeCS"/>
-      </reference>
-      <name value="ConsentComponentType"/>
-      <description value="Typen der für gICS relevanten Consent-Componenten zur Unterscheidung als Suchkriterium"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentPolicyActionVS"/>
-      </reference>
-      <name value="ConsentPolicyAction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentPolicyActionCS"/>
-      </reference>
-      <name value="ConsentPolicyAction"/>
-      <description value="Extensible description of the permissible (data processing-) action resulting from consented module or policy."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentPolicyActorVS"/>
-      </reference>
-      <name value="ConsentPolicyActor"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentPolicyActorCS"/>
-      </reference>
-      <name value="ConsentPolicyActor"/>
-      <description value="Expandable categorisation of consumer/requestor of a consent enforcement request  related to a specific consent component (e.g. policy or module)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentPolicyClassVS"/>
-      </reference>
-      <name value="ConsentPolicyClass"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentPolicyClassCS"/>
-      </reference>
-      <name value="ConsentPolicyClass"/>
-      <description value="Extensible description of the application perspective of a ConsentPolicy (e.g. selected data view 'IDAT')"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentPolicyPurposeVS"/>
-      </reference>
-      <name value="ConsentPolicyPurpose"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentPolicyPurposeCS"/>
-      </reference>
-      <name value="ConsentPolicyPurpose"/>
-      <description value="Expandable specification of the application context and/or scope of a consent policy or module"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusVS"/>
-      </reference>
-      <name value="ConsentStatus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ConsentStatusCS"/>
-      </reference>
-      <name value="ConsentStatus"/>
-      <description value=" consent states are used to depict the participant’s will. Therefore, documentation should allow different status values. Further details from https://doi.org/10.1186/s12967-020-02457-y"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusConsentFullValuesVS"/>
-      </reference>
-      <name value="ConsentStatusConsentFullValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusConsentOptOutFullValuesVS"/>
-      </reference>
-      <name value="ConsentStatusConsentOptOutFullValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusConsentOptOutShortValuesVS"/>
-      </reference>
-      <name value="ConsentStatusConsentOptOutShortValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusConsentShortValuesVS"/>
-      </reference>
-      <name value="ConsentStatusConsentShortValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusObjectionFullValuesVS"/>
-      </reference>
-      <name value="ConsentStatusObjectionFullValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusObjectionShortValuesVS"/>
-      </reference>
-      <name value="ConsentStatusObjectionShortValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusRefusalFullValuesVS"/>
-      </reference>
-      <name value="ConsentStatusRefusalFullValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusRefusalShortValuesVS"/>
-      </reference>
-      <name value="ConsentStatusRefusalShortValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusWithdrawalFullValuesVS"/>
-      </reference>
-      <name value="ConsentStatusWithdrawalFullValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConsentStatusWithdrawalShortValuesVS"/>
-      </reference>
-      <name value="ConsentStatusWithdrawalShortValues"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -756,80 +509,6 @@
       </reference>
       <name value="Custom IDAT Values"/>
       <description value="Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/DesignationUseCS"/>
-      </reference>
-      <name value="DesignationUse"/>
-      <description value="Use codes (contexts) for terminology designations"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/IdatElementsVS"/>
-      </reference>
-      <name value="IdatElements"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/IdatElementsCS"/>
-      </reference>
-      <name value="IdatElements"/>
-      <description value="Element names for use in $requestTasks operation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/IdMatchingTypeVS"/>
-      </reference>
-      <name value="IdMatchingType"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/IdMatchingTypeCS"/>
-      </reference>
-      <name value="IdMatchingType"/>
-      <description value="ID matching types used in consent management"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/MatchStatusVS"/>
-      </reference>
-      <name value="MatchStatus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/MatchStatusCS"/>
-      </reference>
-      <name value="MatchStatus"/>
-      <description value="Possible match statuses in the context of adding patient identities."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1036,37 +715,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PolicyVS"/>
-      </reference>
-      <name value="Policy"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/PolicyCS"/>
-      </reference>
-      <name value="Policy"/>
-      <description value="Policies used in consent management"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/PolicyStatusVS"/>
-      </reference>
-      <name value="PolicyStatus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="OperationDefinition"/>
       </extension>
       <reference>
@@ -1085,27 +733,6 @@
       </reference>
       <name value="removePossibleMatches"/>
       <description value="Entfernt Matches aus einer Domäne."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SaveActionVS"/>
-      </reference>
-      <name value="SaveAction"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SaveActionCS"/>
-      </reference>
-      <name value="SaveAction"/>
-      <description value="Possible save actions in the context of adding patient identities."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1147,10 +774,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="PersonenUndPatienten-Suche.html"/>
+          <valueUrl value="Allgemein.html"/>
         </extension>
-        <nameUrl value="PersonenUndPatienten-Suche.html"/>
-        <title value="Personen- und Patienten-Suche"/>
+        <nameUrl value="Allgemein.html"/>
+        <title value="Allgemein"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1163,10 +790,18 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Allgemein.html"/>
+          <valueUrl value="Suche.html"/>
         </extension>
-        <nameUrl value="Allgemein.html"/>
-        <title value="Allgemein"/>
+        <nameUrl value="Suche.html"/>
+        <title value="Suche nach Personen und Identitäten"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Terminologie.html"/>
+        </extension>
+        <nameUrl value="Terminologie.html"/>
+        <title value="Terminologie"/>
         <generation value="markdown"/>
       </page>
     </page>

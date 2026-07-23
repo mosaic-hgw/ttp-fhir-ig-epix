@@ -9,7 +9,7 @@ name: IG TTP-FHIR Gateway E-PIX
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: active # draft | active | retired | unknown
-version: 2025.2.0
+version: 2026.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2021+
 releaseLabel: ci-build
@@ -24,7 +24,7 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
-  de.einwilligungsmanagement: 2.0.2
+  de.einwilligungsmanagement: 2.0.3
 
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in

@@ -19,4 +19,3 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html)
-* [Rückmeldung](Parameters-Parameters-AssignIdentityByIdentifier-response-example-1.html)
