@@ -1,9 +1,9 @@
-# Implementation Guide E-PIX - v2025.2.0
+# Implementation Guide E-PIX - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Implementation Guide E-PIX**
@@ -12,8 +12,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2025.2.0 |
-| Active as of 2026-06-17 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.1.0 |
+| Active as of 2026-07-23 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
@@ -58,10 +58,10 @@ kontakt-ths (at) med.uni-greifswald.de
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.epix",
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-06-17T10:17:55+00:00",
+  "date" : "2026-07-23T11:31:55+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -97,7 +97,7 @@ kontakt-ths (at) med.uni-greifswald.de
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.2"
+    "version" : "2.0.3"
   }],
   "definition" : {
     "extension" : [{
@@ -658,6 +658,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AddPatient.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AddPatient"
@@ -670,6 +674,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AddPossibleMatch.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AddPossibleMatch"
@@ -682,6 +690,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AssignIdentity.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AssignIdentity"
@@ -694,6 +706,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AssignIdentityByIdentifier.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/AssignIdentityByIdentifier"
@@ -706,6 +722,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationOutcome"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationOutcome-AssignIdentityByIdentifier-example1.html"
       }],
       "reference" : {
         "reference" : "OperationOutcome/AssignIdentityByIdentifier-example1"
@@ -717,6 +737,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-CustomIdatValues.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/CustomIdatValues"
@@ -729,6 +753,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationOutcome"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.html"
       }],
       "reference" : {
         "reference" : "OperationOutcome/OperationOutcome-AssignIdentity-response-example-1"
@@ -740,6 +768,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationOutcome"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.html"
       }],
       "reference" : {
         "reference" : "OperationOutcome/OperationOutcome-RemovePossibleMatches-response-example-1"
@@ -751,6 +783,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPatient-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddPatient-request-example-1"
@@ -762,6 +798,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPatient-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddPatient-response-example-1"
@@ -773,6 +813,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatch-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddPossibleMatch-request-example-1"
@@ -784,6 +828,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatch-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddPossibleMatch-response-example-1"
@@ -795,6 +843,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AssignIdentity-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AssignIdentity-request-example-1"
@@ -806,6 +858,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AssignIdentityByIdentifier-request-example-1"
@@ -817,6 +873,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-QueryPossibleMatches-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-QueryPossibleMatches-request-example-1"
@@ -828,6 +888,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-QueryPossibleMatches-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-QueryPossibleMatches-response-example-1"
@@ -839,6 +903,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-RemovePossibleMatches-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-RemovePossibleMatches-request-example-1"
@@ -850,6 +918,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-SetReferenceIdentity-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-SetReferenceIdentity-request-example-1"
@@ -861,6 +933,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-SetReferenceIdentity-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-SetReferenceIdentity-response-example-1"
@@ -872,6 +948,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-UpdatePatient-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-UpdatePatient-request-example-1"
@@ -883,6 +963,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-UpdatePatient-response-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-UpdatePatient-response-example-1"
@@ -894,6 +978,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Patient.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Patient"
@@ -906,6 +994,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-Patient-example-1.html"
       }],
       "reference" : {
         "reference" : "Patient/Patient-example-1"
@@ -917,6 +1009,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-Patient-example-2.html"
       }],
       "reference" : {
         "reference" : "Patient/Patient-example-2"
@@ -928,6 +1024,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-Person.html"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Person"
@@ -940,6 +1040,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Person"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Person-Person-example-1.html"
       }],
       "reference" : {
         "reference" : "Person/Person-example-1"
@@ -951,6 +1055,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-QueryPossibleMatches.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/QueryPossibleMatches"
@@ -963,6 +1071,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-RemovePossibleMatches.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/RemovePossibleMatches"
@@ -975,6 +1087,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-SetReferenceIdentity.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/SetReferenceIdentity"
@@ -987,6 +1103,10 @@ kontakt-ths (at) med.uni-greifswald.de
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-UpdatePatient.html"
       }],
       "reference" : {
         "reference" : "OperationDefinition/UpdatePatient"

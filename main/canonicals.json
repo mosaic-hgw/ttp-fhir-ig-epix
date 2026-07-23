@@ -2,83 +2,83 @@
   "id" : "AddPatient",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AddPatient"
 },
 {
   "id" : "AddPossibleMatch",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AddPossibleMatch"
 },
 {
   "id" : "AssignIdentity",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AssignIdentity"
 },
 {
   "id" : "AssignIdentityByIdentifier",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "AssignIdentityByIdentifier"
 },
 {
   "id" : "QueryPossibleMatches",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "QueryPossibleMatches"
 },
 {
   "id" : "RemovePossibleMatches",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "RemovePossibleMatches"
 },
 {
   "id" : "SetReferenceIdentity",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "SetReferenceIdentity"
 },
 {
   "id" : "UpdatePatient",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "UpdatePatient"
 },
 {
   "id" : "CustomIdatValues",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "CustomIdatValues"
 },
 {
   "id" : "Patient",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Patient"
 },
 {
   "id" : "Person",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Person"
 },
 {
   "id" : "ths-greifswald.ttp-fhir-gw.epix",
   "type" : "ImplementationGuide",
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX"
 }]

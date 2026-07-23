@@ -1,9 +1,9 @@
-# Patient - v2025.2.0
+# Patient - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient | *Version*:2026.1.0 |
 | Active as of 2026-02-05 | *Computable Name*:Patient |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-Patient.csv), [Excel
   "resourceType" : "StructureDefinition",
   "id" : "Patient",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Patient",
   "title" : "Patient",
   "status" : "active",

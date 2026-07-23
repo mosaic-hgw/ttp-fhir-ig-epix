@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,27 +7,28 @@
 
 <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AssignIdentity-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Parameters-AssignIdentity-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "comment" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."
-     ]
-  ] [
-     fhir:name [ fhir:v "linkId" ] ;
-     fhir:value [
-       a fhir:integer ;
-       fhir:v 5654986
-     ]
-  ] [
-     fhir:name [ fhir:v "identityReference" ] ;
-     fhir:value [
-       a fhir:Reference ;
+  fhir:Resource.id [ fhir:value "Parameters-AssignIdentity-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist." ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "5654986"^^xsd:integer ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "identityReference" ] ;
+     fhir:Parameters.parameter.valueReference [
        fhir:link <https://ths-greifswald.de/fhir/epix/Patient/52> ;
-       fhir:reference [ fhir:v "Patient/52" ]
+       fhir:Reference.reference [ fhir:value "Patient/52" ]
      ]
-  ] ) . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AssignIdentity-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.epix</b></p><a name="ths-greifswald.ttp-fhir-gw.epix"> </a><a name="hcths-greifswald.ttp-fhir-gw.epix"> </a><h2>IGTTPFHIRGatewayEPIX</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix"/>
-  <version value="2025.2.0"/>
+  <version value="2026.1.0"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-06-17T10:17:55+00:00"/>
+  <date value="2026-07-23T11:31:55+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -40,7 +40,7 @@
   <dependsOn id="de_einwilligungsmanagement">
     <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
     <packageId value="de.einwilligungsmanagement"/>
-    <version value="2.0.2"/>
+    <version value="2.0.3"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

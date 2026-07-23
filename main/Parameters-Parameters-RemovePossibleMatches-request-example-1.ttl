@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,27 +7,26 @@
 
 <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-RemovePossibleMatches-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Parameters-RemovePossibleMatches-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "domain" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "MIRACUM"
-     ] ;
-     fhir:part ( [
-       fhir:name [ fhir:v "comment" ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Dieser Match war völliger Unsinn!"
-       ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "linkId" ] ;
-     fhir:value [
-       a fhir:integer ;
-       fhir:v 5654986
+  fhir:Resource.id [ fhir:value "Parameters-RemovePossibleMatches-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MIRACUM" ] ;
+     fhir:Parameters.parameter.part [
+       fhir:index 0 ;
+       fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
+       fhir:Parameters.parameter.valueString [ fhir:value "Dieser Match war völliger Unsinn!" ]
      ]
-  ] ) . # 
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "5654986"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-RemovePossibleMatches-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

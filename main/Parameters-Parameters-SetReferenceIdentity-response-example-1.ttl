@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,87 +7,109 @@
 
 <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-SetReferenceIdentity-response-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Parameters-SetReferenceIdentity-response-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "mpiPerson" ] ;
-     fhir:Parameters.parameter.resource ( [
+  fhir:Resource.id [ fhir:value "Parameters-SetReferenceIdentity-response-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "mpiPerson" ] ;
+     fhir:Parameters.parameter.resource [
        a fhir:Person ;
-       fhir:id [ fhir:v "52" ] ;
-       fhir:meta [
-         fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
-         fhir:profile ( [
-           fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person"^^xsd:anyURI ;
+       fhir:Resource.id [ fhir:value "52" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.lastUpdated [ fhir:value "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person" ;
+           fhir:index 0 ;
            fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Person>
-         ] )
-       ] ;
-       fhir:identifier ( [
-         fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "1001000000066" ]
-       ] ) ;
-       fhir:managingOrganization [
-         fhir:identifier [
-           fhir:value [ fhir:v "MIRACUM" ]
          ]
        ] ;
-       fhir:active [ fhir:v true ] ;
-       fhir:link ( [
-         fhir:target [
+       fhir:Person.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+         fhir:Identifier.value [ fhir:value "1001000000066" ]
+       ] ;
+       fhir:Person.managingOrganization [
+         fhir:Reference.identifier [
+           fhir:Identifier.value [ fhir:value "MIRACUM" ]
+         ]
+       ] ;
+       fhir:Person.active [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:Person.link [
+         fhir:index 0 ;
+         fhir:Person.link.target [
            fhir:link <https://ths-greifswald.de/fhir/epix/Patient/52> ;
-           fhir:reference [ fhir:v "Patient/52" ]
+           fhir:Reference.reference [ fhir:value "Patient/52" ]
          ]
-       ] [
-         fhir:target [
+       ], [
+         fhir:index 1 ;
+         fhir:Person.link.target [
            fhir:link <https://ths-greifswald.de/fhir/epix/Patient/53> ;
-           fhir:reference [ fhir:v "Patient/53" ]
+           fhir:Reference.reference [ fhir:value "Patient/53" ]
          ] ;
-         fhir:assurance [ fhir:v "level4" ]
-       ] )
-     ] )
-  ] [
-     fhir:name [ fhir:v "identity" ] ;
-     fhir:Parameters.parameter.resource ( [
+         fhir:Person.link.assurance [ fhir:value "level4" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "identity" ] ;
+     fhir:Parameters.parameter.resource [
        a fhir:Patient ;
-       fhir:id [ fhir:v "52" ] ;
-       fhir:meta [
-         fhir:versionId [ fhir:v "1" ] ;
-         fhir:lastUpdated [ fhir:v "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
-         fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
-         fhir:profile ( [
-           fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+       fhir:Resource.id [ fhir:value "52" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "1" ] ;
+         fhir:Meta.lastUpdated [ fhir:value "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
+         fhir:Meta.source [ fhir:value "dummy_safe_source" ] ;
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
+           fhir:index 0 ;
            fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
-         ] )
+         ]
        ] ;
-       fhir:active [ fhir:v true ] ;
-       fhir:name ( [
-         fhir:family [ fhir:v "xxxxx" ] ;
-         fhir:given ( [ fhir:v "Stefanie" ] )
-       ] ) ;
-       fhir:gender [ fhir:v "male" ] ;
-       fhir:birthDate [ fhir:v "1962-12-17"^^xsd:date ]
-     ] )
-  ] [
-     fhir:name [ fhir:v "identity" ] ;
-     fhir:Parameters.parameter.resource ( [
+       fhir:Patient.active [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "xxxxx" ] ;
+         fhir:HumanName.given [
+           fhir:value "Stefanie" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1962-12-17"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "identity" ] ;
+     fhir:Parameters.parameter.resource [
        a fhir:Patient ;
-       fhir:id [ fhir:v "53" ] ;
-       fhir:meta [
-         fhir:versionId [ fhir:v "1" ] ;
-         fhir:lastUpdated [ fhir:v "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
-         fhir:source [ fhir:v "dummy_safe_source"^^xsd:anyURI ] ;
-         fhir:profile ( [
-           fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+       fhir:Resource.id [ fhir:value "53" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.versionId [ fhir:value "1" ] ;
+         fhir:Meta.lastUpdated [ fhir:value "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
+         fhir:Meta.source [ fhir:value "dummy_safe_source" ] ;
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
+           fhir:index 0 ;
            fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
-         ] )
+         ]
        ] ;
-       fhir:active [ fhir:v true ] ;
-       fhir:name ( [
-         fhir:family [ fhir:v "xxxxx" ] ;
-         fhir:given ( [ fhir:v "Stefanie" ] )
-       ] ) ;
-       fhir:gender [ fhir:v "male" ] ;
-       fhir:birthDate [ fhir:v "1962-12-16"^^xsd:date ]
-     ] )
-  ] ) . # 
+       fhir:Patient.active [ fhir:value "true"^^xsd:boolean ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "xxxxx" ] ;
+         fhir:HumanName.given [
+           fhir:value "Stefanie" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1962-12-16"^^xsd:date ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-SetReferenceIdentity-response-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 {
   "package": "ths-greifswald.ttp-fhir-gw.epix",
-  "version": "2025.2.0",
+  "version": "2026.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

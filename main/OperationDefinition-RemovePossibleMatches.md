@@ -1,9 +1,9 @@
-# removePossibleMatches - v2025.2.0
+# removePossibleMatches - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches | *Version*:2026.1.0 |
 | Draft as of 2026-02-05 | *Computable Name*:RemovePossibleMatches |
 
  
@@ -49,7 +49,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-RemovePossibleMatches-request-example-1.md)
-* [Rückmeldung](Parameters-Parameters-RemovePossibleMatches-response-example-1.md)
+* [Rückmeldung](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md)
 
 
 
@@ -60,7 +60,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "resourceType" : "OperationDefinition",
   "id" : "RemovePossibleMatches",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "RemovePossibleMatches",
   "title" : "removePossibleMatches",
   "status" : "draft",

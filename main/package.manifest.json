@@ -1,6 +1,6 @@
 {
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260617101755",
+  "date" : "20260723113155",
   "name" : "ths-greifswald.ttp-fhir-gw.epix"
 }

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,27 +7,28 @@
 
 <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-SetReferenceIdentity-request-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "Parameters-SetReferenceIdentity-request-example-1"] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "comment" ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "aufgrund neuerer Informationen"
+  fhir:Resource.id [ fhir:value "Parameters-SetReferenceIdentity-request-example-1"] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "aufgrund neuerer Informationen" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "mpiId" ] ;
+     fhir:Parameters.parameter.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+       fhir:Identifier.value [ fhir:value "1001000000066" ]
      ]
-  ] [
-     fhir:name [ fhir:v "mpiId" ] ;
-     fhir:value [
-       a fhir:Identifier ;
-       fhir:system [ fhir:v "https://ths-greifswald.de/fhir/epix/identifier/MPI"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "1001000000066" ]
-     ]
-  ] [
-     fhir:name [ fhir:v "identityReference" ] ;
-     fhir:value [
-       a fhir:id ;
-       fhir:v "53"
-     ]
-  ] ) . # 
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "identityReference" ] ;
+     fhir:Parameters.parameter.valueId [ fhir:value "53" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Parameters/Parameters-SetReferenceIdentity-request-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

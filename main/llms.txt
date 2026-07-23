@@ -1,13 +1,13 @@
-# ths-greifswald.ttp-fhir-gw.epix#2025.2.0: null
+# ths-greifswald.ttp-fhir-gw.epix#2026.1.0: null
 
 ## Pages
 
 * [Implementation Guide E-PIX](index.md)
-* [Terminologie](Terminologie.md)
 * [Allgemein](Allgemein.md)
-* [Artifacts Summary](artifacts.md)
-* [Suche nach Personen und Identitäten](Suche.md)
 * [Extensions](Extensions.md)
+* [Terminologie](Terminologie.md)
+* [Suche nach Personen und Identitäten](Suche.md)
+* [Artifacts Summary](artifacts.md)
 
 ## Resources
 

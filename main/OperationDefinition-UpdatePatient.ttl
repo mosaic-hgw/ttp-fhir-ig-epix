@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,96 +7,111 @@
 
 <https://ths-greifswald.de/fhir/epix/OperationDefinition/UpdatePatient> a fhir:OperationDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "UpdatePatient"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition UpdatePatient</b></p><a name=\"UpdatePatient\"> </a><a name=\"hcUpdatePatient\"> </a><p>URL: [base]/$updatePatient</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matchingdomain</p>\n</div></td></tr><tr><td>IN</td><td>source</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Datenquelle</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>\n</div></td></tr><tr><td>IN</td><td>identity</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu der Patienten-Identität)</p>\n</div></td></tr><tr><td>IN</td><td>force</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>matchStatus</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td>https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>\n</div></td></tr><tr><td>OUT</td><td>mpiPerson</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/person.html\">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>\n</div></td></tr><tr><td>OUT</td><td>identity</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>\n</div></td></tr></table><div><p>Aktualisiert Patienten-Identitäten eines MPI-Eintrags.</p>\n</div></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:url [ fhir:v "https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2025.2.0"] ; # 
-  fhir:name [ fhir:v "UpdatePatient"] ; # 
-  fhir:title [ fhir:v "updatePatient"] ; # 
-  fhir:status [ fhir:v "active"] ; # 
-  fhir:kind [ fhir:v "operation"] ; # 
-  fhir:date [ fhir:v "2026-02-05"^^xsd:date] ; # 
-  fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.ths-greifswald.de/" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Aktualisiert Patienten-Identitäten eines MPI-Eintrags."] ; # 
-  fhir:affectsState [ fhir:v true] ; # 
-  fhir:code [ fhir:v "updatePatient"] ; # 
-  fhir:comment [ fhir:v "Aktualisiert Patienten-Identitäten eines MPI-Eintrags."] ; # 
-  fhir:system [ fhir:v true] ; # 
-  fhir:type [ fhir:v false] ; # 
-  fhir:instance [ fhir:v false] ; # 
-  fhir:parameter ( [
-     fhir:name [ fhir:v "domain" ] ;
-     fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Angabe der Matchingdomain" ] ;
-     fhir:type [ fhir:v "string" ]
-  ] [
-     fhir:name [ fhir:v "source" ] ;
-     fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Datenquelle" ] ;
-     fhir:type [ fhir:v "string" ]
-  ] [
-     fhir:name [ fhir:v "mpiIdentifier" ] ;
-     fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Identifikator des MPI-Eintrags (MPI-ID)" ] ;
-     fhir:type [ fhir:v "Identifier" ]
-  ] [
-     fhir:name [ fhir:v "identity" ] ;
-     fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Patient-Ressource (analog zu der Patienten-Identität)" ] ;
-     fhir:type [ fhir:v "Patient" ]
-  ] [
-     fhir:name [ fhir:v "force" ] ;
-     fhir:use [ fhir:v "in" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:type [ fhir:v "boolean" ]
-  ] [
-     fhir:name [ fhir:v "matchStatus" ] ;
-     fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v 1 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Match-Status aus dem Matching der übermittelten Patienten-Identität" ] ;
-     fhir:type [ fhir:v "Coding" ] ;
-     fhir:binding [
-       fhir:strength [ fhir:v "required" ] ;
-       fhir:valueSet [
-         fhir:v "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus"^^xsd:anyURI ;
+  fhir:Resource.id [ fhir:value "UpdatePatient"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition UpdatePatient</b></p><a name=\"UpdatePatient\"> </a><a name=\"hcUpdatePatient\"> </a><p>URL: [base]/$updatePatient</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matchingdomain</p>\n</div></td></tr><tr><td>IN</td><td>source</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Datenquelle</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>\n</div></td></tr><tr><td>IN</td><td>identity</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu der Patienten-Identität)</p>\n</div></td></tr><tr><td>IN</td><td>force</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td/></tr><tr><td>OUT</td><td>matchStatus</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td>https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus (Required)</td><td><div><p>Match-Status aus dem Matching der übermittelten Patienten-Identität</p>\n</div></td></tr><tr><td>OUT</td><td>mpiPerson</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/person.html\">Person</a></td><td/><td><div><p>Person-Ressource, die den MPI-Eintrag repräsentiert.</p>\n</div></td></tr><tr><td>OUT</td><td>identity</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource).</p>\n</div></td></tr></table><div><p>Aktualisiert Patienten-Identitäten eines MPI-Eintrags.</p>\n</div></div>"
+  ] ;
+  fhir:OperationDefinition.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient"] ;
+  fhir:OperationDefinition.version [ fhir:value "2026.1.0"] ;
+  fhir:OperationDefinition.name [ fhir:value "UpdatePatient"] ;
+  fhir:OperationDefinition.title [ fhir:value "updatePatient"] ;
+  fhir:OperationDefinition.status [ fhir:value "active"] ;
+  fhir:OperationDefinition.kind [ fhir:value "operation"] ;
+  fhir:OperationDefinition.date [ fhir:value "2026-02-05"^^xsd:date] ;
+  fhir:OperationDefinition.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:OperationDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
+     ]
+  ] ;
+  fhir:OperationDefinition.description [ fhir:value "Aktualisiert Patienten-Identitäten eines MPI-Eintrags."] ;
+  fhir:OperationDefinition.affectsState [ fhir:value "true"^^xsd:boolean] ;
+  fhir:OperationDefinition.code [ fhir:value "updatePatient"] ;
+  fhir:OperationDefinition.comment [ fhir:value "Aktualisiert Patienten-Identitäten eines MPI-Eintrags."] ;
+  fhir:OperationDefinition.system [ fhir:value "true"^^xsd:boolean] ;
+  fhir:OperationDefinition.type [ fhir:value "false"^^xsd:boolean] ;
+  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean] ;
+  fhir:OperationDefinition.parameter [
+     fhir:index 0 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "domain" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Angabe der Matchingdomain" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "source" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Datenquelle" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+  ], [
+     fhir:index 2 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "mpiIdentifier" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Identifikator des MPI-Eintrags (MPI-ID)" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Identifier" ]
+  ], [
+     fhir:index 3 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "identity" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Patient-Ressource (analog zu der Patienten-Identität)" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Patient" ]
+  ], [
+     fhir:index 4 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "force" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "boolean" ]
+  ], [
+     fhir:index 5 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "matchStatus" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Match-Status aus dem Matching der übermittelten Patienten-Identität" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Coding" ] ;
+     fhir:OperationDefinition.parameter.binding [
+       fhir:OperationDefinition.parameter.binding.strength [ fhir:value "required" ] ;
+       fhir:OperationDefinition.parameter.binding.valueSet [
+         fhir:value "https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus" ;
          fhir:link <https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus>
        ]
      ]
-  ] [
-     fhir:name [ fhir:v "mpiPerson" ] ;
-     fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v 0 ] ;
-     fhir:max [ fhir:v "1" ] ;
-     fhir:documentation [ fhir:v "Person-Ressource, die den MPI-Eintrag repräsentiert." ] ;
-     fhir:type [ fhir:v "Person" ]
-  ] [
-     fhir:name [ fhir:v "identity" ] ;
-     fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v 0 ] ;
-     fhir:max [ fhir:v "*" ] ;
-     fhir:documentation [ fhir:v "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource)." ] ;
-     fhir:type [ fhir:v "Patient" ]
-  ] ) . # 
+  ], [
+     fhir:index 6 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "mpiPerson" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Person-Ressource, die den MPI-Eintrag repräsentiert." ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Person" ]
+  ], [
+     fhir:index 7 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "identity" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "*" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Patient-Ressource (analog zu Patienten-Identität, referenziert aus dem MPI-Index der Personen-Ressource)." ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/OperationDefinition/UpdatePatient.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

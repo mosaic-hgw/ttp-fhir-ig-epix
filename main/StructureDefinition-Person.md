@@ -1,9 +1,9 @@
-# Person - v2025.2.0
+# Person - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2025.2.0 - ci-build  
+ 2026.1.0 - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Person | *Version*:2025.2.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Person | *Version*:2026.1.0 |
 | Active as of 2026-02-05 | *Computable Name*:Person |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-Person.csv), [Excel]
   "resourceType" : "StructureDefinition",
   "id" : "Person",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person",
-  "version" : "2025.2.0",
+  "version" : "2026.1.0",
   "name" : "Person",
   "title" : "Person",
   "status" : "active",
