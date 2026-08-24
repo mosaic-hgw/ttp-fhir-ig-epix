@@ -10,17 +10,21 @@
   fhir:Resource.id [ fhir:value "Parameters-AssignIdentityByIdentifier-request-example-1"] ;
   fhir:Parameters.parameter [
      fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MIRACUM" ]
+  ], [
+     fhir:index 1 ;
      fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
      fhir:Parameters.parameter.valueString [ fhir:value "Korrektur nach manueller Begutachtung." ]
   ], [
-     fhir:index 1 ;
+     fhir:index 2 ;
      fhir:Parameters.parameter.name [ fhir:value "identityIdentifier" ] ;
      fhir:Parameters.parameter.valueIdentifier [
-       fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/identity" ] ;
-       fhir:Identifier.value [ fhir:value "10010000006546" ]
+       fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+       fhir:Identifier.value [ fhir:value "1001000000011" ]
      ]
   ], [
-     fhir:index 2 ;
+     fhir:index 3 ;
      fhir:Parameters.parameter.name [ fhir:value "mpiIdentifier" ] ;
      fhir:Parameters.parameter.valueIdentifier [
        fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;

@@ -269,7 +269,7 @@
 
 <div style="display:inline-block" markdown="1">
 
-<p><strong>Konzeptarbeit. Noch nicht implementiert</strong></p>
+<p><strong>ab Version 2026.2.0</strong></p>
 
 <h2 id="zweck">Zweck</h2>
 <p>Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Suchkriterium für die Identität ist ein Identifier.</p>
@@ -288,10 +288,10 @@
 
 
   <div data-fhir="generated"><p class="res-header-id"/><a name="AssignIdentityByIdentifier"> </a><a name="hcAssignIdentityByIdentifier"> </a><p>URL: [base]/$assignIdentityByIdentifier</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domäne</p>
+</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Anmerkung zum Änderungsvorgang</p>
 </div></td></tr><tr><td>IN</td><td>identityIdentifier</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Identifier der zu verschiebenden Identität (Patient-Ressource).</p>
 </div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Identifikator des MPI-Eintrags (MPI-ID)</p>
-</div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Anmerkung zum Änderungsvorgang</p>
-</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Merge-Vorgang.</p>
+</div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Assign-Vorgang.</p>
 </div></td></tr></table></div>
 
   <!-- insert notes if present -->
@@ -326,6 +326,7 @@
 
 <ul>
   <li><a href="Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html">Request-Body</a></li>
+  <li><a href="OperationOutcome-AssignIdentityByIdentifier-response-example1.html">Rückmeldung</a></li>
 </ul>
 
 
@@ -352,7 +353,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 23, 2026 11:31+0000">2026-07-23</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 24, 2026 11:16+0000">2026-08-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

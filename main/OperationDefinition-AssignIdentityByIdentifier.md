@@ -19,7 +19,7 @@
  
 Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. 
 
-**Konzeptarbeit. Noch nicht implementiert**
+**ab Version 2026.2.0**
 
 ## Zweck
 
@@ -49,6 +49,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md)
+* [Rückmeldung](OperationOutcome-AssignIdentityByIdentifier-response-example1.md)
 
 
 
@@ -88,6 +89,14 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "type" : "string"
   },
   {
+    "name" : "comment",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Anmerkung zum Änderungsvorgang",
+    "type" : "string"
+  },
+  {
     "name" : "identityIdentifier",
     "use" : "in",
     "min" : 1,
@@ -104,19 +113,11 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "type" : "Identifier"
   },
   {
-    "name" : "comment",
-    "use" : "in",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Anmerkung zum Änderungsvorgang",
-    "type" : "string"
-  },
-  {
     "name" : "return",
     "use" : "out",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Rückinformation zum Merge-Vorgang.",
+    "documentation" : "Rückinformation zum Assign-Vorgang.",
     "type" : "OperationOutcome"
   }]
 }

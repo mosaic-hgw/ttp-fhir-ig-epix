@@ -23,7 +23,7 @@ Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI 
 **Usages:**
 
 * Refer to this Profile: [Person](StructureDefinition-Person.md)
-* Examples for this Profile: [Patient/Patient-example-2](Patient-Patient-example-2.md)
+* Examples for this Profile: [Patient/Patient-example-1](Patient-Patient-example-1.md) and [Patient/Patient-example-2](Patient-Patient-example-2.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.epix|current/StructureDefinition/StructureDefinition-Patient.json)
 

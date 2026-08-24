@@ -5,9 +5,9 @@
 * [Implementation Guide E-PIX](index.md)
 * [Allgemein](Allgemein.md)
 * [Extensions](Extensions.md)
+* [Artifacts Summary](artifacts.md)
 * [Terminologie](Terminologie.md)
 * [Suche nach Personen und Identitäten](Suche.md)
-* [Artifacts Summary](artifacts.md)
 
 ## Resources
 
@@ -37,7 +37,7 @@
 
 ### Examples
 
-* [AssignIdentityByIdentifier-example1 (OperationOutcome)](OperationOutcome-AssignIdentityByIdentifier-example1.md)
+* [AssignIdentityByIdentifier-response-example1 (OperationOutcome)](OperationOutcome-AssignIdentityByIdentifier-response-example1.md)
 * [OperationOutcome-AssignIdentity-response-example-1 (OperationOutcome)](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md)
 * [OperationOutcome-RemovePossibleMatches-response-example-1 (OperationOutcome)](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md)
 * [Parameters-AddPatient-request-example-1 (Parameters)](Parameters-Parameters-AddPatient-request-example-1.md)

@@ -13,7 +13,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.1.0 |
-| Active as of 2026-07-23 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| Active as of 2026-08-24 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-07-23T11:31:55+00:00",
+  "date" : "2026-08-24T11:16:00+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -81,7 +81,7 @@ kontakt-ths (at) med.uni-greifswald.de
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -119,6 +119,17 @@ kontakt-ths (at) med.uni-greifswald.de
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "snapshot"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -398,6 +409,17 @@ kontakt-ths (at) med.uni-greifswald.de
       {
         "url" : "value",
         "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "snapshot"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -725,12 +747,12 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "OperationOutcome-AssignIdentityByIdentifier-example1.html"
+        "valueUri" : "OperationOutcome-AssignIdentityByIdentifier-response-example1.html"
       }],
       "reference" : {
-        "reference" : "OperationOutcome/AssignIdentityByIdentifier-example1"
+        "reference" : "OperationOutcome/AssignIdentityByIdentifier-response-example1"
       },
-      "name" : "AssignIdentityByIdentifier-example1",
+      "name" : "AssignIdentityByIdentifier-response-example1",
       "exampleBoolean" : true
     },
     {
@@ -1003,7 +1025,7 @@ kontakt-ths (at) med.uni-greifswald.de
         "reference" : "Patient/Patient-example-1"
       },
       "name" : "Patient-example-1",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
     },
     {
       "extension" : [{

@@ -50,7 +50,7 @@ These are example instances that show what data produced and consumed by systems
 
 | |
 | :--- |
-| [AssignIdentityByIdentifier-example1](OperationOutcome-AssignIdentityByIdentifier-example1.md) |
+| [AssignIdentityByIdentifier-response-example1](OperationOutcome-AssignIdentityByIdentifier-response-example1.md) |
 | [OperationOutcome-AssignIdentity-response-example-1](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md) |
 | [OperationOutcome-RemovePossibleMatches-response-example-1](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md) |
 | [Parameters-AddPatient-request-example-1](Parameters-Parameters-AddPatient-request-example-1.md) |

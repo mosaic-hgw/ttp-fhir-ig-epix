@@ -9,7 +9,7 @@
   <version value="2026.1.0"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-07-23T11:31:55+00:00"/>
+  <date value="2026-08-24T11:16:00+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -27,7 +27,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.2.0"/>
+    <version value="7.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -57,6 +57,14 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="snapshot"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -260,6 +268,14 @@
       </extension>
       <extension url="value">
         <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="snapshot"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -495,9 +511,9 @@
         <valueString value="OperationOutcome"/>
       </extension>
       <reference>
-        <reference value="OperationOutcome/AssignIdentityByIdentifier-example1"/>
+        <reference value="OperationOutcome/AssignIdentityByIdentifier-response-example1"/>
       </reference>
-      <name value="AssignIdentityByIdentifier-example1"/>
+      <name value="AssignIdentityByIdentifier-response-example1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -680,7 +696,7 @@
         <reference value="Patient/Patient-example-1"/>
       </reference>
       <name value="Patient-example-1"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

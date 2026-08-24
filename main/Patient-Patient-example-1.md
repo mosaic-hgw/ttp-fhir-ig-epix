@@ -13,7 +13,7 @@
 
 Last updated: 2021-05-19 17:50:23+0200
 
-Profile: [Consent Management: Patient](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient)
+Profiles: [Patient](StructureDefinition-Patient.md), [Consent Management: Patient](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Patient)
 
 Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: dic_1H51T)
 
@@ -29,7 +29,8 @@ Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: dic_1H
   "id" : "Patient-example-1",
   "meta" : {
     "lastUpdated" : "2021-05-19T17:50:23.000+02:00",
-    "profile" : ["http://fhir.de/ConsentManagement/StructureDefinition/Patient"]
+    "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
+    "http://fhir.de/ConsentManagement/StructureDefinition/Patient"]
   },
   "identifier" : [{
     "type" : {
