@@ -169,7 +169,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifierR2",
-      "version" : "4.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "EntityNamePartQualifierR2",
       "title" : "EntityNamePartQualifierR2",
@@ -181,7 +181,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "4.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "MaritalStatus",
       "title" : "MaritalStatus",

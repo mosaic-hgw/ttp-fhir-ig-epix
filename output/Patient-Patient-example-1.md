@@ -11,6 +11,7 @@
   "meta" : {
     "lastUpdated" : "2021-05-19T17:50:23.000+02:00",
     "profile" : [
+      "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
       "http://fhir.de/ConsentManagement/StructureDefinition/Patient"
     ]
   },

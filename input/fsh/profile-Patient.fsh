@@ -108,7 +108,7 @@ Description: "Patienten-Identität (Variante/Schreibweise) einer realen Person (
 
 
 Instance: Patient-example-1
-InstanceOf: $prEinwPatient
+InstanceOf: Patient
 Usage: #example
 * meta.lastUpdated = "2021-05-19T17:50:23.000+02:00"
 * meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Patient"

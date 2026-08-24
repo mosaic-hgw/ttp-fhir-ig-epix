@@ -6,6 +6,6 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.einwilligungsmanagement": "2.0.3"
+    "de.einwilligungsmanagement": "latest"
   }
 }

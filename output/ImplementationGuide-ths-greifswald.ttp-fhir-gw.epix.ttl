@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "2026.1.0"] ; # 
   fhir:name [ fhir:v "IGTTPFHIRGatewayEPIX"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2026-07-23T13:22:00+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-08-24T13:07:26+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
@@ -49,7 +49,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.2.0" ]
+     fhir:version [ fhir:v "7.3.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -120,6 +120,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "snapshot"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
          ]
        ] ) ;
        fhir:url [
@@ -729,6 +753,30 @@
          fhir:value [
            a fhir:String ;
            fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "snapshot"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "value"^^xsd:anyURI ;
+           fhir:l fhir:value
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "true"
          ]
        ] ) ;
        fhir:url [
@@ -1384,10 +1432,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://ths-greifswald.de/fhir/epix/OperationOutcome/AssignIdentityByIdentifier-example1> ;
-         fhir:reference [ fhir:v "OperationOutcome/AssignIdentityByIdentifier-example1" ]
+         fhir:l <https://ths-greifswald.de/fhir/epix/OperationOutcome/AssignIdentityByIdentifier-response-example1> ;
+         fhir:reference [ fhir:v "OperationOutcome/AssignIdentityByIdentifier-response-example1" ]
        ] ;
-       fhir:name [ fhir:v "AssignIdentityByIdentifier-example1" ] ;
+       fhir:name [ fhir:v "AssignIdentityByIdentifier-response-example1" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
@@ -1751,8 +1799,9 @@
        ] ;
        fhir:name [ fhir:v "Patient-example-1" ] ;
        fhir:example [
-         a fhir:Boolean ;
-         fhir:v true
+         a fhir:Canonical ;
+         fhir:v "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"^^xsd:anyURI ;
+         fhir:l <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
        ]
      ] [
        fhir:extension ( [

@@ -12,7 +12,7 @@
   "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-07-23T13:22:00+02:00",
+  "date" : "2026-08-24T13:07:26+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [
     {
@@ -39,7 +39,7 @@
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.2.0"
+      "version" : "7.3.0"
     },
     {
       "id" : "hl7ext",
@@ -84,6 +84,19 @@
           {
             "url" : "value",
             "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "snapshot"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -413,6 +426,19 @@
           {
             "url" : "value",
             "valueString" : "ci-build"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "snapshot"
+          },
+          {
+            "url" : "value",
+            "valueString" : "true"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -782,9 +808,9 @@
           }
         ],
         "reference" : {
-          "reference" : "OperationOutcome/AssignIdentityByIdentifier-example1"
+          "reference" : "OperationOutcome/AssignIdentityByIdentifier-response-example1"
         },
-        "name" : "AssignIdentityByIdentifier-example1",
+        "name" : "AssignIdentityByIdentifier-response-example1",
         "exampleBoolean" : true
       },
       {
@@ -1021,7 +1047,7 @@
           "reference" : "Patient/Patient-example-1"
         },
         "name" : "Patient-example-1",
-        "exampleBoolean" : true
+        "exampleCanonical" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
       },
       {
         "extension" : [

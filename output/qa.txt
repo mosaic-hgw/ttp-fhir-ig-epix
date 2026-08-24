@@ -1,11 +1,11 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 49, warn = 71, info = 38
-IG Publisher Version: 2.0.26 Out of date - current version is 2.2.11
-Generated Thu Jul 23 13:27:21 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
+err = 53, warn = 72, info = 38
+IG Publisher Version: 2.0.26 Out of date - current version is 2.3.2
+Generated Mon Aug 24 13:09:21 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 1 / 23 / 0
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 0 / 2 / 1
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPatient : 2 / 2 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPossibleMatch : 2 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AssignIdentity : 2 / 0 / 1
@@ -14,7 +14,7 @@ Generated Thu Jul 23 13:27:21 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-RemovePossibleMatches : 2 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-SetReferenceIdentity : 2 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-UpdatePatient : 2 / 1 / 1
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationOutcome-AssignIdentityByIdentifier-example1 : 0 / 0 / 1
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationOutcome-AssignIdentityByIdentifier-response-example1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationOutcome-OperationOutcome-AssignIdentity-response-example-1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AddPatient-request-example-1 : 6 / 2 / 5
@@ -30,7 +30,7 @@ Generated Thu Jul 23 13:27:21 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-response-example-1 : 0 / 4 / 9
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-UpdatePatient-request-example-1 : 0 / 2 / 3
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-UpdatePatient-response-example-1 : 0 / 4 / 10
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Patient-Patient-example-1 : 0 / 1 / 1
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Patient-Patient-example-1 : 0 / 1 / 4
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Patient-Patient-example-2 : 4 / 1 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Person-Person-example-1 : 2 / 1 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-CustomIdatValues : 2 / 0 / 1
@@ -38,7 +38,7 @@ Generated Thu Jul 23 13:27:21 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Person : 2 / 3 / 9
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/AssignIdentityByIdentifier-example1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/AssignIdentityByIdentifier-response-example1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/OperationOutcome-AssignIdentity-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/OperationOutcome-RemovePossibleMatches-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPatient-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -63,7 +63,12 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix.json ==
+WARNING: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix: Unknown Parameters: [snapshot=true]
 WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement' kann nicht aufgelöst werden
+ERROR: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): !!!!!!!!!!!!!!Die System-URI konnte für den Code snapshot im ValueSet http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0 nicht ermittelt werden
+ERROR: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.definition.extension[2].extension[0].value.ofType(string): Der angegebene Wert ('snapshot') ist nicht im ValueSet 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0), und ein Code aus diesem Valueset ist erforderlich) (error message = !!!!!!!!!!!!!!Die System-URI konnte für den Code snapshot im ValueSet http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0 nicht ermittelt werden; Der angegebene Code '#snapshot' befindet sich nicht im ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0')
+ERROR: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.definition.extension[29].extension[0].value.ofType(code): !!!!!!!!!!!!!!Die System-URI konnte für den Code snapshot im ValueSet http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0 nicht ermittelt werden
+ERROR: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.definition.extension[29].extension[0].value.ofType(code): Der angegebene Wert ('snapshot') ist nicht im ValueSet 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0), und ein Code aus diesem Valueset ist erforderlich) (error message = !!!!!!!!!!!!!!Die System-URI konnte für den Code snapshot im ValueSet http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0 nicht ermittelt werden; Der angegebene Code '#snapshot' befindet sich nicht im ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.8.0')
 WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.dependsOn[2]: The canonical URL http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement doesn't point to an actual ImplementationGuide resource
 == fsh-generated\resources\OperationDefinition-AddPatient.json ==
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient'): Conformance resource C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPatient.json - the canonical URL (https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPatient) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient). Use the special-url parameter if you really mean for it not to match
@@ -92,7 +97,7 @@ ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDe
 ERROR: OperationDefinition.where(url = 'https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient'): Conformance resource C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-UpdatePatient.json - the canonical URL (https://ths-greifswald.de/fhir/epix/OperationDefinition/UpdatePatient) does not match the URL (https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient). Use the special-url parameter if you really mean for it not to match
 WARNING: OperationDefinition/UpdatePatient: OperationDefinition.parameter[5].binding.valueSet: Canonical URL 'https://ths-greifswald.de/fhir/ValueSet/epix/MatchStatus' kann nicht aufgelöst werden
 ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-UpdatePatient: URL Mismatch https://ths-greifswald.de/fhir/epix/OperationDefinition/UpdatePatient vs https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient
-== fsh-generated\resources\OperationOutcome-AssignIdentityByIdentifier-example1.json ==
+== fsh-generated\resources\OperationOutcome-AssignIdentityByIdentifier-response-example1.json ==
 == fsh-generated\resources\OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.json ==
 == fsh-generated\resources\OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.json ==
 == fsh-generated\resources\Parameters-Parameters-AddPatient-request-example-1.json ==
@@ -144,8 +149,8 @@ WARNING: Parameters/Parameters-AddPossibleMatch-response-example-1: Parameters.p
 == fsh-generated\resources\Parameters-Parameters-AssignIdentity-request-example-1.json ==
 ERROR: Parameters/Parameters-AssignIdentity-request-example-1: Parameters.parameter[2].value.ofType(Reference): Ressource 'Patient/52' nicht auffindbar
 == fsh-generated\resources\Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json ==
-WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[1].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/identity' löst nicht auf
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
+WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1.json ==
 WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[1].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-response-example-1.json ==

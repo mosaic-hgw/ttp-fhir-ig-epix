@@ -21,6 +21,13 @@ Usage: #definition
   * documentation = "Angabe der Matching-Domäne"
   * type = #string
 * parameter[+]
+  * name = #comment
+  * use = #in
+  * min = 0
+  * max = "1"
+  * documentation = "Anmerkung zum Änderungsvorgang"
+  * type = #string
+* parameter[+]
   * name = #identityIdentifier
   * use = #in
   * min = 1
@@ -35,18 +42,11 @@ Usage: #definition
   * documentation = "Identifikator des MPI-Eintrags (MPI-ID)"
   * type = #Identifier
 * parameter[+]
-  * name = #comment
-  * use = #in
-  * min = 0
-  * max = "1"
-  * documentation = "Anmerkung zum Änderungsvorgang"
-  * type = #string
-* parameter[+]
   * name = #return
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "Rückinformation zum Merge-Vorgang."
+  * documentation = "Rückinformation zum Assign-Vorgang."
   * type = #OperationOutcome
 
 
@@ -57,24 +57,28 @@ Usage: #example
   * name = "domain"
   * valueString = "MIRACUM"
 * parameter[+]
+  * name = "comment"
+  * valueString = "Korrektur nach manueller Begutachtung."
+* parameter[+]
   * name = "identityIdentifier"
   * valueIdentifier
-    * system = "https://ths-greifswald.de/fhir/epix/identifier/identity"
-    * value = "10010000006546"
+    * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+    * value = "1001000000011"
 * parameter[+]
   * name = "mpiIdentifier"
   * valueIdentifier
     * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * value = "1001000000066"
-* parameter
-  * name = "comment"
-  * valueString = "Korrektur nach manueller Begutachtung."
 
 
-Instance: AssignIdentityByIdentifier-example1
+Instance: AssignIdentityByIdentifier-response-example1
 InstanceOf: OperationOutcome
 Usage: #example
 * issue
   * severity = #information
   * code = #informational
-  * diagnostics = "identity moved."
+  * details
+    * coding
+      * system = #"http://terminology.hl7.org/CodeSystem/operation-outcome"
+      * code = #MSG_UPDATED
+  * diagnostics = "Identity assigned."

@@ -43,6 +43,14 @@
       "type" : "string"
     },
     {
+      "name" : "comment",
+      "use" : "in",
+      "min" : 0,
+      "max" : "1",
+      "documentation" : "Anmerkung zum Änderungsvorgang",
+      "type" : "string"
+    },
+    {
       "name" : "identityIdentifier",
       "use" : "in",
       "min" : 1,
@@ -59,19 +67,11 @@
       "type" : "Identifier"
     },
     {
-      "name" : "comment",
-      "use" : "in",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Änderungsvorgang",
-      "type" : "string"
-    },
-    {
       "name" : "return",
       "use" : "out",
       "min" : 1,
       "max" : "1",
-      "documentation" : "Rückinformation zum Merge-Vorgang.",
+      "documentation" : "Rückinformation zum Assign-Vorgang.",
       "type" : "OperationOutcome"
     }
   ]
