@@ -25,13 +25,11 @@
   },
   {
     "name" : "linkId",
-    "valueInteger" : 5654986
+    "valueInteger" : 56
   },
   {
     "name" : "identityReference",
-    "valueReference" : {
-      "reference" : "Patient/52"
-    }
+    "valueId" : "86"
   }]
 }
 

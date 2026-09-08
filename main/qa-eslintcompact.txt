@@ -103,7 +103,6 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-response-example-1.json: line 8, col 12, Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation) (INVARIANT)
 /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-response-example-1.json: line 41, col 44, Info - No definition could be found for URL value 'dummy_safe_source' (INVALID)
 /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-response-example-1.json: line 34, col 12, Warning - Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation) (INVARIANT)
-/workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1.json: line 14, col 8, Error - Unable to resolve resource with reference 'Patient/52' (STRUCTURE)
 /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json: line 15, col 71, Warning - No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI' (INVALID)
 /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json: line 22, col 71, Warning - No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI' (INVALID)
 /workspace/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-request-example-1.json: line 11, col 71, Warning - No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI' (INVALID)
@@ -166,5 +165,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /workspace/fsh-generated/resources/StructureDefinition-Person.json: line 0, col 0, Info - The resource StructureDefinition/Person could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
 /workspace/fsh-generated/resources/StructureDefinition-Person.json: line 0, col 0, Error - URL Mismatch https://ths-greifswald.de/fhir/epix/StructureDefinition/Person vs https://ths-greifswald.de/fhir/StructureDefinition/epix/Person (BUSINESSRULE)
 
-err = 53, warn = 72, info = 38
-IG Publisher Version: 2.3.2
+err = 52, warn = 72, info = 38
+IG Publisher Version: 2.3.4

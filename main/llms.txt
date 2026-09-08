@@ -3,11 +3,11 @@
 ## Pages
 
 * [Implementation Guide E-PIX](index.md)
-* [Allgemein](Allgemein.md)
-* [Extensions](Extensions.md)
-* [Artifacts Summary](artifacts.md)
-* [Terminologie](Terminologie.md)
 * [Suche nach Personen und Identitäten](Suche.md)
+* [Artifacts Summary](artifacts.md)
+* [Extensions](Extensions.md)
+* [Allgemein](Allgemein.md)
+* [Terminologie](Terminologie.md)
 
 ## Resources
 

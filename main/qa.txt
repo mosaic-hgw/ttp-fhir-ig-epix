@@ -1,9 +1,9 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 53, warn = 72, info = 38
-IG Publisher Version: 2.3.2
-Generated Mon Aug 24 11:17:10 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
+err = 52, warn = 72, info = 38
+IG Publisher Version: 2.3.4
+Generated Tue Sep 08 13:23:09 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 1 / 23 / 0
  /workspace/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
  /workspace/fsh-generated/resources/OperationDefinition-AddPatient : 2 / 2 / 2
@@ -21,7 +21,7 @@ Generated Mon Aug 24 11:17:10 UTC 2026. FHIR version 4.0.1 for ths-greifswald.tt
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPatient-response-example-1 : 13 / 6 / 16
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-request-example-1 : 0 / 2 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatch-response-example-1 : 0 / 2 / 7
- /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1 : 1 / 0 / 1
+ /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-request-example-1 : 0 / 1 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-response-example-1 : 0 / 2 / 7
@@ -157,7 +157,6 @@ WARNING: Parameters/Parameters-AddPossibleMatch-response-example-1: Parameters.p
 INFORMATION: Parameters/Parameters-AddPossibleMatch-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/53*/.meta.source: No definition could be found for URL value 'dummy_safe_source'
 WARNING: Parameters/Parameters-AddPossibleMatch-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1.json ==
-ERROR: Parameters/Parameters-AssignIdentity-request-example-1: Parameters.parameter[2].value.ofType(Reference): Unable to resolve resource with reference 'Patient/52'
 == fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json ==
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'

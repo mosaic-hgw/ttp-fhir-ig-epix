@@ -8,12 +8,10 @@
   </parameter>
   <parameter>
     <name value="linkId"/>
-    <valueInteger value="5654986"/>
+    <valueInteger value="56"/>
   </parameter>
   <parameter>
     <name value="identityReference"/>
-    <valueReference>
-      <reference value="Patient/52"/>
-    </valueReference>
+    <valueId value="86"/>
   </parameter>
 </Parameters>

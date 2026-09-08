@@ -15,14 +15,11 @@
   ], [
      fhir:index 1 ;
      fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
-     fhir:Parameters.parameter.valueInteger [ fhir:value "5654986"^^xsd:integer ]
+     fhir:Parameters.parameter.valueInteger [ fhir:value "56"^^xsd:integer ]
   ], [
      fhir:index 2 ;
      fhir:Parameters.parameter.name [ fhir:value "identityReference" ] ;
-     fhir:Parameters.parameter.valueReference [
-       fhir:link <https://ths-greifswald.de/fhir/epix/Patient/52> ;
-       fhir:Reference.reference [ fhir:value "Patient/52" ]
-     ]
+     fhir:Parameters.parameter.valueId [ fhir:value "86" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

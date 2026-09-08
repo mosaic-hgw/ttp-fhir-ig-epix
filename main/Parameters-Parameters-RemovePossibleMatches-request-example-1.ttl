@@ -20,7 +20,7 @@
   ], [
      fhir:index 1 ;
      fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
-     fhir:Parameters.parameter.valueInteger [ fhir:value "5654986"^^xsd:integer ]
+     fhir:Parameters.parameter.valueInteger [ fhir:value "86"^^xsd:integer ]
   ] .
 
 # - ontology header ------------------------------------------------------------

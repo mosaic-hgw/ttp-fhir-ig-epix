@@ -24,7 +24,7 @@
     "valueString" : "aufgrund neuerer Informationen"
   },
   {
-    "name" : "mpiId",
+    "name" : "mpiIdentifier",
     "valueIdentifier" : {
       "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
       "value" : "1001000000066"
