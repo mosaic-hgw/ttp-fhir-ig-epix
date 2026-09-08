@@ -3,17 +3,15 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="Parameters-AssignIdentity-request-example-1"/>
   <parameter>
-    <name value="comment"/>
-    <valueString value="Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."/>
-  </parameter>
-  <parameter>
     <name value="linkId"/>
-    <valueInteger value="5654986"/>
+    <valueInteger value="86"/>
   </parameter>
   <parameter>
     <name value="identityReference"/>
-    <valueReference>
-      <reference value="Patient/52"/>
-    </valueReference>
+    <valueId value="252"/>
+  </parameter>
+  <parameter>
+    <name value="comment"/>
+    <valueString value="Nachforschungen haben ergeben, dass die Zuordnung so korrekt ist."/>
   </parameter>
 </Parameters>

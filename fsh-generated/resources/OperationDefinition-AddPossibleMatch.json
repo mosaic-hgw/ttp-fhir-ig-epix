@@ -89,9 +89,9 @@
       "documentation": "Match-Informationen zu zwei Identitäten."
     }
   ],
-  "version": "2025.1.0",
+  "version": "2025.2.0",
   "status": "draft",
-  "date": "2025-06-12",
+  "date": "2026-02-05",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "name": "AddPossibleMatch",
   "title": "addPossibleMatch",

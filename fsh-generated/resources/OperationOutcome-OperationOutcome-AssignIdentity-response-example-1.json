@@ -5,7 +5,7 @@
     {
       "severity": "information",
       "code": "informational",
-      "diagnostics": "match resolved, identity moved."
+      "diagnostics": "identity assigned and possible match resolved."
     }
   ]
 }

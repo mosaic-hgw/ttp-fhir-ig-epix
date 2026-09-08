@@ -86,12 +86,12 @@ menu:
   Operationen:
     addPatient: OperationDefinition-AddPatient.html
     updatePatient: OperationDefinition-UpdatePatient.html
-    setReferenceIdentity (Draft): OperationDefinition-SetReferenceIdentity.html
-    assignIdentity (Draft): OperationDefinition-AssignIdentity.html
-    assignIdentityByIdentifier (Draft): OperationDefinition-AssignIdentityByIdentifier.html
-    queryPossibleMatches (Draft): OperationDefinition-QueryPossibleMatches.html
-    addPossibleMatch (Draft): OperationDefinition-AddPossibleMatch.html
-    removePossibleMatches (Draft): OperationDefinition-RemovePossibleMatches.html
+    setReferenceIdentity: OperationDefinition-SetReferenceIdentity.html
+    assignIdentity: OperationDefinition-AssignIdentity.html
+    assignIdentityByIdentifier: OperationDefinition-AssignIdentityByIdentifier.html
+    queryPossibleMatches: OperationDefinition-QueryPossibleMatches.html
+    addPossibleMatch: OperationDefinition-AddPossibleMatch.html
+    removePossibleMatches: OperationDefinition-RemovePossibleMatches.html
   ##### Suche ############################################################
   Suche: Suche.html
   ##### Suche ############################################################

@@ -60,7 +60,7 @@ Usage: #definition
 Instance: Parameters-SetReferenceIdentity-request-example-1
 InstanceOf: Parameters
 Usage: #example
-* parameter[+]
+* parameter[0]
   * name = "domain"
   * valueString = "MIRACUM"
 * parameter[+]
@@ -71,7 +71,7 @@ Usage: #example
 * parameter[+]
   * name = "identityReference"
   * valueId = "53"
-* parameter
+* parameter[+]
   * name = "comment"
   * valueString = "aufgrund neuerer Informationen"
 

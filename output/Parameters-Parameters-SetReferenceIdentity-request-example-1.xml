@@ -3,11 +3,11 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="Parameters-SetReferenceIdentity-request-example-1"/>
   <parameter>
-    <name value="comment"/>
-    <valueString value="aufgrund neuerer Informationen"/>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
   </parameter>
   <parameter>
-    <name value="mpiId"/>
+    <name value="mpiIdentifier"/>
     <valueIdentifier>
       <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
       <value value="1001000000066"/>
@@ -16,5 +16,9 @@
   <parameter>
     <name value="identityReference"/>
     <valueId value="53"/>
+  </parameter>
+  <parameter>
+    <name value="comment"/>
+    <valueString value="aufgrund neuerer Informationen"/>
   </parameter>
 </Parameters>

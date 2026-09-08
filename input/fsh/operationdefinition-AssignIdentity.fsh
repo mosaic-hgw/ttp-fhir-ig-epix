@@ -14,13 +14,6 @@ Usage: #definition
 * type = false
 * instance = false
 * parameter[+]
-  * name = #domain
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "Angabe der Matching-Domäne"
-  * type = #string
-* parameter[+]
   * name = #linkId
   * use = #in
   * min = 1
@@ -49,23 +42,17 @@ Usage: #definition
   * documentation = "Rückinformation zum Merge-Vorgang."
   * type = #OperationOutcome
 
-
 Instance: Parameters-AssignIdentity-request-example-1
 InstanceOf: Parameters
 Usage: #example
-* parameter[+]
-  * name = "domain"
-  * valueString = "MIRACUM"
-* parameter[+]
-  * name = "linkId"
-  * valueInteger = 56
+* parameter[0].name = "linkId"
+* parameter[=].valueInteger = 86
 * parameter[+]
   * name = "identityReference"
-  * valueId = "86"
-* parameter
+  * valueId = "252"
+* parameter[+]
   * name = "comment"
-  * valueString = "Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."
-
+  * valueString = "Nachforschungen haben ergeben, dass die Zuordung so korrekt ist."
 
 Instance: OperationOutcome-AssignIdentity-response-example-1
 InstanceOf: OperationOutcome
@@ -73,4 +60,5 @@ Usage: #example
 * issue
   * severity = #information
   * code = #informational
-  * diagnostics = "match resolved, identity moved."
+  * diagnostics = "identity assigned and possible match resolved."
+

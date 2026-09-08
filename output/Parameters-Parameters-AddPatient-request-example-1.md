@@ -1,5 +1,16 @@
 # Parameters-AddPatient-request-example-1 - v2026.1.0
 
+ ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
+
+ 
+ 2026.1.0 - ci-build  
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Parameters-AddPatient-request-example-1**
+
+## Example Parameters: Parameters-AddPatient-request-example-1
+
 
 
 ## Resource Content
@@ -8,74 +19,60 @@
 {
   "resourceType" : "Parameters",
   "id" : "Parameters-AddPatient-request-example-1",
-  "parameter" : [
-    {
-      "name" : "domain",
-      "valueString" : "MIRACUM"
-    },
-    {
-      "name" : "source",
-      "valueString" : "KlinikumXY"
-    },
-    {
-      "name" : "identity",
-      "resource" : {
-        "resourceType" : "Patient",
-        "meta" : {
-          "profile" : [
-            "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-          ]
+  "parameter" : [{
+    "name" : "domain",
+    "valueString" : "MIRACUM"
+  },
+  {
+    "name" : "source",
+    "valueString" : "KlinikumXY"
+  },
+  {
+    "name" : "identity",
+    "resource" : {
+      "resourceType" : "Patient",
+      "meta" : {
+        "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
+      },
+      "extension" : [{
+        "extension" : [{
+          "valueString" : "A38"
         },
-        "extension" : [
-          {
-            "extension" : [
-              {
-                "valueString" : "A38"
-              },
-              {
-                "valueBoolean" : true
-              }
-            ]
-          }
-        ],
-        "identifier" : [
-          {
-            "system" : "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
-            "value" : "ABC_12345"
-          }
-        ],
-        "name" : [
-          {
-            "family" : "xxxxx",
-            "given" : ["Stefanie"]
-          }
-        ],
-        "birthDate" : "1962-12-17",
-        "address" : [
-          {
-            "city" : "Spöck",
-            "postalCode" : "76297"
-          },
-          {
-            "line" : ["Musterstrasse 1"],
-            "city" : "Greifswald",
-            "postalCode" : "17487"
-          }
-        ]
-      }
-    },
-    {
-      "name" : "saveAction",
-      "valueCoding" : {
-        "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction",
-        "code" : "SAVE_ALL"
-      }
-    },
-    {
-      "name" : "forceReferenceUpdate",
-      "valueBoolean" : false
+        {
+          "valueBoolean" : true
+        }]
+      }],
+      "identifier" : [{
+        "system" : "https://ths-greifswald.de/fhir/epix/identifier/SystemXY",
+        "value" : "ABC_12345"
+      }],
+      "name" : [{
+        "family" : "xxxxx",
+        "given" : ["Stefanie"]
+      }],
+      "birthDate" : "1962-12-17",
+      "address" : [{
+        "city" : "Spöck",
+        "postalCode" : "76297"
+      },
+      {
+        "line" : ["Musterstrasse 1"],
+        "city" : "Greifswald",
+        "postalCode" : "17487"
+      }]
     }
-  ]
+  },
+  {
+    "name" : "saveAction",
+    "valueCoding" : {
+      "system" : "https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction",
+      "code" : "SAVE_ALL"
+    }
+  },
+  {
+    "name" : "forceReferenceUpdate",
+    "valueBoolean" : false
+  }]
 }
 
 ```
