@@ -20,8 +20,8 @@
   "resourceType" : "Parameters",
   "id" : "Parameters-SetReferenceIdentity-request-example-1",
   "parameter" : [{
-    "name" : "comment",
-    "valueString" : "aufgrund neuerer Informationen"
+    "name" : "domain",
+    "valueString" : "MIRACUM"
   },
   {
     "name" : "mpiIdentifier",
@@ -33,6 +33,10 @@
   {
     "name" : "identityReference",
     "valueId" : "53"
+  },
+  {
+    "name" : "comment",
+    "valueString" : "aufgrund neuerer Informationen"
   }]
 }
 

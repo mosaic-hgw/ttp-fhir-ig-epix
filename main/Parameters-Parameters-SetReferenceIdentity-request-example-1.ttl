@@ -10,8 +10,8 @@
   fhir:Resource.id [ fhir:value "Parameters-SetReferenceIdentity-request-example-1"] ;
   fhir:Parameters.parameter [
      fhir:index 0 ;
-     fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
-     fhir:Parameters.parameter.valueString [ fhir:value "aufgrund neuerer Informationen" ]
+     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "MIRACUM" ]
   ], [
      fhir:index 1 ;
      fhir:Parameters.parameter.name [ fhir:value "mpiIdentifier" ] ;
@@ -23,6 +23,10 @@
      fhir:index 2 ;
      fhir:Parameters.parameter.name [ fhir:value "identityReference" ] ;
      fhir:Parameters.parameter.valueId [ fhir:value "53" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
+     fhir:Parameters.parameter.valueString [ fhir:value "aufgrund neuerer Informationen" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

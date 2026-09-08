@@ -19,7 +19,7 @@
  
 Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. 
 
-**ab Version 2026.2.0**
+Unterstützt ab v2026.2.0
 
 ## Zweck
 

@@ -2,15 +2,15 @@
   "resourceType" : "Parameters",
   "id" : "Parameters-AssignIdentity-request-example-1",
   "parameter" : [{
-    "name" : "comment",
-    "valueString" : "Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."
-  },
-  {
     "name" : "linkId",
-    "valueInteger" : 56
+    "valueInteger" : 86
   },
   {
     "name" : "identityReference",
-    "valueId" : "86"
+    "valueId" : "252"
+  },
+  {
+    "name" : "comment",
+    "valueString" : "Nachforschungen haben ergeben, dass die Zuordung so korrekt ist."
   }]
 }

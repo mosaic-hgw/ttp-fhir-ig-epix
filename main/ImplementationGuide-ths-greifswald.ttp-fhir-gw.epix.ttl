@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "2026.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "IGTTPFHIRGatewayEPIX"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-08T13:20:49+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-08T15:05:21+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;

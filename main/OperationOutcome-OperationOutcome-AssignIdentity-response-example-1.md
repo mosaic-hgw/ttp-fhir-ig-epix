@@ -16,7 +16,7 @@
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Severity** | **Code** | **Diagnostics** |
-| * | Information | Informational Note | match resolved, identity moved. |
+| * | Information | Informational Note | identity assigned and possible match resolved. |
 
 
 
@@ -29,7 +29,7 @@
   "issue" : [{
     "severity" : "information",
     "code" : "informational",
-    "diagnostics" : "match resolved, identity moved."
+    "diagnostics" : "identity assigned and possible match resolved."
   }]
 }
 

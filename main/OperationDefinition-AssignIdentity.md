@@ -19,7 +19,7 @@
  
 Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben. 
 
-**Konzeptarbeit. Noch nicht implementiert**
+Unterstützt ab v2026.2.0
 
 ## Zweck
 
@@ -81,14 +81,6 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "type" : false,
   "instance" : false,
   "parameter" : [{
-    "name" : "domain",
-    "use" : "in",
-    "min" : 1,
-    "max" : "1",
-    "documentation" : "Angabe der Matching-Domäne",
-    "type" : "string"
-  },
-  {
     "name" : "linkId",
     "use" : "in",
     "min" : 1,
