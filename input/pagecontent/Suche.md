@@ -1,6 +1,6 @@
 Die Suche nach E-PIX-Personen bzw. den zugeordneten Patienten-Identitäten ist mittels der FHIR Search-API umgesetzt. Die Rückgabe erfolgt dementsprechend in Form eines Bundles vom Typ searchset.
 
-Suchanfragen werden ausschließlich als GET-Requests akzeptiert. Bezüglich des Encodings der URL sei auf die Hinweise unter [TechnischeGrundlagen](TechnischeGrundlagen.html) verwiesen.
+Suchanfragen werden ausschließlich als GET-Requests akzeptiert.
 
 Unterstützt wird die logische UND-Verknüpfung gemäß [FHIR Search API](http://hl7.org/fhir/r4/search.html), nicht jedoch das logische ODER.
 
