@@ -46,7 +46,7 @@ Usage: #example
 * parameter[0].name = "domain"
 * parameter[=].valueString = "MIRACUM"
 * parameter[+].name = "linkId"
-* parameter[=].valueInteger = 5654986
+* parameter[=].valueInteger = 86
 * parameter.part[+].name = "comment"
 * parameter.part[=].valueString = "Dieser Match war völliger Unsinn!"
 

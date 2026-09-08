@@ -58,10 +58,10 @@ Usage: #example
   * valueString = "MIRACUM"
 * parameter[+]
   * name = "linkId"
-  * valueInteger = 5654986
+  * valueInteger = 56
 * parameter[+]
   * name = "identityReference"
-  * valueReference.reference = "Patient/52"
+  * valueId = "86"
 * parameter
   * name = "comment"
   * valueString = "Nachforschungen haben ergeben, dass die Zuordnug so korrekt ist."

@@ -21,7 +21,7 @@ Usage: #definition
   * documentation = "Angabe der Matching-Domaene"
   * type = #string
 * parameter[+]
-  * name = #mpiId
+  * name = #mpiIdentifier
   * use = #in
   * min = 1
   * max = "1"
@@ -64,7 +64,7 @@ Usage: #example
   * name = "domain"
   * valueString = "MIRACUM"
 * parameter[+]
-  * name = "mpiId"
+  * name = "mpiIdentifier"
   * valueIdentifier
     * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * value = "1001000000066"
