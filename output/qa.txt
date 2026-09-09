@@ -3,8 +3,8 @@ IGTTPFHIRGatewayEPIX : Validation Results
 
 err = 52, warn = 72, info = 38
 IG Publisher Version: 2.3.4
-Generated Tue Sep 08 16:58:16 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
- Build Errors : 1 / 23 / 0
+Generated Wed Sep 09 15:38:52 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
+ Build Errors : 0 / 23 / 0
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPatient : 2 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPossibleMatch : 2 / 0 / 2
@@ -57,7 +57,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient-example-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Person/Person-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Suche.html#/html/body/div/div/div/div/div/p/a at Line 206, column 128: The link 'TechnischeGrundlagen.html' for "TechnischeGrundlagen" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

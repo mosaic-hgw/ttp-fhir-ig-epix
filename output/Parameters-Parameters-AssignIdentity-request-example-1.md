@@ -29,7 +29,7 @@
   },
   {
     "name" : "comment",
-    "valueString" : "Nachforschungen haben ergeben, dass die Zuordnung so korrekt ist."
+    "valueString" : "Nachforschungen haben ergeben, dass die Zuordung so korrekt ist."
   }]
 }
 

@@ -19,7 +19,7 @@
   ], [
      fhir:index 2 ;
      fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
-     fhir:Parameters.parameter.valueString [ fhir:value "Nachforschungen haben ergeben, dass die Zuordnung so korrekt ist." ]
+     fhir:Parameters.parameter.valueString [ fhir:value "Nachforschungen haben ergeben, dass die Zuordung so korrekt ist." ]
   ] .
 
 # - ontology header ------------------------------------------------------------

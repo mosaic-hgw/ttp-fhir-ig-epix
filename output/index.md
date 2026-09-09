@@ -13,7 +13,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.1.0 |
-| Active as of 2026-09-08 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| Active as of 2026-09-09 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-08T16:54:56+02:00",
+  "date" : "2026-09-09T15:36:45+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -1102,7 +1102,7 @@ kontakt-ths (at) med.uni-greifswald.de
         "reference" : "OperationDefinition/RemovePossibleMatches"
       },
       "name" : "removePossibleMatches",
-      "description" : "Entfernt Matches aus einer Domäne.",
+      "description" : "Entfernt Possible Matches anhand von LinkIds.",
       "exampleBoolean" : false
     },
     {

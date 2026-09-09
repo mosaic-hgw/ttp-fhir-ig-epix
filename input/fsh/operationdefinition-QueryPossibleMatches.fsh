@@ -32,7 +32,7 @@ Usage: #definition
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Matching-Domaene"
 * parameter[=].type = #string
-* parameter[+].name = #mpiId
+* parameter[+].name = #mpiIdentifier
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
@@ -98,7 +98,7 @@ InstanceOf: Parameters
 Usage: #example
 * parameter[0].name = "domain"
 * parameter[=].valueString = "MIRACUM"
-* parameter[+].name = "mpiId"
+* parameter[+].name = "mpiIdentifier"
 * parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].valueIdentifier.value = "1001000000066"
 

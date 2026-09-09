@@ -1,4 +1,4 @@
-**Konzeptarbeit. Noch nicht implementiert**
+Unterstützt ab v2026.2.0
 
 ## Zweck
-Entfernt Matches aus einer Domäne.
+Entfernt Possible Matches.
