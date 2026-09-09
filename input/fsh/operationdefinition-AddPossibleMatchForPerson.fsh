@@ -1,16 +1,16 @@
-Instance: AddPossibleMatch
+Instance: AddPossibleMatchForPerson
 InstanceOf: OperationDefinition
 Usage: #definition
 * insert meta-instance
-* url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch"
-* name = "AddPossibleMatch"
-* title = "addPossibleMatch"
+* url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForPerson"
+* name = "AddPossibleMatchForPerson"
+* title = "addPossibleMatchForPerson"
 * status = #draft
 * kind = #operation
-* description = "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu."
+* description = "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu."
 * affectsState = true
-* code = #addPossibleMatch
-* comment = "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu."
+* code = #addPossibleMatchForPerson
+* comment = "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu."
 * system = true
 * type = false
 * instance = false
@@ -22,18 +22,18 @@ Usage: #definition
   * documentation = "Angabe der Matching-Domaene"
   * type = #string
 * parameter[+]
-  * name = #mpiId
+  * name = #mpiIdentifier
   * use = #in
   * min = 1
   * max = "1"
   * documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
-  * name = #aliasMpiId
+  * name = #mpiIdentifierAlias
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Identifikator des matchenden MPI-Entrags."
+  * documentation = "Aliasangabe bezogen auf Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
   * name = #match
@@ -46,7 +46,7 @@ Usage: #definition
     * use = #out
     * min = 2
     * max = "2"
-    * documentation = "Die beiden matchenden Identitäten wie im Request übergeben."
+    * documentation = "Die beiden matchenden Personen wie im Request übergeben."
     * type = #Patient
   * part[+]
     * name = #score
@@ -78,30 +78,30 @@ Usage: #definition
     * type = #string
 
 
-Instance: Parameters-AddPossibleMatch-request-example-1
+Instance: Parameters-AddPossibleMatchForPerson-request-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter[+]
   * name = "domain"
   * valueString = "MIRACUM"
 * parameter[+]
-  * name = "mpiId"
+  * name = "mpiIdentifier"
   * valueIdentifier
     * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * value = "1001000000066"
 * parameter[+]
-  * name = "aliasMpiId"
+  * name = "mpiIdentifierAlias"
   * valueIdentifier
     * system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
     * value = "1001000068944"
 
-Instance: Parameters-AddPossibleMatch-response-example-1
+Instance: Parameters-AddPossibleMatchForPerson-response-example-1
 InstanceOf: Parameters
 Usage: #example
 * parameter.name = "match"
 * parameter.part[0].name = "item"
 * parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "52"
+* parameter.part[=].resource.id = "53"
 * parameter.part[=].resource.meta.versionId = "1"
 * parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
 * parameter.part[=].resource.meta.source = "dummy_safe_source"
@@ -113,7 +113,7 @@ Usage: #example
 * parameter.part[=].resource.birthDate = "1962-12-17"
 * parameter.part[+].name = "item"
 * parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "53"
+* parameter.part[=].resource.id = "67"
 * parameter.part[=].resource.meta.versionId = "1"
 * parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:24.180+02:00"
 * parameter.part[=].resource.meta.source = "dummy_safe_source"
@@ -130,4 +130,4 @@ Usage: #example
 * parameter.part[+].name = "linkId"
 * parameter.part[=].valueInteger = 5654986
 * parameter.part[+].name = "comment"
-* parameter.part[=].valueString = "This match was added manually!"
+* parameter.part[=].valueString = "This match was added externally or manually."

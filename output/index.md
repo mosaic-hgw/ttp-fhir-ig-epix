@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-09T15:36:45+02:00",
+  "date" : "2026-09-09T16:10:51+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -699,13 +699,29 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "OperationDefinition-AddPossibleMatch.html"
+        "valueUri" : "OperationDefinition-AddPossibleMatchForIdentity.html"
       }],
       "reference" : {
-        "reference" : "OperationDefinition/AddPossibleMatch"
+        "reference" : "OperationDefinition/AddPossibleMatchForIdentity"
       },
-      "name" : "addPossibleMatch",
-      "description" : "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu.",
+      "name" : "addPossibleMatchForIdentity",
+      "description" : "Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "OperationDefinition-AddPossibleMatchForPerson.html"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/AddPossibleMatchForPerson"
+      },
+      "name" : "addPossibleMatchForPerson",
+      "description" : "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu.",
       "exampleBoolean" : false
     },
     {
@@ -838,12 +854,12 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Parameters-Parameters-AddPossibleMatch-request-example-1.html"
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.html"
       }],
       "reference" : {
-        "reference" : "Parameters/Parameters-AddPossibleMatch-request-example-1"
+        "reference" : "Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1"
       },
-      "name" : "Parameters-AddPossibleMatch-request-example-1",
+      "name" : "Parameters-AddPossibleMatchForIdentity-request-example-1",
       "exampleBoolean" : true
     },
     {
@@ -853,12 +869,42 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Parameters-Parameters-AddPossibleMatch-response-example-1.html"
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html"
       }],
       "reference" : {
-        "reference" : "Parameters/Parameters-AddPossibleMatch-response-example-1"
+        "reference" : "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"
       },
-      "name" : "Parameters-AddPossibleMatch-response-example-1",
+      "name" : "Parameters-AddPossibleMatchForIdentity-response-example-1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.html"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-AddPossibleMatchForPerson-request-example-1"
+      },
+      "name" : "Parameters-AddPossibleMatchForPerson-request-example-1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"
+      },
+      "name" : "Parameters-AddPossibleMatchForPerson-response-example-1",
       "exampleBoolean" : true
     },
     {

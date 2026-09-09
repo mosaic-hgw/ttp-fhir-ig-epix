@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "2026.1.0"] ;
   fhir:ImplementationGuide.name [ fhir:value "IGTTPFHIRGatewayEPIX"] ;
   fhir:ImplementationGuide.status [ fhir:value "active"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-09T15:36:45+02:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-09T16:10:51+02:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -723,14 +723,28 @@
          fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPossibleMatch> ;
-         fhir:Reference.reference [ fhir:value "OperationDefinition/AddPossibleMatch" ]
+         fhir:link <https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPossibleMatchForIdentity> ;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/AddPossibleMatchForIdentity" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "addPossibleMatch" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu." ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "addPossibleMatchForIdentity" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPossibleMatchForPerson> ;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/AddPossibleMatchForPerson" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "addPossibleMatchForPerson" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -744,7 +758,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3 ;
+       fhir:index 4 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -758,7 +772,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4 ;
+       fhir:index 5 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -771,7 +785,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AssignIdentityByIdentifier-response-example1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 5 ;
+       fhir:index 6 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -785,7 +799,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6 ;
+       fhir:index 7 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -798,7 +812,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OperationOutcome-AssignIdentity-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 7 ;
+       fhir:index 8 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -811,7 +825,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OperationOutcome-RemovePossibleMatches-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 8 ;
+       fhir:index 9 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -824,7 +838,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPatient-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 9 ;
+       fhir:index 10 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -837,19 +851,6 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPatient-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 10 ;
-       fhir:Element.extension [
-         fhir:index 0 ;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
-         fhir:Extension.valueString [ fhir:value "Parameters" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatch-request-example-1> ;
-         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatch-request-example-1" ]
-       ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatch-request-example-1" ] ;
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
        fhir:index 11 ;
        fhir:Element.extension [
          fhir:index 0 ;
@@ -857,13 +858,52 @@
          fhir:Extension.valueString [ fhir:value "Parameters" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatch-response-example-1> ;
-         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatch-response-example-1" ]
+         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1> ;
+         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1" ]
        ] ;
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatch-response-example-1" ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatchForIdentity-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
        fhir:index 12 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1> ;
+         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatchForIdentity-response-example-1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 13 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatchForPerson-request-example-1> ;
+         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatchForPerson-request-example-1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatchForPerson-request-example-1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 14 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatchForPerson-response-example-1> ;
+         fhir:Reference.reference [ fhir:value "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AddPossibleMatchForPerson-response-example-1" ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -876,7 +916,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AssignIdentity-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 13 ;
+       fhir:index 16 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -889,7 +929,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-AssignIdentityByIdentifier-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14 ;
+       fhir:index 17 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -902,7 +942,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-QueryPossibleMatches-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 15 ;
+       fhir:index 18 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -915,7 +955,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-QueryPossibleMatches-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 16 ;
+       fhir:index 19 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -928,7 +968,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-RemovePossibleMatches-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17 ;
+       fhir:index 20 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -941,7 +981,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-SetReferenceIdentity-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18 ;
+       fhir:index 21 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -954,7 +994,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-SetReferenceIdentity-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 19 ;
+       fhir:index 22 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -967,7 +1007,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-UpdatePatient-request-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20 ;
+       fhir:index 23 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -980,7 +1020,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Parameters-UpdatePatient-response-example-1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21 ;
+       fhir:index 24 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -994,7 +1034,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI Eintrag, Person-Profil)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22 ;
+       fhir:index 25 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1010,7 +1050,7 @@
          fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
        ]
      ], [
-       fhir:index 23 ;
+       fhir:index 26 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1026,7 +1066,7 @@
          fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
        ]
      ], [
-       fhir:index 24 ;
+       fhir:index 27 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1040,7 +1080,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Allgemeines Personen-Profil. Repräsentiert die reale Person (MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil). Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25 ;
+       fhir:index 28 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1056,7 +1096,7 @@
          fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Person>
        ]
      ], [
-       fhir:index 26 ;
+       fhir:index 29 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1070,7 +1110,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27 ;
+       fhir:index 30 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1084,7 +1124,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Entfernt Possible Matches anhand von LinkIds." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28 ;
+       fhir:index 31 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
@@ -1098,7 +1138,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29 ;
+       fhir:index 32 ;
        fhir:Element.extension [
          fhir:index 0 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;

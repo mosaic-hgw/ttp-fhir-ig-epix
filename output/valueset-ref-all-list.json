@@ -11,8 +11,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.69"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -26,8 +26,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.67"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -41,8 +41,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -56,8 +56,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -71,8 +71,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.71"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -86,8 +86,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.73"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -101,8 +101,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.45"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -116,8 +116,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.57"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/identity-assuranceLevel",
@@ -157,8 +157,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -202,8 +202,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.906"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -217,8 +217,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -264,7 +264,7 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-Patient.html" : "Patient"
   }]
 }

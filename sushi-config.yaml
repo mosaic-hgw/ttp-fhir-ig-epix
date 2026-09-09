@@ -90,7 +90,8 @@ menu:
     assignIdentity: OperationDefinition-AssignIdentity.html
     assignIdentityByIdentifier: OperationDefinition-AssignIdentityByIdentifier.html
     queryPossibleMatches: OperationDefinition-QueryPossibleMatches.html
-    addPossibleMatch: OperationDefinition-AddPossibleMatch.html
+    addPossibleMatchForPerson: OperationDefinition-AddPossibleMatchForPerson.html
+    addPossibleMatchForIdentity: OperationDefinition-AddPossibleMatchForIdentity.html
     removePossibleMatches: OperationDefinition-RemovePossibleMatches.html
   ##### Suche ############################################################
   Suche: Suche.html

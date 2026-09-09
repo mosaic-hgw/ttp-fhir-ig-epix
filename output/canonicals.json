@@ -6,11 +6,18 @@
   "name" : "AddPatient"
 },
 {
-  "id" : "AddPossibleMatch",
+  "id" : "AddPossibleMatchForIdentity",
   "type" : "OperationDefinition",
-  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatch",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForIdentity",
   "version" : "2026.1.0",
-  "name" : "AddPossibleMatch"
+  "name" : "AddPossibleMatchForIdentity"
+},
+{
+  "id" : "AddPossibleMatchForPerson",
+  "type" : "OperationDefinition",
+  "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForPerson",
+  "version" : "2026.1.0",
+  "name" : "AddPossibleMatchForPerson"
 },
 {
   "id" : "AssignIdentity",

@@ -4,7 +4,7 @@ Verwendete Parameter-Werte müssen im E-PIX bekannt sein.
 ## Aufruf und Rückgabe
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
-`<HOST>:<PORT>/ttp-fhir/fhir/epix/$addPossibleMatch`
+`<HOST>:<PORT>/ttp-fhir/fhir/epix/$addPossibleMatchForIdentity`
 
 Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem Multi-Part-Parameter zurück.
 
@@ -18,5 +18,5 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 
 ## Beispiel
 
-* [Request-Body](Parameters-Parameters-AddPossibleMatch-request-example-1.html)
-* [Rückmeldung](Parameters-Parameters-AddPossibleMatch-response-example-1.html)
+* [Request-Body](Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.html)
+* [Rückmeldung](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html)
