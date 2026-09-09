@@ -17,17 +17,17 @@
 | Draft as of 2026-02-05 | *Computable Name*:RemovePossibleMatches |
 
  
-Entfernt Matches aus einer Domäne. 
+Entfernt Possible Matches anhand von LinkIds. 
 
-**Konzeptarbeit. Noch nicht implementiert**
+Unterstützt ab v2026.2.0
 
 ## Zweck
 
-Entfernt Matches aus einer Domäne.
+Entfernt Possible Matches.
 
 ## Voraussetzung
 
-Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX konfiguriert sein.
+Verwendete Parameter-Werte müssen im E-PIX bekannt sein.
 
 ## Aufruf und Rückgabe
 
@@ -74,7 +74,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
       "value" : "https://www.ths-greifswald.de/"
     }]
   }],
-  "description" : "Entfernt Matches aus einer Domäne.",
+  "description" : "Entfernt Possible Matches anhand von LinkIds.",
   "affectsState" : true,
   "code" : "removePossibleMatches",
   "comment" : "(Mögliche) Matches von Identitäten entfernen.",
@@ -82,14 +82,6 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "type" : false,
   "instance" : false,
   "parameter" : [{
-    "name" : "domain",
-    "use" : "in",
-    "min" : 1,
-    "max" : "1",
-    "documentation" : "Angabe der Matching-Domaene",
-    "type" : "string"
-  },
-  {
     "name" : "linkId",
     "use" : "in",
     "min" : 1,

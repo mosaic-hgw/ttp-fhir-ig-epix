@@ -7,7 +7,7 @@
     <valueString value="MIRACUM"/>
   </parameter>
   <parameter>
-    <name value="mpiId"/>
+    <name value="mpiIdentifier"/>
     <valueIdentifier>
       <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
       <value value="1001000000066"/>

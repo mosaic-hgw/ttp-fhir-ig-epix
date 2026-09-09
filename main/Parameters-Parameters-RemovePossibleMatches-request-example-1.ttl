@@ -10,17 +10,17 @@
   fhir:Resource.id [ fhir:value "Parameters-RemovePossibleMatches-request-example-1"] ;
   fhir:Parameters.parameter [
      fhir:index 0 ;
-     fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
-     fhir:Parameters.parameter.valueString [ fhir:value "MIRACUM" ] ;
+     fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "86"^^xsd:integer ] ;
      fhir:Parameters.parameter.part [
        fhir:index 0 ;
        fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
-       fhir:Parameters.parameter.valueString [ fhir:value "Dieser Match war völliger Unsinn!" ]
+       fhir:Parameters.parameter.valueString [ fhir:value "Diese Matches waren völliger Unsinn!" ]
      ]
   ], [
      fhir:index 1 ;
      fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
-     fhir:Parameters.parameter.valueInteger [ fhir:value "86"^^xsd:integer ]
+     fhir:Parameters.parameter.valueInteger [ fhir:value "87"^^xsd:integer ]
   ] .
 
 # - ontology header ------------------------------------------------------------

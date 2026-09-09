@@ -9,7 +9,7 @@
   <version value="2026.1.0"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-09-08T15:18:18+00:00"/>
+  <date value="2026-09-09T13:43:24+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -748,7 +748,7 @@
         <reference value="OperationDefinition/RemovePossibleMatches"/>
       </reference>
       <name value="removePossibleMatches"/>
-      <description value="Entfernt Matches aus einer Domäne."/>
+      <description value="Entfernt Possible Matches anhand von LinkIds."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

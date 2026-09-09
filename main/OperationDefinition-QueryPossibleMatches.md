@@ -108,7 +108,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "type" : "string"
   },
   {
-    "name" : "mpiId",
+    "name" : "mpiIdentifier",
     "use" : "in",
     "min" : 0,
     "max" : "1",

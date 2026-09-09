@@ -16,7 +16,7 @@
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **Severity** | **Code** | **Diagnostics** |
-| * | Information | Informational Note | removed 1 possible match(es). |
+| * | Information | Informational Note | possible match(es) removed. |
 
 
 
@@ -29,7 +29,7 @@
   "issue" : [{
     "severity" : "information",
     "code" : "informational",
-    "diagnostics" : "removed 1 possible match(es)."
+    "diagnostics" : "possible match(es) removed."
   }]
 }
 

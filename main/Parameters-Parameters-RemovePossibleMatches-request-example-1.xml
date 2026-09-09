@@ -3,15 +3,15 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="Parameters-RemovePossibleMatches-request-example-1"/>
   <parameter>
-    <name value="domain"/>
-    <valueString value="MIRACUM"/>
+    <name value="linkId"/>
+    <valueInteger value="86"/>
     <part>
       <name value="comment"/>
-      <valueString value="Dieser Match war völliger Unsinn!"/>
+      <valueString value="Diese Matches waren völliger Unsinn!"/>
     </part>
   </parameter>
   <parameter>
     <name value="linkId"/>
-    <valueInteger value="86"/>
+    <valueInteger value="87"/>
   </parameter>
 </Parameters>

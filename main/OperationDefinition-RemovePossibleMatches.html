@@ -257,7 +257,7 @@
 
 
 <p>
-<p>Entfernt Matches aus einer Domäne.</p>
+<p>Entfernt Possible Matches anhand von LinkIds.</p>
 
 </p>
 
@@ -269,10 +269,10 @@
 
 <div style="display:inline-block" markdown="1">
 
-<p><strong>Konzeptarbeit. Noch nicht implementiert</strong></p>
+<p>Unterstützt ab v2026.2.0</p>
 
 <h2 id="zweck">Zweck</h2>
-<p>Entfernt Matches aus einer Domäne.</p>
+<p>Entfernt Possible Matches.</p>
 
 </div>
 
@@ -286,8 +286,7 @@
   
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="RemovePossibleMatches"> </a><a name="hcRemovePossibleMatches"> </a><p>URL: [base]/$removePossibleMatches</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>
-</div></td></tr><tr><td>IN</td><td>linkId</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>Link-ID eines zu löschen Matches.</p>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="RemovePossibleMatches"> </a><a name="hcRemovePossibleMatches"> </a><p>URL: [base]/$removePossibleMatches</p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>linkId</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>Link-ID eines zu löschen Matches.</p>
 </div></td></tr><tr><td>IN</td><td>comment</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Anmerkung zum Löschvorgang</p>
 </div></td></tr><tr><td>OUT</td><td>return</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>Rückinformation zum Löschvorgang.</p>
 </div></td></tr></table><div><p>(Mögliche) Matches von Identitäten entfernen.</p>
@@ -302,7 +301,7 @@
 <div style="display:inline-block" markdown="1">
 
 <h2 id="voraussetzung">Voraussetzung</h2>
-<p>Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX konfiguriert sein.</p>
+<p>Verwendete Parameter-Werte müssen im E-PIX bekannt sein.</p>
 
 <h2 id="aufruf-und-rückgabe">Aufruf und Rückgabe</h2>
 <p>Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von <a href="https://www.hl7.org/fhir/parameters.html">FHIR Parameters</a> übermittelt.</p>
@@ -352,7 +351,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 8, 2026 15:18+0000">2026-09-08</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 9, 2026 13:43+0000">2026-09-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

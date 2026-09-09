@@ -20,16 +20,16 @@
   "resourceType" : "Parameters",
   "id" : "Parameters-RemovePossibleMatches-request-example-1",
   "parameter" : [{
-    "name" : "domain",
-    "valueString" : "MIRACUM",
+    "name" : "linkId",
+    "valueInteger" : 86,
     "part" : [{
       "name" : "comment",
-      "valueString" : "Dieser Match war völliger Unsinn!"
+      "valueString" : "Diese Matches waren völliger Unsinn!"
     }]
   },
   {
     "name" : "linkId",
-    "valueInteger" : 86
+    "valueInteger" : 87
   }]
 }
 

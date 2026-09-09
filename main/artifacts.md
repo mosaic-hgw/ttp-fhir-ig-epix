@@ -23,7 +23,7 @@ These are custom operations that can be supported by and/or invoked by systems c
 | [assignIdentity](OperationDefinition-AssignIdentity.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben. |
 | [assignIdentityByIdentifier](OperationDefinition-AssignIdentityByIdentifier.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. |
 | [queryPossibleMatches](OperationDefinition-QueryPossibleMatches.md) | Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. |
-| [removePossibleMatches](OperationDefinition-RemovePossibleMatches.md) | Entfernt Matches aus einer Domäne. |
+| [removePossibleMatches](OperationDefinition-RemovePossibleMatches.md) | Entfernt Possible Matches anhand von LinkIds. |
 | [setReferenceIdentity](OperationDefinition-SetReferenceIdentity.md) | Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen. |
 | [updatePatient](OperationDefinition-UpdatePatient.md) | Aktualisiert Patienten-Identitäten eines MPI-Eintrags. |
 
