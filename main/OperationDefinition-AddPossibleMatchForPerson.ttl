@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPossibleMatchForPerson> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "AddPossibleMatchForPerson"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AddPossibleMatchForPerson</b></p><a name=\"AddPossibleMatchForPerson\"> </a><a name=\"hcAddPossibleMatchForPerson\"> </a><p>URL: [base]/$addPossibleMatchForPerson</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifierAlias</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Aliasangabe bezogen auf Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).</p>\n</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>1..1</td><td/><td/><td><div><p>Match-Informationen zu zwei Identitäten.</p>\n</div></td></tr><tr><td>OUT</td><td>match.item</td><td/><td>2..2</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Die beiden matchenden Personen wie im Request übergeben.</p>\n</div></td></tr><tr><td>OUT</td><td>match.score</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Score</p>\n</div></td></tr><tr><td>OUT</td><td>match.result</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Ergebnis</p>\n</div></td></tr><tr><td>OUT</td><td>match.linkId</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Link-ID des Matches</p>\n</div></td></tr><tr><td>OUT</td><td>match.comment</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anmerkung zum Match</p>\n</div></td></tr></table><div><p>Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu.</p>\n</div></div>"
+  ] ;
+  fhir:OperationDefinition.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForPerson"] ;
+  fhir:OperationDefinition.version [ fhir:value "2026.1.0"] ;
+  fhir:OperationDefinition.name [ fhir:value "AddPossibleMatchForPerson"] ;
+  fhir:OperationDefinition.title [ fhir:value "addPossibleMatchForPerson"] ;
+  fhir:OperationDefinition.status [ fhir:value "draft"] ;
+  fhir:OperationDefinition.kind [ fhir:value "operation"] ;
+  fhir:OperationDefinition.date [ fhir:value "2026-02-05"^^xsd:date] ;
+  fhir:OperationDefinition.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
+  fhir:OperationDefinition.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
+     ]
+  ] ;
+  fhir:OperationDefinition.description [ fhir:value "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu."] ;
+  fhir:OperationDefinition.affectsState [ fhir:value "true"^^xsd:boolean] ;
+  fhir:OperationDefinition.code [ fhir:value "addPossibleMatchForPerson"] ;
+  fhir:OperationDefinition.comment [ fhir:value "Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu."] ;
+  fhir:OperationDefinition.system [ fhir:value "true"^^xsd:boolean] ;
+  fhir:OperationDefinition.type [ fhir:value "false"^^xsd:boolean] ;
+  fhir:OperationDefinition.instance [ fhir:value "false"^^xsd:boolean] ;
+  fhir:OperationDefinition.parameter [
+     fhir:index 0 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "domain" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Angabe der Matching-Domaene" ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+  ], [
+     fhir:index 1 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "mpiIdentifier" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)." ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Identifier" ]
+  ], [
+     fhir:index 2 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "mpiIdentifierAlias" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Aliasangabe bezogen auf Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)." ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Identifier" ]
+  ], [
+     fhir:index 3 ;
+     fhir:OperationDefinition.parameter.name [ fhir:value "match" ] ;
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Match-Informationen zu zwei Identitäten." ] ;
+     fhir:OperationDefinition.parameter.part [
+       fhir:index 0 ;
+       fhir:OperationDefinition.parameter.name [ fhir:value "item" ] ;
+       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+       fhir:OperationDefinition.parameter.min [ fhir:value "2"^^xsd:integer ] ;
+       fhir:OperationDefinition.parameter.max [ fhir:value "2" ] ;
+       fhir:OperationDefinition.parameter.documentation [ fhir:value "Die beiden matchenden Personen wie im Request übergeben." ] ;
+       fhir:OperationDefinition.parameter.type [ fhir:value "Patient" ]
+     ], [
+       fhir:index 1 ;
+       fhir:OperationDefinition.parameter.name [ fhir:value "score" ] ;
+       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+       fhir:OperationDefinition.parameter.documentation [ fhir:value "Matching-Score" ] ;
+       fhir:OperationDefinition.parameter.type [ fhir:value "decimal" ]
+     ], [
+       fhir:index 2 ;
+       fhir:OperationDefinition.parameter.name [ fhir:value "result" ] ;
+       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+       fhir:OperationDefinition.parameter.documentation [ fhir:value "Matching-Ergebnis" ] ;
+       fhir:OperationDefinition.parameter.type [ fhir:value "decimal" ]
+     ], [
+       fhir:index 3 ;
+       fhir:OperationDefinition.parameter.name [ fhir:value "linkId" ] ;
+       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+       fhir:OperationDefinition.parameter.documentation [ fhir:value "Link-ID des Matches" ] ;
+       fhir:OperationDefinition.parameter.type [ fhir:value "integer" ]
+     ], [
+       fhir:index 4 ;
+       fhir:OperationDefinition.parameter.name [ fhir:value "comment" ] ;
+       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
+       fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
+       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+       fhir:OperationDefinition.parameter.documentation [ fhir:value "Anmerkung zum Match" ] ;
+       fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/OperationDefinition/AddPossibleMatchForPerson.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

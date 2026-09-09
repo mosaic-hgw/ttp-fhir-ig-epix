@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "Parameters-AddPossibleMatchForIdentity-request-example-1",
+  "parameter" : [{
+    "name" : "domain",
+    "valueString" : "MIRACUM"
+  },
+  {
+    "name" : "identityReference",
+    "valueId" : "53"
+  },
+  {
+    "name" : "identityReferenceAlias",
+    "valueId" : "67"
+  }]
+}

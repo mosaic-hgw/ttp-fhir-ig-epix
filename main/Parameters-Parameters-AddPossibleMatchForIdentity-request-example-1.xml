@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AddPossibleMatchForIdentity-request-example-1"/>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
+  </parameter>
+  <parameter>
+    <name value="identityReference"/>
+    <valueId value="53"/>
+  </parameter>
+  <parameter>
+    <name value="identityReferenceAlias"/>
+    <valueId value="67"/>
+  </parameter>
+</Parameters>

@@ -9,7 +9,7 @@
   <version value="2026.1.0"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-09-09T13:43:24+00:00"/>
+  <date value="2026-09-09T14:19:15+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -478,10 +478,21 @@
         <valueString value="OperationDefinition"/>
       </extension>
       <reference>
-        <reference value="OperationDefinition/AddPossibleMatch"/>
+        <reference value="OperationDefinition/AddPossibleMatchForIdentity"/>
       </reference>
-      <name value="addPossibleMatch"/>
-      <description value="Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu."/>
+      <name value="addPossibleMatchForIdentity"/>
+      <description value="Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/AddPossibleMatchForPerson"/>
+      </reference>
+      <name value="addPossibleMatchForPerson"/>
+      <description value="Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -572,9 +583,9 @@
         <valueString value="Parameters"/>
       </extension>
       <reference>
-        <reference value="Parameters/Parameters-AddPossibleMatch-request-example-1"/>
+        <reference value="Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1"/>
       </reference>
-      <name value="Parameters-AddPossibleMatch-request-example-1"/>
+      <name value="Parameters-AddPossibleMatchForIdentity-request-example-1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -582,9 +593,29 @@
         <valueString value="Parameters"/>
       </extension>
       <reference>
-        <reference value="Parameters/Parameters-AddPossibleMatch-response-example-1"/>
+        <reference value="Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"/>
       </reference>
-      <name value="Parameters-AddPossibleMatch-response-example-1"/>
+      <name value="Parameters-AddPossibleMatchForIdentity-response-example-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/Parameters-AddPossibleMatchForPerson-request-example-1"/>
+      </reference>
+      <name value="Parameters-AddPossibleMatchForPerson-request-example-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"/>
+      </reference>
+      <name value="Parameters-AddPossibleMatchForPerson-response-example-1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

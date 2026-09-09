@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="Parameters-AddPossibleMatchForPerson-request-example-1"/>
+  <parameter>
+    <name value="domain"/>
+    <valueString value="MIRACUM"/>
+  </parameter>
+  <parameter>
+    <name value="mpiIdentifier"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+      <value value="1001000000066"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="mpiIdentifierAlias"/>
+    <valueIdentifier>
+      <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+      <value value="1001000068944"/>
+    </valueIdentifier>
+  </parameter>
+</Parameters>

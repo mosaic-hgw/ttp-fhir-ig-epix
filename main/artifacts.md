@@ -19,7 +19,8 @@ These are custom operations that can be supported by and/or invoked by systems c
 | | |
 | :--- | :--- |
 | [addPatient](OperationDefinition-AddPatient.md) | Fügt eine oder mehrere Patientenidentitäten hinzu. |
-| [addPossibleMatch](OperationDefinition-AddPossibleMatch.md) | Fügt einen Match zu einem bestimmten MPI-Eintrag einer Domäne hinzu. |
+| [addPossibleMatchForIdentity](OperationDefinition-AddPossibleMatchForIdentity.md) | Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu. |
+| [addPossibleMatchForPerson](OperationDefinition-AddPossibleMatchForPerson.md) | Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu. |
 | [assignIdentity](OperationDefinition-AssignIdentity.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben. |
 | [assignIdentityByIdentifier](OperationDefinition-AssignIdentityByIdentifier.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. |
 | [queryPossibleMatches](OperationDefinition-QueryPossibleMatches.md) | Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. |
@@ -55,8 +56,10 @@ These are example instances that show what data produced and consumed by systems
 | [OperationOutcome-RemovePossibleMatches-response-example-1](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md) |
 | [Parameters-AddPatient-request-example-1](Parameters-Parameters-AddPatient-request-example-1.md) |
 | [Parameters-AddPatient-response-example-1](Parameters-Parameters-AddPatient-response-example-1.md) |
-| [Parameters-AddPossibleMatch-request-example-1](Parameters-Parameters-AddPossibleMatch-request-example-1.md) |
-| [Parameters-AddPossibleMatch-response-example-1](Parameters-Parameters-AddPossibleMatch-response-example-1.md) |
+| [Parameters-AddPossibleMatchForIdentity-request-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.md) |
+| [Parameters-AddPossibleMatchForIdentity-response-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md) |
+| [Parameters-AddPossibleMatchForPerson-request-example-1](Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.md) |
+| [Parameters-AddPossibleMatchForPerson-response-example-1](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) |
 | [Parameters-AssignIdentity-request-example-1](Parameters-Parameters-AssignIdentity-request-example-1.md) |
 | [Parameters-AssignIdentityByIdentifier-request-example-1](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md) |
 | [Parameters-QueryPossibleMatches-request-example-1](Parameters-Parameters-QueryPossibleMatches-request-example-1.md) |
