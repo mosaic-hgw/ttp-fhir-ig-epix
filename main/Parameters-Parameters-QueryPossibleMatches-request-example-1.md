@@ -1,4 +1,4 @@
-# Parameters-QueryPossibleMatches-request-example-1 - v2026.1.0
+# Beispiel Request für Operation QueryPossibleMatches - v2026.1.0
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
@@ -7,9 +7,9 @@
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Parameters-QueryPossibleMatches-request-example-1**
+* **Beispiel Request für Operation QueryPossibleMatches**
 
-## Example Parameters: Parameters-QueryPossibleMatches-request-example-1
+## Example Parameters: Beispiel Request für Operation QueryPossibleMatches
 
 
 
@@ -20,6 +20,14 @@
   "resourceType" : "Parameters",
   "id" : "Parameters-QueryPossibleMatches-request-example-1",
   "parameter" : [{
+    "name" : "_offset",
+    "valueInteger" : 0
+  },
+  {
+    "name" : "_count",
+    "valueInteger" : 1
+  },
+  {
     "name" : "domain",
     "valueString" : "MIRACUM"
   },

@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Bundle/Bundle-QueryPossibleMatches-response-example-1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Bundle-QueryPossibleMatches-response-example-1"] ;
+  fhir:Bundle.type [ fhir:value "searchset"] ;
+  fhir:Bundle.total [ fhir:value "45"^^xsd:nonNegativeInteger] ;
+  fhir:Bundle.link [
+     fhir:index 0 ;
+     fhir:Bundle.link.relation [ fhir:value "self" ] ;
+     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Bundle.link.relation [ fhir:value "next" ] ;
+     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=1&_count=1" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Bundle.link.relation [ fhir:value "previous" ] ;
+     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Bundle.link.relation [ fhir:value "first" ] ;
+     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Bundle.link.relation [ fhir:value "last" ] ;
+     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1" ]
+  ] ;
+  fhir:Bundle.entry [
+     fhir:index 0 ;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0" ] ;
+     fhir:Bundle.entry.resource <urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0>
+  ] .
+
+<urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0> a fhir:Parameters ;
+  fhir:Resource.id [ fhir:value "MatchResultParameters01"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile" ;
+       fhir:index 0 ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile>
+     ]
+  ] ;
+  fhir:Parameters.parameter [
+     fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchItem" ] ;
+     fhir:Parameters.parameter.resource [
+       a fhir:Patient ;
+       fhir:Resource.id [ fhir:value "MatchPatient01" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
+           fhir:index 0 ;
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+         ]
+       ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "Strange" ] ;
+         fhir:HumanName.given [
+           fhir:value "Stephan" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1985-04-12"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchItem" ] ;
+     fhir:Parameters.parameter.resource [
+       a fhir:Patient ;
+       fhir:Resource.id [ fhir:value "MatchPatient02" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
+           fhir:index 0 ;
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+         ]
+       ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "Strange" ] ;
+         fhir:HumanName.given [
+           fhir:value "Stephen" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1985-04-12"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchScore" ] ;
+     fhir:Parameters.parameter.valueDecimal [ fhir:value "0.92"^^xsd:decimal ]
+  ], [
+     fhir:index 3 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchResult" ] ;
+     fhir:Parameters.parameter.valueDecimal [ fhir:value "1"^^xsd:decimal ]
+  ], [
+     fhir:index 4 ;
+     fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "52"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://ths-greifswald.de/fhir/epix/Bundle/Bundle-QueryPossibleMatches-response-example-1.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

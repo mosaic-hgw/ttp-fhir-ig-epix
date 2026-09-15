@@ -9,7 +9,7 @@
   "version" : "2026.1.0",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-09T14:19:15+00:00",
+  "date" : "2026-09-15T15:23:09+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -698,6 +698,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Bundle-QueryPossibleMatches-response-example-1"
+      },
+      "name" : "Beispiel Bundle Response für Operation QueryPossibleMatches",
+      "description" : "Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-QueryPossibleMatches-request-example-1"
+      },
+      "name" : "Beispiel Request für Operation QueryPossibleMatches",
+      "description" : "Parameters-Ressource für den Aufruf der Operation per HTTP-POST.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-MatchParametersProfile-example-1"
+      },
+      "name" : "Beispiel-Instanz für MatchParametersProfile",
+      "description" : "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.",
+      "exampleCanonical" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -705,6 +741,18 @@
       },
       "name" : "Custom IDAT Values",
       "description" : "Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/match-parameters-profile"
+      },
+      "name" : "Match Parameters Profile",
+      "description" : "Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches",
       "exampleBoolean" : false
     },
     {
@@ -815,28 +863,6 @@
         "reference" : "Parameters/Parameters-AssignIdentityByIdentifier-request-example-1"
       },
       "name" : "Parameters-AssignIdentityByIdentifier-request-example-1",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      }],
-      "reference" : {
-        "reference" : "Parameters/Parameters-QueryPossibleMatches-request-example-1"
-      },
-      "name" : "Parameters-QueryPossibleMatches-request-example-1",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      }],
-      "reference" : {
-        "reference" : "Parameters/Parameters-QueryPossibleMatches-response-example-1"
-      },
-      "name" : "Parameters-QueryPossibleMatches-response-example-1",
       "exampleBoolean" : true
     },
     {
@@ -960,7 +986,7 @@
         "reference" : "OperationDefinition/QueryPossibleMatches"
       },
       "name" : "queryPossibleMatches",
-      "description" : "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+      "description" : "Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich.",
       "exampleBoolean" : false
     },
     {

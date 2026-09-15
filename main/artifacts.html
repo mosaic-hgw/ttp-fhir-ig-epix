@@ -266,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="OperationDefinition/QueryPossibleMatches">queryPossibleMatches</a>
             </td>
             <td>
-<p>Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.</p>
+<p>Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich.</p>
 </td>
          </tr>
          <tr>
@@ -304,6 +304,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-match-parameters-profile.html"
+                  title="StructureDefinition/match-parameters-profile">Match Parameters Profile</a>
+            </td>
+            <td>
+<p>Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-Patient.html"
@@ -352,123 +361,195 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="OperationOutcome-AssignIdentityByIdentifier-response-example1.html"
                   title="OperationOutcome/AssignIdentityByIdentifier-response-example1">AssignIdentityByIdentifier-response-example1</a>
             </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Bundle-QueryPossibleMatches-response-example-1.html"
+                  title="Bundle/Bundle-QueryPossibleMatches-response-example-1">Beispiel Bundle Response für Operation QueryPossibleMatches</a>
+            </td>
+            <td>
+<p>Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-Parameters-QueryPossibleMatches-request-example-1.html"
+                  title="Parameters/Parameters-QueryPossibleMatches-request-example-1">Beispiel Request für Operation QueryPossibleMatches</a>
+            </td>
+            <td>
+<p>Parameters-Ressource für den Aufruf der Operation per HTTP-POST.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Parameters-Parameters-MatchParametersProfile-example-1.html"
+                  title="Parameters/Parameters-MatchParametersProfile-example-1">Beispiel-Instanz für MatchParametersProfile</a>
+            </td>
+            <td>
+<p>Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.</p>
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.html"
                   title="OperationOutcome/OperationOutcome-AssignIdentity-response-example-1">OperationOutcome-AssignIdentity-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.html"
                   title="OperationOutcome/OperationOutcome-RemovePossibleMatches-response-example-1">OperationOutcome-RemovePossibleMatches-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPatient-request-example-1.html"
                   title="Parameters/Parameters-AddPatient-request-example-1">Parameters-AddPatient-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPatient-response-example-1.html"
                   title="Parameters/Parameters-AddPatient-response-example-1">Parameters-AddPatient-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.html"
                   title="Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1">Parameters-AddPossibleMatchForIdentity-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html"
                   title="Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1">Parameters-AddPossibleMatchForIdentity-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.html"
                   title="Parameters/Parameters-AddPossibleMatchForPerson-request-example-1">Parameters-AddPossibleMatchForPerson-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html"
                   title="Parameters/Parameters-AddPossibleMatchForPerson-response-example-1">Parameters-AddPossibleMatchForPerson-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AssignIdentity-request-example-1.html"
                   title="Parameters/Parameters-AssignIdentity-request-example-1">Parameters-AssignIdentity-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html"
                   title="Parameters/Parameters-AssignIdentityByIdentifier-request-example-1">Parameters-AssignIdentityByIdentifier-request-example-1</a>
             </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Parameters-Parameters-QueryPossibleMatches-request-example-1.html"
-                  title="Parameters/Parameters-QueryPossibleMatches-request-example-1">Parameters-QueryPossibleMatches-request-example-1</a>
-            </td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Parameters-Parameters-QueryPossibleMatches-response-example-1.html"
-                  title="Parameters/Parameters-QueryPossibleMatches-response-example-1">Parameters-QueryPossibleMatches-response-example-1</a>
-            </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-RemovePossibleMatches-request-example-1.html"
                   title="Parameters/Parameters-RemovePossibleMatches-request-example-1">Parameters-RemovePossibleMatches-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-SetReferenceIdentity-request-example-1.html"
                   title="Parameters/Parameters-SetReferenceIdentity-request-example-1">Parameters-SetReferenceIdentity-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-SetReferenceIdentity-response-example-1.html"
                   title="Parameters/Parameters-SetReferenceIdentity-response-example-1">Parameters-SetReferenceIdentity-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-UpdatePatient-request-example-1.html"
                   title="Parameters/Parameters-UpdatePatient-request-example-1">Parameters-UpdatePatient-request-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Parameters-Parameters-UpdatePatient-response-example-1.html"
                   title="Parameters/Parameters-UpdatePatient-response-example-1">Parameters-UpdatePatient-response-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Patient-Patient-example-1.html" title="Patient/Patient-example-1">Patient-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Patient-Patient-example-2.html" title="Patient/Patient-example-2">Patient-example-2</a>
             </td>
+            <td>
+
+</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Person-Person-example-1.html" title="Person/Person-example-1">Person-example-1</a>
             </td>
+            <td>
+
+</td>
          </tr>
       </tbody>
    </table>
@@ -490,7 +571,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 9, 2026 14:19+0000">2026-09-09</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 15, 2026 15:23+0000">2026-09-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

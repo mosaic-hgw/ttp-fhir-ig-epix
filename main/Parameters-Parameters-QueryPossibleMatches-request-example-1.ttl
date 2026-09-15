@@ -10,10 +10,18 @@
   fhir:Resource.id [ fhir:value "Parameters-QueryPossibleMatches-request-example-1"] ;
   fhir:Parameters.parameter [
      fhir:index 0 ;
+     fhir:Parameters.parameter.name [ fhir:value "_offset" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "_count" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "1"^^xsd:integer ]
+  ], [
+     fhir:index 2 ;
      fhir:Parameters.parameter.name [ fhir:value "domain" ] ;
      fhir:Parameters.parameter.valueString [ fhir:value "MIRACUM" ]
   ], [
-     fhir:index 1 ;
+     fhir:index 3 ;
      fhir:Parameters.parameter.name [ fhir:value "mpiIdentifier" ] ;
      fhir:Parameters.parameter.valueIdentifier [
        fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;

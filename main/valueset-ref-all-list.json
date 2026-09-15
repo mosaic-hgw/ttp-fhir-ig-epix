@@ -57,6 +57,7 @@
     "uses" : {
     },
     "StructureDefinition-Patient.html" : "Patient",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Person.html" : "Person"
   },
   {
@@ -158,6 +159,7 @@
     "uses" : {
     },
     "StructureDefinition-Patient.html" : "Patient",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Person.html" : "Person"
   },
   {
@@ -265,6 +267,7 @@
     "uses" : {
     },
     "StructureDefinition-Patient.html" : "Patient",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Person.html" : "Person"
   }]
 }

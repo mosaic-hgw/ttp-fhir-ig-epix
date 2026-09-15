@@ -69,6 +69,13 @@
   "name" : "CustomIdatValues"
 },
 {
+  "id" : "match-parameters-profile",
+  "type" : "StructureDefinition",
+  "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile",
+  "version" : "2026.1.0",
+  "name" : "MatchParametersProfile"
+},
+{
   "id" : "Patient",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",

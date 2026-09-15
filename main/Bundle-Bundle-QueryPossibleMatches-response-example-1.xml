@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Bundle-QueryPossibleMatches-response-example-1"/>
+  <type value="searchset"/>
+  <total value="45"/>
+  <link>
+    <relation value="self"/>
+    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
+  </link>
+  <link>
+    <relation value="next"/>
+    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=1&amp;_count=1"/>
+  </link>
+  <link>
+    <relation value="previous"/>
+    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
+  </link>
+  <link>
+    <relation value="first"/>
+    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
+  </link>
+  <link>
+    <relation value="last"/>
+    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=44&amp;_count=1"/>
+  </link>
+  <entry>
+    <fullUrl value="urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0"/>
+    <resource>
+      <Parameters>
+        <id value="MatchResultParameters01"/>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"/>
+        </meta>
+        <parameter>
+          <name value="matchItem"/>
+          <resource>
+            <Patient>
+              <id value="MatchPatient01"/>
+              <meta>
+                <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+              </meta>
+              <name>
+                <family value="Strange"/>
+                <given value="Stephan"/>
+              </name>
+              <gender value="male"/>
+              <birthDate value="1985-04-12"/>
+            </Patient>
+          </resource>
+        </parameter>
+        <parameter>
+          <name value="matchItem"/>
+          <resource>
+            <Patient>
+              <id value="MatchPatient02"/>
+              <meta>
+                <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+              </meta>
+              <name>
+                <family value="Strange"/>
+                <given value="Stephen"/>
+              </name>
+              <gender value="male"/>
+              <birthDate value="1985-04-12"/>
+            </Patient>
+          </resource>
+        </parameter>
+        <parameter>
+          <name value="matchScore"/>
+          <valueDecimal value="0.92"/>
+        </parameter>
+        <parameter>
+          <name value="matchResult"/>
+          <valueDecimal value="1"/>
+        </parameter>
+        <parameter>
+          <name value="linkId"/>
+          <valueInteger value="52"/>
+        </parameter>
+      </Parameters>
+    </resource>
+  </entry>
+</Bundle>

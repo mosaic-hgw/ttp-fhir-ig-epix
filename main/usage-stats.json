@@ -551,6 +551,12 @@
     }
   ],
   "profiles": {
+    "Parameters": [
+      {
+        "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile",
+        "title": "Match Parameters Profile"
+      }
+    ],
     "Patient": [
       {
         "url": "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
