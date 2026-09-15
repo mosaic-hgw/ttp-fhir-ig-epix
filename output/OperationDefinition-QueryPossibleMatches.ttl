@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "QueryPossibleMatches"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition QueryPossibleMatches</b></p><a name=\"QueryPossibleMatches\"> </a><a name=\"hcQueryPossibleMatches\"> </a><p>URL: [base]/$queryPossibleMatches</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_offset</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Offset für Paging (Anzahl der zu überspringenden match-Parameter)</p>\n</div></td></tr><tr><td>IN</td><td>_count</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anzahl der zurück zu gebenden match-Parameter (Paging)</p>\n</div></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben.</p>\n</div></td></tr><tr><td>OUT</td><td>prev</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td/><td><div><p>Bei Paging: URL der vorausgehenden Seite.</p>\n</div></td></tr><tr><td>OUT</td><td>self</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td/><td><div><p>Bei Paging: URL der aktuellen Seite.</p>\n</div></td></tr><tr><td>OUT</td><td>next</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td/><td><div><p>Bei Paging: URL der folgenden Seite.</p>\n</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>0..*</td><td/><td/><td><div><p>Match-Informationen zu zwei Identitäten.</p>\n</div></td></tr><tr><td>OUT</td><td>match.matchItem</td><td/><td>2..2</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Die beiden matchenden Identitäten.</p>\n</div></td></tr><tr><td>OUT</td><td>match.matchScore</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Score</p>\n</div></td></tr><tr><td>OUT</td><td>match.matchResult</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Ergebnis</p>\n</div></td></tr><tr><td>OUT</td><td>match.linkId</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Link-ID des Matches</p>\n</div></td></tr><tr><td>OUT</td><td>match.comment</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anmerkung zum Match</p>\n</div></td></tr></table><div><p>Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition QueryPossibleMatches</b></p><a name=\"QueryPossibleMatches\"> </a><a name=\"hcQueryPossibleMatches\"> </a><p>URL: [base]/$queryPossibleMatches</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_offset</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Offset für Paging (Anzahl der zu überspringenden match-Parameter)</p>\n</div></td></tr><tr><td>IN</td><td>_count</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Anzahl der zurück zu gebenden match-Parameter (Paging)</p>\n</div></td></tr><tr><td>IN</td><td>domain</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).</p>\n</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a> (<a href=\"StructureDefinition-match-parameters-profile.html\" title=\"https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile\">Match Parameters Profile</a>)</td><td/><td><div><p>Ergebnis-Bundle mit Match-Informationen.</p>\n</div></td></tr></table><div><p>Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.</p>\n</div></div>"
   ] ;
   fhir:OperationDefinition.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches"] ;
   fhir:OperationDefinition.version [ fhir:value "2026.1.0"] ;
@@ -29,7 +29,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.ths-greifswald.de/" ]
      ]
   ] ;
-  fhir:OperationDefinition.description [ fhir:value "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus."] ;
+  fhir:OperationDefinition.description [ fhir:value "Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich."] ;
   fhir:OperationDefinition.affectsState [ fhir:value "false"^^xsd:boolean] ;
   fhir:OperationDefinition.code [ fhir:value "queryPossibleMatches"] ;
   fhir:OperationDefinition.comment [ fhir:value "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben."] ;
@@ -51,12 +51,12 @@
      fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
      fhir:OperationDefinition.parameter.documentation [ fhir:value "Anzahl der zurück zu gebenden match-Parameter (Paging)" ] ;
-     fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+     fhir:OperationDefinition.parameter.type [ fhir:value "integer" ]
   ], [
      fhir:index 2 ;
      fhir:OperationDefinition.parameter.name [ fhir:value "domain" ] ;
      fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
-     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
      fhir:OperationDefinition.parameter.documentation [ fhir:value "Angabe der Matching-Domaene" ] ;
      fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
@@ -66,79 +66,20 @@
      fhir:OperationDefinition.parameter.use [ fhir:value "in" ] ;
      fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
      fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben." ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)." ] ;
      fhir:OperationDefinition.parameter.type [ fhir:value "Identifier" ]
   ], [
      fhir:index 4 ;
-     fhir:OperationDefinition.parameter.name [ fhir:value "prev" ] ;
-     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
-     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "Bei Paging: URL der vorausgehenden Seite." ] ;
-     fhir:OperationDefinition.parameter.type [ fhir:value "uri" ]
-  ], [
-     fhir:index 5 ;
-     fhir:OperationDefinition.parameter.name [ fhir:value "self" ] ;
-     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
-     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "Bei Paging: URL der aktuellen Seite." ] ;
-     fhir:OperationDefinition.parameter.type [ fhir:value "uri" ]
-  ], [
-     fhir:index 6 ;
-     fhir:OperationDefinition.parameter.name [ fhir:value "next" ] ;
-     fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
-     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "Bei Paging: URL der folgenden Seite." ] ;
-     fhir:OperationDefinition.parameter.type [ fhir:value "uri" ]
-  ], [
-     fhir:index 7 ;
      fhir:OperationDefinition.parameter.name [ fhir:value "match" ] ;
      fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
      fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
-     fhir:OperationDefinition.parameter.max [ fhir:value "*" ] ;
-     fhir:OperationDefinition.parameter.documentation [ fhir:value "Match-Informationen zu zwei Identitäten." ] ;
-     fhir:OperationDefinition.parameter.part [
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Ergebnis-Bundle mit Match-Informationen." ] ;
+     fhir:OperationDefinition.parameter.type [ fhir:value "Bundle" ] ;
+     fhir:OperationDefinition.parameter.targetProfile [
+       fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile" ;
        fhir:index 0 ;
-       fhir:OperationDefinition.parameter.name [ fhir:value "matchItem" ] ;
-       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-       fhir:OperationDefinition.parameter.min [ fhir:value "2"^^xsd:integer ] ;
-       fhir:OperationDefinition.parameter.max [ fhir:value "2" ] ;
-       fhir:OperationDefinition.parameter.documentation [ fhir:value "Die beiden matchenden Identitäten." ] ;
-       fhir:OperationDefinition.parameter.type [ fhir:value "Patient" ]
-     ], [
-       fhir:index 1 ;
-       fhir:OperationDefinition.parameter.name [ fhir:value "matchScore" ] ;
-       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
-       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-       fhir:OperationDefinition.parameter.documentation [ fhir:value "Matching-Score" ] ;
-       fhir:OperationDefinition.parameter.type [ fhir:value "decimal" ]
-     ], [
-       fhir:index 2 ;
-       fhir:OperationDefinition.parameter.name [ fhir:value "matchResult" ] ;
-       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
-       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-       fhir:OperationDefinition.parameter.documentation [ fhir:value "Matching-Ergebnis" ] ;
-       fhir:OperationDefinition.parameter.type [ fhir:value "decimal" ]
-     ], [
-       fhir:index 3 ;
-       fhir:OperationDefinition.parameter.name [ fhir:value "linkId" ] ;
-       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-       fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ] ;
-       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-       fhir:OperationDefinition.parameter.documentation [ fhir:value "Link-ID des Matches" ] ;
-       fhir:OperationDefinition.parameter.type [ fhir:value "integer" ]
-     ], [
-       fhir:index 4 ;
-       fhir:OperationDefinition.parameter.name [ fhir:value "comment" ] ;
-       fhir:OperationDefinition.parameter.use [ fhir:value "out" ] ;
-       fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ] ;
-       fhir:OperationDefinition.parameter.max [ fhir:value "1" ] ;
-       fhir:OperationDefinition.parameter.documentation [ fhir:value "Anmerkung zum Match" ] ;
-       fhir:OperationDefinition.parameter.type [ fhir:value "string" ]
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile>
      ]
   ] .
 

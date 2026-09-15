@@ -23,7 +23,7 @@ These are custom operations that can be supported by and/or invoked by systems c
 | [addPossibleMatchForPerson](OperationDefinition-AddPossibleMatchForPerson.md) | Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu. |
 | [assignIdentity](OperationDefinition-AssignIdentity.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person, um eine erkannte Dublette (Match Result) zu beheben. |
 | [assignIdentityByIdentifier](OperationDefinition-AssignIdentityByIdentifier.md) | Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. |
-| [queryPossibleMatches](OperationDefinition-QueryPossibleMatches.md) | Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. |
+| [queryPossibleMatches](OperationDefinition-QueryPossibleMatches.md) | Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich. |
 | [removePossibleMatches](OperationDefinition-RemovePossibleMatches.md) | Entfernt Possible Matches anhand von LinkIds. |
 | [setReferenceIdentity](OperationDefinition-SetReferenceIdentity.md) | Ändert die Referenz-Identität einer vorhandenen Person (MPI-Eintrag), d.h. diejenigen Daten einer Person, die primäre Gültigkeit haben sollen. |
 | [updatePatient](OperationDefinition-UpdatePatient.md) | Aktualisiert Patienten-Identitäten eines MPI-Eintrags. |
@@ -34,6 +34,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
+| [Match Parameters Profile](StructureDefinition-match-parameters-profile.md) | Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches |
 | [Patient](StructureDefinition-Patient.md) | Patienten-Identität (Variante/Schreibweise) einer realen Person (vgl. auch MPI Eintrag, Person-Profil). |
 | [Person](StructureDefinition-Person.md) | Allgemeines Personen-Profil. Repräsentiert die reale Person (MPI Eintrag), mit beliebig vielen Varianten/Schreibweisen. Letztere werden als Patienten-Identitäten abgebildet (=> Patient-Profil). Die Referenz-Identität wird als aktuell korrekte Variante festgelegt und durch die Angabe von link.assurance='level4' repräsentiert. Es existiert immer genau 1 Link mit diesem Assurance-Level. |
 
@@ -49,27 +50,28 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
 
-| |
-| :--- |
-| [AssignIdentityByIdentifier-response-example1](OperationOutcome-AssignIdentityByIdentifier-response-example1.md) |
-| [OperationOutcome-AssignIdentity-response-example-1](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md) |
-| [OperationOutcome-RemovePossibleMatches-response-example-1](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md) |
-| [Parameters-AddPatient-request-example-1](Parameters-Parameters-AddPatient-request-example-1.md) |
-| [Parameters-AddPatient-response-example-1](Parameters-Parameters-AddPatient-response-example-1.md) |
-| [Parameters-AddPossibleMatchForIdentity-request-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.md) |
-| [Parameters-AddPossibleMatchForIdentity-response-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md) |
-| [Parameters-AddPossibleMatchForPerson-request-example-1](Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.md) |
-| [Parameters-AddPossibleMatchForPerson-response-example-1](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) |
-| [Parameters-AssignIdentity-request-example-1](Parameters-Parameters-AssignIdentity-request-example-1.md) |
-| [Parameters-AssignIdentityByIdentifier-request-example-1](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md) |
-| [Parameters-QueryPossibleMatches-request-example-1](Parameters-Parameters-QueryPossibleMatches-request-example-1.md) |
-| [Parameters-QueryPossibleMatches-response-example-1](Parameters-Parameters-QueryPossibleMatches-response-example-1.md) |
-| [Parameters-RemovePossibleMatches-request-example-1](Parameters-Parameters-RemovePossibleMatches-request-example-1.md) |
-| [Parameters-SetReferenceIdentity-request-example-1](Parameters-Parameters-SetReferenceIdentity-request-example-1.md) |
-| [Parameters-SetReferenceIdentity-response-example-1](Parameters-Parameters-SetReferenceIdentity-response-example-1.md) |
-| [Parameters-UpdatePatient-request-example-1](Parameters-Parameters-UpdatePatient-request-example-1.md) |
-| [Parameters-UpdatePatient-response-example-1](Parameters-Parameters-UpdatePatient-response-example-1.md) |
-| [Patient-example-1](Patient-Patient-example-1.md) |
-| [Patient-example-2](Patient-Patient-example-2.md) |
-| [Person-example-1](Person-Person-example-1.md) |
+| | |
+| :--- | :--- |
+| [AssignIdentityByIdentifier-response-example1](OperationOutcome-AssignIdentityByIdentifier-response-example1.md) |  |
+| [Beispiel Bundle Response für Operation QueryPossibleMatches](Bundle-Bundle-QueryPossibleMatches-response-example-1.md) | Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz. |
+| [Beispiel Request für Operation QueryPossibleMatches](Parameters-Parameters-QueryPossibleMatches-request-example-1.md) | Parameters-Ressource für den Aufruf der Operation per HTTP-POST. |
+| [Beispiel-Instanz für MatchParametersProfile](Parameters-Parameters-MatchParametersProfile-example-1.md) | Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten. |
+| [OperationOutcome-AssignIdentity-response-example-1](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md) |  |
+| [OperationOutcome-RemovePossibleMatches-response-example-1](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md) |  |
+| [Parameters-AddPatient-request-example-1](Parameters-Parameters-AddPatient-request-example-1.md) |  |
+| [Parameters-AddPatient-response-example-1](Parameters-Parameters-AddPatient-response-example-1.md) |  |
+| [Parameters-AddPossibleMatchForIdentity-request-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.md) |  |
+| [Parameters-AddPossibleMatchForIdentity-response-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md) |  |
+| [Parameters-AddPossibleMatchForPerson-request-example-1](Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.md) |  |
+| [Parameters-AddPossibleMatchForPerson-response-example-1](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) |  |
+| [Parameters-AssignIdentity-request-example-1](Parameters-Parameters-AssignIdentity-request-example-1.md) |  |
+| [Parameters-AssignIdentityByIdentifier-request-example-1](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md) |  |
+| [Parameters-RemovePossibleMatches-request-example-1](Parameters-Parameters-RemovePossibleMatches-request-example-1.md) |  |
+| [Parameters-SetReferenceIdentity-request-example-1](Parameters-Parameters-SetReferenceIdentity-request-example-1.md) |  |
+| [Parameters-SetReferenceIdentity-response-example-1](Parameters-Parameters-SetReferenceIdentity-response-example-1.md) |  |
+| [Parameters-UpdatePatient-request-example-1](Parameters-Parameters-UpdatePatient-request-example-1.md) |  |
+| [Parameters-UpdatePatient-response-example-1](Parameters-Parameters-UpdatePatient-response-example-1.md) |  |
+| [Patient-example-1](Patient-Patient-example-1.md) |  |
+| [Patient-example-2](Patient-Patient-example-2.md) |  |
+| [Person-example-1](Person-Person-example-1.md) |  |
 

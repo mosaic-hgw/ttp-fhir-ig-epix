@@ -7,7 +7,7 @@ Usage: #definition
 * title = "queryPossibleMatches"
 * status = #draft
 * kind = #operation
-* description = "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus."
+* description = "Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich."
 * affectsState = false
 * code = #queryPossibleMatches
 * comment = "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben."
@@ -25,10 +25,10 @@ Usage: #definition
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Anzahl der zurück zu gebenden match-Parameter (Paging)"
-* parameter[=].type = #string
+* parameter[=].type = #integer
 * parameter[+].name = #domain
 * parameter[=].use = #in
-* parameter[=].min = 1
+* parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Matching-Domaene"
 * parameter[=].type = #string
@@ -36,105 +36,102 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben."
+* parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
 * parameter[=].type = #Identifier
-* parameter[+].name = #prev
-* parameter[=].use = #out
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Bei Paging: URL der vorausgehenden Seite."
-* parameter[=].type = #uri
-* parameter[+].name = #self
-* parameter[=].use = #out
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Bei Paging: URL der aktuellen Seite."
-* parameter[=].type = #uri
-* parameter[+].name = #next
-* parameter[=].use = #out
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Bei Paging: URL der folgenden Seite."
-* parameter[=].type = #uri
 * parameter[+].name = #match
 * parameter[=].use = #out
 * parameter[=].min = 0
-* parameter[=].max = "*"
-* parameter[=].documentation = "Match-Informationen zu zwei Identitäten."
-* parameter[=].part[0].name = #matchItem
-* parameter[=].part[=].use = #out
-* parameter[=].part[=].min = 2
-* parameter[=].part[=].max = "2"
-* parameter[=].part[=].documentation = "Die beiden matchenden Identitäten."
-* parameter[=].part[=].type = #Patient
-* parameter[=].part[+].name = #matchScore
-* parameter[=].part[=].use = #out
-* parameter[=].part[=].min = 1
-* parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Matching-Score"
-* parameter[=].part[=].type = #decimal
-* parameter[=].part[+].name = #matchResult
-* parameter[=].part[=].use = #out
-* parameter[=].part[=].min = 1
-* parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Matching-Ergebnis"
-* parameter[=].part[=].type = #decimal
-* parameter[=].part[+].name = #linkId
-* parameter[=].part[=].use = #out
-* parameter[=].part[=].min = 1
-* parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Link-ID des Matches"
-* parameter[=].part[=].type = #integer
-* parameter[=].part[+].name = #comment
-* parameter[=].part[=].use = #out
-* parameter[=].part[=].min = 0
-* parameter[=].part[=].max = "1"
-* parameter[=].part[=].documentation = "Anmerkung zum Match"
-* parameter[=].part[=].type = #string
-
+* parameter[=].max = "1"
+* parameter[=].documentation = "Ergebnis-Bundle mit Match-Informationen."
+* parameter[=].type = #Bundle
+* parameter[=].targetProfile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
 
 Instance: Parameters-QueryPossibleMatches-request-example-1
 InstanceOf: Parameters
+Title: "Beispiel Request für Operation QueryPossibleMatches"
+Description: "Parameters-Ressource für den Aufruf der Operation per HTTP-POST."
 Usage: #example
-* parameter[0].name = "domain"
+
+* parameter[0].name = "_offset"
+* parameter[=].valueInteger = 0
+
+* parameter[+].name = "_count"
+* parameter[=].valueInteger = 1
+
+* parameter[+].name = "domain"
 * parameter[=].valueString = "MIRACUM"
+
 * parameter[+].name = "mpiIdentifier"
 * parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].valueIdentifier.value = "1001000000066"
 
-Instance: Parameters-QueryPossibleMatches-response-example-1
-InstanceOf: Parameters
+Instance: Bundle-QueryPossibleMatches-response-example-1
+InstanceOf: Bundle
+Title: "Beispiel Bundle Response für Operation QueryPossibleMatches"
+Description: "Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz."
 Usage: #example
-* parameter.name = "match"
-* parameter.part[0].name = "matchItem"
-* parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "52"
-* parameter.part[=].resource.meta.versionId = "1"
-* parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
-* parameter.part[=].resource.meta.source = "dummy_safe_source"
-* parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-* parameter.part[=].resource.active = true
-* parameter.part[=].resource.name.family = "xxxxx"
-* parameter.part[=].resource.name.given = "Stefanie"
-* parameter.part[=].resource.gender = #male
-* parameter.part[=].resource.birthDate = "1962-12-17"
-* parameter.part[+].name = "matchItem"
-* parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "53"
-* parameter.part[=].resource.meta.versionId = "1"
-* parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:24.180+02:00"
-* parameter.part[=].resource.meta.source = "dummy_safe_source"
-* parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-* parameter.part[=].resource.active = true
-* parameter.part[=].resource.name.family = "xxxxx"
-* parameter.part[=].resource.name.given = "Stefanie"
-* parameter.part[=].resource.gender = #male
-* parameter.part[=].resource.birthDate = "1962-12-16"
-* parameter.part[+].name = "matchScore"
-* parameter.part[=].valueDecimal = 0.965
-* parameter.part[+].name = "matchResult"
-* parameter.part[=].valueDecimal = 0.952
-* parameter.part[+].name = "linkId"
-* parameter.part[=].valueInteger = 5654986
-* parameter.part[+].name = "comment"
-* parameter.part[=].valueString = "Dieser Match wurde manuell durchgeführt!"
+
+* type = #searchset
+* total = 45 // Gesamtzahl aller possible matches im E-PIX
+
+// Paging Navigation Links
+* link[0].relation = "self"
+* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
+
+* link[+].relation = "next"
+* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=1&_count=1"
+
+* link[+].relation = "previous"
+* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
+
+* link[+].relation = "first"
+* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
+
+* link[+].relation = "last"
+* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1"
+
+* entry[0].fullUrl = "urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0"
+* entry[=].resource = MatchResultParameters01
+
+// Einbettung des Ergebnisses gemäß MatchParametersProfile
+Instance: MatchResultParameters01
+InstanceOf: MatchParametersProfile
+Usage: #inline
+
+// Slice: matchItem (1. Patient)
+* parameter[matchItem][0].name = "matchItem"
+* parameter[matchItem][0].resource = MatchPatient01
+
+// Slice: matchItem (2. Patient)
+* parameter[matchItem][1].name = "matchItem"
+* parameter[matchItem][1].resource = MatchPatient02
+
+// Slice: matchScore
+* parameter[matchScore].name = "matchScore"
+* parameter[matchScore].valueDecimal = 0.92
+
+// Slice: matchResult
+* parameter[matchResult].name = "matchResult"
+* parameter[matchResult].valueDecimal = 1.0
+
+// Slice: linkId
+* parameter[linkId].name = "linkId"
+* parameter[linkId].valueInteger = 52
+
+
+// Definition der beiden eingebetteten Patienten-Ressourcen:
+Instance: MatchPatient01
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Stephan"
+* gender = #male
+* birthDate = "1985-04-12"
+
+Instance: MatchPatient02
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Stephen"
+* gender = #male
+* birthDate = "1985-04-12"

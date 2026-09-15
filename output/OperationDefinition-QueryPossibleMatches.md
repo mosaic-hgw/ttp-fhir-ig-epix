@@ -17,13 +17,13 @@
 | Draft as of 2026-02-05 | *Computable Name*:QueryPossibleMatches |
 
  
-Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus. 
+Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich. 
 
 **Konzeptarbeit. Noch nicht implementiert**
 
 ## Zweck
 
-Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.
+Possible Matches des E-PIX abfragen. Filterung auf Domäne und/oder spezifische Person möglich.
 
 ## Voraussetzung
 
@@ -37,7 +37,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgen den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.
 
-Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem oder mehreren Multi-Part-Parametern zurück.
+Der Funktionsaufruf liefert ein SearchSet-Bundle zurück. Das Bundle-Total gibt die Gesamtanzahl der offenen Possible-Matches im E-PIX zurück.
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
@@ -51,7 +51,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
 ## Beispiel
 
 * [Request-Body](Parameters-Parameters-QueryPossibleMatches-request-example-1.md)
-* [Rückmeldung](Parameters-Parameters-QueryPossibleMatches-response-example-1.md)
+* [Rückmeldung](Bundle-Bundle-QueryPossibleMatches-response-example-1.md)
 
 
 
@@ -76,7 +76,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
       "value" : "https://www.ths-greifswald.de/"
     }]
   }],
-  "description" : "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+  "description" : "Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich.",
   "affectsState" : false,
   "code" : "queryPossibleMatches",
   "comment" : "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.",
@@ -97,12 +97,12 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "min" : 0,
     "max" : "1",
     "documentation" : "Anzahl der zurück zu gebenden match-Parameter (Paging)",
-    "type" : "string"
+    "type" : "integer"
   },
   {
     "name" : "domain",
     "use" : "in",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
     "documentation" : "Angabe der Matching-Domaene",
     "type" : "string"
@@ -112,79 +112,17 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "use" : "in",
     "min" : 0,
     "max" : "1",
-    "documentation" : "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben.",
+    "documentation" : "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).",
     "type" : "Identifier"
-  },
-  {
-    "name" : "prev",
-    "use" : "out",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Bei Paging: URL der vorausgehenden Seite.",
-    "type" : "uri"
-  },
-  {
-    "name" : "self",
-    "use" : "out",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Bei Paging: URL der aktuellen Seite.",
-    "type" : "uri"
-  },
-  {
-    "name" : "next",
-    "use" : "out",
-    "min" : 0,
-    "max" : "1",
-    "documentation" : "Bei Paging: URL der folgenden Seite.",
-    "type" : "uri"
   },
   {
     "name" : "match",
     "use" : "out",
     "min" : 0,
-    "max" : "*",
-    "documentation" : "Match-Informationen zu zwei Identitäten.",
-    "part" : [{
-      "name" : "matchItem",
-      "use" : "out",
-      "min" : 2,
-      "max" : "2",
-      "documentation" : "Die beiden matchenden Identitäten.",
-      "type" : "Patient"
-    },
-    {
-      "name" : "matchScore",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Score",
-      "type" : "decimal"
-    },
-    {
-      "name" : "matchResult",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Ergebnis",
-      "type" : "decimal"
-    },
-    {
-      "name" : "linkId",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Link-ID des Matches",
-      "type" : "integer"
-    },
-    {
-      "name" : "comment",
-      "use" : "out",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Match",
-      "type" : "string"
-    }]
+    "max" : "1",
+    "documentation" : "Ergebnis-Bundle mit Match-Informationen.",
+    "type" : "Bundle",
+    "targetProfile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"]
   }]
 }
 

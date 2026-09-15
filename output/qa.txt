@@ -1,10 +1,11 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 54, warn = 76, info = 41
+err = 56, warn = 84, info = 42
 IG Publisher Version: 2.3.4
-Generated Wed Sep 09 16:13:05 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
- Build Errors : 0 / 25 / 0
+Generated Tue Sep 15 17:14:31 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.1.0 (canonical = https://ths-greifswald.de/fhir/epix)
+ Build Errors : 0 / 23 / 0
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 8 / 9
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPatient : 2 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPossibleMatchForIdentity : 2 / 0 / 2
@@ -26,8 +27,8 @@ Generated Wed Sep 09 16:13:05 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 2 / 7
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 4 / 5
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1 : 0 / 1 / 1
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-response-example-1 : 0 / 2 / 7
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-RemovePossibleMatches-request-example-1 : 1 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-request-example-1 : 0 / 1 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-response-example-1 : 0 / 4 / 9
@@ -39,6 +40,7 @@ Generated Wed Sep 09 16:13:05 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-CustomIdatValues : 2 / 0 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Patient : 2 / 9 / 6
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Person : 2 / 3 / 4
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile : 2 / 0 / 2
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/AssignIdentityByIdentifier-response-example1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -52,8 +54,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPossibleMatchForPerson-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AssignIdentity-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AssignIdentityByIdentifier-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-QueryPossibleMatches-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-QueryPossibleMatches-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-RemovePossibleMatches-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-SetReferenceIdentity-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-SetReferenceIdentity-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -66,6 +66,17 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated\resources\Bundle-Bundle-QueryPossibleMatches-response-example-1.json ==
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[0].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[1].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=1&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[2].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[3].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[4].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/MatchPatient01*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/MatchPatient02*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: Es konnten keine Typen aus dem Suchstring ermittelt werden, so dass die Typen nicht überprüft werden können
+INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource: Es konnte nicht festgestellt werden, ob diese Ressource ein gültiger Ressourcentyp für diese Suche ist
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: SearchSet-Bundles sollten Suchmodi für die Einträge enthalten
 == fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix.json ==
 WARNING: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix: Unknown Parameters: [snapshot=true]
 WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement' kann nicht aufgelöst werden
@@ -174,13 +185,13 @@ WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Par
 == fsh-generated\resources\Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json ==
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
+== fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1.json ==
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.meta.profile[1]: Canonical URL 'https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters' kann nicht aufgelöst werden
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.meta.profile[1]: Die Profilreferenz 'https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
 == fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1.json ==
-WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[1].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
-== fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-response-example-1.json ==
-INFORMATION: Parameters/Parameters-QueryPossibleMatches-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/52*/.meta.source: URL-Wert 'dummy_safe_source' löst nicht auf
-WARNING: Parameters/Parameters-QueryPossibleMatches-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/52*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-QueryPossibleMatches-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/53*/.meta.source: URL-Wert 'dummy_safe_source' löst nicht auf
-WARNING: Parameters/Parameters-QueryPossibleMatches-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-RemovePossibleMatches-request-example-1.json ==
 ERROR: Parameters/Parameters-RemovePossibleMatches-request-example-1: Parameters.parameter[0]: Regel inv-1 fehlgeschlagen
 == fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-request-example-1.json ==
@@ -246,3 +257,7 @@ INFORMATION: StructureDefinition/Person: StructureDefinition.differential.elemen
 INFORMATION: StructureDefinition/Person: StructureDefinition.snapshot.element[45].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: Resource: The resource StructureDefinition/Person could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Person: URL Mismatch https://ths-greifswald.de/fhir/epix/StructureDefinition/Person vs https://ths-greifswald.de/fhir/StructureDefinition/epix/Person
+== fsh-generated\resources\StructureDefinition-match-parameters-profile.json ==
+ERROR: StructureDefinition.where(url = 'https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile'): Conformance resource C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile.json - the canonical URL (https://ths-greifswald.de/fhir/epix/StructureDefinition/match-parameters-profile) does not match the URL (https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile). Use the special-url parameter if you really mean for it not to match
+INFORMATION: Resource: The resource StructureDefinition/match-parameters-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile: URL Mismatch https://ths-greifswald.de/fhir/epix/StructureDefinition/match-parameters-profile vs https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile

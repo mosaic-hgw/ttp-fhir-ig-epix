@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Bundle-Bundle-QueryPossibleMatches-response-example-1.json",
+    "fshName": "Bundle-QueryPossibleMatches-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
+    "startLine": 68,
+    "endLine": 94
+  },
+  {
     "outputFile": "OperationDefinition-AddPatient.json",
     "fshName": "AddPatient",
     "fshType": "Instance",
@@ -8,10 +16,18 @@
     "endLine": 77
   },
   {
-    "outputFile": "OperationDefinition-AddPossibleMatch.json",
-    "fshName": "AddPossibleMatch",
+    "outputFile": "OperationDefinition-AddPossibleMatchForIdentity.json",
+    "fshName": "AddPossibleMatchForIdentity",
     "fshType": "Instance",
-    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "fshFile": "operationdefinition-AddPossibleMatchForIdentity.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "OperationDefinition-AddPossibleMatchForPerson.json",
+    "fshName": "AddPossibleMatchForPerson",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatchForPerson.fsh",
     "startLine": 1,
     "endLine": 78
   },
@@ -37,7 +53,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
     "startLine": 1,
-    "endLine": 93
+    "endLine": 47
   },
   {
     "outputFile": "OperationDefinition-RemovePossibleMatches.json",
@@ -45,7 +61,7 @@
     "fshType": "Instance",
     "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 34
   },
   {
     "outputFile": "OperationDefinition-SetReferenceIdentity.json",
@@ -84,8 +100,8 @@
     "fshName": "OperationOutcome-RemovePossibleMatches-response-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
-    "startLine": 54,
-    "endLine": 60
+    "startLine": 47,
+    "endLine": 53
   },
   {
     "outputFile": "Parameters-Parameters-AddPatient-request-example-1.json",
@@ -104,18 +120,34 @@
     "endLine": 169
   },
   {
-    "outputFile": "Parameters-Parameters-AddPossibleMatch-request-example-1.json",
-    "fshName": "Parameters-AddPossibleMatch-request-example-1",
+    "outputFile": "Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.json",
+    "fshName": "Parameters-AddPossibleMatchForIdentity-request-example-1",
     "fshType": "Instance",
-    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "fshFile": "operationdefinition-AddPossibleMatchForIdentity.fsh",
+    "startLine": 81,
+    "endLine": 92
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.json",
+    "fshName": "Parameters-AddPossibleMatchForIdentity-response-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatchForIdentity.fsh",
+    "startLine": 94,
+    "endLine": 129
+  },
+  {
+    "outputFile": "Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.json",
+    "fshName": "Parameters-AddPossibleMatchForPerson-request-example-1",
+    "fshType": "Instance",
+    "fshFile": "operationdefinition-AddPossibleMatchForPerson.fsh",
     "startLine": 81,
     "endLine": 96
   },
   {
-    "outputFile": "Parameters-Parameters-AddPossibleMatch-response-example-1.json",
-    "fshName": "Parameters-AddPossibleMatch-response-example-1",
+    "outputFile": "Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.json",
+    "fshName": "Parameters-AddPossibleMatchForPerson-response-example-1",
     "fshType": "Instance",
-    "fshFile": "operationdefinition-AddPossibleMatch.fsh",
+    "fshFile": "operationdefinition-AddPossibleMatchForPerson.fsh",
     "startLine": 98,
     "endLine": 133
   },
@@ -136,28 +168,28 @@
     "endLine": 71
   },
   {
+    "outputFile": "Parameters-Parameters-MatchParametersProfile-example-1.json",
+    "fshName": "Parameters-MatchParametersProfile-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Parameters-Parameters.fsh",
+    "startLine": 45,
+    "endLine": 71
+  },
+  {
     "outputFile": "Parameters-Parameters-QueryPossibleMatches-request-example-1.json",
     "fshName": "Parameters-QueryPossibleMatches-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
-    "startLine": 96,
-    "endLine": 103
-  },
-  {
-    "outputFile": "Parameters-Parameters-QueryPossibleMatches-response-example-1.json",
-    "fshName": "Parameters-QueryPossibleMatches-response-example-1",
-    "fshType": "Instance",
-    "fshFile": "operationdefinition-QueryPossibleMatches.fsh",
-    "startLine": 105,
-    "endLine": 140
+    "startLine": 49,
+    "endLine": 66
   },
   {
     "outputFile": "Parameters-Parameters-RemovePossibleMatches-request-example-1.json",
     "fshName": "Parameters-RemovePossibleMatches-request-example-1",
     "fshType": "Instance",
     "fshFile": "operationdefinition-RemovePossibleMatches.fsh",
-    "startLine": 43,
-    "endLine": 51
+    "startLine": 36,
+    "endLine": 44
   },
   {
     "outputFile": "Parameters-Parameters-SetReferenceIdentity-request-example-1.json",
@@ -238,5 +270,13 @@
     "fshFile": "profile-Person.fsh",
     "startLine": 1,
     "endLine": 65
+  },
+  {
+    "outputFile": "StructureDefinition-match-parameters-profile.json",
+    "fshName": "MatchParametersProfile",
+    "fshType": "Profile",
+    "fshFile": "profile-Parameters-Parameters.fsh",
+    "startLine": 1,
+    "endLine": 43
   }
 ]

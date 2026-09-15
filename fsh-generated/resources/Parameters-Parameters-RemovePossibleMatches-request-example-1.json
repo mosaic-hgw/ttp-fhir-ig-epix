@@ -6,15 +6,15 @@
       "part": [
         {
           "name": "comment",
-          "valueString": "Dieser Match war völliger Unsinn!"
+          "valueString": "Diese Matches waren völliger Unsinn!"
         }
       ],
-      "name": "domain",
-      "valueString": "MIRACUM"
+      "name": "linkId",
+      "valueInteger": 86
     },
     {
       "name": "linkId",
-      "valueInteger": 86
+      "valueInteger": 87
     }
   ]
 }

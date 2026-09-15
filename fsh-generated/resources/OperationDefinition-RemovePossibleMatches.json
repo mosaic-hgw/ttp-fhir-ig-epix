@@ -16,14 +16,6 @@
   ],
   "parameter": [
     {
-      "name": "domain",
-      "use": "in",
-      "min": 1,
-      "max": "1",
-      "documentation": "Angabe der Matching-Domaene",
-      "type": "string"
-    },
-    {
       "name": "linkId",
       "use": "in",
       "min": 1,
@@ -55,7 +47,7 @@
   "name": "RemovePossibleMatches",
   "title": "removePossibleMatches",
   "kind": "operation",
-  "description": "Entfernt Matches aus einer Domäne.",
+  "description": "Entfernt Possible Matches anhand von LinkIds.",
   "affectsState": true,
   "code": "removePossibleMatches",
   "comment": "(Mögliche) Matches von Identitäten entfernen.",

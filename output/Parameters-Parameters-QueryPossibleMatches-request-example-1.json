@@ -2,6 +2,14 @@
   "resourceType" : "Parameters",
   "id" : "Parameters-QueryPossibleMatches-request-example-1",
   "parameter" : [{
+    "name" : "_offset",
+    "valueInteger" : 0
+  },
+  {
+    "name" : "_count",
+    "valueInteger" : 1
+  },
+  {
     "name" : "domain",
     "valueString" : "MIRACUM"
   },

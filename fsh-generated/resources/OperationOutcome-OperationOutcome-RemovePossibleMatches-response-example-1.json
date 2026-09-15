@@ -5,7 +5,7 @@
     {
       "severity": "information",
       "code": "informational",
-      "diagnostics": "removed 1 possible match(es)."
+      "diagnostics": "possible match(es) removed."
     }
   ]
 }

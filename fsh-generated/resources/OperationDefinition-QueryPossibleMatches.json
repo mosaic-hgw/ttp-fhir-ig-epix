@@ -29,96 +29,34 @@
       "min": 0,
       "max": "1",
       "documentation": "Anzahl der zurück zu gebenden match-Parameter (Paging)",
-      "type": "string"
+      "type": "integer"
     },
     {
       "name": "domain",
       "use": "in",
-      "min": 1,
+      "min": 0,
       "max": "1",
       "documentation": "Angabe der Matching-Domaene",
       "type": "string"
     },
     {
-      "name": "mpiId",
+      "name": "mpiIdentifier",
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Ist dieser Parameter nicht angegeben, werden alle Matches zur Domäne zurück gegeben.",
+      "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).",
       "type": "Identifier"
     },
     {
-      "name": "prev",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "documentation": "Bei Paging: URL der vorausgehenden Seite.",
-      "type": "uri"
-    },
-    {
-      "name": "self",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "documentation": "Bei Paging: URL der aktuellen Seite.",
-      "type": "uri"
-    },
-    {
-      "name": "next",
-      "use": "out",
-      "min": 0,
-      "max": "1",
-      "documentation": "Bei Paging: URL der folgenden Seite.",
-      "type": "uri"
-    },
-    {
-      "part": [
-        {
-          "name": "matchItem",
-          "use": "out",
-          "min": 2,
-          "max": "2",
-          "documentation": "Die beiden matchenden Identitäten.",
-          "type": "Patient"
-        },
-        {
-          "name": "matchScore",
-          "use": "out",
-          "min": 1,
-          "max": "1",
-          "documentation": "Matching-Score",
-          "type": "decimal"
-        },
-        {
-          "name": "matchResult",
-          "use": "out",
-          "min": 1,
-          "max": "1",
-          "documentation": "Matching-Ergebnis",
-          "type": "decimal"
-        },
-        {
-          "name": "linkId",
-          "use": "out",
-          "min": 1,
-          "max": "1",
-          "documentation": "Link-ID des Matches",
-          "type": "integer"
-        },
-        {
-          "name": "comment",
-          "use": "out",
-          "min": 0,
-          "max": "1",
-          "documentation": "Anmerkung zum Match",
-          "type": "string"
-        }
+      "targetProfile": [
+        "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
       ],
       "name": "match",
       "use": "out",
       "min": 0,
-      "max": "*",
-      "documentation": "Match-Informationen zu zwei Identitäten."
+      "max": "1",
+      "documentation": "Ergebnis-Bundle mit Match-Informationen.",
+      "type": "Bundle"
     }
   ],
   "version": "2025.2.0",
@@ -128,7 +66,7 @@
   "name": "QueryPossibleMatches",
   "title": "queryPossibleMatches",
   "kind": "operation",
-  "description": "Gibt Matches zu einer Domäne oder zu einem bestimmten MPI-Eintrag aus.",
+  "description": "Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich.",
   "affectsState": false,
   "code": "queryPossibleMatches",
   "comment": "Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.",

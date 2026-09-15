@@ -3,6 +3,14 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="Parameters-QueryPossibleMatches-request-example-1"/>
   <parameter>
+    <name value="_offset"/>
+    <valueInteger value="0"/>
+  </parameter>
+  <parameter>
+    <name value="_count"/>
+    <valueInteger value="1"/>
+  </parameter>
+  <parameter>
     <name value="domain"/>
     <valueString value="MIRACUM"/>
   </parameter>

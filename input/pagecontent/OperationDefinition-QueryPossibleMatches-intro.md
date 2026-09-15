@@ -1,4 +1,4 @@
 **Konzeptarbeit. Noch nicht implementiert**
 
 ## Zweck
-Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.
+Possible Matches des E-PIX abfragen. Filterung auf Domäne und/oder spezifische Person möglich.
