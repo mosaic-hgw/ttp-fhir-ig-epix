@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MatchCreationTypeCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MatchCreationTypeCS</b></p><a name=\"MatchCreationTypeCS\"> </a><a name=\"hcMatchCreationTypeCS\"> </a><p>This  code system <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">MANUAL<a name=\"MatchCreationTypeCS-MANUAL\"> </a></td><td>Der Match wurde durch einen Benutzer manuell erzeugt.</td></tr><tr><td style=\"white-space:nowrap\">AUTOMATIC<a name=\"MatchCreationTypeCS-AUTOMATIC\"> </a></td><td>Der Match wurde automatisch erzeugt.</td></tr><tr><td style=\"white-space:nowrap\">DEFAULT<a name=\"MatchCreationTypeCS-DEFAULT\"> </a></td><td>Der Match wurde gemäß Standardeinstellung erzeugt.</td></tr></table></div>"
+  },
+  "url" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS",
+  "version" : "2026.2.0-rc",
+  "name" : "MatchCreationTypeCS",
+  "title" : "Match Creation Type CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-16T09:07:42+00:00",
+  "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+  "contact" : [{
+    "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.ths-greifswald.de/"
+    }]
+  }],
+  "description" : "Codes zur Kennzeichnung, wie ein Match erzeugt wurde.",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "MANUAL",
+    "display" : "MANUAL",
+    "definition" : "Der Match wurde durch einen Benutzer manuell erzeugt."
+  },
+  {
+    "code" : "AUTOMATIC",
+    "display" : "AUTOMATIC",
+    "definition" : "Der Match wurde automatisch erzeugt."
+  },
+  {
+    "code" : "DEFAULT",
+    "display" : "DEFAULT",
+    "definition" : "Der Match wurde gemäß Standardeinstellung erzeugt."
+  }]
+}

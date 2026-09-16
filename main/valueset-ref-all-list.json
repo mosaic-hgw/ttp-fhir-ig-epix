@@ -56,8 +56,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
+    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-Person.html" : "Person"
   },
   {
@@ -158,8 +158,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
+    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-Person.html" : "Person"
   },
   {
@@ -266,8 +266,32 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
+    "StructureDefinition-Patient.html" : "Patient",
     "StructureDefinition-Person.html" : "Person"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchCreationTypeVS",
+    "title" : "Match Creation Type ValueSet",
+    "description" : "ValueSet aller zugelassenen Erstellungsarten eines Matches.",
+    "systems" : ["https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"],
+    "uses" : {
+    },
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchPriorityVS",
+    "title" : "Match Priority ValueSet",
+    "description" : "ValueSet zur Priorisierung und Statussteuerung von Matches.",
+    "systems" : ["https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"],
+    "uses" : {
+    },
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile"
   }]
 }

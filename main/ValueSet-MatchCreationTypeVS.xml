@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="MatchCreationTypeVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet MatchCreationTypeVS</b></p><a name="MatchCreationTypeVS"> </a><a name="hcMatchCreationTypeVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-MatchCreationTypeCS.html"><code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2026.2.0-rc</span></li></ul></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS"/>
+  <version value="2026.2.0-rc"/>
+  <name value="MatchCreationTypeVS"/>
+  <title value="Match Creation Type ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-16T09:07:42+00:00"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet aller zugelassenen Erstellungsarten eines Matches."/>
+  <compose>
+    <include>
+      <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+    </include>
+  </compose>
+</ValueSet>

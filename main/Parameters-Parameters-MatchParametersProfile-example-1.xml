@@ -5,30 +5,12 @@
   <meta>
     <lastUpdated value="2026-09-15T16:31:23.000+02:00"/>
     <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"/>
-    <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters"/>
   </meta>
   <parameter>
     <name value="matchItem"/>
     <resource>
       <Patient>
-        <id value="Patient1"/>
-        <meta>
-          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
-        </meta>
-        <name>
-          <family value="Strange"/>
-          <given value="Stephan"/>
-        </name>
-        <gender value="male"/>
-        <birthDate value="1985-04-12"/>
-      </Patient>
-    </resource>
-  </parameter>
-  <parameter>
-    <name value="matchItem"/>
-    <resource>
-      <Patient>
-        <id value="Patient2"/>
+        <id value="Patient3"/>
         <meta>
           <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
         </meta>
@@ -42,12 +24,53 @@
     </resource>
   </parameter>
   <parameter>
+    <name value="matchItem"/>
+    <resource>
+      <Patient>
+        <id value="Patient4"/>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <name>
+          <family value="Strange"/>
+          <given value="Steven"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1985-04-12"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
     <name value="matchScore"/>
     <valueDecimal value="0.85"/>
   </parameter>
   <parameter>
     <name value="matchResult"/>
     <valueDecimal value="1"/>
+  </parameter>
+  <parameter>
+    <name value="matchCreated"/>
+    <valueDateTime value="2026-09-15T16:31:23.000+02:00"/>
+  </parameter>
+  <parameter>
+    <name value="matchCreationType"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+        <code value="MANUAL"/>
+        <display value="MANUAL"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="matchPriority"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"/>
+        <code value="OPEN"/>
+        <display value="OPEN"/>
+      </coding>
+    </valueCodeableConcept>
   </parameter>
   <parameter>
     <name value="linkId"/>

@@ -1,9 +1,9 @@
-# Match Parameters Profile - v2026.1.0
+# Match Parameters Profile - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0-rc - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile | *Version*:2026.2.0-rc |
 | Active as of 2026-02-05 | *Computable Name*:MatchParametersProfile |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
   "resourceType" : "StructureDefinition",
   "id" : "match-parameters-profile",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "MatchParametersProfile",
   "title" : "Match Parameters Profile",
   "status" : "active",
@@ -113,8 +113,8 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
         "ordered" : true,
         "rules" : "closed"
       },
-      "min" : 5,
-      "max" : "5"
+      "min" : 8,
+      "max" : "8"
     },
     {
       "id" : "Parameters.parameter:matchItem",
@@ -175,6 +175,74 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
       "type" : [{
         "code" : "decimal"
       }]
+    },
+    {
+      "id" : "Parameters.parameter:matchCreated",
+      "path" : "Parameters.parameter",
+      "sliceName" : "matchCreated",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Parameters.parameter:matchCreated.name",
+      "path" : "Parameters.parameter.name",
+      "patternString" : "matchCreated"
+    },
+    {
+      "id" : "Parameters.parameter:matchCreated.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "Parameters.parameter:matchCreationType",
+      "path" : "Parameters.parameter",
+      "sliceName" : "matchCreationType",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Parameters.parameter:matchCreationType.name",
+      "path" : "Parameters.parameter.name",
+      "patternString" : "matchCreationType"
+    },
+    {
+      "id" : "Parameters.parameter:matchCreationType.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS"
+      }
+    },
+    {
+      "id" : "Parameters.parameter:matchPriority",
+      "path" : "Parameters.parameter",
+      "sliceName" : "matchPriority",
+      "min" : 1,
+      "max" : "1"
+    },
+    {
+      "id" : "Parameters.parameter:matchPriority.name",
+      "path" : "Parameters.parameter.name",
+      "patternString" : "matchPriority"
+    },
+    {
+      "id" : "Parameters.parameter:matchPriority.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS"
+      }
     },
     {
       "id" : "Parameters.parameter:linkId",

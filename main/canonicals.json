@@ -2,97 +2,125 @@
   "id" : "AddPatient",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "AddPatient"
 },
 {
   "id" : "AddPossibleMatchForIdentity",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForIdentity",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "AddPossibleMatchForIdentity"
 },
 {
   "id" : "AddPossibleMatchForPerson",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForPerson",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "AddPossibleMatchForPerson"
 },
 {
   "id" : "AssignIdentity",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentity",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "AssignIdentity"
 },
 {
   "id" : "AssignIdentityByIdentifier",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "AssignIdentityByIdentifier"
 },
 {
   "id" : "QueryPossibleMatches",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "QueryPossibleMatches"
 },
 {
   "id" : "RemovePossibleMatches",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "RemovePossibleMatches"
 },
 {
   "id" : "SetReferenceIdentity",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "SetReferenceIdentity"
 },
 {
   "id" : "UpdatePatient",
   "type" : "OperationDefinition",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "UpdatePatient"
 },
 {
   "id" : "CustomIdatValues",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "CustomIdatValues"
 },
 {
   "id" : "match-parameters-profile",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "MatchParametersProfile"
 },
 {
   "id" : "Patient",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "Patient"
 },
 {
   "id" : "Person",
   "type" : "StructureDefinition",
   "url" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/Person",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "Person"
+},
+{
+  "id" : "MatchCreationTypeCS",
+  "type" : "CodeSystem",
+  "url" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS",
+  "version" : "2026.2.0-rc",
+  "name" : "MatchCreationTypeCS"
+},
+{
+  "id" : "MatchPriorityCS",
+  "type" : "CodeSystem",
+  "url" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS",
+  "version" : "2026.2.0-rc",
+  "name" : "MatchPriorityCS"
 },
 {
   "id" : "ths-greifswald.ttp-fhir-gw.epix",
   "type" : "ImplementationGuide",
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX"
+},
+{
+  "id" : "MatchCreationTypeVS",
+  "type" : "ValueSet",
+  "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS",
+  "version" : "2026.2.0-rc",
+  "name" : "MatchCreationTypeVS"
+},
+{
+  "id" : "MatchPriorityVS",
+  "type" : "ValueSet",
+  "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS",
+  "version" : "2026.2.0-rc",
+  "name" : "MatchPriorityVS"
 }]

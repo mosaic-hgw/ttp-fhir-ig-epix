@@ -1,9 +1,9 @@
-# queryPossibleMatches - v2026.1.0
+# queryPossibleMatches - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0-rc - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches | *Version*:2026.2.0-rc |
 | Draft as of 2026-02-05 | *Computable Name*:QueryPossibleMatches |
 
  
@@ -62,7 +62,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "resourceType" : "OperationDefinition",
   "id" : "QueryPossibleMatches",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "QueryPossibleMatches",
   "title" : "queryPossibleMatches",
   "status" : "draft",
@@ -121,8 +121,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "min" : 0,
     "max" : "1",
     "documentation" : "Ergebnis-Bundle mit Match-Informationen.",
-    "type" : "Bundle",
-    "targetProfile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"]
+    "type" : "Bundle"
   }]
 }
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MatchCreationTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MatchCreationTypeCS</b></p><a name="MatchCreationTypeCS"> </a><a name="hcMatchCreationTypeCS"> </a><p>This  code system <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">MANUAL<a name="MatchCreationTypeCS-MANUAL"> </a></td><td>Der Match wurde durch einen Benutzer manuell erzeugt.</td></tr><tr><td style="white-space:nowrap">AUTOMATIC<a name="MatchCreationTypeCS-AUTOMATIC"> </a></td><td>Der Match wurde automatisch erzeugt.</td></tr><tr><td style="white-space:nowrap">DEFAULT<a name="MatchCreationTypeCS-DEFAULT"> </a></td><td>Der Match wurde gemäß Standardeinstellung erzeugt.</td></tr></table></div>
+  </text>
+  <url value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+  <version value="2026.2.0-rc"/>
+  <name value="MatchCreationTypeCS"/>
+  <title value="Match Creation Type CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-16T09:07:42+00:00"/>
+  <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+  <contact>
+    <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.ths-greifswald.de/"/>
+    </telecom>
+  </contact>
+  <description value="Codes zur Kennzeichnung, wie ein Match erzeugt wurde."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="MANUAL"/>
+    <display value="MANUAL"/>
+    <definition value="Der Match wurde durch einen Benutzer manuell erzeugt."/>
+  </concept>
+  <concept>
+    <code value="AUTOMATIC"/>
+    <display value="AUTOMATIC"/>
+    <definition value="Der Match wurde automatisch erzeugt."/>
+  </concept>
+  <concept>
+    <code value="DEFAULT"/>
+    <display value="DEFAULT"/>
+    <definition value="Der Match wurde gemäß Standardeinstellung erzeugt."/>
+  </concept>
+</CodeSystem>
