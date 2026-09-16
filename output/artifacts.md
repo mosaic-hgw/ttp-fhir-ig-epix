@@ -1,9 +1,9 @@
-# Artifacts Summary - v2026.1.0
+# Artifacts Summary - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0-rc - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -45,6 +45,24 @@ These define constraints on FHIR data types for systems conforming to this imple
 | | |
 | :--- | :--- |
 | [Custom IDAT Values](StructureDefinition-CustomIdatValues.md) | Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX |
+
+### Terminology: Value Sets 
+
+These define sets of codes used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Match Creation Type ValueSet](ValueSet-MatchCreationTypeVS.md) | ValueSet aller zugelassenen Erstellungsarten eines Matches. |
+| [Match Priority ValueSet](ValueSet-MatchPriorityVS.md) | ValueSet zur Priorisierung und Statussteuerung von Matches. |
+
+### Terminology: Code Systems 
+
+These define new code systems used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Match Creation Type CodeSystem](CodeSystem-MatchCreationTypeCS.md) | Codes zur Kennzeichnung, wie ein Match erzeugt wurde. |
+| [Match Priority CodeSystem](CodeSystem-MatchPriorityCS.md) | Priorität der Bearbeitung eines Matches. |
 
 ### Example: Example Instances 
 

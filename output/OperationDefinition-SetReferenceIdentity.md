@@ -1,9 +1,9 @@
-# setReferenceIdentity - v2026.1.0
+# setReferenceIdentity - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0-rc - ci-build  
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -13,7 +13,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity | *Version*:2026.1.0 |
+| *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity | *Version*:2026.2.0-rc |
 | Draft as of 2026-02-05 | *Computable Name*:SetReferenceIdentity |
 
  
@@ -64,7 +64,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "resourceType" : "OperationDefinition",
   "id" : "SetReferenceIdentity",
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/SetReferenceIdentity",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "SetReferenceIdentity",
   "title" : "setReferenceIdentity",
   "status" : "draft",

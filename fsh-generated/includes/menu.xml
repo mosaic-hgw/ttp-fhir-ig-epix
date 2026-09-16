@@ -27,6 +27,9 @@
       <li>
         <a href="StructureDefinition-Patient.html">Patient</a>
       </li>
+      <li>
+        <a href="StructureDefinition-match-parameters-profile.html">MatchParameters</a>
+      </li>
     </ul>
   </li>
   <li>
@@ -56,7 +59,10 @@
         <a href="OperationDefinition-QueryPossibleMatches.html">queryPossibleMatches</a>
       </li>
       <li>
-        <a href="OperationDefinition-AddPossibleMatch.html">addPossibleMatch</a>
+        <a href="OperationDefinition-AddPossibleMatchForPerson.html">addPossibleMatchForPerson</a>
+      </li>
+      <li>
+        <a href="OperationDefinition-AddPossibleMatchForIdentity.html">addPossibleMatchForIdentity</a>
       </li>
       <li>
         <a href="OperationDefinition-RemovePossibleMatches.html">removePossibleMatches</a>

@@ -14,37 +14,45 @@ Usage: #definition
 * system = true
 * type = false
 * instance = false
+
 * parameter[0].name = #_offset
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Offset für Paging (Anzahl der zu überspringenden match-Parameter)"
 * parameter[=].type = #integer
+
 * parameter[+].name = #_count
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Anzahl der zurück zu gebenden match-Parameter (Paging)"
 * parameter[=].type = #integer
+
 * parameter[+].name = #domain
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Angabe der Matching-Domaene"
 * parameter[=].type = #string
+
 * parameter[+].name = #mpiIdentifier
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
 * parameter[=].type = #Identifier
+
 * parameter[+].name = #match
 * parameter[=].use = #out
 * parameter[=].min = 0
 * parameter[=].max = "1"
 * parameter[=].documentation = "Ergebnis-Bundle mit Match-Informationen."
 * parameter[=].type = #Bundle
-* parameter[=].targetProfile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+
+// -----------------------------------------------------------
+// Parameters-Request Instance
+// -----------------------------------------------------------
 
 Instance: Parameters-QueryPossibleMatches-request-example-1
 InstanceOf: Parameters
@@ -65,6 +73,10 @@ Usage: #example
 * parameter[=].valueIdentifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
 * parameter[=].valueIdentifier.value = "1001000000066"
 
+// -----------------------------------------------------------
+// Bundle Response Instance
+// -----------------------------------------------------------
+
 Instance: Bundle-QueryPossibleMatches-response-example-1
 InstanceOf: Bundle
 Title: "Beispiel Bundle Response für Operation QueryPossibleMatches"
@@ -72,7 +84,7 @@ Description: "Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz."
 Usage: #example
 
 * type = #searchset
-* total = 45 // Gesamtzahl aller possible matches im E-PIX
+* total = 45
 
 // Paging Navigation Links
 * link[0].relation = "self"
@@ -93,45 +105,44 @@ Usage: #example
 * entry[0].fullUrl = "urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0"
 * entry[=].resource = MatchResultParameters01
 
-// Einbettung des Ergebnisses gemäß MatchParametersProfile
+// -----------------------------------------------------------
+// Inline MatchParametersProfile Instance
+// -----------------------------------------------------------
+
 Instance: MatchResultParameters01
 InstanceOf: MatchParametersProfile
+Title: "Beispiel-Instanz für MatchParametersProfile"
+Description: "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten."
 Usage: #inline
 
-// Slice: matchItem (1. Patient)
-* parameter[matchItem][0].name = "matchItem"
-* parameter[matchItem][0].resource = MatchPatient01
+* meta.lastUpdated = "2026-09-15T16:31:23.000+02:00"
+* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
 
-// Slice: matchItem (2. Patient)
-* parameter[matchItem][1].name = "matchItem"
-* parameter[matchItem][1].resource = MatchPatient02
+// Beide Patienten im matchItem-Slice
+* parameter[matchItem][0].resource = Patient1
+* parameter[matchItem][1].resource = Patient2
 
-// Slice: matchScore
-* parameter[matchScore].name = "matchScore"
-* parameter[matchScore].valueDecimal = 0.92
-
-// Slice: matchResult
-* parameter[matchResult].name = "matchResult"
+// Restliche Slices
+* parameter[matchScore].valueDecimal = 0.85
 * parameter[matchResult].valueDecimal = 1.0
-
-// Slice: linkId
-* parameter[linkId].name = "linkId"
+* parameter[matchCreated].valueDateTime = "2026-09-15T16:31:23.000+02:00"
+* parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
+* parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
 * parameter[linkId].valueInteger = 52
 
-
-// Definition der beiden eingebetteten Patienten-Ressourcen:
-Instance: MatchPatient01
-InstanceOf: Patient
-Usage: #inline
-* name.family = "Strange"
-* name.given = "Stephan"
-* gender = #male
-* birthDate = "1985-04-12"
-
-Instance: MatchPatient02
+// Inline Patients
+Instance: Patient1
 InstanceOf: Patient
 Usage: #inline
 * name.family = "Strange"
 * name.given = "Stephen"
+* gender = #male
+* birthDate = "1985-04-12"
+
+Instance: Patient2
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Steven"
 * gender = #male
 * birthDate = "1985-04-12"

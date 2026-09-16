@@ -1,9 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8f7b7a29-aa24-42e1-92f7-c9cf04c3512d"/>
+  <id value="9c4e3f55-5862-4b53-b7e8-93b10788b1ca"/>
   <meta>
-    <lastUpdated value="2026-09-15T17:12:46.941+02:00"/>
+    <lastUpdated value="2026-09-16T11:00:43.978+02:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MatchCreationTypeCS.html">codesystem Match Creation Type CodeSystem v2026.2.0-rc (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS|2026.2.0-rc" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS-MANUAL"> </a>
+                  <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MatchCreationTypeCS.html#MatchCreationTypeCS-MANUAL">MANUAL</a>
+                </td>
+                <td>MANUAL</td>
+                <td>Der Match wurde durch einen Benutzer manuell erzeugt.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;, &quot;version&quot;: &quot;2026.2.0-rc&quot;, &quot;code&quot;: &quot;MANUAL&quot;, &quot;display&quot;: &quot;MANUAL&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;&gt;&lt;version value=&quot;2026.2.0-rc&quot;&gt;&lt;code value=&quot;MANUAL&quot;&gt;&lt;display value=&quot;MANUAL&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS-AUTOMATIC"> </a>
+                  <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MatchCreationTypeCS.html#MatchCreationTypeCS-AUTOMATIC">AUTOMATIC</a>
+                </td>
+                <td>AUTOMATIC</td>
+                <td>Der Match wurde automatisch erzeugt.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;, &quot;version&quot;: &quot;2026.2.0-rc&quot;, &quot;code&quot;: &quot;AUTOMATIC&quot;, &quot;display&quot;: &quot;AUTOMATIC&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;&gt;&lt;version value=&quot;2026.2.0-rc&quot;&gt;&lt;code value=&quot;AUTOMATIC&quot;&gt;&lt;display value=&quot;AUTOMATIC&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS-DEFAULT"> </a>
+                  <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MatchCreationTypeCS.html#MatchCreationTypeCS-DEFAULT">DEFAULT</a>
+                </td>
+                <td>DEFAULT</td>
+                <td>Der Match wurde gemäß Standardeinstellung erzeugt.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;, &quot;version&quot;: &quot;2026.2.0-rc&quot;, &quot;code&quot;: &quot;DEFAULT&quot;, &quot;display&quot;: &quot;DEFAULT&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS&quot;&gt;&lt;version value=&quot;2026.2.0-rc&quot;&gt;&lt;code value=&quot;DEFAULT&quot;&gt;&lt;display value=&quot;DEFAULT&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS"/>
+        <version value="2026.2.0-rc"/>
+        <name value="MatchCreationTypeVS"/>
+        <title value="Match Creation Type ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-16T11:00:43+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:751e3021-27bf-41eb-a3e3-0c3f6db4496a"/>
+          <timestamp value="2026-09-16T11:03:05+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS|2026.2.0-rc"/>
+          </parameter>
+          <contains>
+            <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+            <code value="MANUAL"/>
+            <display value="MANUAL"/>
+          </contains>
+          <contains>
+            <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+            <code value="AUTOMATIC"/>
+            <display value="AUTOMATIC"/>
+          </contains>
+          <contains>
+            <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+            <code value="DEFAULT"/>
+            <display value="DEFAULT"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-MatchPriorityCS.html">codesystem Match Priority CodeSystem v2026.2.0-rc (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS|2026.2.0-rc" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS-OPEN"> </a>
+                  <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MatchPriorityCS.html#MatchPriorityCS-OPEN">OPEN</a>
+                </td>
+                <td>OPEN</td>
+                <td>Der Match muss noch bearbeitet werden.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS&quot;, &quot;version&quot;: &quot;2026.2.0-rc&quot;, &quot;code&quot;: &quot;OPEN&quot;, &quot;display&quot;: &quot;OPEN&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS&quot;&gt;&lt;version value=&quot;2026.2.0-rc&quot;&gt;&lt;code value=&quot;OPEN&quot;&gt;&lt;display value=&quot;OPEN&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS-POSTPONED"> </a>
+                  <code>https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-MatchPriorityCS.html#MatchPriorityCS-POSTPONED">POSTPONED</a>
+                </td>
+                <td>POSTPONED</td>
+                <td>Der Match wurde bereits gesichtet, die Bearbeitung wurde jedoch zunächst verschoben.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS&quot;, &quot;version&quot;: &quot;2026.2.0-rc&quot;, &quot;code&quot;: &quot;POSTPONED&quot;, &quot;display&quot;: &quot;POSTPONED&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS&quot;&gt;&lt;version value=&quot;2026.2.0-rc&quot;&gt;&lt;code value=&quot;POSTPONED&quot;&gt;&lt;display value=&quot;POSTPONED&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS"/>
+        <version value="2026.2.0-rc"/>
+        <name value="MatchPriorityVS"/>
+        <title value="Match Priority ValueSet"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2026-09-16T11:00:43+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5dff63e7-cd1e-413e-bce8-382cf9f2a296"/>
+          <timestamp value="2026-09-16T11:03:06+02:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS|2026.2.0-rc"/>
+          </parameter>
+          <contains>
+            <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"/>
+            <code value="OPEN"/>
+            <display value="OPEN"/>
+          </contains>
+          <contains>
+            <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"/>
+            <code value="POSTPONED"/>
+            <display value="POSTPONED"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

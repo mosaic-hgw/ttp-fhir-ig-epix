@@ -12,7 +12,7 @@ Description: "Match informationen zu zwei Identitäten inklusive der betroffende
 * meta.versionId MS
 * meta.lastUpdated MS
 * meta.source MS
-* parameter 5..5
+* parameter 8..8
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
@@ -36,6 +36,26 @@ Description: "Match informationen zu zwei Identitäten inklusive der betroffende
 * parameter[matchResult].value[x] 1..1
 * parameter[matchResult].value[x] only decimal
 
+// Definition von Slice: matchCreated
+* parameter contains matchCreated 1..1
+* parameter[matchCreated].name = "matchCreated"
+* parameter[matchCreated].value[x] 1..1
+* parameter[matchCreated].value[x] only dateTime
+
+// Definition von Slice: matchCreationType (auf CodeableConcept geändert)
+* parameter contains matchCreationType 1..1
+* parameter[matchCreationType].name = "matchCreationType"
+* parameter[matchCreationType].value[x] 1..1
+* parameter[matchCreationType].value[x] only CodeableConcept
+* parameter[matchCreationType].valueCodeableConcept from MatchCreationTypeVS (required)
+
+// Definition von Slice: matchPriority (auf CodeableConcept geändert)
+* parameter contains matchPriority 1..1
+* parameter[matchPriority].name = "matchPriority"
+* parameter[matchPriority].value[x] 1..1
+* parameter[matchPriority].value[x] only CodeableConcept
+* parameter[matchPriority].valueCodeableConcept from MatchPriorityVS (required)
+
 // Definition von Slice: linkId
 * parameter contains linkId 1..1
 * parameter[linkId].name = "linkId"
@@ -48,41 +68,45 @@ Title: "Beispiel-Instanz für MatchParametersProfile"
 Description: "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten."
 Usage: #example
 * meta.lastUpdated = "2026-09-15T16:31:23.000+02:00"
-* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters"
+* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
 
 // Erster Patient (matchItem 1)
-* parameter[matchItem][0].name = "matchItem"
-* parameter[matchItem][0].resource = Patient1
+* parameter[matchItem][0].resource = Patient3
 
 // Zweiter Patient (matchItem 2)
-* parameter[matchItem][1].name = "matchItem"
-* parameter[matchItem][1].resource = Patient2
+* parameter[matchItem][1].resource = Patient4
 
 // Match Score
-* parameter[matchScore].name = "matchScore"
 * parameter[matchScore].valueDecimal = 0.85
 
 // Match Result
-* parameter[matchResult].name = "matchResult"
 * parameter[matchResult].valueDecimal = 1.0
 
+// Match Created
+* parameter[matchCreated].valueDateTime = "2026-09-15T16:31:23.000+02:00"
+
+// Match Creation Type (jetzt als CodeableConcept)
+* parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
+
+// Match Priority (jetzt als CodeableConcept)
+* parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
+
 // Link ID
-* parameter[linkId].name = "linkId"
 * parameter[linkId].valueInteger = 52
 
 // Definition der beiden Inline-Patientenressourcen:
-Instance: Patient1
-InstanceOf: Patient
-Usage: #inline
-* name.family = "Strange"
-* name.given = "Stephan"
-* gender = #male
-* birthDate = "1985-04-12"
-
-Instance: Patient2
+Instance: Patient3
 InstanceOf: Patient
 Usage: #inline
 * name.family = "Strange"
 * name.given = "Stephen"
+* gender = #male
+* birthDate = "1985-04-12"
+
+Instance: Patient4
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Steven"
 * gender = #male
 * birthDate = "1985-04-12"

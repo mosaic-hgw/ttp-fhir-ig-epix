@@ -48,9 +48,6 @@
       "type": "Identifier"
     },
     {
-      "targetProfile": [
-        "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
-      ],
       "name": "match",
       "use": "out",
       "min": 0,

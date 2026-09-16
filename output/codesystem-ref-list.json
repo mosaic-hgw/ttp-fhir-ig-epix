@@ -22,5 +22,27 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchCreationTypeCS",
+    "title" : "Match Creation Type CodeSystem",
+    "description" : "Codes zur Kennzeichnung, wie ein Match erzeugt wurde.",
+    "uses" : {
+    },
+    "ValueSet-MatchCreationTypeVS.html" : "Match Creation Type ValueSet"
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchPriorityCS",
+    "title" : "Match Priority CodeSystem",
+    "description" : "Priorität der Bearbeitung eines Matches.",
+    "uses" : {
+    },
+    "ValueSet-MatchPriorityVS.html" : "Match Priority ValueSet"
   }]
 }

@@ -1,11 +1,13 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 56, warn = 84, info = 42
+err = 56, warn = 88, info = 44
 $--
 Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 0 / 23 / 0
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 8 / 9
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\CodeSystem-MatchCreationTypeCS : 0 / 2 / 2
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\CodeSystem-MatchPriorityCS : 0 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPatient : 2 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\OperationDefinition-AddPossibleMatchForIdentity : 2 / 0 / 2
@@ -27,7 +29,7 @@ Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonic
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 2 / 7
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 4 / 5
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 2 / 5
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1 : 0 / 1 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-RemovePossibleMatches-request-example-1 : 1 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-request-example-1 : 0 / 1 / 1
@@ -41,6 +43,8 @@ Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonic
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Patient : 2 / 9 / 6
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-Person : 2 / 3 / 4
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile : 2 / 0 / 2
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ValueSet-MatchCreationTypeVS : 0 / 1 / 1
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ValueSet-MatchPriorityVS : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationOutcome/AssignIdentityByIdentifier-response-example1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -72,11 +76,19 @@ WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[1].u
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[2].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[3].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[4].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1' löst nicht auf
-WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/MatchPatient01*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/MatchPatient02*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/Patient2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: Es konnten keine Typen aus dem Suchstring ermittelt werden, so dass die Typen nicht überprüft werden können
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource: Es konnte nicht festgestellt werden, ob diese Ressource ein gültiger Ressourcentyp für diese Suche ist
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: SearchSet-Bundles sollten Suchmodi für die Einträge enthalten
+== fsh-generated\resources\CodeSystem-MatchCreationTypeCS.json ==
+INFORMATION: CodeSystem/MatchCreationTypeCS: CodeSystem: CodeSysteme SOLLTEN einen angegebenen Wert für das caseSensitive-Element haben, damit die Benutzer den Status und die Bedeutung des Codesystems eindeutig kennen
+WARNING: CodeSystem/MatchCreationTypeCS: CodeSystem: Das ShareableCodeSystem-Profil sagt, dass das caseSensitive-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen
+WARNING: Resource: The resource CodeSystem/MatchCreationTypeCS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated\resources\CodeSystem-MatchPriorityCS.json ==
+INFORMATION: CodeSystem/MatchPriorityCS: CodeSystem: CodeSysteme SOLLTEN einen angegebenen Wert für das caseSensitive-Element haben, damit die Benutzer den Status und die Bedeutung des Codesystems eindeutig kennen
+WARNING: CodeSystem/MatchPriorityCS: CodeSystem: Das ShareableCodeSystem-Profil sagt, dass das caseSensitive-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen
+WARNING: Resource: The resource CodeSystem/MatchPriorityCS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix.json ==
 WARNING: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix: Unknown Parameters: [snapshot=true]
 WARNING: ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix: ImplementationGuide.dependsOn[2].uri: Canonical URL 'http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement' kann nicht aufgelöst werden
@@ -137,7 +149,7 @@ ERROR: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[
 ERROR: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[2].resource/*Patient/null*/.extension[0].extension[1]: Extension.url: mindestens erforderlich = 1, aber nur gefunden 0
 WARNING: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[2].resource/*Patient/null*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/SystemXY' löst nicht auf
 WARNING: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[2].resource/*Patient/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[2].resource/*Patient/null*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 überein.
+INFORMATION: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[2].resource/*Patient/null*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc überein.
 INFORMATION: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[3].value.ofType(Coding).system: Das CodeSystem https://ths-greifswald.de/fhir/CodeSystem/epix/SaveAction ist unbekannt
 INFORMATION: Parameters/Parameters-AddPatient-request-example-1: Parameters.parameter[1]: The parameter 'source' has the same name as a parameter for at least one operation in the core specification. In the base specification, the parameter has the types uri or Observation, but this parameter instead has a value of type string. Check that this is correct
 == fsh-generated\resources\Parameters-Parameters-AddPatient-response-example-1.json ==
@@ -148,13 +160,13 @@ ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/null*/.extension[0].extension[1]: Extension.url ist erforderlich
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/null*/.extension[0].extension[1]: Extension.url: mindestens erforderlich = 1, aber nur gefunden 0
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/null*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/null*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 überein.
+INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/null*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc überein.
 INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[1].value.ofType(Coding).system: Das CodeSystem https://ths-greifswald.de/fhir/CodeSystem/epix/MatchStatus ist unbekannt
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target: Details für Patient/52 Abgleich gegen Profilhttp://hl7.org/fhir/StructureDefinition/Patient|4.0.1
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target: Es konnte kein passendes Profil für Patient/52 unter den Auswahlmöglichkeiten [https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient] gefunden werden
-INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target: Details für Patient/52 Abgleich gegen Profilhttps://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0
+INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target: Details für Patient/52 Abgleich gegen Profilhttps://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc
 INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.meta.source: URL-Wert 'dummy_safe_source' löst nicht auf
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.extension[0]: Extension.url ist erforderlich
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.extension[0]: Extension.url: mindestens erforderlich = 1, aber nur gefunden 0
@@ -164,7 +176,7 @@ ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter
 ERROR: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.extension[0].extension[1]: Extension.url: mindestens erforderlich = 1, aber nur gefunden 0
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/SystemXY' löst nicht auf
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 überein.
+INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[0].target.parameter[0].part[0].resource/*Patient/52*/.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc überein.
 INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[1].target.parameter[0].part[0].resource/*Patient/53*/.meta.source: URL-Wert 'dummy_safe_source' löst nicht auf
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[1].target.parameter[0].part[0].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated\resources\Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.json ==
@@ -186,10 +198,8 @@ WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Par
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1.json ==
-WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.meta.profile[1]: Canonical URL 'https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters' kann nicht aufgelöst werden
-WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.meta.profile[1]: Die Profilreferenz 'https://ths-greifswald.de/fhir/StructureDefinition/epix/Parameters' wurde nicht geprüft, weil sie unbekannt ist und der Validator so eingestellt ist, dass er keine unbekannten Profile abruft.
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient3*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient4*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1.json ==
 WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-RemovePossibleMatches-request-example-1.json ==
@@ -218,10 +228,10 @@ WARNING: Parameters/Parameters-UpdatePatient-response-example-1: Parameters.para
 == fsh-generated\resources\Patient-Patient-example-1.json ==
 WARNING: Patient/Patient-example-1: Patient.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/gics/identifiers/Pseudonym' löst nicht auf
 == fsh-generated\resources\Patient-Patient-example-2.json ==
-ERROR: Patient/Patient-example-2: Patient.telecom[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:email übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 hat keinen fixed Value, kein Binding oder existence assertions
-ERROR: Patient/Patient-example-2: Patient.telecom[1]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:email übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 hat keinen fixed Value, kein Binding oder existence assertions
-ERROR: Patient/Patient-example-2: Patient.telecom[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:telefon übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 hat keinen fixed Value, kein Binding oder existence assertions
-ERROR: Patient/Patient-example-2: Patient.telecom[1]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:telefon übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.1.0 hat keinen fixed Value, kein Binding oder existence assertions
+ERROR: Patient/Patient-example-2: Patient.telecom[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:email übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc hat keinen fixed Value, kein Binding oder existence assertions
+ERROR: Patient/Patient-example-2: Patient.telecom[1]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:email übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc hat keinen fixed Value, kein Binding oder existence assertions
+ERROR: Patient/Patient-example-2: Patient.telecom[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:telefon übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc hat keinen fixed Value, kein Binding oder existence assertions
+ERROR: Patient/Patient-example-2: Patient.telecom[1]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Patient.telecom:telefon übereinstimmen - der Diskriminator https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient|2026.2.0-rc hat keinen fixed Value, kein Binding oder existence assertions
 WARNING: Patient/Patient-example-2: Patient.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/SystemXY' löst nicht auf
 == fsh-generated\resources\Person-Person-example-1.json ==
 WARNING: Person/Person-example-1: Person.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
@@ -261,3 +271,7 @@ ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDe
 ERROR: StructureDefinition.where(url = 'https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile'): Conformance resource C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile.json - the canonical URL (https://ths-greifswald.de/fhir/epix/StructureDefinition/match-parameters-profile) does not match the URL (https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile). Use the special-url parameter if you really mean for it not to match
 INFORMATION: Resource: The resource StructureDefinition/match-parameters-profile could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\StructureDefinition-match-parameters-profile: URL Mismatch https://ths-greifswald.de/fhir/epix/StructureDefinition/match-parameters-profile vs https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile
+== fsh-generated\resources\ValueSet-MatchCreationTypeVS.json ==
+WARNING: Resource: The resource ValueSet/MatchCreationTypeVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated\resources\ValueSet-MatchPriorityVS.json ==
+WARNING: Resource: The resource ValueSet/MatchPriorityVS should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

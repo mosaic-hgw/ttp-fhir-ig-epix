@@ -1,3 +1,20 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchCreationTypeVS",
+    "title" : "Match Creation Type ValueSet",
+    "description" : "ValueSet aller zugelassenen Erstellungsarten eines Matches.",
+    "systems" : ["https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"]
+  },
+  {
+    "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS",
+    "version" : "2026.2.0-rc",
+    "status" : "active",
+    "name" : "MatchPriorityVS",
+    "title" : "Match Priority ValueSet",
+    "description" : "ValueSet zur Priorisierung und Statussteuerung von Matches.",
+    "systems" : ["https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"]
+  }]
 }

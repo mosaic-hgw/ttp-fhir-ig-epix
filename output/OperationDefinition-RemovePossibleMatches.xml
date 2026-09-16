@@ -10,7 +10,7 @@
 </div></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/RemovePossibleMatches"/>
-  <version value="2026.1.0"/>
+  <version value="2026.2.0-rc"/>
   <name value="RemovePossibleMatches"/>
   <title value="removePossibleMatches"/>
   <status value="draft"/>

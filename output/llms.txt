@@ -1,4 +1,4 @@
-# ths-greifswald.ttp-fhir-gw.epix#2026.1.0: null
+# ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc: null
 
 ## Pages
 
@@ -10,6 +10,16 @@
 * [Terminologie](Terminologie.md)
 
 ## Resources
+
+### CodeSystems
+
+* [Match Creation Type CodeSystem](CodeSystem-MatchCreationTypeCS.md)
+* [Match Priority CodeSystem](CodeSystem-MatchPriorityCS.md)
+
+### ValueSets
+
+* [Match Creation Type ValueSet](ValueSet-MatchCreationTypeVS.md)
+* [Match Priority ValueSet](ValueSet-MatchPriorityVS.md)
 
 ### Resource Profiles
 

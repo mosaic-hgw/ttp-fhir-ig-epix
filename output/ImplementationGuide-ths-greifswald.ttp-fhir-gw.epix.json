@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.epix</b></p><a name=\"ths-greifswald.ttp-fhir-gw.epix\"> </a><a name=\"hcths-greifswald.ttp-fhir-gw.epix\"> </a><h2>IGTTPFHIRGatewayEPIX</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix</pre></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-15T17:12:46+02:00",
+  "date" : "2026-09-16T11:00:43+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -45,7 +45,7 @@
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.3"
+    "version" : "2.0.4"
   }],
   "definition" : {
     "extension" : [{
@@ -746,6 +746,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MatchCreationTypeCS"
+      },
+      "name" : "Match Creation Type CodeSystem",
+      "description" : "Codes zur Kennzeichnung, wie ein Match erzeugt wurde.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MatchCreationTypeVS"
+      },
+      "name" : "Match Creation Type ValueSet",
+      "description" : "ValueSet aller zugelassenen Erstellungsarten eines Matches.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -753,6 +777,30 @@
       },
       "name" : "Match Parameters Profile",
       "description" : "Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MatchPriorityCS"
+      },
+      "name" : "Match Priority CodeSystem",
+      "description" : "Priorität der Bearbeitung eines Matches.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MatchPriorityVS"
+      },
+      "name" : "Match Priority ValueSet",
+      "description" : "ValueSet zur Priorisierung und Statussteuerung von Matches.",
       "exampleBoolean" : false
     },
     {

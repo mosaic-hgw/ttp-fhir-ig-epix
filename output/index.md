@@ -1,9 +1,9 @@
-# Implementation Guide E-PIX - v2026.1.0
+# Implementation Guide E-PIX - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
  
- 2026.1.0 - ci-build  
+ 2026.2.0-rc - ci-build  
 
 * [**Table of Contents**](toc.md)
 * **Implementation Guide E-PIX**
@@ -12,8 +12,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.1.0 |
-| Active as of 2026-09-15 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.2.0-rc |
+| Active as of 2026-09-16 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
@@ -58,10 +58,10 @@ kontakt-ths (at) med.uni-greifswald.de
   "resourceType" : "ImplementationGuide",
   "id" : "ths-greifswald.ttp-fhir-gw.epix",
   "url" : "https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix",
-  "version" : "2026.1.0",
+  "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-15T17:12:46+02:00",
+  "date" : "2026-09-16T11:00:43+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -97,7 +97,7 @@ kontakt-ths (at) med.uni-greifswald.de
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.3"
+    "version" : "2.0.4"
   }],
   "definition" : {
     "extension" : [{
@@ -838,6 +838,38 @@ kontakt-ths (at) med.uni-greifswald.de
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MatchCreationTypeCS.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MatchCreationTypeCS"
+      },
+      "name" : "Match Creation Type CodeSystem",
+      "description" : "Codes zur Kennzeichnung, wie ein Match erzeugt wurde.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MatchCreationTypeVS.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MatchCreationTypeVS"
+      },
+      "name" : "Match Creation Type ValueSet",
+      "description" : "ValueSet aller zugelassenen Erstellungsarten eines Matches.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -849,6 +881,38 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       "name" : "Match Parameters Profile",
       "description" : "Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-MatchPriorityCS.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/MatchPriorityCS"
+      },
+      "name" : "Match Priority CodeSystem",
+      "description" : "Priorität der Bearbeitung eines Matches.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-MatchPriorityVS.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/MatchPriorityVS"
+      },
+      "name" : "Match Priority ValueSet",
+      "description" : "ValueSet zur Priorisierung und Statussteuerung von Matches.",
       "exampleBoolean" : false
     },
     {

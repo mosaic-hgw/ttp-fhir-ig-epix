@@ -8,7 +8,11 @@
 [Parameters-QueryPossibleMatches-request-example-1]: Parameters-Parameters-QueryPossibleMatches-request-example-1.html
 [Parameters-MatchParametersProfile-example-1]: Parameters-Parameters-MatchParametersProfile-example-1.html
 [CustomIdatValues]: StructureDefinition-CustomIdatValues.html
+[MatchCreationTypeCS]: CodeSystem-MatchCreationTypeCS.html
+[MatchCreationTypeVS]: ValueSet-MatchCreationTypeVS.html
 [MatchParametersProfile]: StructureDefinition-match-parameters-profile.html
+[MatchPriorityCS]: CodeSystem-MatchPriorityCS.html
+[MatchPriorityVS]: ValueSet-MatchPriorityVS.html
 [OperationOutcome-AssignIdentity-response-example-1]: OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.html
 [OperationOutcome-RemovePossibleMatches-response-example-1]: OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.html
 [Parameters-AddPatient-request-example-1]: Parameters-Parameters-AddPatient-request-example-1.html

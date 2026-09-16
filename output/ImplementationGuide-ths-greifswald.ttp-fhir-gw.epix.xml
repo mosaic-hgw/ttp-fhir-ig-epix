@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ths-greifswald.ttp-fhir-gw.epix</b></p><a name="ths-greifswald.ttp-fhir-gw.epix"> </a><a name="hcths-greifswald.ttp-fhir-gw.epix"> </a><h2>IGTTPFHIRGatewayEPIX</h2><p>The official URL for this implementation guide is: </p><pre>https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix</pre></div>
   </text>
   <url value="https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix"/>
-  <version value="2026.1.0"/>
+  <version value="2026.2.0-rc"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-09-15T17:12:46+02:00"/>
+  <date value="2026-09-16T11:00:43+02:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -40,7 +40,7 @@
   <dependsOn id="de_einwilligungsmanagement">
     <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
     <packageId value="de.einwilligungsmanagement"/>
-    <version value="2.0.3"/>
+    <version value="2.0.4"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -573,6 +573,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/MatchCreationTypeCS"/>
+      </reference>
+      <name value="Match Creation Type CodeSystem"/>
+      <description value="Codes zur Kennzeichnung, wie ein Match erzeugt wurde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MatchCreationTypeVS"/>
+      </reference>
+      <name value="Match Creation Type ValueSet"/>
+      <description value="ValueSet aller zugelassenen Erstellungsarten eines Matches."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -580,6 +602,28 @@
       </reference>
       <name value="Match Parameters Profile"/>
       <description value="Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten, Score, MatchResult und LinkId des Matches"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/MatchPriorityCS"/>
+      </reference>
+      <name value="Match Priority CodeSystem"/>
+      <description value="Priorität der Bearbeitung eines Matches."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MatchPriorityVS"/>
+      </reference>
+      <name value="Match Priority ValueSet"/>
+      <description value="ValueSet zur Priorisierung und Statussteuerung von Matches."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
