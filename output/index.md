@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-17T14:21:54+02:00",
+  "date" : "2026-09-17T16:38:22+02:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -822,6 +822,38 @@ kontakt-ths (at) med.uni-greifswald.de
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"
+      },
+      "name" : "Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity",
+      "description" : "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.",
+      "exampleCanonical" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html"
+      }],
+      "reference" : {
+        "reference" : "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"
+      },
+      "name" : "Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson",
+      "description" : "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.",
+      "exampleCanonical" : "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       },
       {
@@ -997,42 +1029,12 @@ kontakt-ths (at) med.uni-greifswald.de
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html"
-      }],
-      "reference" : {
-        "reference" : "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"
-      },
-      "name" : "Parameters-AddPossibleMatchForIdentity-response-example-1",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.html"
       }],
       "reference" : {
         "reference" : "Parameters/Parameters-AddPossibleMatchForPerson-request-example-1"
       },
       "name" : "Parameters-AddPossibleMatchForPerson-request-example-1",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Parameters"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html"
-      }],
-      "reference" : {
-        "reference" : "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"
-      },
-      "name" : "Parameters-AddPossibleMatchForPerson-response-example-1",
       "exampleBoolean" : true
     },
     {

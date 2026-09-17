@@ -9,6 +9,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgen den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.
 
 Der Funktionsaufruf liefert ein SearchSet-Bundle zurück. Das Bundle-Total gibt die Gesamtanzahl der offenen Possible-Matches im E-PIX zurück.
+Possible Matches werden als Ressourcen vom Typ [Match Parameters Profile](StructureDefinition-match-parameters-profile.html) zurückgegeben. 
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 

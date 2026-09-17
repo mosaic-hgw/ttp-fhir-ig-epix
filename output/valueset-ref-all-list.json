@@ -56,9 +56,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.79"],
     "uses" : {
     },
-    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -158,9 +158,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -266,9 +266,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile",
     "StructureDefinition-Patient.html" : "Patient",
-    "StructureDefinition-Person.html" : "Person"
+    "StructureDefinition-Person.html" : "Person",
+    "StructureDefinition-match-parameters-profile.html" : "Match Parameters Profile"
   },
   {
     "url" : "https://ths-greifswald.de/fhir/epix/ValueSet/MatchCreationTypeVS",

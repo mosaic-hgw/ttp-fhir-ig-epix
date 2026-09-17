@@ -26,57 +26,22 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
+  * documentation = "Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
   * name = #mpiIdentifierAlias
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Aliasangabe bezogen auf Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
+  * documentation = "Aliasangabe bezogen auf Identifikator eines MPI-Eintrags (MPI-ID, Person.identifier)."
   * type = #Identifier
 * parameter[+]
   * name = #match
   * use = #out
-  * min = 1
+  * min = 0
   * max = "1"
-  * documentation = "Match-Informationen zu zwei Identitäten."
-  * part[+]
-    * name = #item
-    * use = #out
-    * min = 2
-    * max = "2"
-    * documentation = "Die beiden matchenden Personen wie im Request übergeben."
-    * type = #Patient
-  * part[+]
-    * name = #score
-    * use = #out
-    * min = 1
-    * max = "1"
-    * documentation = "Matching-Score"
-    * type = #decimal
-  * part[+]
-    * name = #result
-    * use = #out
-    * min = 1
-    * max = "1"
-    * documentation = "Matching-Ergebnis"
-    * type = #decimal
-  * part[+]
-    * name = #linkId
-    * use = #out
-    * min = 1
-    * max = "1"
-    * documentation = "Link-ID des Matches"
-    * type = #integer
-  * part[+]
-    * name = #comment
-    * use = #out
-    * min = 0
-    * max = "1"
-    * documentation = "Anmerkung zum Match"
-    * type = #string
-
+  * documentation = "Ergebnis mit Match-Informationen vom Typ Match Parameters Profile."
+  * type = #Parameters
 
 Instance: Parameters-AddPossibleMatchForPerson-request-example-1
 InstanceOf: Parameters
@@ -96,38 +61,42 @@ Usage: #example
     * value = "1001000068944"
 
 Instance: Parameters-AddPossibleMatchForPerson-response-example-1
-InstanceOf: Parameters
+InstanceOf: MatchParametersProfile
+Title: "Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson"
+Description: "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten."
 Usage: #example
-* parameter.name = "match"
-* parameter.part[0].name = "item"
-* parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "53"
-* parameter.part[=].resource.meta.versionId = "1"
-* parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:03.200+02:00"
-* parameter.part[=].resource.meta.source = "dummy_safe_source"
-* parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-* parameter.part[=].resource.active = true
-* parameter.part[=].resource.name.family = "xxxxx"
-* parameter.part[=].resource.name.given = "Stefanie"
-* parameter.part[=].resource.gender = #male
-* parameter.part[=].resource.birthDate = "1962-12-17"
-* parameter.part[+].name = "item"
-* parameter.part[=].resource.resourceType = "Patient"
-* parameter.part[=].resource.id = "67"
-* parameter.part[=].resource.meta.versionId = "1"
-* parameter.part[=].resource.meta.lastUpdated = "2021-06-17T08:28:24.180+02:00"
-* parameter.part[=].resource.meta.source = "dummy_safe_source"
-* parameter.part[=].resource.meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-* parameter.part[=].resource.active = true
-* parameter.part[=].resource.name.family = "xxxxx"
-* parameter.part[=].resource.name.given = "Stefanie"
-* parameter.part[=].resource.gender = #male
-* parameter.part[=].resource.birthDate = "1962-12-16"
-* parameter.part[+].name = "score"
-* parameter.part[=].valueDecimal = 0.965
-* parameter.part[+].name = "result"
-* parameter.part[=].valueDecimal = 0.952
-* parameter.part[+].name = "linkId"
-* parameter.part[=].valueInteger = 5654986
-* parameter.part[+].name = "comment"
-* parameter.part[=].valueString = "This match was added externally or manually."
+
+* meta.lastUpdated = "2026-09-15T16:31:23.000+02:00"
+* meta.profile = "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+
+// Match Items
+* parameter[matchItem][+].resource = Patient5
+* parameter[matchItem][+].resource = Patient6
+
+// Restliche Parameter
+* parameter[matchProbability][+].valueDecimal = 5.362352
+* parameter[matchCreated][+].valueDateTime = "2026-09-15T16:31:23.000+02:00"
+* parameter[matchCreationType][+].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
+* parameter[matchPriority][+].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
+* parameter[matchLinkId][+].valueInteger = 52
+
+// Inline Patients
+Instance: Patient5
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Stephen"
+* gender = #male
+* birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000000066"
+
+Instance: Patient6
+InstanceOf: Patient
+Usage: #inline
+* name.family = "Strange"
+* name.given = "Steven"
+* gender = #male
+* birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000068944"

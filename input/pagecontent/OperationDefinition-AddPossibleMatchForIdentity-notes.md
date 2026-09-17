@@ -6,7 +6,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$addPossibleMatchForIdentity`
 
-Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem Multi-Part-Parameter zurück.
+Der Funktionsaufruf liefert eine Parameters-Ressource gemäß dem [Match Parameters Profile](StructureDefinition-match-parameters-profile.html) zurück.
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 

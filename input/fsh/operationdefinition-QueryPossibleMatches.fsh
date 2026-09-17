@@ -47,7 +47,7 @@ Usage: #definition
 * parameter[=].use = #out
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "Ergebnis-Bundle mit Match-Informationen."
+* parameter[=].documentation = "Ergebnis-Bundle mit Match-Informationen vom Typ Match Parameters Profile."
 * parameter[=].type = #Bundle
 
 // -----------------------------------------------------------
@@ -127,7 +127,7 @@ Usage: #inline
 * parameter[matchCreated].valueDateTime = "2026-09-15T16:31:23.000+02:00"
 * parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
 * parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
-* parameter[linkId].valueInteger = 52
+* parameter[matchLinkId].valueInteger = 52
 
 // Inline Patients
 Instance: Patient1

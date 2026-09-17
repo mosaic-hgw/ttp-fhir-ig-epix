@@ -50,11 +50,11 @@ Description: "Match informationen zu zwei Identitäten inklusive der betroffende
 * parameter[matchPriority].value[x] only CodeableConcept
 * parameter[matchPriority].valueCodeableConcept from MatchPriorityVS (required)
 
-// Definition von Slice: linkId
-* parameter contains linkId 1..1
-* parameter[linkId].name = "linkId"
-* parameter[linkId].value[x] 1..1
-* parameter[linkId].value[x] only integer
+// Definition von Slice: matchLinkId
+* parameter contains matchLinkId 1..1
+* parameter[matchLinkId].name = "matchLinkId"
+* parameter[matchLinkId].value[x] 1..1
+* parameter[matchLinkId].value[x] only integer
 
 Instance: Parameters-MatchParametersProfile-example-1
 InstanceOf: MatchParametersProfile
@@ -83,7 +83,7 @@ Usage: #example
 * parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
 
 // Link ID
-* parameter[linkId].valueInteger = 52
+* parameter[matchLinkId].valueInteger = 52
 
 // Definition der beiden Inline-Patientenressourcen:
 Instance: Patient3
