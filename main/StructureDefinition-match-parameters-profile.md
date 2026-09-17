@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile | *Version*:2026.2.0-rc |
-| Active as of 2026-02-05 | *Computable Name*:MatchParametersProfile |
+| Active as of 2026-09-16 | *Computable Name*:MatchParametersProfile |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
  
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
   "title" : "Match Parameters Profile",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
@@ -113,8 +113,8 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
         "ordered" : true,
         "rules" : "closed"
       },
-      "min" : 8,
-      "max" : "8"
+      "min" : 7,
+      "max" : "7"
     },
     {
       "id" : "Parameters.parameter:matchItem",
@@ -137,39 +137,19 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
       }]
     },
     {
-      "id" : "Parameters.parameter:matchScore",
+      "id" : "Parameters.parameter:matchProbability",
       "path" : "Parameters.parameter",
-      "sliceName" : "matchScore",
+      "sliceName" : "matchProbability",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Parameters.parameter:matchScore.name",
+      "id" : "Parameters.parameter:matchProbability.name",
       "path" : "Parameters.parameter.name",
-      "patternString" : "matchScore"
+      "patternString" : "matchProbability"
     },
     {
-      "id" : "Parameters.parameter:matchScore.value[x]",
-      "path" : "Parameters.parameter.value[x]",
-      "min" : 1,
-      "type" : [{
-        "code" : "decimal"
-      }]
-    },
-    {
-      "id" : "Parameters.parameter:matchResult",
-      "path" : "Parameters.parameter",
-      "sliceName" : "matchResult",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Parameters.parameter:matchResult.name",
-      "path" : "Parameters.parameter.name",
-      "patternString" : "matchResult"
-    },
-    {
-      "id" : "Parameters.parameter:matchResult.value[x]",
+      "id" : "Parameters.parameter:matchProbability.value[x]",
       "path" : "Parameters.parameter.value[x]",
       "min" : 1,
       "type" : [{

@@ -60,6 +60,11 @@
            fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
          ]
        ] ;
+       fhir:Patient.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+         fhir:Identifier.value [ fhir:value "1001000000066" ]
+       ] ;
        fhir:Patient.name [
          fhir:index 0 ;
          fhir:HumanName.family [ fhir:value "Strange" ] ;
@@ -84,6 +89,11 @@
            fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
          ]
        ] ;
+       fhir:Patient.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+         fhir:Identifier.value [ fhir:value "1001000000031" ]
+       ] ;
        fhir:Patient.name [
          fhir:index 0 ;
          fhir:HumanName.family [ fhir:value "Strange" ] ;
@@ -97,18 +107,14 @@
      ]
   ], [
      fhir:index 2 ;
-     fhir:Parameters.parameter.name [ fhir:value "matchScore" ] ;
-     fhir:Parameters.parameter.valueDecimal [ fhir:value "0.85"^^xsd:decimal ]
+     fhir:Parameters.parameter.name [ fhir:value "matchProbability" ] ;
+     fhir:Parameters.parameter.valueDecimal [ fhir:value "5.362352"^^xsd:decimal ]
   ], [
      fhir:index 3 ;
-     fhir:Parameters.parameter.name [ fhir:value "matchResult" ] ;
-     fhir:Parameters.parameter.valueDecimal [ fhir:value "1"^^xsd:decimal ]
-  ], [
-     fhir:index 4 ;
      fhir:Parameters.parameter.name [ fhir:value "matchCreated" ] ;
      fhir:Parameters.parameter.valueDateTime [ fhir:value "2026-09-15T16:31:23.000+02:00"^^xsd:dateTime ]
   ], [
-     fhir:index 5 ;
+     fhir:index 4 ;
      fhir:Parameters.parameter.name [ fhir:value "matchCreationType" ] ;
      fhir:Parameters.parameter.valueCodeableConcept [
        fhir:CodeableConcept.coding [
@@ -119,7 +125,7 @@
        ]
      ]
   ], [
-     fhir:index 6 ;
+     fhir:index 5 ;
      fhir:Parameters.parameter.name [ fhir:value "matchPriority" ] ;
      fhir:Parameters.parameter.valueCodeableConcept [
        fhir:CodeableConcept.coding [
@@ -130,7 +136,7 @@
        ]
      ]
   ], [
-     fhir:index 7 ;
+     fhir:index 6 ;
      fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
      fhir:Parameters.parameter.valueInteger [ fhir:value "52"^^xsd:integer ]
   ] .

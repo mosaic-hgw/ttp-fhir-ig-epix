@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPatient | *Version*:2026.2.0-rc |
-| Draft as of 2026-02-05 | *Computable Name*:AddPatient |
+| Draft as of 2026-09-16 | *Computable Name*:AddPatient |
 
  
 Fügt eine oder mehrere Patientenidentitäten hinzu. 
@@ -69,7 +69,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "title" : "addPatient",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

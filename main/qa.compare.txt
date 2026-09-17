@@ -1,11 +1,11 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 56, warn = 88, info = 44
+err = 56, warn = 92, info = 44
 $--
 Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 0 / 23 / 0
- /workspace/fsh-generated/resources/Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 8 / 9
+ /workspace/fsh-generated/resources/Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 10 / 9
  /workspace/fsh-generated/resources/CodeSystem-MatchCreationTypeCS : 0 / 2 / 2
  /workspace/fsh-generated/resources/CodeSystem-MatchPriorityCS : 0 / 2 / 2
  /workspace/fsh-generated/resources/ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
@@ -29,7 +29,7 @@ Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonic
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 2 / 7
  /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 2 / 5
+ /workspace/fsh-generated/resources/Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 4 / 5
  /workspace/fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-request-example-1 : 0 / 1 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-RemovePossibleMatches-request-example-1 : 1 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-SetReferenceIdentity-request-example-1 : 0 / 1 / 1
@@ -76,7 +76,9 @@ WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[1].u
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[2].url: No definition could be found for URL value 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1'
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[3].url: No definition could be found for URL value 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1'
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[4].url: No definition could be found for URL value 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1'
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/Patient1*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/Patient2*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/Patient2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: No types could be determined from the search string, so the types can't be checked
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource: Unable to determine if this resource is a valid resource type for this search
@@ -198,7 +200,9 @@ WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Par
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 == fsh-generated/resources/Parameters-Parameters-MatchParametersProfile-example-1.json ==
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient3*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient3*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient4*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient4*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Parameters-Parameters-QueryPossibleMatches-request-example-1.json ==
 WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'

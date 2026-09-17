@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS | *Version*:2026.2.0-rc |
-| Active as of 2026-09-16 | *Computable Name*:MatchCreationTypeCS |
+| Active as of 2026-09-17 | *Computable Name*:MatchCreationTypeCS |
 
  
 Codes zur Kennzeichnung, wie ein Match erzeugt wurde. 
@@ -37,7 +37,7 @@ Codes zur Kennzeichnung, wie ein Match erzeugt wurde.
   "title" : "Match Creation Type CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-16T09:07:42+00:00",
+  "date" : "2026-09-17T12:28:54+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

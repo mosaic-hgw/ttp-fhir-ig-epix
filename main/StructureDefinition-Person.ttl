@@ -18,7 +18,7 @@
   fhir:StructureDefinition.title [ fhir:value "Person"] ;
   fhir:StructureDefinition.status [ fhir:value "active"] ;
   fhir:StructureDefinition.experimental [ fhir:value "false"^^xsd:boolean] ;
-  fhir:StructureDefinition.date [ fhir:value "2026-02-05"^^xsd:date] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-09-16"^^xsd:date] ;
   fhir:StructureDefinition.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
   fhir:StructureDefinition.contact [
      fhir:index 0 ;

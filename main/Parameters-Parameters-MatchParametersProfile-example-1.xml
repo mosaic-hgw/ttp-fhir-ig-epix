@@ -14,6 +14,10 @@
         <meta>
           <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
         </meta>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+          <value value="1001000000066"/>
+        </identifier>
         <name>
           <family value="Strange"/>
           <given value="Stephen"/>
@@ -31,6 +35,10 @@
         <meta>
           <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
         </meta>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+          <value value="1001000000013"/>
+        </identifier>
         <name>
           <family value="Strange"/>
           <given value="Steven"/>
@@ -41,12 +49,8 @@
     </resource>
   </parameter>
   <parameter>
-    <name value="matchScore"/>
-    <valueDecimal value="0.85"/>
-  </parameter>
-  <parameter>
-    <name value="matchResult"/>
-    <valueDecimal value="1"/>
+    <name value="matchProbability"/>
+    <valueDecimal value="6.952380935351054"/>
   </parameter>
   <parameter>
     <name value="matchCreated"/>
@@ -57,8 +61,8 @@
     <valueCodeableConcept>
       <coding>
         <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
-        <code value="MANUAL"/>
-        <display value="MANUAL"/>
+        <code value="AUTOMATIC"/>
+        <display value="AUTOMATIC"/>
       </coding>
     </valueCodeableConcept>
   </parameter>

@@ -13,11 +13,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.2.0-rc |
-| Active as of 2026-09-16 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| Active as of 2026-09-17 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
-Stand 04.02.2026
+Stand 19.09.2026
 
 Die Softwarelösungen E-PIX, gPAS und gICS werden in zahlreichen Forschungseinrichtungen und Projekten für die Realisierung von Treuhandstellen-Services (THS) eingesetzt. Um die Verwendung dieser Lösungen in FHIR-basierten Infrastrukturen zu unterstützen, werden ausgewählte THS-Funktionalitäten in durch FHIR-basierte Operations, Profile, Erweiterungen und Terminologien realisiert.
 
@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-16T09:07:42+00:00",
+  "date" : "2026-09-17T12:28:54+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

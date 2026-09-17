@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/UpdatePatient | *Version*:2026.2.0-rc |
-| Active as of 2026-02-05 | *Computable Name*:UpdatePatient |
+| Active as of 2026-09-16 | *Computable Name*:UpdatePatient |
 
  
 Aktualisiert Patienten-Identitäten eines MPI-Eintrags. 
@@ -67,7 +67,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "title" : "updatePatient",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

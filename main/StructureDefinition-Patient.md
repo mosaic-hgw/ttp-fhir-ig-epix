@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient | *Version*:2026.2.0-rc |
-| Active as of 2026-02-05 | *Computable Name*:Patient |
+| Active as of 2026-09-16 | *Computable Name*:Patient |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
  
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-Patient.csv), [Excel
   "title" : "Patient",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

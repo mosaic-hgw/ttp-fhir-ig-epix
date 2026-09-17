@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/CustomIdatValues | *Version*:2026.2.0-rc |
-| Active as of 2026-02-05 | *Computable Name*:CustomIdatValues |
+| Active as of 2026-09-16 | *Computable Name*:CustomIdatValues |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
 Set von bis zu zehn individualisierbaren Werten zur Dokumentation von personenidentifizierenden Daten im E-PIX
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-CustomIdatValues.csv
   "title" : "Custom IDAT Values",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

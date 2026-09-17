@@ -40,6 +40,10 @@
           "meta" : {
             "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
           },
+          "identifier" : [{
+            "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+            "value" : "1001000000066"
+          }],
           "name" : [{
             "family" : "Strange",
             "given" : ["Stephen"]
@@ -56,6 +60,10 @@
           "meta" : {
             "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
           },
+          "identifier" : [{
+            "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+            "value" : "1001000000031"
+          }],
           "name" : [{
             "family" : "Strange",
             "given" : ["Steven"]
@@ -65,12 +73,8 @@
         }
       },
       {
-        "name" : "matchScore",
-        "valueDecimal" : 0.85
-      },
-      {
-        "name" : "matchResult",
-        "valueDecimal" : 1
+        "name" : "matchProbability",
+        "valueDecimal" : 5.362352
       },
       {
         "name" : "matchCreated",

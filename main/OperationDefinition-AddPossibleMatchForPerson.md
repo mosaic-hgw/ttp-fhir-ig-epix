@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForPerson | *Version*:2026.2.0-rc |
-| Draft as of 2026-02-05 | *Computable Name*:AddPossibleMatchForPerson |
+| Draft as of 2026-09-16 | *Computable Name*:AddPossibleMatchForPerson |
 
  
 Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu. 
@@ -65,7 +65,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "title" : "addPossibleMatchForPerson",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
