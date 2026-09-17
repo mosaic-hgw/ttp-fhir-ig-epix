@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/AssignIdentityByIdentifier | *Version*:2026.2.0-rc |
-| Draft as of 2026-02-05 | *Computable Name*:AssignIdentityByIdentifier |
+| Draft as of 2026-09-16 | *Computable Name*:AssignIdentityByIdentifier |
 
  
 Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. 
@@ -65,7 +65,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "title" : "assignIdentityByIdentifier",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

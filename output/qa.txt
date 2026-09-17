@@ -1,11 +1,11 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 56, warn = 88, info = 44
+err = 56, warn = 92, info = 44
 IG Publisher Version: 2.3.4
-Generated Wed Sep 16 11:05:00 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc (canonical = https://ths-greifswald.de/fhir/epix)
+Generated Thu Sep 17 14:24:37 CEST 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 0 / 23 / 0
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 8 / 9
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 10 / 9
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\CodeSystem-MatchCreationTypeCS : 0 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\CodeSystem-MatchPriorityCS : 0 / 2 / 2
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\ImplementationGuide-ths-greifswald.ttp-fhir-gw.epix : 4 / 3 / 2
@@ -29,7 +29,7 @@ Generated Wed Sep 16 11:05:00 CEST 2026. FHIR version 4.0.1 for ths-greifswald.t
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 2 / 7
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
- C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 2 / 5
+ C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 4 / 5
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1 : 0 / 1 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-RemovePossibleMatches-request-example-1 : 1 / 0 / 1
  C:\Daten\Entwicklung\ttp-fhir-ig-epix\fsh-generated\resources\Parameters-Parameters-SetReferenceIdentity-request-example-1 : 0 / 1 / 1
@@ -76,7 +76,9 @@ WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[1].u
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[2].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[3].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.link[4].url: URL-Wert 'https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1' löst nicht auf
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/Patient1*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[0].resource/*Patient/Patient1*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/Patient2*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource/*Parameters/MatchResultParameters01*/.parameter[1].resource/*Patient/Patient2*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle: Es konnten keine Typen aus dem Suchstring ermittelt werden, so dass die Typen nicht überprüft werden können
 INFORMATION: Bundle/Bundle-QueryPossibleMatches-response-example-1: Bundle.entry[0].resource: Es konnte nicht festgestellt werden, ob diese Ressource ein gültiger Ressourcentyp für diese Suche ist
@@ -198,7 +200,9 @@ WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Par
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 == fsh-generated\resources\Parameters-Parameters-MatchParametersProfile-example-1.json ==
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient3*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[0].resource/*Patient/Patient3*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient4*/.identifier[0].system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf
 WARNING: Parameters/Parameters-MatchParametersProfile-example-1: Parameters.parameter[1].resource/*Patient/Patient4*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated\resources\Parameters-Parameters-QueryPossibleMatches-request-example-1.json ==
 WARNING: Parameters/Parameters-QueryPossibleMatches-request-example-1: Parameters.parameter[3].value.ofType(Identifier).system: URL-Wert 'https://ths-greifswald.de/fhir/epix/identifier/MPI' löst nicht auf

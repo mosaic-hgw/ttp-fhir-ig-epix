@@ -18,7 +18,7 @@
   fhir:OperationDefinition.title [ fhir:value "assignIdentity"] ;
   fhir:OperationDefinition.status [ fhir:value "draft"] ;
   fhir:OperationDefinition.kind [ fhir:value "operation"] ;
-  fhir:OperationDefinition.date [ fhir:value "2026-02-05"^^xsd:date] ;
+  fhir:OperationDefinition.date [ fhir:value "2026-09-16"^^xsd:date] ;
   fhir:OperationDefinition.publisher [ fhir:value "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"] ;
   fhir:OperationDefinition.contact [
      fhir:index 0 ;

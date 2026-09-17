@@ -12,7 +12,7 @@ Description: "Match informationen zu zwei Identitäten inklusive der betroffende
 * meta.versionId MS
 * meta.lastUpdated MS
 * meta.source MS
-* parameter 8..8
+* parameter 7..7
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #closed
@@ -24,17 +24,11 @@ Description: "Match informationen zu zwei Identitäten inklusive der betroffende
 * parameter[matchItem].resource 1..1
 * parameter[matchItem].resource only Patient
 
-// Definition von Slice: matchScore
-* parameter contains matchScore 1..1
-* parameter[matchScore].name = "matchScore"
-* parameter[matchScore].value[x] 1..1
-* parameter[matchScore].value[x] only decimal
-
-// Definition von Slice: matchResult
-* parameter contains matchResult 1..1
-* parameter[matchResult].name = "matchResult"
-* parameter[matchResult].value[x] 1..1
-* parameter[matchResult].value[x] only decimal
+// Definition von Slice: matchProbability
+* parameter contains matchProbability 1..1
+* parameter[matchProbability].name = "matchProbability"
+* parameter[matchProbability].value[x] 1..1
+* parameter[matchProbability].value[x] only decimal
 
 // Definition von Slice: matchCreated
 * parameter contains matchCreated 1..1
@@ -76,17 +70,14 @@ Usage: #example
 // Zweiter Patient (matchItem 2)
 * parameter[matchItem][1].resource = Patient4
 
-// Match Score
-* parameter[matchScore].valueDecimal = 0.85
-
-// Match Result
-* parameter[matchResult].valueDecimal = 1.0
+// matchProbability
+* parameter[matchProbability].valueDecimal = 6.952380935351054
 
 // Match Created
 * parameter[matchCreated].valueDateTime = "2026-09-15T16:31:23.000+02:00"
 
 // Match Creation Type (jetzt als CodeableConcept)
-* parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
+* parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#AUTOMATIC "AUTOMATIC"
 
 // Match Priority (jetzt als CodeableConcept)
 * parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
@@ -102,6 +93,8 @@ Usage: #inline
 * name.given = "Stephen"
 * gender = #male
 * birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000000066"
 
 Instance: Patient4
 InstanceOf: Patient
@@ -110,3 +103,5 @@ Usage: #inline
 * name.given = "Steven"
 * gender = #male
 * birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000000013"

@@ -123,8 +123,7 @@ Usage: #inline
 * parameter[matchItem][1].resource = Patient2
 
 // Restliche Slices
-* parameter[matchScore].valueDecimal = 0.85
-* parameter[matchResult].valueDecimal = 1.0
+* parameter[matchProbability].valueDecimal = 5.362352
 * parameter[matchCreated].valueDateTime = "2026-09-15T16:31:23.000+02:00"
 * parameter[matchCreationType].valueCodeableConcept = MatchCreationTypeCS#MANUAL "MANUAL"
 * parameter[matchPriority].valueCodeableConcept = MatchPriorityCS#OPEN "OPEN"
@@ -138,6 +137,8 @@ Usage: #inline
 * name.given = "Stephen"
 * gender = #male
 * birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000000066"
 
 Instance: Patient2
 InstanceOf: Patient
@@ -146,3 +147,5 @@ Usage: #inline
 * name.given = "Steven"
 * gender = #male
 * birthDate = "1985-04-12"
+* identifier.system = "https://ths-greifswald.de/fhir/epix/identifier/MPI"
+* identifier.value = "1001000000031"

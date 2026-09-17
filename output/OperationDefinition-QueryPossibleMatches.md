@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches | *Version*:2026.2.0-rc |
-| Draft as of 2026-02-05 | *Computable Name*:QueryPossibleMatches |
+| Draft as of 2026-09-16 | *Computable Name*:QueryPossibleMatches |
 
  
 Gibt possible Matches des E-PIX zurück. Begrenzung auf eine spezifische Domäne und/oder eine spezifische Person (MPI-Eintrag) ist möglich. 
@@ -67,7 +67,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   "title" : "queryPossibleMatches",
   "status" : "draft",
   "kind" : "operation",
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

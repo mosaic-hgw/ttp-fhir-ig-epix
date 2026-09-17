@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/StructureDefinition/epix/Person | *Version*:2026.2.0-rc |
-| Active as of 2026-02-05 | *Computable Name*:Person |
+| Active as of 2026-09-16 | *Computable Name*:Person |
 | **Copyright/Legal**: Copyright 2020-2026 Unabhängige Treuhandstelle der Universitätsmedizin Greifswald | |
 
  
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-Person.csv), [Excel]
   "title" : "Person",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-05",
+  "date" : "2026-09-16",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

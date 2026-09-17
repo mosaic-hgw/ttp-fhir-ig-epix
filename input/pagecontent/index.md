@@ -1,6 +1,6 @@
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
-Stand 04.02.2026
+Stand 19.09.2026
 
 Die Softwarelösungen E-PIX, gPAS und gICS werden in zahlreichen Forschungseinrichtungen und Projekten für die Realisierung von Treuhandstellen-Services (THS) eingesetzt. Um die Verwendung dieser Lösungen in FHIR-basierten Infrastrukturen zu unterstützen, werden ausgewählte THS-Funktionalitäten in durch FHIR-basierte Operations, Profile, Erweiterungen und Terminologien realisiert.
 
