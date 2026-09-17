@@ -7,7 +7,7 @@
 </div></td></tr><tr><td>IN</td><td>_count</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td><td/><td><div><p>Anzahl der zurück zu gebenden match-Parameter (Paging)</p>
 </div></td></tr><tr><td>IN</td><td>domain</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>
 </div></td></tr><tr><td>IN</td><td>mpiIdentifier</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).</p>
-</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>Ergebnis-Bundle mit Match-Informationen.</p>
+</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>Ergebnis-Bundle mit Match-Informationen vom Typ Match Parameters Profile.</p>
 </div></td></tr></table><div><p>Matchende Identitäts-Informationen sowie zugehörige Meta-Informationen ausgeben.</p>
 </div></div>
   </text>
@@ -70,7 +70,7 @@
     <use value="out"/>
     <min value="0"/>
     <max value="1"/>
-    <documentation value="Ergebnis-Bundle mit Match-Informationen."/>
+    <documentation value="Ergebnis-Bundle mit Match-Informationen vom Typ Match Parameters Profile."/>
     <type value="Bundle"/>
   </parameter>
 </OperationDefinition>

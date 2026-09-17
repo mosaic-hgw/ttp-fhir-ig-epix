@@ -9,7 +9,7 @@
   <version value="2026.2.0-rc"/>
   <name value="IGTTPFHIRGatewayEPIX"/>
   <status value="active"/>
-  <date value="2026-09-17T12:28:54+00:00"/>
+  <date value="2026-09-17T14:43:24+00:00"/>
   <publisher value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
   <contact>
     <name value="Unabhängige Treuhandstelle der Universitätsmedizin Greifswald"/>
@@ -562,6 +562,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"/>
+      </reference>
+      <name value="Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity"/>
+      <description value="Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten."/>
+      <exampleCanonical value="https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"/>
+      </reference>
+      <name value="Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson"/>
+      <description value="Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten."/>
+      <exampleCanonical value="https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -681,29 +703,9 @@
         <valueString value="Parameters"/>
       </extension>
       <reference>
-        <reference value="Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"/>
-      </reference>
-      <name value="Parameters-AddPossibleMatchForIdentity-response-example-1"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
-      </extension>
-      <reference>
         <reference value="Parameters/Parameters-AddPossibleMatchForPerson-request-example-1"/>
       </reference>
       <name value="Parameters-AddPossibleMatchForPerson-request-example-1"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
-      </extension>
-      <reference>
-        <reference value="Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"/>
-      </reference>
-      <name value="Parameters-AddPossibleMatchForPerson-response-example-1"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

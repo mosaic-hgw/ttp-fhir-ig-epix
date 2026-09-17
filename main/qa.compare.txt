@@ -1,10 +1,10 @@
 IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
-err = 56, warn = 92, info = 44
+err = 56, warn = 94, info = 40
 $--
 Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonical = https://ths-greifswald.de/fhir/epix)
- Build Errors : 0 / 23 / 0
+ Build Errors : 0 / 21 / 0
  /workspace/fsh-generated/resources/Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 10 / 9
  /workspace/fsh-generated/resources/CodeSystem-MatchCreationTypeCS : 0 / 2 / 2
  /workspace/fsh-generated/resources/CodeSystem-MatchPriorityCS : 0 / 2 / 2
@@ -24,9 +24,9 @@ Generated $--. FHIR version $-- for ths-greifswald.ttp-fhir-gw.epix#$-- (canonic
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPatient-request-example-1 : 6 / 2 / 6
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPatient-response-example-1 : 13 / 6 / 16
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1 : 0 / 0 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1 : 0 / 2 / 7
+ /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1 : 0 / 4 / 5
  /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-request-example-1 : 0 / 2 / 1
- /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 2 / 7
+ /workspace/fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-response-example-1 : 0 / 4 / 5
  /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1 : 0 / 0 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1 : 0 / 2 / 1
  /workspace/fsh-generated/resources/Parameters-Parameters-MatchParametersProfile-example-1 : 0 / 4 / 5
@@ -53,9 +53,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPatient-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPatient-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPossibleMatchForIdentity-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPossibleMatchForPerson-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AddPossibleMatchForPerson-response-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AssignIdentity-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-AssignIdentityByIdentifier-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/Parameters-RemovePossibleMatches-request-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -183,18 +181,18 @@ INFORMATION: Parameters/Parameters-AddPatient-response-example-1: Parameters.par
 WARNING: Parameters/Parameters-AddPatient-response-example-1: Parameters.parameter[0].part[2].resource/*Person/52*/.link[1].target.parameter[0].part[0].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.json ==
 == fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.json ==
-INFORMATION: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/53*/.meta.source: No definition could be found for URL value 'dummy_safe_source'
-WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/67*/.meta.source: No definition could be found for URL value 'dummy_safe_source'
-WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/67*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].resource/*Patient/Patient7*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
+WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[0].resource/*Patient/Patient7*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[1].resource/*Patient/Patient8*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
+WARNING: Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1: Parameters.parameter[1].resource/*Patient/Patient8*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.json ==
 WARNING: Parameters/Parameters-AddPossibleMatchForPerson-request-example-1: Parameters.parameter[1].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 WARNING: Parameters/Parameters-AddPossibleMatchForPerson-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
 == fsh-generated/resources/Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.json ==
-INFORMATION: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/53*/.meta.source: No definition could be found for URL value 'dummy_safe_source'
-WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].part[0].resource/*Patient/53*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/67*/.meta.source: No definition could be found for URL value 'dummy_safe_source'
-WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].part[1].resource/*Patient/67*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].resource/*Patient/Patient5*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
+WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[0].resource/*Patient/Patient5*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[1].resource/*Patient/Patient6*/.identifier[0].system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'
+WARNING: Parameters/Parameters-AddPossibleMatchForPerson-response-example-1: Parameters.parameter[1].resource/*Patient/Patient6*/: Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 == fsh-generated/resources/Parameters-Parameters-AssignIdentity-request-example-1.json ==
 == fsh-generated/resources/Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.json ==
 WARNING: Parameters/Parameters-AssignIdentityByIdentifier-request-example-1: Parameters.parameter[2].value.ofType(Identifier).system: No definition could be found for URL value 'https://ths-greifswald.de/fhir/epix/identifier/MPI'

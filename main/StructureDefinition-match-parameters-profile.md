@@ -22,7 +22,7 @@ Match informationen zu zwei Identitäten inklusive der betroffenden Identitäten
 
 **Usages:**
 
-* Examples for this Profile: [Parameters/Parameters-MatchParametersProfile-example-1](Parameters-Parameters-MatchParametersProfile-example-1.md)
+* Examples for this Profile: [Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md), [Parameters/Parameters-AddPossibleMatchForPerson-response-example-1](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) and [Parameters/Parameters-MatchParametersProfile-example-1](Parameters-Parameters-MatchParametersProfile-example-1.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/ths-greifswald.ttp-fhir-gw.epix|current/StructureDefinition/StructureDefinition-match-parameters-profile.json)
 
@@ -225,19 +225,19 @@ Other representations of profile: [CSV](StructureDefinition-match-parameters-pro
       }
     },
     {
-      "id" : "Parameters.parameter:linkId",
+      "id" : "Parameters.parameter:matchLinkId",
       "path" : "Parameters.parameter",
-      "sliceName" : "linkId",
+      "sliceName" : "matchLinkId",
       "min" : 1,
       "max" : "1"
     },
     {
-      "id" : "Parameters.parameter:linkId.name",
+      "id" : "Parameters.parameter:matchLinkId.name",
       "path" : "Parameters.parameter.name",
-      "patternString" : "linkId"
+      "patternString" : "matchLinkId"
     },
     {
-      "id" : "Parameters.parameter:linkId.value[x]",
+      "id" : "Parameters.parameter:matchLinkId.value[x]",
       "path" : "Parameters.parameter.value[x]",
       "min" : 1,
       "type" : [{

@@ -35,7 +35,7 @@ Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$addPossibleMatchForIdentity`
 
-Der Funktionsaufruf liefert eine Parameters-Ressource bestehend aus einem Multi-Part-Parameter zurück.
+Der Funktionsaufruf liefert eine Parameters-Ressource gemäß dem [Match Parameters Profile](StructureDefinition-match-parameters-profile.md) zurück.
 
 Im Erfolgsfall wird der HTTP Statuscode 200 zurückgegeben.
 
@@ -108,49 +108,10 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
   {
     "name" : "match",
     "use" : "out",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Match-Informationen zu zwei Identitäten.",
-    "part" : [{
-      "name" : "item",
-      "use" : "out",
-      "min" : 2,
-      "max" : "2",
-      "documentation" : "Die beiden matchenden Personen wie im Request übergeben.",
-      "type" : "Patient"
-    },
-    {
-      "name" : "score",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Score",
-      "type" : "decimal"
-    },
-    {
-      "name" : "result",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Ergebnis",
-      "type" : "decimal"
-    },
-    {
-      "name" : "linkId",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Link-ID des Matches",
-      "type" : "integer"
-    },
-    {
-      "name" : "comment",
-      "use" : "out",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Match",
-      "type" : "string"
-    }]
+    "documentation" : "Ergebnis mit Match-Informationen vom Typ Match Parameters Profile.",
+    "type" : "Parameters"
   }]
 }
 

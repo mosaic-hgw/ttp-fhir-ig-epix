@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Parameters-AddPossibleMatchForIdentity-response-example-1 - JSON Representation -  v2026.2.0-rc</title>
+    <title>Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity - JSON Representation -  v2026.2.0-rc</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"6.27"}
-    h3,h4,h5,h6{--heading-prefix:"6.27"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.22"}
+    h3,h4,h5,h6{--heading-prefix:"6.22"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -165,7 +165,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Parameters-AddPossibleMatchForIdentity-response-example-1</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -224,7 +224,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Parameters-AddPossibleMatchForIdentity-response-example-1 - JSON Representation</h2>
+<h2 id="root">: Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity - JSON Representation</h2>
 
 
 <p><a href="Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.json" no-download="true">Raw json</a> | <a href="Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.json" download>Download</a></p>
@@ -237,79 +237,104 @@
   <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">resourceType</a>" : "Parameters",
   "<a href="http://hl7.org/fhir/R4/resource.html#Parameters.id">id</a>" : "Parameters-AddPossibleMatchForIdentity-response-example-1",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Parameters.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2026-09-15T16:31:23.000+02:00",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="StructureDefinition-match-parameters-profile.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+    ]
+  },
   "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter">parameter</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "match",
-      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.part">part</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "item",
-          "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
-            "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
-            "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "53",
-            "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2021-06-17T08:28:03.200+02:00",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "dummy_safe_source",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-                <a href="StructureDefinition-Patient.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-              ]
-            },
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "xxxxx",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-                  "Stefanie"
-                ]
-              }
-            ],
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1962-12-17"
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchItem",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "Patient7",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Patient.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+          ]
+        },
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1001000000066"
           }
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "item",
-          "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
-            "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
-            "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "67",
-            "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.versionId">versionId</a>" : "1",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a>" : "2021-06-17T08:28:24.180+02:00",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.source">source</a>" : "dummy_safe_source",
-              "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-                <a href="StructureDefinition-Patient.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
-              ]
-            },
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
-              {
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "xxxxx",
-                "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
-                  "Stefanie"
-                ]
-              }
-            ],
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
-            "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1962-12-16"
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Strange",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Stephen"
+            ]
           }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1985-04-12"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchItem",
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>" : {
+        "<a href="http://hl7.org/fhir/R4/patient.html">resourceType</a>" : "Patient",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.id">id</a>" : "Patient8",
+        "<a href="http://hl7.org/fhir/R4/resource.html#Patient.meta">meta</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+            <a href="StructureDefinition-Patient.html" style="color: Maroon">&#x1F517;</a> "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"
+          ]
         },
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "score",
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueDecimal</a>" : 0.965
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "result",
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueDecimal</a>" : 0.952
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "linkId",
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueInteger</a>" : 5654986
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "comment",
-          "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueString</a>" : "This match was added externally or manually."
-        }
-      ]
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1001000000031"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Strange",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+              "Steven"
+            ]
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
+        "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1985-04-12"
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchProbability",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueDecimal</a>" : 5.362352
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchCreated",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueDateTime</a>" : "2026-09-15T16:31:23.000+02:00"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchCreationType",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MANUAL",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "MANUAL"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchPriority",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueCodeableConcept</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "OPEN",
+            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "OPEN"
+          }
+        ]
+      }
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.name">name</a>" : "matchLinkId",
+      "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters.parameter.value_x_">valueInteger</a>" : 52
     }
   ]
 }</code></pre>
@@ -336,7 +361,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 12:28+0000">2026-09-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.ths-greifswald.de/">Unabhängige Treuhandstelle der Universitätsmedizin Greifswald</a>.  Package ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 17, 2026 14:43+0000">2026-09-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

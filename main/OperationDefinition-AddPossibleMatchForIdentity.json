@@ -3,7 +3,7 @@
   "id" : "AddPossibleMatchForIdentity",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AddPossibleMatchForIdentity</b></p><a name=\"AddPossibleMatchForIdentity\"> </a><a name=\"hcAddPossibleMatchForIdentity\"> </a><p>URL: [base]/$addPossibleMatchForIdentity</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>identityReference</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Referenz auf eine Identität (Patient-Ressource)</p>\n</div></td></tr><tr><td>IN</td><td>identityReferenceAlias</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Referenz auf ein Alias der Identität (Patient-Ressource)</p>\n</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>1..1</td><td></td><td/><td><div><p>Match-Informationen zu zwei Identitäten.</p>\n</div></td></tr><tr><td>OUT</td><td>match.item</td><td/><td>2..2</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Die beiden matchenden Personen wie im Request übergeben.</p>\n</div></td></tr><tr><td>OUT</td><td>match.score</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Score</p>\n</div></td></tr><tr><td>OUT</td><td>match.result</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#decimal\">decimal</a></td><td/><td><div><p>Matching-Ergebnis</p>\n</div></td></tr><tr><td>OUT</td><td>match.linkId</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td/><td><div><p>Link-ID des Matches</p>\n</div></td></tr><tr><td>OUT</td><td>match.comment</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Anmerkung zum Match</p>\n</div></td></tr></table><div><p>Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition AddPossibleMatchForIdentity</b></p><a name=\"AddPossibleMatchForIdentity\"> </a><a name=\"hcAddPossibleMatchForIdentity\"> </a><p>URL: [base]/$addPossibleMatchForIdentity</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>domain</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td/><td><div><p>Angabe der Matching-Domaene</p>\n</div></td></tr><tr><td>IN</td><td>identityReference</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Referenz auf eine Identität (Patient-Ressource)</p>\n</div></td></tr><tr><td>IN</td><td>identityReferenceAlias</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Referenz auf ein Alias der Identität (Patient-Ressource)</p>\n</div></td></tr><tr><td>OUT</td><td>match</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/parameters.html\">Parameters</a></td><td/><td><div><p>Ergebnis mit Match-Informationen vom Typ Match Parameters Profile.</p>\n</div></td></tr></table><div><p>Fügt einen Match zu einer Person anhand von IdentityIds einer Domäne hinzu.</p>\n</div></div>"
   },
   "url" : "https://ths-greifswald.de/fhir/OperationDefinition/epix/AddPossibleMatchForIdentity",
   "version" : "2026.2.0-rc",
@@ -54,48 +54,9 @@
   {
     "name" : "match",
     "use" : "out",
-    "min" : 1,
+    "min" : 0,
     "max" : "1",
-    "documentation" : "Match-Informationen zu zwei Identitäten.",
-    "part" : [{
-      "name" : "item",
-      "use" : "out",
-      "min" : 2,
-      "max" : "2",
-      "documentation" : "Die beiden matchenden Personen wie im Request übergeben.",
-      "type" : "Patient"
-    },
-    {
-      "name" : "score",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Score",
-      "type" : "decimal"
-    },
-    {
-      "name" : "result",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Matching-Ergebnis",
-      "type" : "decimal"
-    },
-    {
-      "name" : "linkId",
-      "use" : "out",
-      "min" : 1,
-      "max" : "1",
-      "documentation" : "Link-ID des Matches",
-      "type" : "integer"
-    },
-    {
-      "name" : "comment",
-      "use" : "out",
-      "min" : 0,
-      "max" : "1",
-      "documentation" : "Anmerkung zum Match",
-      "type" : "string"
-    }]
+    "documentation" : "Ergebnis mit Match-Informationen vom Typ Match Parameters Profile.",
+    "type" : "Parameters"
   }]
 }

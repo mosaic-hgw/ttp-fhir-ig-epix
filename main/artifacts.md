@@ -74,14 +74,14 @@ These are example instances that show what data produced and consumed by systems
 | [Beispiel Bundle Response für Operation QueryPossibleMatches](Bundle-Bundle-QueryPossibleMatches-response-example-1.md) | Suchergebnis-Bundle mit einer MatchParametersProfile-Instanz. |
 | [Beispiel Request für Operation QueryPossibleMatches](Parameters-Parameters-QueryPossibleMatches-request-example-1.md) | Parameters-Ressource für den Aufruf der Operation per HTTP-POST. |
 | [Beispiel-Instanz für MatchParametersProfile](Parameters-Parameters-MatchParametersProfile-example-1.md) | Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten. |
+| [Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md) | Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten. |
+| [Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) | Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten. |
 | [OperationOutcome-AssignIdentity-response-example-1](OperationOutcome-OperationOutcome-AssignIdentity-response-example-1.md) |  |
 | [OperationOutcome-RemovePossibleMatches-response-example-1](OperationOutcome-OperationOutcome-RemovePossibleMatches-response-example-1.md) |  |
 | [Parameters-AddPatient-request-example-1](Parameters-Parameters-AddPatient-request-example-1.md) |  |
 | [Parameters-AddPatient-response-example-1](Parameters-Parameters-AddPatient-response-example-1.md) |  |
 | [Parameters-AddPossibleMatchForIdentity-request-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.md) |  |
-| [Parameters-AddPossibleMatchForIdentity-response-example-1](Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.md) |  |
 | [Parameters-AddPossibleMatchForPerson-request-example-1](Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.md) |  |
-| [Parameters-AddPossibleMatchForPerson-response-example-1](Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.md) |  |
 | [Parameters-AssignIdentity-request-example-1](Parameters-Parameters-AssignIdentity-request-example-1.md) |  |
 | [Parameters-AssignIdentityByIdentifier-request-example-1](Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.md) |  |
 | [Parameters-RemovePossibleMatches-request-example-1](Parameters-Parameters-RemovePossibleMatches-request-example-1.md) |  |

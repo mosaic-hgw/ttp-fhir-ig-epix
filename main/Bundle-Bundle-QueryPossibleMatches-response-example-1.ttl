@@ -137,7 +137,7 @@
      ]
   ], [
      fhir:index 6 ;
-     fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
+     fhir:Parameters.parameter.name [ fhir:value "matchLinkId" ] ;
      fhir:Parameters.parameter.valueInteger [ fhir:value "52"^^xsd:integer ]
   ] .
 

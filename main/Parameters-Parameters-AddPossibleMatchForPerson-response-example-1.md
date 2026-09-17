@@ -1,4 +1,4 @@
-# Parameters-AddPossibleMatchForPerson-response-example-1 - v2026.2.0-rc
+# Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson - v2026.2.0-rc
 
  ![](assets/images/Design-Logo-THS-deutsch-271-padding.png) 
 
@@ -7,9 +7,9 @@
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Parameters-AddPossibleMatchForPerson-response-example-1**
+* **Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson**
 
-## Example Parameters: Parameters-AddPossibleMatchForPerson-response-example-1
+## Example Parameters: Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson
 
 
 
@@ -19,64 +19,81 @@
 {
   "resourceType" : "Parameters",
   "id" : "Parameters-AddPossibleMatchForPerson-response-example-1",
+  "meta" : {
+    "lastUpdated" : "2026-09-15T16:31:23.000+02:00",
+    "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"]
+  },
   "parameter" : [{
-    "name" : "match",
-    "part" : [{
-      "name" : "item",
-      "resource" : {
-        "resourceType" : "Patient",
-        "id" : "53",
-        "meta" : {
-          "versionId" : "1",
-          "lastUpdated" : "2021-06-17T08:28:03.200+02:00",
-          "source" : "dummy_safe_source",
-          "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
-        },
-        "active" : true,
-        "name" : [{
-          "family" : "xxxxx",
-          "given" : ["Stefanie"]
-        }],
-        "gender" : "male",
-        "birthDate" : "1962-12-17"
-      }
-    },
-    {
-      "name" : "item",
-      "resource" : {
-        "resourceType" : "Patient",
-        "id" : "67",
-        "meta" : {
-          "versionId" : "1",
-          "lastUpdated" : "2021-06-17T08:28:24.180+02:00",
-          "source" : "dummy_safe_source",
-          "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
-        },
-        "active" : true,
-        "name" : [{
-          "family" : "xxxxx",
-          "given" : ["Stefanie"]
-        }],
-        "gender" : "male",
-        "birthDate" : "1962-12-16"
-      }
-    },
-    {
-      "name" : "score",
-      "valueDecimal" : 0.965
-    },
-    {
-      "name" : "result",
-      "valueDecimal" : 0.952
-    },
-    {
-      "name" : "linkId",
-      "valueInteger" : 5654986
-    },
-    {
-      "name" : "comment",
-      "valueString" : "This match was added externally or manually."
-    }]
+    "name" : "matchItem",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Patient5",
+      "meta" : {
+        "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
+      },
+      "identifier" : [{
+        "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+        "value" : "1001000000066"
+      }],
+      "name" : [{
+        "family" : "Strange",
+        "given" : ["Stephen"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1985-04-12"
+    }
+  },
+  {
+    "name" : "matchItem",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "Patient6",
+      "meta" : {
+        "profile" : ["https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"]
+      },
+      "identifier" : [{
+        "system" : "https://ths-greifswald.de/fhir/epix/identifier/MPI",
+        "value" : "1001000068944"
+      }],
+      "name" : [{
+        "family" : "Strange",
+        "given" : ["Steven"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1985-04-12"
+    }
+  },
+  {
+    "name" : "matchProbability",
+    "valueDecimal" : 5.362352
+  },
+  {
+    "name" : "matchCreated",
+    "valueDateTime" : "2026-09-15T16:31:23.000+02:00"
+  },
+  {
+    "name" : "matchCreationType",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS",
+        "code" : "MANUAL",
+        "display" : "MANUAL"
+      }]
+    }
+  },
+  {
+    "name" : "matchPriority",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS",
+        "code" : "OPEN",
+        "display" : "OPEN"
+      }]
+    }
+  },
+  {
+    "name" : "matchLinkId",
+    "valueInteger" : 52
   }]
 }
 

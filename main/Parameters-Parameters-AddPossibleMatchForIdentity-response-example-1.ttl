@@ -8,82 +8,106 @@
 <https://ths-greifswald.de/fhir/epix/Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Parameters-AddPossibleMatchForIdentity-response-example-1"] ;
+  fhir:Resource.meta [
+     fhir:Meta.lastUpdated [ fhir:value "2026-09-15T16:31:23.000+02:00"^^xsd:dateTime ] ;
+     fhir:Meta.profile [
+       fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile" ;
+       fhir:index 0 ;
+       fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile>
+     ]
+  ] ;
   fhir:Parameters.parameter [
      fhir:index 0 ;
-     fhir:Parameters.parameter.name [ fhir:value "match" ] ;
-     fhir:Parameters.parameter.part [
-       fhir:index 0 ;
-       fhir:Parameters.parameter.name [ fhir:value "item" ] ;
-       fhir:Parameters.parameter.resource [
-         a fhir:Patient ;
-         fhir:Resource.id [ fhir:value "53" ] ;
-         fhir:Resource.meta [
-           fhir:Meta.versionId [ fhir:value "1" ] ;
-           fhir:Meta.lastUpdated [ fhir:value "2021-06-17T08:28:03.200+02:00"^^xsd:dateTime ] ;
-           fhir:Meta.source [ fhir:value "dummy_safe_source" ] ;
-           fhir:Meta.profile [
-             fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
-             fhir:index 0 ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
-           ]
-         ] ;
-         fhir:Patient.active [ fhir:value "true"^^xsd:boolean ] ;
-         fhir:Patient.name [
+     fhir:Parameters.parameter.name [ fhir:value "matchItem" ] ;
+     fhir:Parameters.parameter.resource [
+       a fhir:Patient ;
+       fhir:Resource.id [ fhir:value "Patient7" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
            fhir:index 0 ;
-           fhir:HumanName.family [ fhir:value "xxxxx" ] ;
-           fhir:HumanName.given [
-             fhir:value "Stefanie" ;
-             fhir:index 0
-           ]
-         ] ;
-         fhir:Patient.gender [ fhir:value "male" ] ;
-         fhir:Patient.birthDate [ fhir:value "1962-12-17"^^xsd:date ]
-       ]
-     ], [
-       fhir:index 1 ;
-       fhir:Parameters.parameter.name [ fhir:value "item" ] ;
-       fhir:Parameters.parameter.resource [
-         a fhir:Patient ;
-         fhir:Resource.id [ fhir:value "67" ] ;
-         fhir:Resource.meta [
-           fhir:Meta.versionId [ fhir:value "1" ] ;
-           fhir:Meta.lastUpdated [ fhir:value "2021-06-17T08:28:24.180+02:00"^^xsd:dateTime ] ;
-           fhir:Meta.source [ fhir:value "dummy_safe_source" ] ;
-           fhir:Meta.profile [
-             fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
-             fhir:index 0 ;
-             fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
-           ]
-         ] ;
-         fhir:Patient.active [ fhir:value "true"^^xsd:boolean ] ;
-         fhir:Patient.name [
-           fhir:index 0 ;
-           fhir:HumanName.family [ fhir:value "xxxxx" ] ;
-           fhir:HumanName.given [
-             fhir:value "Stefanie" ;
-             fhir:index 0
-           ]
-         ] ;
-         fhir:Patient.gender [ fhir:value "male" ] ;
-         fhir:Patient.birthDate [ fhir:value "1962-12-16"^^xsd:date ]
-       ]
-     ], [
-       fhir:index 2 ;
-       fhir:Parameters.parameter.name [ fhir:value "score" ] ;
-       fhir:Parameters.parameter.valueDecimal [ fhir:value "0.965"^^xsd:decimal ]
-     ], [
-       fhir:index 3 ;
-       fhir:Parameters.parameter.name [ fhir:value "result" ] ;
-       fhir:Parameters.parameter.valueDecimal [ fhir:value "0.952"^^xsd:decimal ]
-     ], [
-       fhir:index 4 ;
-       fhir:Parameters.parameter.name [ fhir:value "linkId" ] ;
-       fhir:Parameters.parameter.valueInteger [ fhir:value "5654986"^^xsd:integer ]
-     ], [
-       fhir:index 5 ;
-       fhir:Parameters.parameter.name [ fhir:value "comment" ] ;
-       fhir:Parameters.parameter.valueString [ fhir:value "This match was added externally or manually." ]
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+         ]
+       ] ;
+       fhir:Patient.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+         fhir:Identifier.value [ fhir:value "1001000000066" ]
+       ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "Strange" ] ;
+         fhir:HumanName.given [
+           fhir:value "Stephen" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1985-04-12"^^xsd:date ]
      ]
+  ], [
+     fhir:index 1 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchItem" ] ;
+     fhir:Parameters.parameter.resource [
+       a fhir:Patient ;
+       fhir:Resource.id [ fhir:value "Patient8" ] ;
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient" ;
+           fhir:index 0 ;
+           fhir:link <https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient>
+         ]
+       ] ;
+       fhir:Patient.identifier [
+         fhir:index 0 ;
+         fhir:Identifier.system [ fhir:value "https://ths-greifswald.de/fhir/epix/identifier/MPI" ] ;
+         fhir:Identifier.value [ fhir:value "1001000000031" ]
+       ] ;
+       fhir:Patient.name [
+         fhir:index 0 ;
+         fhir:HumanName.family [ fhir:value "Strange" ] ;
+         fhir:HumanName.given [
+           fhir:value "Steven" ;
+           fhir:index 0
+         ]
+       ] ;
+       fhir:Patient.gender [ fhir:value "male" ] ;
+       fhir:Patient.birthDate [ fhir:value "1985-04-12"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchProbability" ] ;
+     fhir:Parameters.parameter.valueDecimal [ fhir:value "5.362352"^^xsd:decimal ]
+  ], [
+     fhir:index 3 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchCreated" ] ;
+     fhir:Parameters.parameter.valueDateTime [ fhir:value "2026-09-15T16:31:23.000+02:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 4 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchCreationType" ] ;
+     fhir:Parameters.parameter.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS" ] ;
+         fhir:Coding.code [ fhir:value "MANUAL" ] ;
+         fhir:Coding.display [ fhir:value "MANUAL" ]
+       ]
+     ]
+  ], [
+     fhir:index 5 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchPriority" ] ;
+     fhir:Parameters.parameter.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS" ] ;
+         fhir:Coding.code [ fhir:value "OPEN" ] ;
+         fhir:Coding.display [ fhir:value "OPEN" ]
+       ]
+     ]
+  ], [
+     fhir:index 6 ;
+     fhir:Parameters.parameter.name [ fhir:value "matchLinkId" ] ;
+     fhir:Parameters.parameter.valueInteger [ fhir:value "52"^^xsd:integer ]
   ] .
 
 # - ontology header ------------------------------------------------------------

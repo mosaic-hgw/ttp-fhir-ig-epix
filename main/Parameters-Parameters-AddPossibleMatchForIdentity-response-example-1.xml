@@ -2,65 +2,82 @@
 
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="Parameters-AddPossibleMatchForIdentity-response-example-1"/>
+  <meta>
+    <lastUpdated value="2026-09-15T16:31:23.000+02:00"/>
+    <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"/>
+  </meta>
   <parameter>
-    <name value="match"/>
-    <part>
-      <name value="item"/>
-      <resource>
-        <Patient>
-          <id value="53"/>
-          <meta>
-            <versionId value="1"/>
-            <lastUpdated value="2021-06-17T08:28:03.200+02:00"/>
-            <source value="dummy_safe_source"/>
-            <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
-          </meta>
-          <active value="true"/>
-          <name>
-            <family value="xxxxx"/>
-            <given value="Stefanie"/>
-          </name>
-          <gender value="male"/>
-          <birthDate value="1962-12-17"/>
-        </Patient>
-      </resource>
-    </part>
-    <part>
-      <name value="item"/>
-      <resource>
-        <Patient>
-          <id value="67"/>
-          <meta>
-            <versionId value="1"/>
-            <lastUpdated value="2021-06-17T08:28:24.180+02:00"/>
-            <source value="dummy_safe_source"/>
-            <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
-          </meta>
-          <active value="true"/>
-          <name>
-            <family value="xxxxx"/>
-            <given value="Stefanie"/>
-          </name>
-          <gender value="male"/>
-          <birthDate value="1962-12-16"/>
-        </Patient>
-      </resource>
-    </part>
-    <part>
-      <name value="score"/>
-      <valueDecimal value="0.965"/>
-    </part>
-    <part>
-      <name value="result"/>
-      <valueDecimal value="0.952"/>
-    </part>
-    <part>
-      <name value="linkId"/>
-      <valueInteger value="5654986"/>
-    </part>
-    <part>
-      <name value="comment"/>
-      <valueString value="This match was added externally or manually."/>
-    </part>
+    <name value="matchItem"/>
+    <resource>
+      <Patient>
+        <id value="Patient7"/>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+          <value value="1001000000066"/>
+        </identifier>
+        <name>
+          <family value="Strange"/>
+          <given value="Stephen"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1985-04-12"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="matchItem"/>
+    <resource>
+      <Patient>
+        <id value="Patient8"/>
+        <meta>
+          <profile value="https://ths-greifswald.de/fhir/StructureDefinition/epix/Patient"/>
+        </meta>
+        <identifier>
+          <system value="https://ths-greifswald.de/fhir/epix/identifier/MPI"/>
+          <value value="1001000000031"/>
+        </identifier>
+        <name>
+          <family value="Strange"/>
+          <given value="Steven"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1985-04-12"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="matchProbability"/>
+    <valueDecimal value="5.362352"/>
+  </parameter>
+  <parameter>
+    <name value="matchCreated"/>
+    <valueDateTime value="2026-09-15T16:31:23.000+02:00"/>
+  </parameter>
+  <parameter>
+    <name value="matchCreationType"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchCreationTypeCS"/>
+        <code value="MANUAL"/>
+        <display value="MANUAL"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="matchPriority"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS"/>
+        <code value="OPEN"/>
+        <display value="OPEN"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="matchLinkId"/>
+    <valueInteger value="52"/>
   </parameter>
 </Parameters>
