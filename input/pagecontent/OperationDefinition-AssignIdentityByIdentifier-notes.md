@@ -1,5 +1,6 @@
 ## Voraussetzung
 Verwendete Parameter-Werte müssen im E-PIX bekannt sein.
+**Funktion kann nur verwendet werden, wenn die genutzte E-PIX-Domäne im Match-Modus `NO_DECISION` läuft. Der Default ist jedoch `MATCHING_IDENTITIES`. Details siehe E-PIX-Handbuch.**
 
 ## Aufruf und Rückgabe
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.

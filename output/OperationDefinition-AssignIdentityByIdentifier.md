@@ -19,7 +19,7 @@
  
 Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine andere Person. Selektionsparameter ist ein Identifier der Identität. 
 
-Unterstützt ab v2026.2.0
+**Konzeptarbeit. Noch nicht implementiert.**
 
 ## Zweck
 
@@ -27,7 +27,7 @@ Verschiebt die Zuordnung einer Identität zu einer Person (MPI-Eintrag) auf eine
 
 ## Voraussetzung
 
-Verwendete Parameter-Werte müssen im E-PIX bekannt sein.
+Verwendete Parameter-Werte müssen im E-PIX bekannt sein. **Funktion kann nur verwendet werden, wenn die genutzte E-PIX-Domäne im Match-Modus `NO_DECISION` läuft. Der Default ist jedoch `MATCHING_IDENTITIES`. Details siehe E-PIX-Handbuch.**
 
 ## Aufruf und Rückgabe
 
@@ -85,7 +85,7 @@ Im Fehlerfall wird einer der folgenden HTTP Statuscodes in Verbindung mit einer 
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Angabe der Matching-Domäne",
+    "documentation" : "Angabe der Matching-Domäne (erforderlich: Match-Modus=NO-DECISION)",
     "type" : "string"
   },
   {

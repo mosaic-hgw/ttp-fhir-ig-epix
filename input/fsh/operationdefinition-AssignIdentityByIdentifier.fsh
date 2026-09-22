@@ -18,7 +18,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Angabe der Matching-Domäne"
+  * documentation = "Angabe der Matching-Domäne (erforderlich: Match-Modus=NO-DECISION)"
   * type = #string
 * parameter[+]
   * name = #comment
