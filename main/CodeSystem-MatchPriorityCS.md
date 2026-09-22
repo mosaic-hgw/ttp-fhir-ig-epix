@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/CodeSystem/MatchPriorityCS | *Version*:2026.2.0-rc |
-| Active as of 2026-09-17 | *Computable Name*:MatchPriorityCS |
+| Active as of 2026-09-22 | *Computable Name*:MatchPriorityCS |
 
  
 Priorität der Bearbeitung eines Matches. 
@@ -37,7 +37,7 @@ Priorität der Bearbeitung eines Matches.
   "title" : "Match Priority CodeSystem",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-17T14:43:24+00:00",
+  "date" : "2026-09-22T12:29:02+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

@@ -2,8 +2,8 @@ IGTTPFHIRGatewayEPIX : Validation Results
 =========================================
 
 err = 56, warn = 94, info = 40
-IG Publisher Version: 2.3.4 Out of date - current version is null
-Generated Thu Sep 17 14:44:51 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc (canonical = https://ths-greifswald.de/fhir/epix)
+IG Publisher Version: 2.3.4
+Generated Tue Sep 22 12:31:51 UTC 2026. FHIR version 4.0.1 for ths-greifswald.ttp-fhir-gw.epix#2026.2.0-rc (canonical = https://ths-greifswald.de/fhir/epix)
  Build Errors : 0 / 21 / 0
  /workspace/fsh-generated/resources/Bundle-Bundle-QueryPossibleMatches-response-example-1 : 0 / 10 / 9
  /workspace/fsh-generated/resources/CodeSystem-MatchCreationTypeCS : 0 / 2 / 2
