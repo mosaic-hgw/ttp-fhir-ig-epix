@@ -19,7 +19,7 @@
  
 Fügt einen Match zu einer Person anhand von MPIs einer Domäne hinzu. 
 
-**Konzeptarbeit. Noch nicht implementiert**
+Unterstützt ab v2026.2.0
 
 ## Zweck
 

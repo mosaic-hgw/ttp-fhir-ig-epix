@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://fhir.de/ValueSet/iso/bundeslaender,1.6.0,active,,ValueSetISO31662DE,ISO-3166-2:de-Laendercodes,"Dieses ValueSet enthält die ISO-3166-2:DE-Codes der deutschen Bundesländer.","StructureDefinition/Patient","Other"
 http://hl7.org/fhir/ValueSet/address-type,4.0.1,active,"2.16.840.1.113883.4.642.3.69",AddressType,AddressType,"The type of an address (physical / postal).","StructureDefinition/Patient,StructureDefinition/Person","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/address-use,4.0.1,active,"2.16.840.1.113883.4.642.3.67",AddressUse,AddressUse,"The use of an address.","StructureDefinition/Patient,StructureDefinition/Person","hl7.fhir.r4.core"
 http://hl7.org/fhir/ValueSet/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.3.1",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","StructureDefinition/Patient,StructureDefinition/Person","hl7.fhir.r4.core"

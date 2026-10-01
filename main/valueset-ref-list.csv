@@ -1,4 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://fhir.de/ValueSet/iso/bundeslaender,1.6.0,active,,ValueSetISO31662DE,ISO-3166-2:de-Laendercodes,"Dieses ValueSet enthält die ISO-3166-2:DE-Codes der deutschen Bundesländer.","StructureDefinition/Patient","Other"
 http://hl7.org/fhir/ValueSet/iso3166-1-2,4.0.1,active,,Iso3166-1-2,Iso 3166 Part 1: 2 Letter Codes,"This value set defines the ISO 3166 Part 1 2-letter codes","StructureDefinition/Patient","Other"
 http://hl7.org/fhir/ValueSet/languages,4.0.1,draft,"2.16.840.1.113883.4.642.3.20",CommonLanguages,Common Languages,"This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)","StructureDefinition/Patient","Other"
 http://hl7.org/fhir/ValueSet/marital-status,4.0.1,active,"2.16.840.1.113883.4.642.3.29",Marital Status Codes,MaritalStatus,"This value set defines the set of codes that can be used to indicate the marital status of a person.","StructureDefinition/Patient","THO (V3)"

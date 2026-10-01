@@ -8,22 +8,6 @@
     <relation value="self"/>
     <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
   </link>
-  <link>
-    <relation value="next"/>
-    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=1&amp;_count=1"/>
-  </link>
-  <link>
-    <relation value="previous"/>
-    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
-  </link>
-  <link>
-    <relation value="first"/>
-    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=0&amp;_count=1"/>
-  </link>
-  <link>
-    <relation value="last"/>
-    <url value="https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&amp;mpiIdentifier=123456789&amp;_offset=44&amp;_count=1"/>
-  </link>
   <entry>
     <fullUrl value="urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0"/>
     <resource>

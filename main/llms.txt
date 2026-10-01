@@ -4,8 +4,8 @@
 
 * [Implementation Guide E-PIX](index.md)
 * [Suche nach Personen und Identitäten](Suche.md)
-* [Artifacts Summary](artifacts.md)
 * [Extensions](Extensions.md)
+* [Artifacts Summary](artifacts.md)
 * [Allgemein](Allgemein.md)
 * [Terminologie](Terminologie.md)
 

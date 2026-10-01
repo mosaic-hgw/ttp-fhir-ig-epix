@@ -14,22 +14,6 @@
      fhir:index 0 ;
      fhir:Bundle.link.relation [ fhir:value "self" ] ;
      fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
-  ], [
-     fhir:index 1 ;
-     fhir:Bundle.link.relation [ fhir:value "next" ] ;
-     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=1&_count=1" ]
-  ], [
-     fhir:index 2 ;
-     fhir:Bundle.link.relation [ fhir:value "previous" ] ;
-     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
-  ], [
-     fhir:index 3 ;
-     fhir:Bundle.link.relation [ fhir:value "first" ] ;
-     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1" ]
-  ], [
-     fhir:index 4 ;
-     fhir:Bundle.link.relation [ fhir:value "last" ] ;
-     fhir:Bundle.link.url [ fhir:value "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1" ]
   ] ;
   fhir:Bundle.entry [
      fhir:index 0 ;

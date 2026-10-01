@@ -14,7 +14,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/ValueSet/MatchPriorityVS | *Version*:2026.2.0-rc |
-| Active as of 2026-09-22 | *Computable Name*:MatchPriorityVS |
+| Active as of 2026-10-01 | *Computable Name*:MatchPriorityVS |
 
  
 ValueSet zur Priorisierung und Statussteuerung von Matches. 
@@ -56,7 +56,7 @@ ValueSet zur Priorisierung und Statussteuerung von Matches.
   "title" : "Match Priority ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-22T12:29:02+00:00",
+  "date" : "2026-10-01T16:42:11+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",

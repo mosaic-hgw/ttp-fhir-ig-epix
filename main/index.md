@@ -13,7 +13,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://ths-greifswald.de/fhir/epix/ImplementationGuide/ths-greifswald.ttp-fhir-gw.epix | *Version*:2026.2.0-rc |
-| Active as of 2026-09-22 | *Computable Name*:IGTTPFHIRGatewayEPIX |
+| Active as of 2026-10-01 | *Computable Name*:IGTTPFHIRGatewayEPIX |
 
 # FHIR-Support für Record Linkage und Identitätsmanagement
 
@@ -61,7 +61,7 @@ kontakt-ths (at) med.uni-greifswald.de
   "version" : "2026.2.0-rc",
   "name" : "IGTTPFHIRGatewayEPIX",
   "status" : "active",
-  "date" : "2026-09-22T12:29:02+00:00",
+  "date" : "2026-10-01T16:42:11+00:00",
   "publisher" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "contact" : [{
     "name" : "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
