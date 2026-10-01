@@ -1,12 +1,13 @@
 ## Voraussetzung
 Der angegebene Parameter zur Spezifikation der Matching-Domäne muss im E-PIX konfiguriert sein.
+Wenn der Parameter `mpiIdentifier` angeben wird, muss ebenfalls zwingend Parameter `domain` angegeben werden.
 
 ## Aufruf und Rückgabe
 Die bereitgestellte Funktionalität kann per POST-Request aufgerufen werden. Die erforderlichen Angaben werden per POST-BODY in Form von [FHIR Parameters](https://www.hl7.org/fhir/parameters.html) übermittelt.
 
 `<HOST>:<PORT>/ttp-fhir/fhir/epix/$queryPossibleMatches`
 
-Paging wird mittels der optionalen In-Parameter _offset und _count sowie der optionalen Out-Parameter prev, self und next realisiert. Die Paging-Mechanismen folgen den Vorgaben unter http://www.hl7.org/fhir/r4/search.html - allerdings ist der komplexe Out-Parameter 'match' der Bezug für die Zählung.
+Paging mittels `_count` und `_offset` sowie Bundle-Navigation-Links werden in der aktuellen Version noch nicht unterstützt.
 
 Der Funktionsaufruf liefert ein SearchSet-Bundle zurück. Das Bundle-Total gibt die Gesamtanzahl der offenen Possible-Matches im E-PIX zurück.
 Possible Matches werden als Ressourcen vom Typ [Match Parameters Profile](StructureDefinition-match-parameters-profile.html) zurückgegeben. 

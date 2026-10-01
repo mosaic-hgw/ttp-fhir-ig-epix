@@ -16,22 +16,6 @@
   ],
   "parameter": [
     {
-      "name": "_offset",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Offset für Paging (Anzahl der zu überspringenden match-Parameter)",
-      "type": "integer"
-    },
-    {
-      "name": "_count",
-      "use": "in",
-      "min": 0,
-      "max": "1",
-      "documentation": "Anzahl der zurück zu gebenden match-Parameter (Paging)",
-      "type": "integer"
-    },
-    {
       "name": "domain",
       "use": "in",
       "min": 0,
@@ -44,7 +28,7 @@
       "use": "in",
       "min": 0,
       "max": "1",
-      "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier).",
+      "documentation": "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Im konkreten Fall muss auch die Domain angegeben werden.",
       "type": "Identifier"
     },
     {
@@ -52,13 +36,13 @@
       "use": "out",
       "min": 0,
       "max": "1",
-      "documentation": "Ergebnis-Bundle mit Match-Informationen.",
+      "documentation": "Ergebnis-Bundle mit Match-Informationen vom Typ Match Parameters Profile.",
       "type": "Bundle"
     }
   ],
-  "version": "2025.2.0",
+  "version": "2026.2.0-rc",
   "status": "draft",
-  "date": "2026-02-05",
+  "date": "2026-09-16",
   "publisher": "Unabhängige Treuhandstelle der Universitätsmedizin Greifswald",
   "name": "QueryPossibleMatches",
   "title": "queryPossibleMatches",

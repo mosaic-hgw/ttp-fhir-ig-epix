@@ -7,6 +7,8 @@
 [Bundle-QueryPossibleMatches-response-example-1]: Bundle-Bundle-QueryPossibleMatches-response-example-1.html
 [Parameters-QueryPossibleMatches-request-example-1]: Parameters-Parameters-QueryPossibleMatches-request-example-1.html
 [Parameters-MatchParametersProfile-example-1]: Parameters-Parameters-MatchParametersProfile-example-1.html
+[Parameters-AddPossibleMatchForIdentity-response-example-1]: Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html
+[Parameters-AddPossibleMatchForPerson-response-example-1]: Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html
 [CustomIdatValues]: StructureDefinition-CustomIdatValues.html
 [MatchCreationTypeCS]: CodeSystem-MatchCreationTypeCS.html
 [MatchCreationTypeVS]: ValueSet-MatchCreationTypeVS.html
@@ -18,9 +20,7 @@
 [Parameters-AddPatient-request-example-1]: Parameters-Parameters-AddPatient-request-example-1.html
 [Parameters-AddPatient-response-example-1]: Parameters-Parameters-AddPatient-response-example-1.html
 [Parameters-AddPossibleMatchForIdentity-request-example-1]: Parameters-Parameters-AddPossibleMatchForIdentity-request-example-1.html
-[Parameters-AddPossibleMatchForIdentity-response-example-1]: Parameters-Parameters-AddPossibleMatchForIdentity-response-example-1.html
 [Parameters-AddPossibleMatchForPerson-request-example-1]: Parameters-Parameters-AddPossibleMatchForPerson-request-example-1.html
-[Parameters-AddPossibleMatchForPerson-response-example-1]: Parameters-Parameters-AddPossibleMatchForPerson-response-example-1.html
 [Parameters-AssignIdentity-request-example-1]: Parameters-Parameters-AssignIdentity-request-example-1.html
 [Parameters-AssignIdentityByIdentifier-request-example-1]: Parameters-Parameters-AssignIdentityByIdentifier-request-example-1.html
 [Parameters-RemovePossibleMatches-request-example-1]: Parameters-Parameters-RemovePossibleMatches-request-example-1.html

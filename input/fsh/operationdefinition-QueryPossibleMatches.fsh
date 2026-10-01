@@ -15,21 +15,7 @@ Usage: #definition
 * type = false
 * instance = false
 
-* parameter[0].name = #_offset
-* parameter[=].use = #in
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Offset für Paging (Anzahl der zu überspringenden match-Parameter)"
-* parameter[=].type = #integer
-
-* parameter[+].name = #_count
-* parameter[=].use = #in
-* parameter[=].min = 0
-* parameter[=].max = "1"
-* parameter[=].documentation = "Anzahl der zurück zu gebenden match-Parameter (Paging)"
-* parameter[=].type = #integer
-
-* parameter[+].name = #domain
+* parameter[0].name = #domain
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
@@ -40,7 +26,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier)."
+* parameter[=].documentation = "Identifikator eines MPI-Entrags (MPI-ID, Person.identifier). Im konkreten Fall muss auch die Domain angegeben werden."
 * parameter[=].type = #Identifier
 
 * parameter[+].name = #match
@@ -60,13 +46,7 @@ Title: "Beispiel Request für Operation QueryPossibleMatches"
 Description: "Parameters-Ressource für den Aufruf der Operation per HTTP-POST."
 Usage: #example
 
-* parameter[0].name = "_offset"
-* parameter[=].valueInteger = 0
-
-* parameter[+].name = "_count"
-* parameter[=].valueInteger = 1
-
-* parameter[+].name = "domain"
+* parameter[0].name = "domain"
 * parameter[=].valueString = "MIRACUM"
 
 * parameter[+].name = "mpiIdentifier"
@@ -89,18 +69,6 @@ Usage: #example
 // Paging Navigation Links
 * link[0].relation = "self"
 * link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
-
-* link[+].relation = "next"
-* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=1&_count=1"
-
-* link[+].relation = "previous"
-* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
-
-* link[+].relation = "first"
-* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=0&_count=1"
-
-* link[+].relation = "last"
-* link[=].url = "https://ths-greifswald.de/fhir/OperationDefinition/epix/QueryPossibleMatches?domain=MIRACUM&mpiIdentifier=123456789&_offset=44&_count=1"
 
 * entry[0].fullUrl = "urn:uuid:a1b2c3d4-e5f6-7890-1234-56789abcdef0"
 * entry[=].resource = MatchResultParameters01

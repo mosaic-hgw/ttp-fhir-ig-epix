@@ -104,6 +104,22 @@
       },
       {
         "reference": {
+          "reference": "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"
+        },
+        "name": "Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForIdentity",
+        "description": "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.",
+        "exampleCanonical": "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+      },
+      {
+        "reference": {
+          "reference": "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"
+        },
+        "name": "Beispiel-Instanz für MatchParametersProfile AddPossibleMatchForPerson",
+        "description": "Eine konkrete Instanz des MatchParametersProfile mit Beispielwerten.",
+        "exampleCanonical": "https://ths-greifswald.de/fhir/StructureDefinition/epix/MatchParametersProfile"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/CustomIdatValues"
         },
         "name": "Custom IDAT Values",
@@ -187,23 +203,9 @@
       },
       {
         "reference": {
-          "reference": "Parameters/Parameters-AddPossibleMatchForIdentity-response-example-1"
-        },
-        "name": "Parameters-AddPossibleMatchForIdentity-response-example-1",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
           "reference": "Parameters/Parameters-AddPossibleMatchForPerson-request-example-1"
         },
         "name": "Parameters-AddPossibleMatchForPerson-request-example-1",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Parameters/Parameters-AddPossibleMatchForPerson-response-example-1"
-        },
-        "name": "Parameters-AddPossibleMatchForPerson-response-example-1",
         "exampleBoolean": true
       },
       {
